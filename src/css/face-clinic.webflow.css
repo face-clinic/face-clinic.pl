@@ -742,10 +742,7 @@ img {
 }
 
 .pl-eng {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 35px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -763,6 +760,10 @@ img {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .link-pl-eng_male {
@@ -792,10 +793,7 @@ img {
 }
 
 .pl-eng_2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-right: 12px;
 }
 
@@ -6680,10 +6678,7 @@ img {
     top: auto;
     right: 0%;
     bottom: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     width: 100px;
     margin-top: 58px;
     -webkit-box-orient: horizontal;
