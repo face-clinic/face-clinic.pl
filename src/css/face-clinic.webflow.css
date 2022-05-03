@@ -1312,7 +1312,17 @@ img {
 }
 
 .rich-text-block {
-  padding: 10px 140px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 960px;
+  padding: 10px 20px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -2826,6 +2836,12 @@ img {
   z-index: -9999999999;
 }
 
+.visual.o-klinice {
+  background-image: url('../images/Edukacja.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
 .visual-gradient {
   position: fixed;
   left: 0%;
@@ -3069,7 +3085,20 @@ img {
 }
 
 .section-opis-dzialu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   min-height: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   background-color: rgba(9, 20, 27, 0.9);
 }
 
@@ -4623,6 +4652,10 @@ img {
   margin-bottom: 100px;
 }
 
+.con_opis_dzialu {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 991px) {
   .body-home-pl {
     background-image: none;
@@ -4700,11 +4733,6 @@ img {
 
   .menu-txt-uslugi {
     margin-right: 20px;
-  }
-
-  .rich-text-block {
-    padding-right: 60px;
-    padding-left: 60px;
   }
 
   .rich-text-block.edukacja.txt-o-mnie {
@@ -4832,12 +4860,14 @@ img {
 
   .section-intro.edukacja {
     height: auto;
-    margin-top: 720px;
-    padding-bottom: 0px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
   }
 
   .section-intro.moj-opis {
@@ -4971,10 +5001,6 @@ img {
     -ms-grid-row-align: center;
     align-self: center;
     background-position: 20% 0%;
-  }
-
-  .visual-load.edukacja {
-    background-position: 45% 0%;
   }
 
   .visual-load.tv {
@@ -5581,10 +5607,6 @@ img {
     bottom: auto;
   }
 
-  .rich-text-block {
-    padding-right: 10%;
-  }
-
   .rich-text-block.edukacja.tv {
     padding-bottom: 10px;
   }
@@ -5838,7 +5860,11 @@ img {
     margin-top: 0px;
     margin-bottom: -2px;
     padding-bottom: 0px;
-    background-image: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/Edukacja.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Edukacja.jpg');
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
   }
 
   .section-intro.o-klinice {
@@ -5909,6 +5935,11 @@ img {
 
   .dzial.opis {
     height: auto;
+  }
+
+  .dzial.edu {
+    width: 90%;
+    margin-top: 50px;
   }
 
   .div-block-55 {
@@ -6004,16 +6035,9 @@ img {
     margin-bottom: 0px;
   }
 
-  .visual-load.o-klinice {
-    display: none;
-  }
-
   .visual-load.edukacja {
-    background-image: none;
-    background-position: 0px 0px;
-    background-size: auto;
-    background-repeat: repeat;
-    background-attachment: scroll;
+    background-image: url('../images/Edukacja.jpg');
+    background-position: -100px 50%;
   }
 
   .visual-load.osoba {
@@ -6038,7 +6062,7 @@ img {
   }
 
   .visual.o-klinice {
-    display: none;
+    display: block;
   }
 
   .visual-gradient {
@@ -6979,8 +7003,6 @@ img {
 
   .rich-text-block {
     overflow: hidden;
-    padding-right: 5%;
-    padding-left: 20px;
   }
 
   .rich-text-block.edukacja.txt-o-mnie {
@@ -7200,6 +7222,9 @@ img {
 
   .section-intro.edukacja {
     padding-top: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/Edukacja.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Edukacja.jpg');
+    background-position: 0px 0px, -70px 50%;
   }
 
   .section-intro.o-klinice {
@@ -7376,8 +7401,8 @@ img {
   }
 
   .visual-load.edukacja {
-    background-position: 0% 70px;
-    background-size: 180%;
+    background-position: -200px 70px;
+    background-size: cover;
   }
 
   .visual-load.kontakt {
