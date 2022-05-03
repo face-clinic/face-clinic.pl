@@ -32,9 +32,9 @@ gulp.task('txt', function () {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('.htaccess', function () {
-    return gulp.src('src/.htaccess')
-        .pipe(gulp.dest('dist/'));
+gulp.task('documents', function () {
+    return gulp.src('src/documents/**/*')
+        .pipe(gulp.dest('dist/documents'));
 });
 
 gulp.task('html', function () {
@@ -62,6 +62,6 @@ gulp.task('default', gulp.series(
     'js',
     'html',
     'txt',
-    '.htaccess',
+    'documents',
     'hash'
 ));
