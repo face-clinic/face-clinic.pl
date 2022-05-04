@@ -1627,6 +1627,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 20px;
   background-color: hsla(213, 0%, 42%, 0.9);
 }
 
@@ -4032,10 +4033,8 @@ img {
 
 .link_osoba {
   margin-bottom: 20px;
-  padding-right: 5px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  border-radius: 12px;
+  padding: 5px 5px 10px;
+  border-radius: 16px;
   box-shadow: 1px 1px 3px 0 #000;
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
