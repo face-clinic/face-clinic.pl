@@ -180,7 +180,9 @@ img {
   border-width: 1px;
   border-color: transparent;
   border-radius: 20px;
-  background-color: hsla(0, 0%, 100%, 0.95);
+  background-color: hsla(0, 0%, 100%, 0.4);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -245,9 +247,6 @@ img {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #444749;
   border-radius: 20%;
   background-color: #444749;
 }
@@ -309,8 +308,9 @@ img {
 .div-button-home {
   width: 140px;
   border-radius: 20%;
-  background-color: #fff;
-  opacity: 0.95;
+  background-color: hsla(0, 0%, 100%, 0.55);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   -webkit-transition: box-shadow 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
   transition: box-shadow 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
   transition: box-shadow 200ms ease, transform 200ms ease, opacity 200ms ease;
@@ -346,6 +346,7 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -582,6 +583,8 @@ img {
   align-items: center;
   background-color: rgba(69, 74, 77, 0.9);
   background-image: none;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .image-5 {
@@ -898,9 +901,10 @@ img {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#3a3838));
-  background-image: linear-gradient(180deg, #2b2b2b, #3a3838);
-  opacity: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(66%, rgba(58, 56, 56, 0.5)), color-stop(99%, #3a3838));
+  background-image: linear-gradient(180deg, rgba(58, 56, 56, 0.5) 66%, #3a3838 99%);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 .home-tree {
@@ -1147,8 +1151,6 @@ img {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(17%, rgba(43, 43, 43, 0.3)), to(rgba(43, 43, 43, 0)));
-  background-image: linear-gradient(90deg, rgba(43, 43, 43, 0.3) 17%, rgba(43, 43, 43, 0));
 }
 
 .menu-wrapper {
@@ -1354,7 +1356,6 @@ img {
   right: 0%;
   bottom: 0%;
   z-index: 10;
-  opacity: 1;
 }
 
 .down-info {
@@ -1688,13 +1689,13 @@ img {
 }
 
 .section-white-dots {
-  overflow: hidden;
-  height: 350px;
+  height: 200px;
   background-image: url('../images/white_dot-01.svg');
-  background-position: 78% 0%;
-  background-size: 5px;
+  background-position: 80% 50%;
+  background-size: 3px;
   background-repeat: repeat-y;
-  opacity: 0.35;
+  -webkit-filter: invert(65%);
+  filter: invert(65%);
 }
 
 .section-white-dots.white {
@@ -1912,7 +1913,9 @@ img {
   border-width: 1px;
   border-color: hsla(0, 0%, 100%, 0.6);
   border-radius: 16px;
-  background-color: rgba(9, 20, 27, 0.9);
+  background-color: rgba(9, 20, 27, 0.85);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .div-block-54 {
@@ -2207,7 +2210,11 @@ img {
 }
 
 .przerywana {
-  border-bottom: 1px dashed #fff;
+  height: 3px;
+  background-image: url('../images/white_dot-01_poziom.svg');
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: repeat-x;
 }
 
 .przerywana._2 {
@@ -3094,7 +3101,9 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: rgba(9, 20, 27, 0.9);
+  background-color: rgba(9, 20, 27, 0.85);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .utility-page-wrap {
@@ -4346,6 +4355,8 @@ img {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
 }
 
 .reklama {
@@ -4354,6 +4365,8 @@ img {
 
 .link-block-4 {
   opacity: 0.95;
+  -webkit-backdrop-filter: blur(5px) blur(10px);
+  backdrop-filter: blur(5px) blur(10px);
 }
 
 .container-6 {
@@ -4392,6 +4405,7 @@ img {
 
 .image-21 {
   margin-top: 30px;
+  border-radius: 10px;
 }
 
 .container-7 {
@@ -4399,7 +4413,10 @@ img {
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
+  border-radius: 20px;
   background-color: hsla(0, 0%, 100%, 0.67);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .covid-19 {
@@ -4693,7 +4710,6 @@ img {
     display: flex;
     margin-right: 40px;
     margin-left: 40px;
-    background-color: hsla(0, 0%, 100%, 0.95);
   }
 
   .logo {
@@ -5599,8 +5615,8 @@ img {
   }
 
   .menu-uslugi {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3838), to(#2b2b2b));
-    background-image: linear-gradient(180deg, #3a3838, #2b2b2b);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #3a3838), color-stop(66%, rgba(43, 43, 43, 0.5)));
+    background-image: linear-gradient(180deg, #3a3838 1%, rgba(43, 43, 43, 0.5) 66%);
   }
 
   .kontakt-trigger {
@@ -6451,6 +6467,7 @@ img {
 
   .container-7 {
     margin-bottom: 0px;
+    border-radius: 0px;
   }
 
   .covid-19---ipad {
@@ -6609,9 +6626,11 @@ img {
   }
 
   .logo {
-    display: none;
+    display: block;
     margin-top: 0px;
     margin-right: 0%;
+    -webkit-filter: contrast(500%) invert(100%);
+    filter: contrast(500%) invert(100%);
   }
 
   .text-span-head-stopka {
@@ -6665,13 +6684,15 @@ img {
   }
 
   .image-5 {
-    display: none;
+    display: block;
     width: 95%;
     max-width: 60%;
     min-width: 200px;
     margin-top: 40px;
     margin-right: 0px;
     margin-bottom: 40px;
+    -webkit-filter: contrast(500%) invert(100%);
+    filter: contrast(500%) invert(100%);
   }
 
   .lightbox-link {
@@ -6808,6 +6829,9 @@ img {
 
   .menu-uslugi {
     padding-bottom: 5px;
+    background-image: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .home-tree {
@@ -6924,9 +6948,9 @@ img {
     -ms-flex-align: end;
     align-items: flex-end;
     border-left-style: none;
-    background-color: rgba(64, 87, 102, 0.76);
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(17%, rgba(43, 43, 43, 0.3)), to(rgba(43, 43, 43, 0)));
-    background-image: linear-gradient(90deg, rgba(43, 43, 43, 0.3) 17%, rgba(43, 43, 43, 0));
+    background-image: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   .menu-up {
@@ -6950,7 +6974,10 @@ img {
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    background-color: #3a3838;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3838), color-stop(8%, rgba(58, 56, 56, 0.66)));
+    background-image: linear-gradient(180deg, #3a3838, rgba(58, 56, 56, 0.66) 8%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   .text-block-8 {
@@ -7294,10 +7321,10 @@ img {
 
   .div-block-55 {
     width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding-top: 35px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -7307,16 +7334,23 @@ img {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-
-  .section-logo {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: 350px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .section-logo {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    background-color: rgba(43, 43, 43, 0.32);
   }
 
   .bx4 {
@@ -7406,7 +7440,9 @@ img {
     padding-bottom: 0px;
     border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
-    background-color: hsla(0, 0%, 100%, 0.95);
+    background-color: hsla(0, 0%, 100%, 0.4);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
   }
 
   .footer-01 {
@@ -7796,6 +7832,18 @@ img {
     display: none;
     overflow: hidden;
     padding-bottom: 40px;
+  }
+
+  .body-old {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .bx2 {
