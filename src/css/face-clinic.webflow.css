@@ -1546,7 +1546,6 @@ img {
 }
 
 .div_chirurgia_picture {
-  width: 100%;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1555,9 +1554,6 @@ img {
 .div-block-43 {
   width: 100%;
   margin-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1567,6 +1563,7 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  background-color: #000;
 }
 
 .text-block-12 {
@@ -7820,7 +7817,7 @@ img {
   }
 }
 
-#w-node-_2b534084-2729-9c06-78a7-01ce7587c044-d47529fa {
+#w-node-_2b534084-2729-9c06-78a7-01ce7587c044-84546644 {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-span: 1;
@@ -7831,7 +7828,7 @@ img {
   grid-row-end: 2;
 }
 
-#w-node-_230d8cac-e79c-ec0b-21a4-d7c5f7150b74-d47529fa {
+#w-node-_230d8cac-e79c-ec0b-21a4-d7c5f7150b74-84546644 {
   -ms-grid-column: 3;
   grid-column-start: 3;
   -ms-grid-column-span: 1;
