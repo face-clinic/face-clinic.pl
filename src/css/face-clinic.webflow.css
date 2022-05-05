@@ -121,7 +121,7 @@ h2 {
   margin-bottom: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
-  color: rgba(51, 51, 51, 0.8);
+  color: #333;
   font-size: 23px;
   line-height: 24px;
   font-weight: 600;
@@ -149,14 +149,6 @@ a {
 img {
   display: inline-block;
   max-width: 100%;
-}
-
-.body-home-pl {
-  background-color: #dfd5c0;
-  background-image: none;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
 }
 
 .paragraph {
@@ -256,10 +248,6 @@ img {
   border-style: none;
 }
 
-.button_home.out {
-  border-style: none;
-}
-
 .button_home.lab {
   border-style: none;
   background-color: #44b2e8;
@@ -286,24 +274,6 @@ img {
   border-radius: 16px;
   color: #444749;
   line-height: 22px;
-}
-
-.div-menu-home-secondary {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 40px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  border-radius: 40px;
-  background-color: #fff;
-  opacity: 0.8;
 }
 
 .div-button-home {
@@ -397,27 +367,6 @@ img {
   order: 0;
   background-color: hsla(0, 0%, 100%, 0.65);
   color: #a3a3a3;
-}
-
-.button-home-menu-secondary {
-  padding-right: 8px;
-  padding-left: 8px;
-  background-color: transparent;
-  opacity: 0.56;
-  -webkit-transition: text-shadow 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
-  transition: text-shadow 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
-  transition: text-shadow 200ms ease, transform 200ms ease, opacity 200ms ease;
-  transition: text-shadow 200ms ease, transform 200ms ease, opacity 200ms ease, -webkit-transform 200ms ease;
-  color: #000;
-  font-size: 14px;
-}
-
-.button-home-menu-secondary:hover {
-  opacity: 1;
-  -webkit-transform: translate(0px, -1px);
-  -ms-transform: translate(0px, -1px);
-  transform: translate(0px, -1px);
-  text-shadow: 0 7px 4px rgba(0, 0, 0, 0.2);
 }
 
 .dane {
@@ -535,12 +484,6 @@ img {
   -ms-transform: translate(0px, -2px);
   transform: translate(0px, -2px);
   text-shadow: 0 2px 6px #000;
-}
-
-.facebook {
-  width: 122px;
-  margin-top: 10px;
-  margin-left: 15px;
 }
 
 .projekty-ue {
@@ -681,27 +624,6 @@ img {
 
 .home_tree:hover {
   opacity: 1;
-}
-
-.body-chirurgia-pl {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  background-color: #01191d;
-  background-image: none;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: scroll;
 }
 
 .div-block-18 {
@@ -1192,7 +1114,7 @@ img {
   top: auto;
   right: 0%;
   bottom: 100%;
-  display: block;
+  display: none;
   overflow: hidden;
   width: 400px;
   margin-right: 71px;
@@ -2067,7 +1989,7 @@ img {
   margin-right: 10px;
   margin-left: 10px;
   padding: 9px 10px 0px;
-  border-top: 1px dashed #6b9da8;
+  border-top: 1px dashed #000;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -2078,13 +2000,6 @@ img {
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.heading-h4-in-box {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: #8acfdf;
 }
 
 .paragraph-txt-box {
@@ -2118,6 +2033,10 @@ img {
 .paragraph-box-kategoria-opis {
   margin-bottom: 0px;
   padding: 20px;
+}
+
+.heading-2.white {
+  color: #fff;
 }
 
 .heading-4-tytul-zabiegow {
@@ -2238,14 +2157,6 @@ img {
   -ms-flex-pack: start;
   justify-content: flex-start;
   background-color: #fff;
-}
-
-.dzial.opis.black {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-  background-color: #000;
 }
 
 .div-block-55 {
@@ -2574,10 +2485,6 @@ img {
   background-attachment: fixed;
 }
 
-.visual-load.osoba.monika-walerzak {
-  background-image: url('../images/Monika_Walerzak.jpg');
-}
-
 .visual-load.osoba.konrad-walerzak {
   background-image: url('../images/Konrad_Walerzak.jpg');
 }
@@ -2723,24 +2630,12 @@ img {
   background-position: 0% 50%;
 }
 
-.visual-load.ortodoncja {
-  background-image: url('../images/Ortodoncja.jpg');
-}
-
 .visual-load.chirurgia {
   background-image: url('../images/ObliczeTwarzy_8bit_new.jpg'), url('../images/visual6.jpg');
   background-position: 0% 0%, 0px 0px;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
-}
-
-.visual-load.orto {
-  background-image: url('../images/Ortodoncja.jpg'), url('../images/visual6.jpg');
-  background-position: 0px 0px, 0px 0px;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: scroll, fixed;
 }
 
 .visual-load.ortro {
@@ -3109,16 +3004,8 @@ img {
   align-items: stretch;
 }
 
-.body_implanty_pl {
-  background-color: #09141b;
-}
-
 .youtube {
   background-image: none;
-}
-
-.body_ortodoncja_pl {
-  background-color: #09141b;
 }
 
 .div_ortodoncja_picture {
@@ -3244,10 +3131,6 @@ img {
 
 .body_higiena_pl {
   background-color: #01191d;
-}
-
-.body_pl {
-  background-color: #09141b;
 }
 
 .body_konsultacje_pl {
@@ -3383,10 +3266,6 @@ img {
   width: 40px;
 }
 
-.brake_30 {
-  width: 30px;
-}
-
 .image {
   margin-bottom: 10px;
 }
@@ -3504,14 +3383,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.checkbox-field {
-  margin-top: 10px;
-}
-
-.checkbox-field-2 {
-  margin-top: 10px;
 }
 
 .html-embed {
@@ -3790,13 +3661,6 @@ img {
   display: none;
 }
 
-.visual-load-rodo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .section-intro-rodo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3817,15 +3681,6 @@ img {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-}
-
-.section-intro-rodo.kontakt {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 40, 51, 0.8)), to(rgba(25, 40, 51, 0.8))), url('../images/FC2020.jpg');
-  background-image: linear-gradient(180deg, rgba(25, 40, 51, 0.8), rgba(25, 40, 51, 0.8)), url('../images/FC2020.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-  background-repeat: repeat, no-repeat;
-  background-attachment: scroll, fixed;
 }
 
 .txt-rodo {
@@ -3858,38 +3713,12 @@ img {
   background-repeat: no-repeat;
 }
 
-.div_edu_picture {
-  height: 700px;
-  margin-bottom: 10px;
-  background-image: url('../images/IMG_2765_2280px.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .video {
   margin-bottom: 10px;
 }
 
 .body_rodo_pl {
   background-color: #00224b;
-}
-
-.div-block-89 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #fff;
 }
 
 .image-20 {
@@ -3935,26 +3764,6 @@ img {
   background-color: #fff;
 }
 
-.grid {
-  -webkit-column-count: 5;
-  column-count: 5;
-}
-
-.grid-2 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  justify-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  grid-template-areas: ". Area Area-2 Area-3 Area-4 Area-5 Area-6"
-    ". Area-7 Area-8 Area-9 Area-10 Area-11 Area-12";
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
 .div_grid {
   padding-right: 10px;
   padding-bottom: 10px;
@@ -3969,17 +3778,6 @@ img {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-}
-
-.section-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .immage_grid {
@@ -4026,66 +3824,12 @@ img {
   height: 75vh;
 }
 
-.portret {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  height: 100vh;
-  background-image: url('../images/Face_Clinic_Karolina_Mazurek_2016.jpg');
-  background-position: 0% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.rich-text-block-5 {
-  width: 45%;
-  padding-right: 40px;
-  padding-left: 0px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-.section-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vh;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
 .cv {
   width: 45%;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
   opacity: 1;
-}
-
-.personel {
-  overflow: hidden;
-  width: 1405px;
-  height: 0vw;
-  background-image: url('../images/Face_Clinic_Karolina_Mazurek_2016.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .div-block-91 {
@@ -4095,19 +3839,6 @@ img {
   display: flex;
   width: 100vh;
   height: 100vw;
-}
-
-.div-block-92 {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -9007199254740991;
-  background-image: url('../images/Monika_Walerzak.jpg');
-  background-position: 0px 0px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .portrets {
@@ -4199,20 +3930,9 @@ img {
   flex-direction: row;
 }
 
-.lightbox_galeria {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .div-block-94 {
   -webkit-column-count: 4;
   column-count: 4;
-}
-
-.container-5 {
-  margin-bottom: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .html-embed-3 {
@@ -4256,37 +3976,8 @@ img {
   opacity: 0.93;
 }
 
-.div-block-95 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 610px;
-  height: 355px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 20px;
-  background-color: #313131;
-}
-
 .covid-19---phone {
   display: none;
-}
-
-.body-3 {
-  background-image: url('../images/Paper_FC_BG.jpg');
-  background-position: 0px 0px;
-  background-size: auto;
-  background-attachment: fixed;
 }
 
 .body-old {
@@ -4323,31 +4014,11 @@ img {
   backdrop-filter: blur(5px) blur(10px);
 }
 
-.container-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .bx2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.div-block-97 {
-  position: relative;
 }
 
 .div-block-98 {
@@ -4636,16 +4307,6 @@ img {
   background-color: #868480;
 }
 
-.div-block-102 {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
-  height: 500px;
-  background-color: #b48b36;
-}
-
 .color {
   position: absolute;
   width: 100%;
@@ -4661,15 +4322,54 @@ img {
   background-attachment: scroll, fixed;
 }
 
-@media screen and (max-width: 991px) {
-  .body-home-pl {
-    background-image: none;
-    background-position: 0px 0px;
-    background-size: auto;
-    background-repeat: repeat;
-    background-attachment: scroll;
-  }
+.div-block-102 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
 
+.image-22 {
+  opacity: 0.46;
+}
+
+.div-block-103 {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  bottom: auto;
+  width: 100%;
+  height: 15ch;
+  margin-top: -128px;
+}
+
+.logo_rezonansfc {
+  -webkit-transition: -webkit-filter 200ms ease, -webkit-transform 200ms ease;
+  transition: -webkit-filter 200ms ease, -webkit-transform 200ms ease;
+  transition: filter 200ms ease, transform 200ms ease;
+  transition: filter 200ms ease, transform 200ms ease, -webkit-filter 200ms ease, -webkit-transform 200ms ease;
+}
+
+.logo_rezonansfc:hover {
+  -webkit-filter: contrast(200%);
+  filter: contrast(200%);
+  -webkit-transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -3px);
+  transform: translate(0px, -3px);
+}
+
+@media screen and (max-width: 991px) {
   .paragraph {
     position: relative;
     display: -webkit-box;
@@ -4689,15 +4389,6 @@ img {
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
-  }
-
-  .div-menu-home-secondary {
-    min-height: 40px;
-    -webkit-align-self: stretch;
-    -ms-flex-item-align: stretch;
-    -ms-grid-row-align: stretch;
-    align-self: stretch;
-    border-radius: 30px;
   }
 
   .div-button-home {
@@ -4923,11 +4614,6 @@ img {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    border-top: 1px dashed #4b88be;
-  }
-
-  .dzial.opis.black {
-    padding-top: 5px;
     border-top: 1px dashed #4b88be;
   }
 
@@ -5158,14 +4844,6 @@ img {
     min-width: 210px;
   }
 
-  .brake_30 {
-    width: 30px;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
   .div-block-83 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
@@ -5256,10 +4934,6 @@ img {
     background-position: 50% 50%;
   }
 
-  .div_edu_picture {
-    height: 500px;
-  }
-
   .image_mazowsze {
     width: 265px;
     height: auto;
@@ -5296,30 +4970,13 @@ img {
     align-self: center;
   }
 
-  .grid-2 {
-    grid-auto-flow: row;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-
   .immage_grid {
     max-width: 300px;
-  }
-
-  .portret {
-    background-position: 0% 50%;
   }
 
   .body-2 {
     background-position: 50% 50%;
     background-size: cover;
-  }
-
-  .div-block-92 {
-    position: static;
-    z-index: auto;
-    width: 100vw;
-    height: 100em;
   }
 
   .portrets {
@@ -5370,18 +5027,6 @@ img {
     align-items: center;
   }
 
-  .container-6 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
   .div-block-98 {
     width: 15%;
   }
@@ -5409,14 +5054,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .body-home-pl {
-    background-image: url('../images/Face-Clinic_Karolina_01_2019_03.jpg');
-    background-position: 0px 0px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
   .paragraph {
     width: 450px;
     max-width: none;
@@ -5462,12 +5099,6 @@ img {
     font-size: 12px;
   }
 
-  .button-home-menu-secondary {
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 15px;
-  }
-
   .dane {
     font-size: 14px;
   }
@@ -5492,13 +5123,6 @@ img {
     width: 180px;
     margin-top: 40px;
     margin-bottom: 46px;
-  }
-
-  .body-chirurgia-pl {
-    background-image: none;
-    background-size: auto;
-    background-repeat: repeat;
-    background-attachment: scroll;
   }
 
   .pl-eng-facebook.mobile {
@@ -6054,14 +5678,6 @@ img {
     background-position: 40% 0%, 0px 0px;
   }
 
-  .visual-load.orto {
-    background-image: url('../images/Ortodoncja.jpg');
-    background-position: 0px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
   .visual {
     height: 100%;
   }
@@ -6360,21 +5976,8 @@ img {
     background-position: 50% 50%;
   }
 
-  .div_edu_picture {
-    height: 350px;
-  }
-
-  .grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   .immage_grid {
     min-width: auto;
-  }
-
-  .portret {
-    background-position: 10% 50%;
   }
 
   .div-block-93 {
@@ -6566,13 +6169,6 @@ img {
 }
 
 @media screen and (max-width: 479px) {
-  .body-home-pl {
-    background-image: none;
-    background-size: auto;
-    background-repeat: repeat;
-    background-attachment: scroll;
-  }
-
   .paragraph {
     left: auto;
     display: -webkit-box;
@@ -6622,25 +6218,6 @@ img {
     margin-bottom: 20px;
   }
 
-  .facebook {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 26px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
   .projekty-ue {
     width: auto;
     text-align: center;
@@ -6666,10 +6243,6 @@ img {
   .lightbox-link {
     width: 180px;
     background-position: 0% 0%;
-  }
-
-  .body-chirurgia-pl {
-    overflow: hidden;
   }
 
   .linia {
@@ -7744,10 +7317,6 @@ img {
     background-position: 50% 50%;
   }
 
-  .div_edu_picture {
-    height: 200px;
-  }
-
   .image_mazowsze {
     width: 85%;
   }
@@ -7818,11 +7387,6 @@ img {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-  }
-
-  .dys_proc {
-    width: 10%;
-    min-width: 0%;
   }
 
   .section {
