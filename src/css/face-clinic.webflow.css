@@ -103,7 +103,7 @@ body {
   -ms-flex-order: 0;
   order: 0;
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #09141b;
   font-size: 16px;
   font-weight: 400;
 }
@@ -121,6 +121,7 @@ h2 {
   margin-bottom: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
+  color: rgba(51, 51, 51, 0.8);
   font-size: 23px;
   line-height: 24px;
   font-weight: 600;
@@ -903,8 +904,6 @@ img {
   align-items: flex-start;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(66%, rgba(58, 56, 56, 0.5)), color-stop(99%, #3a3838));
   background-image: linear-gradient(180deg, rgba(58, 56, 56, 0.5) 66%, #3a3838 99%);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
 }
 
 .home-tree {
@@ -971,8 +970,8 @@ img {
 }
 
 .link-menu:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 111, 255, 0)), to(rgba(0, 111, 255, 0.5)));
-  background-image: linear-gradient(180deg, rgba(0, 111, 255, 0), rgba(0, 111, 255, 0.5));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 111, 255, 0.5)));
+  background-image: linear-gradient(180deg, transparent, rgba(0, 111, 255, 0.5));
   opacity: 1;
 }
 
@@ -1004,8 +1003,6 @@ img {
 }
 
 .link-menu.uslugi.w--current {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 111, 255, 0)), to(rgba(0, 111, 255, 0.5)));
-  background-image: linear-gradient(180deg, rgba(0, 111, 255, 0), rgba(0, 111, 255, 0.5));
   opacity: 1;
 }
 
@@ -1195,10 +1192,12 @@ img {
   top: auto;
   right: 0%;
   bottom: 100%;
-  display: none;
+  display: block;
   overflow: hidden;
   width: 400px;
   margin-right: 71px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   cursor: context-menu;
 }
 
@@ -1328,7 +1327,6 @@ img {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  color: #fff;
 }
 
 .rich-text-block.chirurgia {
@@ -1338,6 +1336,7 @@ img {
 
 .rich-text-block.edukacja {
   padding-left: 0px;
+  color: #fff;
 }
 
 .rich-text-block.edukacja.txt-o-mnie {
@@ -1573,18 +1572,22 @@ img {
   top: auto;
   right: 0%;
   bottom: auto;
-  margin-top: -88px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: -30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
-  background-image: linear-gradient(180deg, transparent, #000);
-  color: #fff;
+  background-image: none;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   font-size: 22px;
   text-align: center;
+}
+
+.text-block-12.konrad {
+  color: #fff;
 }
 
 .text-span {
@@ -1673,6 +1676,7 @@ img {
 }
 
 .div-block-47 {
+  overflow: hidden;
   width: 100%;
 }
 
@@ -1694,8 +1698,8 @@ img {
   background-position: 80% 50%;
   background-size: 3px;
   background-repeat: repeat-y;
-  -webkit-filter: invert(65%);
-  filter: invert(65%);
+  -webkit-filter: none;
+  filter: none;
 }
 
 .section-white-dots.white {
@@ -1751,15 +1755,9 @@ img {
   margin-right: 10px;
   margin-left: 10px;
   padding: 9px 10px 0px;
-  border-top: 1px dashed #8acfdf;
-  color: #8acfdf;
+  border-top: 1px dashed #000;
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.txt-zabiegi.r {
-  border-top-color: #4b88be;
-  color: #7ebff8;
 }
 
 .link_film {
@@ -1786,16 +1784,12 @@ img {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  border-style: dashed;
-  border-width: 1px;
-  border-color: #8acfdf;
+  border: 1px dashed #000;
   border-radius: 8px;
-  background-color: rgba(108, 157, 168, 0.2);
-  -webkit-transition: opacity 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
-  transition: opacity 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
-  transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease;
-  transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
-  color: #8acfdf;
+  -webkit-transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, -webkit-transform 200ms ease;
+  transition: opacity 200ms ease, transform 200ms ease;
+  transition: opacity 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
   font-size: 15px;
 }
 
@@ -1804,12 +1798,6 @@ img {
   -webkit-transform: translate(0px, 1px);
   -ms-transform: translate(0px, 1px);
   transform: translate(0px, 1px);
-}
-
-.link_film.r {
-  border-color: #4b88be;
-  background-color: rgba(63, 116, 163, 0.2);
-  color: #7ebff8;
 }
 
 .text-block-21 {
@@ -1825,10 +1813,11 @@ img {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  border-left: 1px dashed #4b88be;
+  border-left: 1px dashed #000;
+  color: #2b2b2b;
 }
 
-.image-13 {
+.kamerka {
   width: 50px;
   height: 60px;
   margin-right: 10px;
@@ -1837,6 +1826,8 @@ img {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  -webkit-filter: brightness(133%) invert(100%) grayscale(100%);
+  filter: brightness(133%) invert(100%) grayscale(100%);
 }
 
 .accordian-content {
@@ -1883,10 +1874,6 @@ img {
   flex-direction: column;
 }
 
-.bold-text-2 {
-  color: #8acfdf;
-}
-
 .round-16 {
   position: relative;
   left: 17%;
@@ -1913,9 +1900,9 @@ img {
   border-width: 1px;
   border-color: hsla(0, 0%, 100%, 0.6);
   border-radius: 16px;
-  background-color: rgba(9, 20, 27, 0.85);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 100%, 0.55);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 
 .div-block-54 {
@@ -1940,7 +1927,7 @@ img {
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 8px;
-  background-color: rgba(108, 157, 168, 0.2);
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .accordian-wrapper.r {
@@ -1948,7 +1935,6 @@ img {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
-  background-color: rgba(63, 116, 163, 0.2);
 }
 
 .accordian-item {
@@ -1974,7 +1960,6 @@ img {
   border-radius: 8px;
   -webkit-transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
   transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
-  color: #8acfdf;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -1982,7 +1967,7 @@ img {
 }
 
 .accordian-item-trigger:hover {
-  background-color: rgba(108, 157, 168, 0.25);
+  background-color: rgba(68, 71, 73, 0.12);
   letter-spacing: 0.2px;
 }
 
@@ -1991,11 +1976,6 @@ img {
   -ms-flex-item-align: stretch;
   -ms-grid-row-align: stretch;
   align-self: stretch;
-  color: #7ebff8;
-}
-
-.accordian-item-trigger.r:hover {
-  background-color: rgba(75, 137, 190, 0.28);
 }
 
 .accordian-item-content {
@@ -2015,7 +1995,6 @@ img {
   border-radius: 8px;
   -webkit-transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
   transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
-  color: #6b9da8;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
@@ -2023,7 +2002,7 @@ img {
 }
 
 .accordian-item-trigger-2:hover {
-  background-color: rgba(108, 157, 168, 0.25);
+  background-color: rgba(68, 71, 73, 0.15);
   letter-spacing: 0.2px;
 }
 
@@ -2051,16 +2030,13 @@ img {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  border-style: dashed;
-  border-width: 1px;
-  border-color: #6b9da8;
+  border: 1px dashed #000;
   border-radius: 8px;
-  background-color: rgba(108, 157, 168, 0.2);
   -webkit-transition: opacity 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
   transition: opacity 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
   transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease;
   transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
-  color: #6b9da8;
+  color: rgba(68, 71, 73, 0.9);
   font-size: 15px;
 }
 
@@ -2084,7 +2060,7 @@ img {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
-  border-left: 1px dashed #6b9da8;
+  border-left: 1px dashed #000;
 }
 
 .txt-zabiegi-2 {
@@ -2092,7 +2068,6 @@ img {
   margin-left: 10px;
   padding: 9px 10px 0px;
   border-top: 1px dashed #6b9da8;
-  color: #8acfdf;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -2130,7 +2105,6 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #8acfdf;
 }
 
 .paragraph-txt-box.r {
@@ -2138,32 +2112,18 @@ img {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  color: #7ebff8;
   text-align: left;
 }
 
 .paragraph-box-kategoria-opis {
   margin-bottom: 0px;
   padding: 20px;
-  color: #8acfdf;
-}
-
-.heading-2 {
-  color: #8acfdf;
-}
-
-.heading-2.r {
-  color: #fff;
 }
 
 .heading-4-tytul-zabiegow {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #8acfdf;
-}
-
-.heading-4-tytul-zabiegow.regular {
-  color: #7ebff8;
+  color: #3a3838;
 }
 
 .ico_main {
@@ -3043,7 +3003,6 @@ img {
 
 .rich-text-block-r {
   padding: 5px 20px 10px;
-  color: #7ebff8;
 }
 
 .image-19 {
@@ -3053,11 +3012,6 @@ img {
 .rich-text-block-opis {
   padding-right: 10px;
   padding-left: 10px;
-  color: #7ebff8;
-}
-
-.rich-text-block-opis.chirurgia {
-  color: #8acfdf;
 }
 
 .div_implanty_picture {
@@ -3101,9 +3055,9 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: rgba(9, 20, 27, 0.85);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 100%, 0.55);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 
 .utility-page-wrap {
@@ -3192,7 +3146,6 @@ img {
 
 .rich-text-block-poddzoal {
   padding: 20px 20px 10px;
-  color: #8acfdf;
 }
 
 .rich-text-block-poddzoal.sen {
@@ -3893,6 +3846,7 @@ img {
   margin-bottom: 60px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  border-radius: 20px;
 }
 
 .div_klinika_picture {
@@ -4576,6 +4530,12 @@ img {
   line-height: 24px;
 }
 
+.container-9 {
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
 .column-0-padding {
   position: static;
   display: -webkit-box;
@@ -4691,6 +4651,14 @@ img {
   width: 100%;
   height: 500px;
   background-color: #e0ddd6;
+}
+
+.lottie_sen {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 40, 51, 0.55)), to(rgba(25, 40, 51, 0.55))), url('../images/Paper_FC_BG.jpg');
+  background-image: linear-gradient(180deg, rgba(25, 40, 51, 0.55), rgba(25, 40, 51, 0.55)), url('../images/Paper_FC_BG.jpg');
+  background-position: 0px 0px, 100% 100%;
+  background-size: auto, auto;
+  background-attachment: scroll, fixed;
 }
 
 @media screen and (max-width: 991px) {
@@ -6949,8 +6917,6 @@ img {
     align-items: flex-end;
     border-left-style: none;
     background-image: none;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
   }
 
   .menu-up {
@@ -6976,8 +6942,6 @@ img {
     flex: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#3a3838), color-stop(8%, rgba(58, 56, 56, 0.66)));
     background-image: linear-gradient(180deg, #3a3838, rgba(58, 56, 56, 0.66) 8%);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
   }
 
   .text-block-8 {
@@ -7156,8 +7120,9 @@ img {
   }
 
   .text-block-12 {
-    margin-top: -80px;
-    padding-bottom: 11px;
+    margin-top: -33px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .text-span {
@@ -7204,7 +7169,7 @@ img {
     line-height: 16px;
   }
 
-  .image-13 {
+  .kamerka {
     width: 30px;
   }
 
