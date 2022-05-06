@@ -1,0 +1,16 @@
+name: Broken links
+
+on:
+  push:
+
+name: Check broken links
+jobs:
+  broken-link-checker:
+    name: Check broken links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: ruzickap/action-my-broken-link-checker@v2
+        with:
+          url: https://face-clinic.pl
+          cmd_params: "--max-connections=3 --color=always"
