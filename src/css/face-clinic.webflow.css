@@ -667,6 +667,10 @@ img {
   display: none;
 }
 
+.pl-eng-facebook.mobile._1 {
+  display: none;
+}
+
 .pl-eng {
   display: none;
   height: 35px;
@@ -719,7 +723,6 @@ img {
 }
 
 .pl-eng_2 {
-  display: none;
   margin-right: 12px;
 }
 
@@ -5153,10 +5156,11 @@ img {
   }
 
   .pl-eng-facebook.desktop {
-    display: none;
+    display: block;
   }
 
   .pl-eng {
+    display: none;
     -webkit-box-flex: 0;
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
