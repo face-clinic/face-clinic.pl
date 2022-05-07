@@ -1,7 +1,6 @@
 name: Check broken links
 
-on:
-  page_build:
+on: [page_build, workflow_dispatch]
 
 jobs:
   broken-link-checker:
