@@ -1,7 +1,7 @@
 name: Check broken links
 
 on:
-  push:
+  page_build:
 
 jobs:
   broken-link-checker:
