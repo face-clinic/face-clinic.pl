@@ -2100,7 +2100,7 @@ img {
 }
 
 .przerywana._2 {
-  border-bottom-color: #4b88be;
+  border-bottom: 1px dashed #4b88be;
 }
 
 .h1-dzial {
