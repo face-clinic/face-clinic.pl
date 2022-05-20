@@ -1544,6 +1544,8 @@ img {
   border-style: none;
   border-width: 1px;
   border-color: hsla(0, 0%, 100%, 0.6);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .box-kategoria-tytul.zespol {
@@ -1559,21 +1561,22 @@ img {
 
 .box-kategoria-tytul.zespol.lekarze {
   max-width: 1200px;
-  background-color: rgba(107, 148, 153, 0.9);
+  background-color: rgba(107, 148, 153, 0.7);
 }
 
 .box-kategoria-tytul.zespol.asystentki {
   max-width: 1200px;
-  background-color: rgba(134, 109, 130, 0.9);
+  background-color: rgba(134, 109, 130, 0.7);
 }
 
 .box-kategoria-tytul.zespol.technicy {
   min-width: 1200px;
-  background-color: rgba(95, 120, 151, 0.9);
+  background-color: rgba(95, 120, 151, 0.7);
 }
 
 .box-kategoria-tytul.zespol.administracja {
   min-width: 1200px;
+  background-color: hsla(213, 0%, 42%, 0.7);
 }
 
 .box-kategotia-zawartosc {
@@ -2494,7 +2497,6 @@ img {
 
 .visual-load.osoba.sebastian-walerzak {
   background-image: url('../images/Sebastian_Walerzak.jpg');
-  background-position: 0% 50%;
 }
 
 .visual-load.osoba.salwa {
@@ -2533,8 +2535,8 @@ img {
   background-position: 0% 50%;
 }
 
-.visual-load.osoba.kornet {
-  background-image: url('../images/Kornet.jpg');
+.visual-load.osoba.nieweglowska {
+  background-image: url('../images/Nieweglowska.jpg');
   background-position: 0% 50%;
 }
 
@@ -2631,6 +2633,39 @@ img {
 .visual-load.osoba.lewandowska {
   background-image: url('../images/Lewandowska.jpg');
   background-position: 0% 50%;
+}
+
+.visual-load.osoba.angelika-berk {
+  background-image: url('../images/Face_Clinic_Angelika_Berk.jpg');
+}
+
+.visual-load.osoba.gut {
+  background-image: url('../images/Gut.jpg');
+}
+
+.visual-load.osoba.stulek {
+  background-image: url('../images/Stulek.jpg');
+}
+
+.visual-load.osoba.jurkowski {
+  background-image: url('../images/Jurkowski.jpg');
+}
+
+.visual-load.osoba.chodyn-semczuk {
+  background-image: url('../images/Chodyn-Semczuk.jpg');
+}
+
+.visual-load.osoba.meredyk {
+  background-image: url('../images/Meredyk.jpg');
+  background-position: 0% 0%;
+}
+
+.visual-load.osoba.kuczynska-ksiazek {
+  background-image: url('../images/Kuczynska-Ksiazek.jpg');
+}
+
+.visual-load.osoba.wierzchowska {
+  background-image: url('../images/Wierzchowska.jpg');
 }
 
 .visual-load.chirurgia {
@@ -4726,7 +4761,7 @@ img {
     background-position: 50% 0%, 0px 0px;
   }
 
-  .visual.monika-walerzak {
+  .visual.osoba {
     position: static;
   }
 
