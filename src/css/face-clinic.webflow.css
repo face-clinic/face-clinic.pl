@@ -2637,35 +2637,48 @@ img {
 
 .visual-load.osoba.angelika-berk {
   background-image: url('../images/Face_Clinic_Angelika_Berk.jpg');
+  background-position: 0% 50%;
 }
 
 .visual-load.osoba.gut {
   background-image: url('../images/Gut.jpg');
+  background-position: 0% 50%;
 }
 
 .visual-load.osoba.stulek {
   background-image: url('../images/Stulek.jpg');
+  background-position: 0% 0%;
 }
 
 .visual-load.osoba.jurkowski {
   background-image: url('../images/Jurkowski.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .visual-load.osoba.chodyn-semczuk {
   background-image: url('../images/Chodyn-Semczuk.jpg');
+  background-position: 0% 0%;
 }
 
 .visual-load.osoba.meredyk {
   background-image: url('../images/Meredyk.jpg');
-  background-position: 0% 0%;
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .visual-load.osoba.kuczynska-ksiazek {
   background-image: url('../images/Kuczynska-Ksiazek.jpg');
+  background-position: 0% 0%;
 }
 
 .visual-load.osoba.wierzchowska {
   background-image: url('../images/Wierzchowska.jpg');
+  background-position: 0px 0%;
 }
 
 .visual-load.chirurgia {
