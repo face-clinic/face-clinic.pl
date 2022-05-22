@@ -2165,7 +2165,7 @@ img {
   background-color: #fff;
 }
 
-.div-block-55 {
+.div-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2662,6 +2662,10 @@ img {
 
 .visual-load.osoba.kuczynska-ksiazek {
   background-image: url('../images/Kuczynska-Ksiazek.jpg');
+}
+
+.visual-load.osoba.wierzchowska {
+  background-image: url('../images/Wierzchowska.jpg');
 }
 
 .visual-load.chirurgia {
@@ -4651,7 +4655,7 @@ img {
     border-top: 1px dashed #4b88be;
   }
 
-  .div-block-55 {
+  .div-nav {
     width: auto;
     margin-right: 0%;
   }
@@ -5606,7 +5610,7 @@ img {
     margin-top: 50px;
   }
 
-  .div-block-55 {
+  .div-nav {
     margin-right: 0%;
   }
 
@@ -6892,12 +6896,12 @@ img {
     padding-left: 20px;
   }
 
-  .div-block-55 {
+  .div-nav {
     width: 100%;
     margin-right: 0px;
     margin-left: 0px;
     padding-top: 35px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -6913,7 +6917,7 @@ img {
     align-items: center;
   }
 
-  .div-block-55.phone {
+  .div-nav.phone {
     margin-bottom: -60px;
     padding-top: 63%;
   }
@@ -7021,7 +7025,7 @@ img {
     padding-bottom: 0px;
     border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
-    background-color: transparent;
+    background-color: hsla(0, 0%, 100%, 0.4);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
   }
@@ -7035,7 +7039,11 @@ img {
   }
 
   .visual-load {
+    background-image: url('../images/visual6.jpg');
     background-position: 20% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   .visual-load.edukacja {
