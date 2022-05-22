@@ -4420,6 +4420,10 @@ img {
   transform: translate(0px, -3px);
 }
 
+.image-23 {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
     position: relative;
@@ -5580,7 +5584,10 @@ img {
   }
 
   .section-intro.galeria {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/face-clinic_modele.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
   }
 
   .section-intro.moj-opis {
@@ -6217,6 +6224,16 @@ img {
   .heading {
     font-size: 22px;
     text-align: center;
+  }
+
+  .image-23 {
+    position: absolute;
+    left: 0%;
+    top: 6%;
+    right: 0%;
+    bottom: auto;
+    z-index: -1;
+    display: block;
   }
 }
 
@@ -6881,6 +6898,10 @@ img {
     background-position: 0px 0px, 0% 50%;
   }
 
+  .section-intro.galeria {
+    background-position: 30% 50%;
+  }
+
   .section-intro.zespol {
     background-position: 12% 0%;
   }
@@ -7455,6 +7476,10 @@ img {
 
   .section {
     margin-top: 0px;
+  }
+
+  .image-23 {
+    width: 1200px;
   }
 }
 
