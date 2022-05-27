@@ -2677,8 +2677,96 @@ img {
 }
 
 .visual-load.osoba.wierzchowska {
-  background-image: url('../images/Wierzchowska.jpg');
+  background-image: url('../images/Wierzchowska_2.jpg');
   background-position: 0px 0%;
+}
+
+.visual-load.osoba.anna_malek {
+  background-image: url('../images/Malek.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.tokarska {
+  background-image: url('../images/Tokarska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.wrobel {
+  background-image: url('../images/Wrobel.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.marciszewska {
+  background-image: url('../images/Marciszewska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.k_wojcik {
+  background-image: url('../images/Wojcik_K.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.siecinska {
+  background-image: url('../images/Siecinska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.skorycka {
+  background-image: url('../images/Skorycka.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.krasnicka {
+  background-image: url('../images/Krasnicka.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.jablonska {
+  background-image: url('../images/Jablonska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.tyminska {
+  background-image: url('../images/Tyminska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.rynska {
+  background-image: url('../images/Rynska.jpg');
+  background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .visual-load.chirurgia {
