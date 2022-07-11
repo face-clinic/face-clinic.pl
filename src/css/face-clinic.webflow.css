@@ -2183,6 +2183,10 @@ img {
   align-items: center;
 }
 
+.div-nav.phone {
+  overflow: hidden;
+}
+
 .section-logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2435,11 +2439,11 @@ img {
 }
 
 .visual-load.implanty {
-  background-image: url('../images/Implanty_tlo.jpg'), url('../images/visual6.jpg');
-  background-position: 0px 0px, 0px 0px;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  background-image: url('../images/Implanty_tlo.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .visual-load.edukacja {
@@ -2770,11 +2774,11 @@ img {
 }
 
 .visual-load.chirurgia {
-  background-image: url('../images/ObliczeTwarzy_8bit_new.jpg'), url('../images/visual6.jpg');
-  background-position: 0% 0%, 0px 0px;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .visual-load.ortro {
@@ -3904,6 +3908,7 @@ img {
 }
 
 .div_grid {
+  overflow: hidden;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -4121,8 +4126,8 @@ img {
 
 .body-old {
   background-image: url('../images/Paper_FC_BG.jpg');
-  background-position: 0px 0px;
-  background-size: auto;
+  background-position: 0% 0%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -7551,6 +7556,10 @@ img {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-attachment: scroll;
   }
 
   .bx2 {
