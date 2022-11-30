@@ -1579,6 +1579,11 @@ img {
   background-color: hsla(213, 0%, 42%, 0.7);
 }
 
+.box-kategoria-tytul.zespol.fizjoterapeuci {
+  min-width: 1200px;
+  background-color: rgba(160, 140, 126, 0.9);
+}
+
 .box-kategotia-zawartosc {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2768,6 +2773,34 @@ img {
 .visual-load.osoba.rynska {
   background-image: url('../images/Rynska.jpg');
   background-position: 0% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.konrad-kaminski {
+  background-image: url('../images/Kaminski.jpg');
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
+.visual-load.osoba.rynkiewicz {
+  background-image: url('../images/Rynkiewicz.jpg');
+  background-position: 0px 0px;
+  background-size: contain;
+}
+
+.visual-load.osoba.podlasinska {
+  background-image: url('../images/Podlasinska.jpg');
+  background-position: -100px 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.visual-load.osoba.podlasinski {
+  background-image: url('../images/Podlasinski.jpg');
+  background-position: -100px 0%;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -4632,6 +4665,11 @@ img {
   }
 
   .box-kategoria-tytul.zespol.administracja {
+    min-width: auto;
+    border-radius: 0px;
+  }
+
+  .box-kategoria-tytul.zespol.fizjoterapeuci {
     min-width: auto;
     border-radius: 0px;
   }
