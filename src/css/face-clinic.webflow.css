@@ -149,6 +149,7 @@ a {
 img {
   display: inline-block;
   max-width: 100%;
+  margin-right: 20px;
 }
 
 .paragraph {
@@ -1352,6 +1353,10 @@ img {
   transition: box-shadow 200ms ease, -webkit-transform 200ms ease;
   transition: box-shadow 200ms ease, transform 200ms ease;
   transition: box-shadow 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.secsion-box._3d-jaw {
+  display: none;
 }
 
 .plexus {
@@ -4548,6 +4553,30 @@ img {
 
 .image-23 {
   display: none;
+}
+
+.face-edu {
+  padding-right: 20px;
+}
+
+.face-edu_box {
+  position: relative;
+  left: -17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  opacity: 0.65;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.face-edu_box:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 991px) {
