@@ -4553,6 +4553,7 @@ img {
 }
 
 .face-edu {
+  display: none;
   padding-right: 20px;
 }
 
