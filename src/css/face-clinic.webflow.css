@@ -1355,10 +1355,6 @@ img {
   transition: box-shadow 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
 }
 
-.secsion-box._3d-jaw {
-  display: none;
-}
-
 .plexus {
   position: fixed;
   left: 0%;
