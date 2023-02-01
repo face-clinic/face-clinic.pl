@@ -149,7 +149,7 @@ a {
 img {
   display: inline-block;
   max-width: 100%;
-  margin-right: 20px;
+  margin-right: 7px;
 }
 
 .paragraph {
@@ -4553,11 +4553,42 @@ img {
 }
 
 .face-edu {
-  display: none;
   padding-right: 20px;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.face-edu:hover {
+  opacity: 0.7;
 }
 
 .face-edu_box {
+  position: relative;
+  left: -17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.image-24 {
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
+}
+
+.face-edu_absolute {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+}
+
+.face-edu_box-2 {
   position: relative;
   left: -17px;
   display: -webkit-box;
@@ -4573,8 +4604,13 @@ img {
   transition: opacity 200ms ease;
 }
 
-.face-edu_box:hover {
+.face-edu_box-2:hover {
   opacity: 1;
+}
+
+.image-25 {
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
 }
 
 @media screen and (max-width: 991px) {
@@ -5701,8 +5737,7 @@ img {
   .section-intro.edukacja {
     height: auto;
     margin-top: 0px;
-    margin-bottom: -2px;
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/Edukacja.jpg');
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Edukacja.jpg');
     background-position: 0px 0px, 50% 50%;
@@ -6392,6 +6427,10 @@ img {
     bottom: auto;
     z-index: -1;
     display: block;
+  }
+
+  .face-edu_absolute {
+    top: 100px;
   }
 }
 
@@ -7642,6 +7681,26 @@ img {
 
   .image-23 {
     width: 1200px;
+  }
+
+  .face-edu_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .image-24 {
+    margin-bottom: 10px;
+  }
+
+  .text-block-28 {
+    margin-left: 17px;
   }
 }
 
