@@ -1,12 +1,12 @@
 .w-embed-youtubevideo {
   width: 100%;
-  position: relative;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
+  background-position: 50%;
   background-size: cover;
-  background-position: 50% 50%;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
 }
 
 .w-embed-youtubevideo:empty {
@@ -15,90 +15,55 @@
 }
 
 .w-checkbox {
-  display: block;
   margin-bottom: 5px;
   padding-left: 20px;
+  display: block;
 }
 
-.w-checkbox::before {
-  content: ' ';
+.w-checkbox:before {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
   display: table;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
 }
 
-.w-checkbox::after {
-  content: ' ';
-  display: table;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+.w-checkbox:after {
+  content: " ";
   clear: both;
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
 }
 
 .w-checkbox-input {
   float: left;
-  margin-bottom: 0px;
-  margin-left: -20px;
-  margin-right: 0px;
-  margin-top: 4px;
+  margin: 4px 0 0 -20px;
   line-height: normal;
 }
 
 .w-checkbox-input--inputType-custom {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-color: #ccc;
-  border-bottom-color: #ccc;
-  border-left-color: #ccc;
-  border-right-color: #ccc;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
   width: 12px;
   height: 12px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 .w-checkbox-input--inputType-custom.w--redirected-checked {
   background-color: #3898ec;
-  border-top-color: #3898ec;
-  border-bottom-color: #3898ec;
-  border-left-color: #3898ec;
-  border-right-color: #3898ec;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #3898ec;
 }
 
 .w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0px 0px 3px 1px #3898ec;
+  box-shadow: 0 0 3px 1px #3898ec;
 }
 
 body {
-  -ms-grid-row-align: auto;
-      align-self: auto;
-  order: 0;
-  font-family: 'Open Sans', sans-serif;
   color: #09141b;
+  order: 0;
+  align-self: auto;
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -107,32 +72,32 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 38px;
-  line-height: 44px;
   font-weight: bold;
+  line-height: 44px;
 }
 
 h2 {
+  color: #333;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
-  color: #333;
   font-size: 23px;
-  line-height: 24px;
   font-weight: 600;
-  text-transform: uppercase;
+  line-height: 24px;
 }
 
 h3 {
   font-size: 18px;
-  line-height: 24px;
   font-weight: 700;
+  line-height: 24px;
 }
 
 h4 {
   font-size: 18px;
-  line-height: 24px;
   font-weight: 600;
+  line-height: 24px;
 }
 
 a {
@@ -142,57 +107,56 @@ a {
 }
 
 img {
-  display: inline-block;
   max-width: 100%;
   margin-right: 7px;
+  display: inline-block;
 }
 
 .paragraph {
-  display: block;
   width: 610px;
-  margin: 0px 20px;
-  padding: 15px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  text-align: left;
+  cursor: e-resize;
+  background-color: rgba(255, 255, 255, .4);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent;
-  border-radius: 20px;
-  background-color: hsla(0, 0%, 100%, 0.4);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  margin: 0 20px;
+  padding: 15px;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 300;
-  text-align: left;
-  cursor: e-resize;
+  line-height: 24px;
+  display: block;
 }
 
 .secsion_pl-eng {
-  position: fixed;
   z-index: 1;
-  display: none;
-  justify-content: flex-start;
   flex-wrap: nowrap;
-  align-self: flex-end;
   flex: 0 auto;
+  justify-content: flex-start;
+  align-self: flex-end;
+  display: none;
+  position: fixed;
 }
 
 .logo {
+  opacity: .9;
   margin-top: 40px;
   margin-bottom: 10px;
-  opacity: 0.9;
 }
 
 .button_pl-eng {
   width: 100%;
   height: 36px;
-  order: 0;
-  background-color: transparent;
-  transition: color 200ms ease;
+  transform: ;
   color: #a3a3a3;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+  order: 0;
+  transition: color .2s;
 }
 
 .button_pl-eng:hover {
@@ -200,18 +164,17 @@ img {
 }
 
 .button_pl-eng.w--current {
-  background-color: #fff;
   color: #000;
   text-transform: uppercase;
+  background-color: #fff;
 }
 
 .button_home {
   max-width: 120px;
   min-width: 140px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
-  border-radius: 20%;
   background-color: #444749;
+  border-radius: 20%;
+  align-self: stretch;
 }
 
 .button_home.chirurgia {
@@ -219,89 +182,84 @@ img {
 }
 
 .button_home.lab {
-  border-style: none;
   background-color: #44b2e8;
+  border-style: none;
 }
 
 .button_home.rfc {
-  border-style: none;
   background-color: #fa8d20;
+  border-style: none;
 }
 
 .button_home.pro {
-  border-style: none;
   background-color: #d3e736;
+  border-style: none;
 }
 
 .txt_fc-tv {
   width: 450px;
-  margin-bottom: 0px;
-  padding: 10px 40px 10px 30px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  border-radius: 16px;
   color: #444749;
+  border-radius: 16px;
+  align-self: center;
+  margin-bottom: 0;
+  padding: 10px 40px 10px 30px;
   line-height: 22px;
 }
 
 .div-button-home {
   width: 140px;
-  border-radius: 20%;
-  background-color: hsla(0, 0%, 100%, 0.55);
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  transition: box-shadow 200ms ease, transform 200ms ease, opacity 200ms ease;
+  backdrop-filter: blur(30px);
   cursor: pointer;
+  background-color: rgba(255, 255, 255, .55);
+  border-radius: 20%;
+  transition: box-shadow .2s, transform .2s, opacity .2s;
 }
 
 .div-button-home:hover {
-  box-shadow: 0 13px 10px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transform: translate(0px, -3px);
+  transform: translate(0, -3px);
+  box-shadow: 0 13px 10px rgba(0, 0, 0, .2);
 }
 
 .txt-button-menu-home {
-  position: static;
-  display: flex;
-  margin-bottom: 0px;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  margin-bottom: 0;
   font-weight: 600;
-  text-align: center;
+  display: flex;
+  position: static;
 }
 
 .div_pl-eng {
-  position: static;
-  display: flex;
-  overflow: visible;
   min-width: 100%;
-  justify-content: space-around;
-  justify-items: center;
-  flex: 1;
-  grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 16px;
-      grid-template-areas: ". . .";
-  -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-  border-bottom-left-radius: 5px;
-  background-color: #424242;
-  transform: translate3d(0px, 0px, 300px);
   transform-style: preserve-3d;
+  background-color: #424242;
+  border-bottom-left-radius: 5px;
+  flex: 1;
+  grid-template: ". . ."
+  / 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-around;
+  justify-items: center;
+  display: flex;
+  position: static;
+  overflow: visible;
+  transform: translate3d(0, 0, 300px);
 }
 
 .div-kreska-pion-black {
   width: 1px;
   height: 12px;
   min-width: 1px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  order: 0;
-  background-color: hsla(0, 0%, 100%, 0.65);
   color: #a3a3a3;
+  background-color: rgba(255, 255, 255, .65);
+  order: 0;
+  align-self: center;
 }
 
 .dane {
@@ -312,28 +270,28 @@ img {
 }
 
 .dane._11 {
-  font-size: 11px;
   text-align: right;
+  font-size: 11px;
   text-decoration: none;
 }
 
 .dane._17 {
-  margin-top: 10px;
-  padding-top: 0px;
-  font-size: 17px;
   text-align: left;
+  margin-top: 10px;
+  padding-top: 0;
+  font-size: 17px;
 }
 
 .text-span-head-stopka {
+  text-transform: none;
   font-size: 19px;
   font-weight: 600;
-  text-transform: none;
 }
 
 .line {
   height: 2px;
-  background-color: #858585;
   color: #2a2a2a;
+  background-color: #858585;
 }
 
 .line.line-2 {
@@ -344,29 +302,29 @@ img {
 .txt-godziny {
   color: #fff;
   font-size: 12px;
-  line-height: 24px;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .txt-link-stopka-home {
   color: #ccc;
+  text-transform: none;
   font-weight: 300;
   text-decoration: none;
-  text-transform: none;
 }
 
 .txt-link-stopka-home.google {
-  transition: text-shadow 200ms ease, transform 200ms ease;
   color: #fff;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
+  transition: text-shadow .2s, transform .2s;
 }
 
 .txt-link-stopka-home.google:hover {
-  display: inline-block;
-  transform: translate(0px, -2px);
   text-shadow: 0 2px 6px #000;
+  display: inline-block;
+  transform: translate(0, -2px);
 }
 
 .linki-w-kontaktach {
@@ -375,41 +333,39 @@ img {
 }
 
 .parking {
-  display: flex;
   width: 150px;
   height: 195px;
-  margin-top: 5px;
-  margin-right: 22px;
-  margin-left: 22px;
-  border-style: none;
-  border-width: 2px;
-  border-color: #727272;
-  border-radius: 20px;
-  transition: opacity 200ms ease, box-shadow 200ms ease;
   cursor: pointer;
+  border: 2px #727272;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 22px;
+  margin-right: 22px;
+  transition: opacity .2s, box-shadow .2s;
+  display: flex;
 }
 
 .parking:hover {
-  box-shadow: -2px 3px 4px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: -2px 3px 4px rgba(0, 0, 0, .26);
 }
 
 .recepcja-home-link {
-  transform: translate(0px, 0px);
-  transition: text-shadow 200ms ease, transform 200ms ease;
   color: #fff;
+  transition: text-shadow .2s, transform .2s;
+  transform: translate(0);
 }
 
 .recepcja-home-link:hover {
-  display: inline-block;
-  transform: translate(0px, -2px);
   text-shadow: 0 2px 6px #000;
+  display: inline-block;
+  transform: translate(0, -2px);
 }
 
 .projekty-ue {
-  display: flex;
   width: 580px;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .zadzwon {
@@ -418,51 +374,50 @@ img {
 }
 
 .section-footer {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  padding-top: 30px;
-  padding-bottom: 135px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(69, 74, 76, .9);
+  background-image: none;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(69, 74, 77, 0.9);
-  background-image: none;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  padding-top: 30px;
+  padding-bottom: 135px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .image-5 {
   width: 300px;
+  opacity: .9;
+  align-self: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  -ms-grid-row-align: auto;
-      align-self: auto;
-  opacity: 0.9;
   transform: rotate(-14deg);
 }
 
 .lightbox-link {
   width: 150px;
   height: auto;
+  opacity: .76;
   background-image: url('../images/tablica_parking_mapa_594x370_poster_.png');
-  background-position: 15% 0%;
-  background-size: 315px;
+  background-position: 15% 0;
   background-repeat: no-repeat;
+  background-size: 315px;
   background-attachment: scroll;
-  opacity: 0.76;
-  transition: transform 100ms ease, opacity 100ms ease;
+  transition: transform .1s, opacity .1s;
 }
 
 .lightbox-link:hover {
-  box-shadow: 0 8px 18px -3px #041620;
   opacity: 1;
-  transform: translate(0px, -3px);
+  transform: translate(0, -3px);
+  box-shadow: 0 8px 18px -3px #041620;
 }
 
 .image-6 {
-  display: none;
   height: auto;
   border-radius: 12px;
+  display: none;
 }
 
 .link-block {
@@ -478,7 +433,7 @@ img {
   height: 70px;
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: padding 200ms ease;
+  transition: padding .2s;
 }
 
 .logo-tree:active {
@@ -487,15 +442,15 @@ img {
 }
 
 .home_tree {
-  display: flex;
   width: 70px;
   height: 70px;
+  opacity: .55;
+  background-color: #444749;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #444749;
-  opacity: 0.55;
-  transition: opacity 200ms ease;
+  transition: opacity .2s;
+  display: flex;
 }
 
 .home_tree:hover {
@@ -517,51 +472,46 @@ img {
 }
 
 .pl-eng-facebook {
-  position: relative;
   z-index: 1;
-  display: flex;
   clear: right;
+  background-color: #444749;
   flex-direction: column;
   flex: 1;
-  background-color: #444749;
+  display: flex;
+  position: relative;
 }
 
-.pl-eng-facebook.mobile {
-  display: none;
-}
-
-.pl-eng-facebook.mobile._1 {
+.pl-eng-facebook.mobile, .pl-eng-facebook.mobile._1 {
   display: none;
 }
 
 .pl-eng {
-  display: none;
   height: 35px;
   justify-content: flex-end;
+  display: none;
 }
 
 .fanpage {
-  display: flex;
   height: 35px;
   justify-content: flex-end;
   align-items: center;
+  display: flex;
 }
 
 .link-pl-eng_male {
-  padding-right: 7px;
-  padding-left: 7px;
-  justify-content: flex-end;
-  align-items: center;
-  -ms-grid-row-align: center;
-      align-self: center;
-  transition: opacity 200ms ease;
   color: #fff;
+  justify-content: flex-end;
+  align-self: center;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
   font-size: 12px;
   font-weight: 300;
+  transition: opacity .2s;
 }
 
 .link-pl-eng_male:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 .pl-eng_2 {
@@ -575,40 +525,40 @@ img {
 }
 
 .dropdown-list {
-  left: 0%;
   top: auto;
-  right: 0%;
   bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .dropdown-list.w--open {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: auto;
-  bottom: 89%;
   background-color: #444749;
-  box-shadow: -3px 3px 11px 0 #272727;
+  position: absolute;
+  top: auto;
+  bottom: 89%;
+  left: 0%;
+  right: auto;
+  box-shadow: -3px 3px 11px #272727;
 }
 
 .drop-up-wrapper {
   z-index: 90;
-  display: flex;
   height: 70px;
-  align-items: center;
   background-color: #444749;
+  align-items: center;
+  display: flex;
 }
 
 .menu-button {
-  position: relative;
-  display: flex;
   width: 70px;
   height: 70px;
+  cursor: pointer;
+  background-color: #444749;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #444749;
-  cursor: pointer;
+  display: flex;
+  position: relative;
 }
 
 .menu-button:hover {
@@ -620,38 +570,38 @@ img {
 }
 
 .menu-uslugi {
-  position: relative;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-image: linear-gradient(rgba(58, 56, 56, .5) 66%, #3a3838 99%);
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-image: linear-gradient(180deg, rgba(58, 56, 56, 0.5) 66%, #3a3838 99%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  position: relative;
 }
 
 .home-tree {
-  overflow: hidden;
   background-color: #444749;
+  overflow: hidden;
 }
 
 .pion-line {
-  position: relative;
   z-index: 1;
   width: 1px;
   height: 43px;
   background-color: #fff;
+  position: relative;
 }
 
 .l1 {
   width: 280px;
-  padding: 8px 20px;
-  align-items: center;
-  border-top: 1px none hsla(0, 0%, 100%, 0.65);
-  opacity: 0.65;
-  transition: opacity 200ms ease;
+  opacity: .65;
   color: #fff;
+  border-top: 1px rgba(255, 255, 255, .65);
+  align-items: center;
+  padding: 8px 20px;
   font-weight: 300;
+  transition: opacity .2s;
 }
 
 .l1:hover {
@@ -659,88 +609,83 @@ img {
 }
 
 .link-menu {
-  display: flex;
   clear: both;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: stretch;
+  opacity: .65;
+  background-image: none;
+  border-top: 1px dashed #a6a6a6;
+  flex-flow: column wrap;
   align-content: space-around;
   align-self: stretch;
-  border-top: 1px dashed #a6a6a6;
-  background-image: none;
-  opacity: 0.65;
-  transition: opacity 200ms ease;
+  align-items: stretch;
+  transition: opacity .2s;
+  display: flex;
 }
 
 .link-menu:hover {
-  background-image: linear-gradient(180deg, transparent, rgba(0, 111, 255, 0.5));
   opacity: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 111, 255, .5));
 }
 
 .link-menu.uslugi {
-  position: relative;
   width: 248px;
-  padding-left: 20px;
-  flex-direction: row;
-  align-items: center;
-  align-self: flex-start;
-  order: 1;
-  border-top-style: none;
-  transform: translate3d(0px, 0px, 9000px);
   transform-style: preserve-3d;
+  border-top-style: none;
+  flex-direction: row;
+  order: 1;
+  align-self: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  transform: translate3d(0, 0, 9000px);
 }
 
 .link-menu.uslugi.w--current {
   opacity: 1;
 }
 
-.link-menu.uslugi.wiecej {
-  display: none;
-}
-
-.link-menu.uslugi.mniej {
+.link-menu.uslugi.wiecej, .link-menu.uslugi.mniej {
   display: none;
 }
 
 .menu-txt-uslugi {
-  display: flex;
-  padding: 20px 20px 20px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
-  color: #fff;
+  padding: 20px 20px 20px 10px;
   font-size: 16px;
   font-weight: 600;
-  text-transform: uppercase;
+  display: flex;
 }
 
 .menu-txt-uslugi.wiecej {
-  justify-content: flex-end;
   text-align: right;
+  justify-content: flex-end;
 }
 
 .kontakt-trigger {
-  position: relative;
-  display: flex;
-  overflow: hidden;
   height: 70px;
-  align-items: center;
-  align-self: center;
   background-color: #444749;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .kontakt-button {
-  display: flex;
   width: 140px;
   height: 70px;
+  opacity: .55;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  opacity: 0.55;
-  transition: font-size 200ms ease, opacity 200ms ease;
   font-size: 22px;
   font-weight: 700;
-  text-align: center;
+  transition: font-size .2s, opacity .2s;
+  display: flex;
 }
 
 .kontakt-button:hover {
@@ -752,73 +697,73 @@ img {
 }
 
 .podmenu {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
-  overflow: hidden;
+  border-left: 1px dashed rgba(255, 255, 255, .45);
   padding-top: 10px;
-  border-left: 1px dashed hsla(0, 0%, 100%, 0.45);
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+  overflow: hidden;
 }
 
 .podmenu.protetyka {
-  display: none;
-  padding-bottom: 244px;
   background-color: #552323;
+  padding-bottom: 244px;
+  display: none;
 }
 
 .podmenu.ortodoncja {
-  display: flex;
-  margin-right: 20px;
-  margin-left: 217px;
+  background-color: #3a3838;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #3a3838;
+  margin-left: 217px;
+  margin-right: 20px;
+  display: flex;
 }
 
 .podmenu._2 {
-  display: flex;
-  margin-left: 246px;
-  padding-top: 10px;
   flex-direction: column;
   flex: 1;
+  margin-left: 246px;
+  padding-top: 10px;
+  display: flex;
 }
 
 .menu-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  order: -1;
-  flex: 1;
   background-color: #444749;
+  flex: 1;
+  order: -1;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  position: relative;
 }
 
 .menu-uslugi-rozwiniecie {
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 
 .menu-up {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 100%;
-  display: none;
-  overflow: hidden;
   width: 400px;
-  margin-right: 71px;
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   cursor: context-menu;
+  margin-right: 71px;
+  display: none;
+  position: absolute;
+  top: auto;
+  bottom: 100%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
 }
 
 .ico-menu {
-  margin-right: 10px;
-  border: 0.5px solid #fff;
+  border: .5px solid #fff;
   border-radius: 6px;
+  margin-right: 10px;
 }
 
 .ico-menu.b {
@@ -826,39 +771,37 @@ img {
 }
 
 .kategoria-button {
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .kategoria-button.ortodoncja {
-  position: relative;
-  display: none;
+  border-top: 1px dashed rgba(255, 255, 255, 0);
   flex-direction: column;
+  align-self: stretch;
   align-items: flex-start;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
-  border-top: 1px dashed hsla(0, 0%, 100%, 0);
+  display: none;
+  position: relative;
 }
 
 .kategoria-button.ortodoncja:hover {
-  border-top: 1px dashed hsla(0, 0%, 100%, 0.8);
+  border-top: 1px dashed rgba(255, 255, 255, .8);
 }
 
 .opis-kategoria {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
-  display: flex;
+  opacity: .76;
+  color: rgba(255, 255, 255, .4);
+  align-items: flex-start;
   margin-top: 35px;
   margin-left: 20px;
-  align-items: flex-start;
-  opacity: 0.76;
-  color: hsla(0, 0%, 100%, 0.4);
   font-size: 26px;
-  line-height: 36px;
   font-weight: 300;
+  line-height: 36px;
+  display: flex;
+  position: relative;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
 }
 
 .text-block-8 {
@@ -866,19 +809,19 @@ img {
 }
 
 .l2-link {
-  display: flex;
   width: 152px;
-  padding: 8px 20px;
+  opacity: .65;
+  background-image: none;
   flex-direction: row;
   align-items: center;
-  background-image: none;
-  opacity: 0.65;
-  transition: opacity 200ms ease;
+  padding: 8px 20px;
+  transition: opacity .2s;
+  display: flex;
 }
 
 .l2-link:hover {
-  background-image: linear-gradient(180deg, rgba(0, 111, 255, 0), rgba(0, 111, 255, 0.5));
   opacity: 1;
+  background-image: linear-gradient(rgba(0, 111, 255, 0), rgba(0, 111, 255, .5));
 }
 
 .l2-link.zespol {
@@ -886,31 +829,31 @@ img {
 }
 
 .chirurgia_wstep {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 .rich-text-block {
-  display: flex;
   max-width: 960px;
-  padding: 10px 20px 20px;
   flex-direction: column;
   align-self: flex-start;
+  padding: 10px 20px 20px;
+  display: flex;
 }
 
 .rich-text-block.chirurgia {
-  padding-right: 40px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .rich-text-block.edukacja {
-  padding-left: 0px;
   color: #fff;
+  padding-left: 0;
 }
 
 .rich-text-block.edukacja.txt-o-mnie {
-  padding-top: 0px;
-  color: rgba(25, 40, 51, 0.8);
+  color: rgba(25, 40, 51, .8);
+  padding-top: 0;
 }
 
 .rich-text-block.edukacja.txt-o-mnie.blue {
@@ -918,44 +861,44 @@ img {
 }
 
 .menu-main-desktop {
-  position: fixed;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
   z-index: 10;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .down-info {
-  position: relative;
   z-index: 1;
   height: 26px;
   background-color: #444749;
+  position: relative;
 }
 
 .div-block-35 {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .text-block-9 {
-  margin-left: 20px;
   color: #fff;
+  margin-left: 20px;
   font-size: 11px;
   font-weight: 300;
 }
 
 .text-block-9.copywrite {
-  color: hsla(0, 0%, 100%, 0.65);
+  color: rgba(255, 255, 255, .65);
 }
 
 .link-artrepublica {
-  margin-right: 20px;
-  opacity: 0.65;
-  transition: opacity 200ms ease;
+  opacity: .65;
   color: #fff;
+  margin-right: 20px;
   font-size: 11px;
   font-weight: 300;
+  transition: opacity .2s;
 }
 
 .link-artrepublica:hover {
@@ -967,66 +910,65 @@ img {
 }
 
 .secsion-box {
-  display: flex;
-  overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: box-shadow 200ms ease, transform 200ms ease;
+  transition: box-shadow .2s, transform .2s;
+  display: flex;
+  overflow: hidden;
 }
 
 .plexus {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   z-index: -9998;
   max-width: 0%;
   background-color: #09141b;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .plexus-div {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: auto;
   z-index: -999999999;
   width: 100vw;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .plexus-lotti {
-  position: static;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   z-index: -999999999;
-  overflow: visible;
   width: 100%;
   height: auto;
+  position: static;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  overflow: visible;
 }
 
 .prelouder {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: 999999999999;
-  display: none;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  z-index: 2147483647;
   background-color: #09141b;
   background-image: none;
-  background-size: auto;
   background-repeat: repeat;
+  background-size: auto;
   background-attachment: scroll;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
 }
 
 .txt-loading {
@@ -1035,29 +977,28 @@ img {
 }
 
 .plexus-render {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   z-index: -999999999;
-  display: none;
-  overflow: hidden;
+  align-self: stretch;
   margin-top: -3000px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
 }
 
 .animation {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
   z-index: -998;
-  display: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #09141b);
   margin-top: -79px;
-  background-image: linear-gradient(180deg, transparent, #09141b);
+  display: none;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .lottie-animation--mobile {
@@ -1065,14 +1006,14 @@ img {
 }
 
 .gradient {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
   z-index: 1;
   height: 200px;
-  background-image: linear-gradient(180deg, rgba(1, 25, 29, 0), #01191d 93%);
+  background-image: linear-gradient(rgba(1, 25, 29, 0), #01191d 93%);
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .div_chirurgia_picture {
@@ -1081,28 +1022,27 @@ img {
 
 .div-block-43 {
   width: 100%;
-  margin-bottom: 10px;
+  background-color: #000;
   flex-direction: row;
   align-items: stretch;
-  background-color: #000;
+  margin-bottom: 10px;
 }
 
 .text-block-12 {
-  position: relative;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: auto;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  text-align: center;
+  background-image: none;
+  align-self: stretch;
   margin-top: -30px;
   padding-top: 7px;
   padding-bottom: 7px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
-  background-image: none;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
   font-size: 22px;
-  text-align: center;
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .text-block-12.konrad {
@@ -1119,64 +1059,62 @@ img {
 }
 
 .box-kategoria-tytul {
-  position: static;
-  display: flex;
-  overflow: hidden;
-  padding-right: 10px;
-  padding-left: 10px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px rgba(255, 255, 255, .6);
   flex-direction: column;
   align-self: stretch;
-  border-style: none;
-  border-width: 1px;
-  border-color: hsla(0, 0%, 100%, 0.6);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  position: static;
+  overflow: hidden;
 }
 
 .box-kategoria-tytul.zespol {
   height: auto;
   max-width: 1200px;
-  align-items: center;
+  background-color: rgba(107, 107, 107, .9);
   border-radius: 20px;
-  background-color: hsla(213, 0%, 42%, 0.9);
+  align-items: center;
 }
 
 .box-kategoria-tytul.zespol.lekarze {
   max-width: 1200px;
-  background-color: rgba(107, 148, 153, 0.7);
+  background-color: rgba(107, 148, 153, .7);
 }
 
 .box-kategoria-tytul.zespol.asystentki {
   max-width: 1200px;
-  background-color: rgba(134, 109, 130, 0.7);
+  background-color: rgba(134, 109, 130, .7);
 }
 
 .box-kategoria-tytul.zespol.technicy {
   min-width: 1200px;
-  background-color: rgba(95, 120, 151, 0.7);
+  background-color: rgba(95, 120, 151, .7);
 }
 
 .box-kategoria-tytul.zespol.administracja {
   min-width: 1200px;
-  background-color: hsla(213, 0%, 42%, 0.7);
+  background-color: rgba(107, 107, 107, .7);
 }
 
 .box-kategoria-tytul.zespol.fizjoterapeuci {
   min-width: 1200px;
-  background-color: rgba(160, 140, 126, 0.9);
+  background-color: rgba(160, 140, 126, .9);
 }
 
 .box-kategotia-zawartosc {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 .image-box {
   width: 100%;
   height: 100%;
   max-width: none;
-  margin-bottom: 10px;
   opacity: 1;
+  margin-bottom: 10px;
 }
 
 .image-box.sz-t {
@@ -1184,28 +1122,28 @@ img {
 }
 
 .div-block-47 {
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
 }
 
 .gradient_plexus {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
   z-index: 1;
   height: 200px;
-  background-image: linear-gradient(180deg, rgba(1, 25, 29, 0), #01191d);
+  background-image: linear-gradient(rgba(1, 25, 29, 0), #01191d);
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .section-white-dots {
   height: 200px;
-  background-image: url('../images/white_dot-01.svg');
-  background-position: 80% 50%;
-  background-size: 3px;
-  background-repeat: repeat-y;
   filter: none;
+  background-image: url('../images/white_dot-01.svg');
+  background-position: 80%;
+  background-repeat: repeat-y;
+  background-size: 3px;
 }
 
 .section-white-dots.white {
@@ -1214,254 +1152,247 @@ img {
 
 .dystans {
   height: 133px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .text-on-picture {
-  display: flex;
   width: 150px;
-  padding-left: 75%;
-  align-items: center;
   color: #fff;
+  align-items: center;
+  padding-left: 75%;
   font-size: 20px;
   line-height: 26px;
+  display: flex;
 }
 
 .div-block-48 {
+  align-self: stretch;
   margin-bottom: 10px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
 }
 
 .box-zabiegi {
-  display: flex;
-  padding-bottom: 10px;
   flex-direction: column;
+  padding-bottom: 10px;
+  display: flex;
 }
 
 .txt-zabiegi {
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 9px 10px 0px;
-  border-top: 1px dashed #000;
-  font-size: 18px;
   text-transform: uppercase;
+  border-top: 1px dashed #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 9px 10px 0;
+  font-size: 18px;
 }
 
 .link_film {
-  display: flex;
-  overflow: hidden;
-  margin: 5px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex: 1;
   border: 1px dashed #000;
   border-radius: 8px;
-  transition: opacity 200ms ease, transform 200ms ease;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 5px;
   font-size: 15px;
+  transition: opacity .2s, transform .2s;
+  display: flex;
+  overflow: hidden;
 }
 
 .link_film:hover {
-  opacity: 0.7;
-  transform: translate(0px, 1px);
+  opacity: .7;
+  transform: translate(0, 1px);
 }
 
 .text-block-21 {
-  display: flex;
-  padding: 7px 15px;
-  align-items: center;
-  align-self: stretch;
-  border-left: 1px dashed #000;
   color: #2b2b2b;
+  border-left: 1px dashed #000;
+  align-self: stretch;
+  align-items: center;
+  padding: 7px 15px;
+  display: flex;
 }
 
 .kamerka {
   width: 50px;
   height: 60px;
-  margin-right: 10px;
+  filter: brightness(133%) invert() grayscale();
+  align-self: center;
   margin-left: 10px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  filter: brightness(133%) invert(100%) grayscale(100%);
+  margin-right: 10px;
 }
 
 .accordian-content {
-  overflow: hidden;
-  margin-right: 10px;
+  flex: 1;
   margin-bottom: 5px;
   margin-left: 10px;
-  flex: 1;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 .film-box-button {
-  display: flex;
-  padding-right: 5px;
-  padding-left: 5px;
   flex-direction: row;
   justify-content: space-around;
   align-self: stretch;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
 }
 
 .przerwa-10 {
-  display: flex;
-  padding-bottom: 5px;
   flex-direction: column;
+  padding-bottom: 5px;
+  display: flex;
 }
 
 .round-16 {
-  position: relative;
-  left: 17%;
-  display: flex;
-  overflow: hidden;
   width: 55%;
   max-width: 800px;
-  flex-direction: column;
-  align-self: auto;
-  flex: 0 auto;
-  border-style: none;
-  border-width: 1px;
-  border-color: hsla(0, 0%, 100%, 0.6);
-  border-radius: 16px;
-  background-color: hsla(0, 0%, 100%, 0.55);
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, .55);
+  border: 1px rgba(255, 255, 255, .6);
+  border-radius: 16px;
+  flex-direction: column;
+  flex: 0 auto;
+  align-self: auto;
+  display: flex;
+  position: relative;
+  left: 17%;
+  overflow: hidden;
 }
 
 .div-block-54 {
+  align-items: flex-start;
+  padding-top: 10px;
   display: flex;
   overflow: hidden;
-  padding-top: 10px;
-  align-items: flex-start;
 }
 
 .accordian-wrapper {
-  display: flex;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+  background-color: rgba(0, 0, 0, .06);
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.06);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
 }
 
 .accordian-wrapper.r {
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .accordian-item {
-  display: flex;
-  overflow: hidden;
   flex-direction: column;
   flex: 1;
+  display: flex;
+  overflow: hidden;
 }
 
 .accordian-item-trigger {
-  overflow: hidden;
-  padding: 10px;
-  border-radius: 8px;
-  transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
   cursor: pointer;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: letter-spacing .2s, text-indent .2s, background-color .2s;
+  overflow: hidden;
 }
 
 .accordian-item-trigger:hover {
-  background-color: rgba(68, 71, 73, 0.12);
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
+  background-color: rgba(68, 71, 73, .12);
 }
 
 .accordian-item-trigger.r {
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .accordian-item-content {
+  align-self: stretch;
   display: flex;
   overflow: hidden;
-  align-self: stretch;
 }
 
 .accordian-item-trigger-2 {
-  overflow: hidden;
-  padding: 10px;
-  border-radius: 8px;
-  transition: letter-spacing 200ms ease, text-indent 200ms ease, background-color 200ms ease;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 600;
   cursor: pointer;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: letter-spacing .2s, text-indent .2s, background-color .2s;
+  overflow: hidden;
 }
 
 .accordian-item-trigger-2:hover {
-  background-color: rgba(68, 71, 73, 0.15);
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
+  background-color: rgba(68, 71, 73, .15);
 }
 
 .link_film-2 {
-  display: flex;
-  overflow: hidden;
-  margin: 5px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex: 1;
+  color: rgba(68, 71, 73, .9);
   border: 1px dashed #000;
   border-radius: 8px;
-  transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease;
-  color: rgba(68, 71, 73, 0.9);
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 5px;
   font-size: 15px;
+  transition: opacity .2s, background-color .2s, transform .2s;
+  display: flex;
+  overflow: hidden;
 }
 
 .link_film-2:hover {
-  opacity: 0.7;
-  transform: translate(0px, 1px);
+  opacity: .7;
+  transform: translate(0, 1px);
 }
 
 .text-block-23 {
-  display: flex;
-  padding: 7px 15px;
-  align-items: center;
-  align-self: stretch;
   border-left: 1px dashed #000;
+  align-self: stretch;
+  align-items: center;
+  padding: 7px 15px;
+  display: flex;
 }
 
 .txt-zabiegi-2 {
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 9px 10px 0px;
-  border-top: 1px dashed #000;
-  font-size: 18px;
   text-transform: uppercase;
+  border-top: 1px dashed #000;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 9px 10px 0;
+  font-size: 18px;
 }
 
 .image-zabiegi {
   width: 100%;
   margin-bottom: 10px;
   padding-top: 10px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .paragraph-txt-box {
-  display: flex;
-  overflow: hidden;
   width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
   flex-direction: column;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  overflow: hidden;
 }
 
 .paragraph-txt-box.r {
-  align-items: flex-start;
   text-align: left;
+  align-items: flex-start;
 }
 
 .paragraph-box-kategoria-opis {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 20px;
 }
 
@@ -1470,16 +1401,16 @@ img {
 }
 
 .heading-4-tytul-zabiegow {
-  margin-top: 0px;
-  margin-bottom: 0px;
   color: #3a3838;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .ico_main {
-  position: relative;
-  bottom: 23px;
   width: 120px;
   margin-left: -30px;
+  position: relative;
+  bottom: 23px;
 }
 
 .ico_main.online {
@@ -1488,12 +1419,12 @@ img {
 }
 
 .section-intro {
-  display: flex;
   height: 100vh;
-  padding-bottom: 15%;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-bottom: 15%;
+  display: flex;
 }
 
 .section-intro.success {
@@ -1508,9 +1439,9 @@ img {
 .przerywana {
   height: 3px;
   background-image: url('../images/white_dot-01_poziom.svg');
-  background-position: 0px 0px;
-  background-size: contain;
+  background-position: 0 0;
   background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .przerywana._2 {
@@ -1518,13 +1449,13 @@ img {
 }
 
 .h1-dzial {
+  color: #fff;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #fff;
   font-size: 18px;
-  line-height: 20px;
   font-weight: 600;
-  text-transform: uppercase;
+  line-height: 20px;
 }
 
 .h1-dzial.funkcja {
@@ -1532,18 +1463,18 @@ img {
 }
 
 .text-haslo {
+  color: #fff;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-right: 20px;
-  color: #fff;
   font-size: 42px;
   line-height: 48px;
-  text-transform: uppercase;
 }
 
 .text-haslo.imie-i-nazwisko {
-  margin-bottom: 10px;
   color: #4b88be;
+  margin-bottom: 10px;
 }
 
 .dzial {
@@ -1555,23 +1486,23 @@ img {
 }
 
 .dzial.opis {
-  position: static;
-  display: flex;
   height: auto;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-top: 20%;
   padding-bottom: 20%;
   padding-left: 40px;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #fff;
+  display: flex;
+  position: static;
 }
 
 .div-nav {
-  display: flex;
   width: 55%;
-  margin-right: 4.5%;
   flex-direction: column;
   align-items: center;
+  margin-right: 4.5%;
+  display: flex;
 }
 
 .div-nav.phone {
@@ -1579,13 +1510,13 @@ img {
 }
 
 .section-logo {
+  height: auto;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: flex-end;
+  padding-top: 119px;
   display: flex;
   overflow: hidden;
-  height: auto;
-  padding-top: 119px;
-  flex-direction: column;
-  align-items: flex-end;
-  align-self: flex-end;
 }
 
 .dystans-10 {
@@ -1593,37 +1524,37 @@ img {
 }
 
 .bx4 {
-  display: flex;
   margin-bottom: 15px;
+  display: flex;
 }
 
 .bx4.kontakt {
-  margin-bottom: 0px;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 ._140 {
-  display: flex;
+  background-color: rgba(255, 255, 255, .95);
   border-radius: 20px;
-  background-color: hsla(0, 0%, 100%, 0.95);
+  display: flex;
 }
 
 ._2-menu {
-  display: none;
   width: 295px;
+  display: none;
 }
 
 .footer-all {
-  display: flex;
   width: 952px;
   flex-direction: row;
   justify-content: center;
+  display: flex;
 }
 
 .adres-zadzwon-linki {
-  display: flex;
   width: 580px;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .footer-02 {
@@ -1631,16 +1562,15 @@ img {
 }
 
 .div-block-63 {
-  display: flex;
   flex-direction: column;
   align-self: flex-start;
+  display: flex;
 }
 
 .copy-art {
-  display: none;
+  align-self: center;
   margin-left: 26px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  display: none;
 }
 
 .rpu {
@@ -1650,11 +1580,10 @@ img {
 }
 
 .artrepublica {
+  color: rgba(255, 255, 255, .76);
+  align-self: center;
   margin-top: -5px;
-  margin-bottom: 0px;
-  -ms-grid-row-align: center;
-      align-self: center;
-  color: hsla(0, 0%, 100%, 0.76);
+  margin-bottom: 0;
   font-size: 10px;
   font-weight: 300;
 }
@@ -1678,22 +1607,24 @@ img {
 }
 
 .polityka-op {
-  margin-top: 19px;
-  transition: transform 200ms ease;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  transition: transform .2s;
 }
 
 .polityka-op:hover {
-  transform: translate(0px, -2px);
   text-shadow: 0 1px 6px #000;
+  transform: translate(0, -2px);
 }
 
 .link-3 {
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 0;
 }
 
 .paragraph-6 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .text-span-3 {
@@ -1703,97 +1634,97 @@ img {
 }
 
 .section-nav {
-  display: flex;
-  overflow: hidden;
-  padding-top: 40px;
-  padding-bottom: 40px;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  overflow: hidden;
 }
 
 .div-block-68 {
-  display: flex;
   width: 55%;
-  margin-right: 4.5%;
   flex-direction: column;
   align-items: center;
+  margin-right: 4.5%;
+  display: flex;
 }
 
 .visual-load {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -9999999999999;
-  display: flex;
-  flex-direction: column;
+  z-index: -2147483648;
   background-image: url('../images/visual6.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .visual-load.o-klinice {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/face_clinic_scaner3d_009-u22744-fr.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../images/face_clinic_scaner3d_009-u22744-fr.jpg');
+  background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-attachment: scroll, scroll;
 }
 
 .visual-load.implanty {
   background-image: url('../images/Implanty_tlo.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.edukacja {
   background-image: url('../images/Edukacja.jpg');
-  background-position: 50% 50%;
+  background-position: 50%;
   background-size: cover;
 }
 
 .visual-load.ue {
-  background-image: linear-gradient(180deg, rgba(0, 16, 34, 0.6), rgba(0, 16, 34, 0.6)), url('../images/UE.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
+  background-image: linear-gradient(rgba(0, 16, 34, .6), rgba(0, 16, 34, .6)), url('../images/UE.jpg');
+  background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-attachment: scroll, scroll;
 }
 
 .visual-load.faq {
   background-image: url('../images/KonradPacjent_sRGB_8bit-1.jpg');
-  background-position: 50% 50%;
+  background-position: 50%;
 }
 
 .visual-load.tv {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/Face-Clinic-TV-Recepcja.jpg');
-  background-position: 0px 0px, 0% 50%;
-  background-size: auto, cover;
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/Face-Clinic-TV-Recepcja.jpg');
+  background-position: 0 0, 0%;
   background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-attachment: scroll, scroll;
 }
 
 .visual-load.zespol {
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   height: 100vh;
   background-image: url('../images/MonikaKonrad_2023.jpg');
-  background-position: 10% 50%;
-  background-size: cover;
+  background-position: 10%;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .visual-load.osoba {
   background-image: url('../images/Face_Clinic_Karolina_Mazurek_2020.jpg');
-  background-position: -100px 0%;
+  background-position: -100px 0;
   background-size: contain;
   background-attachment: fixed;
 }
@@ -1808,388 +1739,396 @@ img {
 
 .visual-load.osoba.salwa {
   background-image: url('../images/Salwa.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
   background-size: contain;
 }
 
 .visual-load.osoba.kolacz {
   background-image: url('../images/Kolacz.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.piekarczyk {
   background-image: url('../images/Piekarczyk.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.baszun {
   background-image: url('../images/Face_Clinic_Magda_Baszun_2022.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.milczarek {
   background-image: url('../images/Milczarek.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.birnbaum {
   background-image: url('../images/Birnbaum.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.magdziak {
   background-image: url('../images/Magdziak.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.nieweglowska {
   background-image: url('../images/Nieweglowska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.betkowski {
   background-image: url('../images/Betkowski.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.wojcik {
   background-image: url('../images/Wojcik.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.dziugiel {
   background-image: url('../images/Dziugiel.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.bugala {
   background-image: url('../images/Bugala.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.debska {
   background-image: url('../images/Debska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.ambrosiewicz {
   background-image: url('../images/Abbrosiewicz.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.sucharska {
   background-image: url('../images/Sucharska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.brzezinska {
   background-image: url('../images/Brzezinska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.melon {
   background-image: url('../images/Melon.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.dziugala {
   background-image: url('../images/Drazba.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.pietrzycka {
   background-image: url('../images/Pietrzycka.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.bojadziska {
   background-image: url('../images/Bojadziska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.szczuka {
   background-image: url('../images/Szczuka.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.cichocka {
   background-image: url('../images/Cichocka.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.milobedzki {
   background-image: url('../images/Milobedzki.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.chrzanowska {
   background-image: url('../images/Chrzanowska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.tecza {
   background-image: url('../images/Tecza.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.wieckowski {
   background-image: url('../images/Wieckowski.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.lewandowska {
   background-image: url('../images/Lewandowska.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.angelika-berk {
   background-image: url('../images/Face_Clinic_Angelika_Berk.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.gut {
   background-image: url('../images/Gut.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.stulek {
   background-image: url('../images/Stulek.jpg');
-  background-position: 0% 0%;
+  background-position: 0 0;
 }
 
 .visual-load.osoba.jurkowski {
   background-image: url('../images/Jurkowski.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.chodyn-semczuk {
   background-image: url('../images/Chodyn-Semczuk.jpg');
-  background-position: 0% 0%;
+  background-position: 0 0;
 }
 
 .visual-load.osoba.meredyk {
   background-image: url('../images/Meredyk.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.kuczynska-ksiazek {
   background-image: url('../images/Kuczynska-Ksiazek.jpg');
-  background-position: 0% 50%;
+  background-position: 0%;
 }
 
 .visual-load.osoba.wierzchowska {
   background-image: url('../images/Wierzchowska_2.jpg');
-  background-position: 0px 0%;
+  background-position: 0 0;
 }
 
 .visual-load.osoba.anna_malek {
   background-image: url('../images/Malek.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.tokarska {
   background-image: url('../images/Tokarska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.wrobel {
   background-image: url('../images/Wrobel.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.marciszewska {
   background-image: url('../images/Marciszewska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.k_wojcik {
   background-image: url('../images/Wojcik_K.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.siecinska {
   background-image: url('../images/Siecinska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.skorycka {
   background-image: url('../images/Skorycka.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.krasnicka {
   background-image: url('../images/Krasnicka.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.jablonska {
   background-image: url('../images/Jablonska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.tyminska {
   background-image: url('../images/Tyminska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.rynska {
   background-image: url('../images/Rynska.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.konrad-kaminski {
   background-image: url('../images/Kaminski.jpg');
-  background-position: 0% 0%;
+  background-position: 0 0;
   background-size: contain;
 }
 
 .visual-load.osoba.rynkiewicz {
   background-image: url('../images/Rynkiewicz.jpg');
-  background-position: 0px 0px;
+  background-position: 0 0;
   background-size: contain;
 }
 
 .visual-load.osoba.podlasinska {
   background-image: url('../images/Podlasinska.jpg');
-  background-position: -100px 0%;
-  background-size: contain;
+  background-position: -100px 0;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.osoba.podlasinski {
   background-image: url('../images/Podlasinski.jpg');
-  background-position: -100px 0%;
-  background-size: contain;
+  background-position: -100px 0;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .visual-load.chirurgia {
   background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
-  background-position: 0% 0%;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.ortro {
   background-image: url('../images/Ortodoncja.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.protetyka {
   background-image: url('../images/Protetyka.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.higiena {
   background-image: url('../images/Higiena.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.stomatologia {
   background-image: url('../images/Stomatologia.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.radiologia {
   background-image: url('../images/Radiologia.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .visual-load.kontakt {
-  background-image: linear-gradient(180deg, rgba(25, 40, 51, 0.12), rgba(25, 40, 51, 0.12)), url('../images/FC2020.jpg');
-  background-position: 0px 0px, 50% 50%;
+  background-image: linear-gradient(rgba(25, 40, 51, .12), rgba(25, 40, 51, .12)), url('../images/FC2020.jpg');
+  background-position: 0 0, 50%;
+}
+
+.visual-load.regulamin {
+  background-image: url('../images/Paper_FC_BG.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .visual {
+  z-index: -2147483648;
   position: relative;
-  left: 0%;
   top: 0%;
-  right: 0%;
   bottom: 0%;
-  z-index: -9999999999;
+  left: 0%;
+  right: 0%;
 }
 
 .visual.o-klinice {
   background-image: url('../images/Edukacja.jpg');
-  background-position: 0px 0px;
+  background-position: 0 0;
   background-size: cover;
 }
 
 .visual-gradient {
-  position: fixed;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  display: none;
   height: 200px;
-  background-image: linear-gradient(180deg, rgba(9, 20, 27, 0), #09141b);
+  background-image: linear-gradient(rgba(9, 20, 27, 0), #09141b);
+  display: none;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .section-opis-home {
-  display: flex;
-  overflow: hidden;
-  padding-top: 40px;
-  padding-bottom: 40px;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  overflow: hidden;
 }
 
 .doted-horizon-line {
@@ -2208,7 +2147,7 @@ img {
 
 .div-nr {
   margin-top: 14px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .div-tel-nr {
@@ -2228,21 +2167,21 @@ img {
 }
 
 .heading-3 {
-  margin-top: 0px;
-  margin-right: 10px;
   color: #fff;
+  margin-top: 0;
+  margin-right: 10px;
 }
 
 .heading-4 {
-  margin-top: 0px;
   color: #fff;
+  margin-top: 0;
   font-size: 16px;
   font-weight: 400;
 }
 
 .paragraph-8 {
-  margin-top: -1px;
   color: #fff;
+  margin-top: -1px;
 }
 
 .paragraph-9 {
@@ -2251,8 +2190,8 @@ img {
 }
 
 .div-block-74 {
-  display: none;
   margin-top: -10px;
+  display: none;
 }
 
 .div-block-75 {
@@ -2261,42 +2200,38 @@ img {
 }
 
 .text-block-24 {
-  margin-bottom: 9px;
   color: #fff;
+  margin-bottom: 9px;
 }
 
 .text-span-4 {
   font-size: 19px;
 }
 
-.text-block-25 {
-  color: #fff;
-}
-
-.nip {
+.text-block-25, .nip {
   color: #fff;
 }
 
 .bank {
-  display: none;
   color: #fff;
   font-size: 14px;
+  display: none;
 }
 
 .x {
-  display: flex;
-  overflow: hidden;
   width: 70px;
   height: 70px;
+  color: rgba(255, 255, 255, .55);
+  background-color: #444749;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #444749;
-  transition: line-height 200ms ease, font-size 200ms ease, color 200ms ease, background-color 200ms ease;
-  color: hsla(0, 0%, 100%, 0.55);
   font-size: 25px;
-  line-height: 20px;
   font-weight: 800;
+  line-height: 20px;
+  transition: line-height .2s, font-size .2s, color .2s, background-color .2s;
+  display: flex;
+  overflow: hidden;
 }
 
 .x:hover {
@@ -2309,16 +2244,16 @@ img {
 }
 
 .x.opened {
-  display: none;
-  background-color: #3a3838;
   color: #fff;
+  background-color: #3a3838;
+  display: none;
 }
 
 .button-x {
-  overflow: hidden;
   width: 70px;
   height: 70px;
   background-color: #444749;
+  overflow: hidden;
 }
 
 .link-block-3 {
@@ -2330,12 +2265,12 @@ img {
 }
 
 .lottie-animation-2 {
-  position: relative;
-  top: 138px;
-  right: 67px;
   width: 200px;
   height: 200px;
   margin-top: -138px;
+  position: relative;
+  top: 138px;
+  right: 67px;
 }
 
 .rich-text-block-r {
@@ -2347,54 +2282,54 @@ img {
 }
 
 .rich-text-block-opis {
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .div_implanty_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
+  background-image: url('../images/face_clinic_podniesienie_dna_zatoki_szczekowej.jpg');
+  background-position: 80% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
   align-items: stretch;
-  background-image: url('../images/face_clinic_podniesienie_dna_zatoki_szczekowej.jpg');
-  background-position: 80% 20%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .section-opis-dzialu {
-  display: flex;
   min-height: 400px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, .55);
   flex-direction: column;
   align-items: stretch;
-  background-color: hsla(0, 0%, 100%, 0.55);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  display: flex;
 }
 
 .utility-page-wrap {
-  display: flex;
   width: 100vw;
   height: 100vh;
   max-height: 100%;
   max-width: 100%;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .utility-page-content {
-  display: flex;
   width: 260px;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
+  display: flex;
 }
 
 .utility-page-form {
-  display: flex;
   flex-direction: column;
   align-items: stretch;
+  display: flex;
 }
 
 .youtube {
@@ -2402,16 +2337,16 @@ img {
 }
 
 .div_ortodoncja_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
+  background-image: url('../images/Face_Clinic_Monika_Walerzak_176b.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('../images/Face_Clinic_Monika_Walerzak_176b.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .rich-text-block-poddzoal {
@@ -2419,87 +2354,87 @@ img {
 }
 
 .rich-text-block-poddzoal.sen {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .slider {
   min-height: 400px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .slide {
   background-image: url('../images/cadcam_01-crop-u51000_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide-2 {
   background-image: url('../images/cadcam_02-crop-u51020_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide-3 {
   background-image: url('../images/cadcam_03-crop-u51040_2x.jpg');
-  background-position: 50% 0%;
-  background-size: cover;
+  background-position: 50% 0;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide-4 {
   background-image: url('../images/face-clinic_tytanowszczekagorna-72_8biti_srgb-72-crop-u51060.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide-5 {
   background-image: url('../images/cadcam_implanty_050_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .div_protetyka_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
+  background-image: url('../images/face-clinic_modele-239-edit-edit.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url('../images/face-clinic_modele-239-edit-edit.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .slide_chirurgia_1 {
   background-image: url('../images/cadcam_implanty_010_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide_chirurgia_2 {
   background-image: url('../images/cadcam_implanty_020_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide_chirurgia_3 {
   background-image: url('../images/cadcam_implanty_030_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slide_chirurgia_4 {
   background-image: url('../images/cadcam_implanty_040_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .body_higiena_pl {
@@ -2511,18 +2446,18 @@ img {
 }
 
 .wstep_do_pacjentow {
-  position: absolute;
-  left: 5%;
-  top: 351px;
-  right: 55%;
-  display: flex;
-  margin-top: 61px;
-  padding-right: 40px;
-  padding-left: 40px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   align-self: stretch;
+  align-items: flex-start;
+  margin-top: 61px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  position: absolute;
+  top: 351px;
+  left: 5%;
+  right: 55%;
 }
 
 .wstep_do_pacjentow.success {
@@ -2531,9 +2466,9 @@ img {
 
 .rich-text-block-2 {
   max-width: 500px;
-  padding-bottom: 10px;
-  align-self: flex-start;
   color: #fff;
+  align-self: flex-start;
+  padding-bottom: 10px;
 }
 
 .section_form.succsess {
@@ -2542,17 +2477,17 @@ img {
 }
 
 .div-block-86 {
-  display: flex;
-  padding: 20px 40px;
+  background-color: #3a3838;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #3a3838;
+  padding: 20px 40px;
+  display: flex;
 }
 
 .div-block-87 {
-  display: flex;
-  justify-content: space-around;
   flex: 1;
+  justify-content: space-around;
+  display: flex;
 }
 
 .div-block-85 {
@@ -2560,9 +2495,9 @@ img {
 }
 
 .paragraph-10 {
-  margin-top: 0px;
-  padding-left: 5px;
   color: #fff;
+  margin-top: 0;
+  padding-left: 5px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -2588,7 +2523,7 @@ img {
 }
 
 .success-message {
-  background-image: linear-gradient(180deg, #807e7e, #fff);
+  background-image: linear-gradient(#807e7e, #fff);
 }
 
 .error-message {
@@ -2608,17 +2543,17 @@ img {
 }
 
 .submit-button {
-  flex: 0 auto;
   background-color: #272727;
+  flex: 0 auto;
 }
 
 .submit-button:hover {
-  opacity: 0.56;
+  opacity: .56;
 }
 
 .section_formularz {
-  overflow: hidden;
   padding-bottom: 87px;
+  overflow: hidden;
 }
 
 .div-block-82 {
@@ -2627,25 +2562,24 @@ img {
 
 .brake_20 {
   width: 20px;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .konsultacje-online {
-  display: flex;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  background-color: #3a3838;
   flex-direction: column;
   align-items: stretch;
-  background-color: #3a3838;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
 }
 
 .div-block-80 {
-  display: block;
   flex-direction: row;
-  justify-content: flex-start;
   flex: 1;
+  justify-content: flex-start;
+  display: block;
 }
 
 .rich-text-block-3 {
@@ -2657,12 +2591,8 @@ img {
 }
 
 .text-field {
-  border-radius: 6px;
   background-color: #bbb;
-}
-
-.text-field::-moz-placeholder {
-  color: #3a3838;
+  border-radius: 6px;
 }
 
 .text-field::-ms-input-placeholder {
@@ -2678,15 +2608,15 @@ img {
 }
 
 .html-embed {
-  display: flex;
-  justify-content: center;
   background-color: #fff;
+  justify-content: center;
+  display: flex;
 }
 
 .container {
+  max-height: 2560px;
   display: none;
   overflow: hidden;
-  max-height: 2560px;
 }
 
 .container-3 {
@@ -2694,92 +2624,92 @@ img {
 }
 
 .container-4 {
-  display: flex;
+  background-color: rgba(255, 255, 255, .55);
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  flex-direction: column;
-  align-items: center;
-  background-color: hsla(0, 0%, 100%, 0.55);
+  display: flex;
 }
 
 .visual-2 {
-  position: relative;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   z-index: -999999999;
+  position: relative;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .visual-gradient-2 {
-  position: fixed;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  display: none;
   height: 200px;
-  background-image: linear-gradient(180deg, rgba(9, 20, 27, 0), #09141b);
+  background-image: linear-gradient(rgba(9, 20, 27, 0), #09141b);
+  display: none;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .visual-load-2 {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -9999999999999;
+  z-index: -2147483648;
   min-width: 1980px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 14%, rgba(0, 0, 0, .43) 57%, rgba(0, 0, 0, .31) 75%, rgba(0, 0, 0, 0) 90%), url('../images/Laptop.png');
+  background-position: 0 0, 50% 25%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 66%;
+  background-attachment: scroll, scroll;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(180deg, transparent 14%, rgba(0, 0, 0, 0.43) 57%, rgba(0, 0, 0, 0.31) 75%, transparent 90%), url('../images/Laptop.png');
-  background-position: 0px 0px, 50% 25%;
-  background-size: auto, 66%;
-  background-repeat: repeat, no-repeat;
-  background-attachment: scroll, scroll;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .wstep_do_pacjentow-2 {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  display: flex;
   max-width: 50%;
-  margin-top: 0px;
-  padding-right: 40px;
-  padding-left: 8%;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   align-self: stretch;
+  align-items: flex-start;
+  margin-top: 0;
+  padding-left: 8%;
+  padding-right: 40px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .rich-text-block-4 {
-  padding-bottom: 10px;
-  align-self: flex-start;
   color: #fff;
+  align-self: flex-start;
+  padding-bottom: 10px;
 }
 
 .button-2 {
-  transition: box-shadow 200ms ease, transform 200ms ease;
+  transition: box-shadow .2s, transform .2s;
 }
 
 .button-2:hover {
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.34);
-  transform: translate(0px, -3px);
+  transform: translate(0, -3px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .34);
 }
 
 .section-intro-2 {
-  display: flex;
   height: 100vh;
-  padding-top: 589px;
-  padding-bottom: 12%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+  padding-top: 589px;
+  padding-bottom: 12%;
+  display: flex;
 }
 
 .dzial-2 {
@@ -2787,13 +2717,13 @@ img {
 }
 
 .h1-dzial-2 {
+  color: #fff;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #fff;
   font-size: 18px;
-  line-height: 20px;
   font-weight: 600;
-  text-transform: uppercase;
+  line-height: 20px;
 }
 
 .przerywana-2 {
@@ -2801,48 +2731,48 @@ img {
 }
 
 .text-haslo-2 {
+  color: #fff;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-right: 20px;
-  color: #fff;
   font-size: 42px;
   line-height: 48px;
-  text-transform: uppercase;
 }
 
 .div_stomatologia_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
-  flex-direction: column;
   background-image: url('../images/face-clinic_wnetrza_2pietro-4653x436_2x.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .div_higiena_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
-  flex-direction: column;
   background-image: url('../images/face-clinic_karolina-221.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .div_radiologia_picture {
-  display: flex;
   min-height: 700px;
-  margin-bottom: 10px;
+  background-image: url('../images/face_clinic_scaner3d_003a.jpg');
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
   flex-direction: column;
   justify-content: center;
-  background-image: url('../images/face_clinic_scaner3d_003a.jpg');
-  background-position: 10% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .zespol {
@@ -2853,11 +2783,7 @@ img {
   background-color: #dfd5c0;
 }
 
-.lottie-animation-3 {
-  width: 200px;
-}
-
-.lottie-animation-4 {
+.lottie-animation-3, .lottie-animation-4 {
   width: 200px;
 }
 
@@ -2870,37 +2796,37 @@ img {
 }
 
 .section-intro-rodo {
-  display: flex;
   height: 100vh;
-  padding-bottom: 12px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  padding-bottom: 12px;
+  display: flex;
 }
 
 .txt-rodo {
-  position: absolute;
   width: 50%;
+  flex: 1;
+  align-self: flex-start;
   margin-top: 77px;
   padding-left: 62px;
-  align-self: flex-start;
-  flex: 1;
+  position: absolute;
 }
 
 .txt-rodo.kontakt {
-  margin-bottom: 60px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   border-radius: 20px;
+  margin-bottom: 60px;
 }
 
 .div_klinika_picture {
   height: 700px;
-  margin-bottom: 10px;
   background-image: url('../images/Face-Clinic_Wnetrza_2022_2022px-15.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
 }
 
 .video {
@@ -2934,57 +2860,57 @@ img {
 }
 
 .loga_prjekty_unijne {
+  background-color: #fff;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  padding: 10px;
   display: flex;
   overflow: hidden;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  background-color: #fff;
 }
 
 .div_grid {
-  overflow: hidden;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  text-align: center;
   flex-direction: row;
   align-items: center;
-  text-align: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
 }
 
 .immage_grid {
-  overflow: hidden;
   width: 220px;
   max-width: none;
-  margin-right: 0px;
+  margin-right: 0;
+  overflow: hidden;
 }
 
 .link_osoba {
+  border-radius: 16px;
   margin-bottom: 20px;
   padding: 5px 5px 10px;
-  border-radius: 16px;
-  box-shadow: 1px 1px 3px 0 #000;
-  transform: translate(0px, 0px);
-  transition: transform 200ms ease;
+  transition: transform .2s;
+  transform: translate(0);
+  box-shadow: 1px 1px 3px #000;
 }
 
 .link_osoba:hover {
+  transform: translate(0, -5px);
   box-shadow: 0 8px 12px -2px #292929;
-  transform: translate(0px, -5px);
 }
 
 .podpis {
+  text-align: left;
   padding-top: 10px;
   padding-left: 5px;
   font-size: 22px;
   line-height: 26px;
-  text-align: left;
 }
 
 .div-block-90 {
-  overflow: hidden;
   border-radius: 12px;
+  overflow: hidden;
 }
 
 .section-9 {
@@ -2993,73 +2919,73 @@ img {
 
 .cv {
   width: 45%;
-  align-self: flex-end;
   opacity: 1;
+  align-self: flex-end;
 }
 
 .div-block-91 {
-  display: flex;
   width: 100vh;
   height: 100vw;
+  display: flex;
 }
 
 .portrets {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   z-index: -999999999;
   display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .visual_desk_monika_walerzak {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -999999999999;
+  z-index: -2147483648;
   background-image: url('../images/Monika_Walerzak.jpg');
-  background-position: -30px 0px;
-  background-size: contain;
+  background-position: -30px 0;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .karolina_mazurek_desktop {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  z-index: -99999999999;
+  z-index: -2147483648;
   width: 100vw;
   background-image: url('../images/Mazurek_2020.jpg');
-  background-position: 0% 50%;
-  background-size: contain;
+  background-position: 0%;
   background-repeat: no-repeat;
+  background-size: contain;
   background-attachment: fixed;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .div-block-93 {
-  display: flex;
   height: 500px;
   background-image: url('../images/face-clinic_modele.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
+  background-position: 50%;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
 }
 
 .back {
-  position: fixed;
-  top: 26px;
+  background-color: #3a3838;
+  border-radius: 0 6px 6px 0;
   padding-top: 2px;
   padding-bottom: 2px;
-  border-radius: 0px 6px 6px 0px;
-  background-color: #3a3838;
-  transition: background-color 200ms ease;
   font-size: 11px;
+  transition: background-color .2s;
+  position: fixed;
+  top: 26px;
 }
 
 .back:hover {
@@ -3067,16 +2993,16 @@ img {
 }
 
 .visual_galeria {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   z-index: -99999999;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url('../images/face-clinic_modele.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
+  background-image: linear-gradient(rgba(0, 0, 0, .24), rgba(0, 0, 0, .24)), url('../images/face-clinic_modele.jpg');
+  background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .section_galeria {
@@ -3084,32 +3010,31 @@ img {
 }
 
 .div-block-94 {
-  -moz-column-count: 4;
-       column-count: 4;
+  column-count: 4;
 }
 
 .html-embed-3 {
-  margin-bottom: 0px;
-  padding: 7px;
-  border-radius: 20px;
   background-color: #333;
+  border-radius: 20px;
+  margin-bottom: 0;
+  padding: 7px;
 }
 
 .covid-19---mob-horizon {
-  display: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: none;
 }
 
 .covid-10---desk {
-  display: flex;
-  overflow: hidden;
-  padding-top: 40px;
+  opacity: .93;
   flex-direction: column;
   align-items: flex-end;
-  opacity: 0.93;
+  padding-top: 40px;
+  display: flex;
+  overflow: hidden;
 }
 
 .covid-19---phone {
@@ -3118,27 +3043,27 @@ img {
 
 .body-old {
   background-image: url('../images/Paper_FC_BG.jpg');
-  background-position: 0% 0%;
+  background-position: 0 0;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .section-reklama {
-  display: flex;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
   flex-direction: row;
   justify-content: space-around;
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  display: flex;
 }
 
 .reklama {
-  width: 1315.625px;
+  width: 1315.63px;
 }
 
 .link-block-4 {
-  opacity: 0.95;
+  opacity: .95;
   -webkit-backdrop-filter: blur(5px) blur(10px);
-          backdrop-filter: blur(5px) blur(10px);
+  backdrop-filter: blur(5px) blur(10px);
 }
 
 .bx2 {
@@ -3146,42 +3071,38 @@ img {
 }
 
 .div-block-98 {
+  width: 33%;
+  background-color: rgba(255, 255, 255, .95);
   position: relative;
   overflow: auto;
-  width: 33%;
-  background-color: hsla(0, 0%, 100%, 0.95);
 }
 
 .image-21 {
-  margin-top: 30px;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 .container-7 {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .67);
+  border-radius: 20px;
   margin-bottom: 60px;
-  padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
-  border-radius: 20px;
-  background-color: hsla(0, 0%, 100%, 0.67);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  padding-right: 30px;
 }
 
-.covid-19 {
-  display: none;
-}
-
-.covid-19---ipad {
+.covid-19, .covid-19---ipad {
   display: none;
 }
 
 .spolecznosciowe {
-  display: flex;
-  margin-right: 10px;
-  margin-left: 10px;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
 }
 
 .spolecznosciowe.m {
@@ -3189,41 +3110,41 @@ img {
 }
 
 .link_media {
+  opacity: .74;
   margin: 8px 6px;
-  opacity: 0.74;
-  transition: opacity 200ms ease, transform 200ms ease;
+  transition: opacity .2s, transform .2s;
 }
 
 .link_media:hover {
   opacity: 1;
-  transform: translate(0px, -3px);
+  transform: translate(0, -3px);
 }
 
 .zadzwon-teraz {
-  position: fixed;
   z-index: 8;
+  position: fixed;
 }
 
 .zadzwon-2 {
-  position: fixed;
-  left: auto;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
   width: 70px;
   height: 70px;
-  margin-right: 40px;
-  margin-bottom: 140px;
-  border-radius: 100px;
   background-color: #00aeff;
-  box-shadow: -3px 10px 11px -5px rgba(9, 43, 59, 0.6);
-  transition: height 300ms ease, width 300ms ease;
+  border-radius: 100px;
+  margin-bottom: 140px;
+  margin-right: 40px;
+  transition: height .3s, width .3s;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+  box-shadow: -3px 10px 11px -5px rgba(9, 43, 59, .6);
 }
 
 .zadzwon-2:hover {
   width: 75px;
   height: 75px;
-  box-shadow: -3px 12px 20px -7px rgba(9, 43, 59, 0.85);
+  box-shadow: -3px 12px 20px -7px rgba(9, 43, 59, .85);
 }
 
 .section_google {
@@ -3241,8 +3162,8 @@ img {
 }
 
 .image-3 {
+  opacity: .9;
   border-radius: 20px;
-  opacity: 0.9;
 }
 
 .paragraph-11 {
@@ -3268,53 +3189,53 @@ img {
 }
 
 .section-title-group {
-  position: relative;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .section-subheading.center {
-  font-family: 'Droid Sans', sans-serif;
   color: #fff;
+  text-align: center;
+  font-family: Droid Sans, sans-serif;
   font-size: 19px;
   line-height: 30px;
-  text-align: center;
 }
 
 .heading-6 {
-  margin-left: 18px;
   color: #fff;
+  margin-left: 18px;
 }
 
 .text-block {
-  overflow: hidden;
-  margin-top: 33px;
   color: #fff;
+  margin-top: 33px;
   font-size: 18px;
   line-height: 24px;
+  overflow: hidden;
 }
 
 .container-9 {
-  border-radius: 20px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 .column-0-padding {
-  position: static;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  display: flex;
+  position: static;
 }
 
 .columns {
-  position: relative;
-  padding-top: 40px;
   opacity: 1;
+  padding-top: 40px;
+  position: relative;
 }
 
 .section {
+  background-color: rgba(0, 0, 0, 0);
   padding: 100px 40px;
-  background-color: transparent;
 }
 
 .heading {
@@ -3324,25 +3245,25 @@ img {
 }
 
 .div-mapa {
-  display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 .body_kontakt {
-  background-color: rgba(25, 40, 51, 0.8);
-  background-image: linear-gradient(180deg, rgba(25, 40, 51, 0.8), rgba(25, 40, 51, 0.8)), url('../images/FC2020.jpg');
-  background-position: 0px 0px, 0px 0px;
-  background-size: auto, cover;
+  background-color: rgba(25, 40, 51, .8);
+  background-image: linear-gradient(rgba(25, 40, 51, .8), rgba(25, 40, 51, .8)), url('../images/FC2020.jpg');
+  background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
   background-attachment: scroll, fixed;
 }
 
 .tekst-kontakt {
+  color: #fff;
+  border-left: 1px dashed #fff;
   margin: 10px;
   padding-left: 10px;
-  border-left: 1px dashed #fff;
-  color: #fff;
 }
 
 .text-span-5 {
@@ -3350,8 +3271,8 @@ img {
 }
 
 .div-block-100 {
-  display: flex;
   align-items: flex-start;
+  display: flex;
 }
 
 .section_links {
@@ -3363,62 +3284,62 @@ img {
 }
 
 .colorcovermulti {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
   height: 100vh;
   background-color: #868480;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .color {
-  position: absolute;
   width: 100%;
   height: 500px;
   background-color: #e0ddd6;
+  position: absolute;
 }
 
 .lottie_sen {
-  background-image: linear-gradient(180deg, rgba(25, 40, 51, 0.55), rgba(25, 40, 51, 0.55)), url('../images/Paper_FC_BG.jpg');
-  background-position: 0px 0px, 100% 100%;
+  background-image: linear-gradient(rgba(25, 40, 51, .55), rgba(25, 40, 51, .55)), url('../images/Paper_FC_BG.jpg');
+  background-position: 0 0, 100% 100%;
   background-size: auto, auto;
   background-attachment: scroll, fixed;
 }
 
 .div-block-102 {
-  display: flex;
-  margin-right: 10px;
+  background-color: rgba(0, 0, 0, .06);
+  border-radius: 8px;
+  justify-content: center;
   margin-bottom: 10px;
   margin-left: 10px;
+  margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: center;
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.06);
+  display: flex;
 }
 
 .image-22 {
-  opacity: 0.46;
+  opacity: .46;
 }
 
 .div-block-103 {
-  position: relative;
-  left: 0%;
-  right: 0%;
-  bottom: auto;
   width: 100%;
   height: 15ch;
   margin-top: -128px;
+  position: relative;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
 .logo_rezonansfc {
-  transition: filter 200ms ease, transform 200ms ease;
+  transition: filter .2s, transform .2s;
 }
 
 .logo_rezonansfc:hover {
   filter: contrast(200%);
-  transform: translate(0px, -3px);
+  transform: translate(0, -3px);
 }
 
 .image-23 {
@@ -3427,18 +3348,18 @@ img {
 
 .face-edu {
   padding-right: 20px;
-  transition: opacity 200ms ease;
+  transition: opacity .2s;
 }
 
 .face-edu:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .face-edu_box {
+  align-items: flex-end;
+  display: flex;
   position: relative;
   left: -17px;
-  display: flex;
-  align-items: flex-end;
 }
 
 .image-24 {
@@ -3447,19 +3368,19 @@ img {
 
 .face-edu_absolute {
   position: fixed;
-  left: 20px;
   top: 20px;
-  right: auto;
   bottom: auto;
+  left: 20px;
+  right: auto;
 }
 
 .face-edu_box-2 {
+  opacity: .65;
+  align-items: flex-end;
+  transition: opacity .2s;
+  display: flex;
   position: relative;
   left: -17px;
-  display: flex;
-  align-items: flex-end;
-  opacity: 0.65;
-  transition: opacity 200ms ease;
 }
 
 .face-edu_box-2:hover {
@@ -3470,12 +3391,22 @@ img {
   filter: brightness(200%);
 }
 
+.div-block-104 {
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: multiply;
+  background-image: url('../images/AdobeStock_50190777.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
-    position: relative;
-    display: flex;
-    margin-right: 40px;
     margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    position: relative;
   }
 
   .logo {
@@ -3495,21 +3426,20 @@ img {
   }
 
   .parking {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .section-footer {
+    background-image: none;
+    align-self: stretch;
     padding-top: 40px;
     padding-bottom: 140px;
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
-    background-image: none;
   }
 
   .image-5 {
-    overflow: hidden;
     width: 230px;
     margin-top: 46px;
+    overflow: hidden;
   }
 
   .link {
@@ -3543,42 +3473,31 @@ img {
   }
 
   .animation {
+    align-self: center;
+    margin-top: 0;
     display: block;
-    margin-top: 0px;
-    -ms-grid-row-align: center;
-        align-self: center;
   }
 
   .lottie-animation--mobile {
     width: 1280px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
-  .box-kategoria-tytul.zespol.lekarze {
+  .box-kategoria-tytul.zespol.lekarze, .box-kategoria-tytul.zespol.asystentki {
     min-width: auto;
-    border-radius: 0px;
-  }
-
-  .box-kategoria-tytul.zespol.asystentki {
-    min-width: auto;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   .box-kategoria-tytul.zespol.technicy {
     width: 100%;
     min-width: auto;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
-  .box-kategoria-tytul.zespol.administracja {
+  .box-kategoria-tytul.zespol.administracja, .box-kategoria-tytul.zespol.fizjoterapeuci {
     min-width: auto;
-    border-radius: 0px;
-  }
-
-  .box-kategoria-tytul.zespol.fizjoterapeuci {
-    min-width: auto;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   .gradient_plexus {
@@ -3586,7 +3505,7 @@ img {
   }
 
   .section-white-dots {
-    background-position: 75% 0%;
+    background-position: 75% 0;
   }
 
   .text-on-picture {
@@ -3595,8 +3514,8 @@ img {
   }
 
   .round-16 {
-    position: static;
     width: 70%;
+    position: static;
   }
 
   .div-block-54 {
@@ -3605,8 +3524,8 @@ img {
   }
 
   .accordian-wrapper {
-    display: flex;
     flex-direction: column;
+    display: flex;
   }
 
   .accordian-wrapper.r {
@@ -3614,9 +3533,9 @@ img {
   }
 
   .section-intro {
-    overflow: hidden;
-    padding-bottom: 162px;
     justify-content: flex-end;
+    padding-bottom: 162px;
+    overflow: hidden;
   }
 
   .section-intro.orto {
@@ -3625,43 +3544,43 @@ img {
 
   .section-intro.edukacja {
     height: auto;
-    justify-content: flex-start;
     background-image: none;
-    background-position: 0px 0px;
-    background-size: auto;
+    background-position: 0 0;
     background-repeat: repeat;
+    background-size: auto;
+    justify-content: flex-start;
   }
 
   .section-intro.moj-opis {
-    margin-top: -26px;
-    padding-bottom: 0px;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: -26px;
+    padding-bottom: 0;
   }
 
   .section-intro.zespol {
     height: 100vh;
     background-image: url('../images/MonikaKonrad_2023.jpg');
-    background-position: 20% 0%;
-    background-size: cover;
+    background-position: 20% 0;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .dzial {
-    display: flex;
     width: 50%;
-    padding-left: 40px;
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 40px;
+    display: flex;
   }
 
   .dzial.opis {
     width: 100vw;
     height: auto;
+    border-top: 1px dashed #4b88be;
+    justify-content: flex-start;
     padding-top: 5px;
     padding-bottom: 0%;
-    justify-content: flex-start;
-    border-top: 1px dashed #4b88be;
   }
 
   .div-nav {
@@ -3670,16 +3589,16 @@ img {
   }
 
   .section-logo {
+    align-items: center;
     margin-left: 50%;
     padding-top: 326px;
     padding-bottom: 151px;
-    align-items: center;
   }
 
   .footer-all {
-    overflow: hidden;
     width: auto;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .footer-02 {
@@ -3692,14 +3611,15 @@ img {
   }
 
   .polityka-op {
-    margin-top: 27px;
+    margin-top: 5px;
+    margin-bottom: -2px;
   }
 
   .section-nav {
-    margin-bottom: 0px;
-    padding-bottom: 40px;
-    align-items: center;
     background-image: none;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .footer-01 {
@@ -3712,16 +3632,15 @@ img {
   }
 
   .visual-load {
+    background-position: 20% 0;
     flex-direction: column;
+    align-self: center;
     align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-    background-position: 20% 0%;
   }
 
   .visual-load.tv {
-    background-image: linear-gradient(180deg, null, null), url('../images/Face-Clinic-TV-Recepcja.jpg');
-    background-position: 0px 0px, 0% 50%;
+    background-image: linear-gradient(to bottom, null, null), url('../images/Face-Clinic-TV-Recepcja.jpg');
+    background-position: 0 0, 0%;
   }
 
   .visual-load.zespol {
@@ -3729,22 +3648,18 @@ img {
   }
 
   .visual-load.osoba {
-    display: none;
-    background-position: 0% 0%;
+    background-position: 0 0;
     background-size: contain;
     background-attachment: scroll;
-  }
-
-  .visual-load.osoba.konrad-walerzak {
     display: none;
   }
 
-  .visual-load.osoba.sebastian-walerzak {
+  .visual-load.osoba.konrad-walerzak, .visual-load.osoba.sebastian-walerzak {
     display: none;
   }
 
   .visual-load.chirurgia {
-    background-position: 50% 0%, 0px 0px;
+    background-position: 50% 0, 0 0;
   }
 
   .visual.osoba {
@@ -3752,7 +3667,7 @@ img {
   }
 
   .visual-gradient {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .visual-gradient._2 {
@@ -3760,12 +3675,12 @@ img {
   }
 
   .section-opis-home {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-image: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .div-nr {
@@ -3785,11 +3700,10 @@ img {
   }
 
   .image-19 {
+    align-self: center;
     margin-top: 10px;
-    margin-right: 10%;
     margin-bottom: 10px;
-    -ms-grid-row-align: center;
-        align-self: center;
+    margin-right: 10%;
   }
 
   .div_implanty_picture {
@@ -3812,22 +3726,22 @@ img {
   }
 
   .wstep_do_pacjentow {
-    left: 100px;
     margin-top: 99px;
-    padding-left: 0px;
+    padding-left: 0;
+    left: 100px;
   }
 
   .section_form {
-    display: flex;
-    padding-right: 100px;
     padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
   }
 
   .div-block-86 {
-    display: flex;
-    padding-right: 20px;
-    padding-left: 20px;
     flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
   }
 
   .div-block-87 {
@@ -3849,8 +3763,8 @@ img {
   }
 
   .section_formularz {
-    padding-right: 100px;
     padding-left: 100px;
+    padding-right: 100px;
   }
 
   .container {
@@ -3862,34 +3776,33 @@ img {
   }
 
   .visual-gradient-2 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .visual-load-2 {
     min-height: 400px;
-    flex-direction: column;
-    align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-    background-position: 0px 0px, 50% 50%;
+    background-position: 0 0, 50%;
     background-size: auto, 1441px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
   }
 
   .wstep_do_pacjentow-2 {
-    left: 100px;
     width: 280px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-top: 0;
+    padding-left: 0;
+    left: 100px;
   }
 
   .section-intro-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 12%, rgba(0, 0, 0, .12) 28%, rgba(0, 0, 0, .25) 44%, rgba(0, 0, 0, .42) 74%, rgba(14, 14, 14, .34) 77%, rgba(34, 34, 34, 0)), url('../images/Laptop.png');
+    background-position: 0 0, 50% 45%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 800px;
     padding-top: 582px;
     padding-bottom: 7%;
     padding-left: 226px;
-    background-image: linear-gradient(180deg, transparent 12%, rgba(0, 0, 0, 0.12) 28%, rgba(0, 0, 0, 0.25) 44%, rgba(0, 0, 0, 0.42) 74%, rgba(14, 14, 14, 0.34) 77%, rgba(34, 34, 34, 0)), url('../images/Laptop.png');
-    background-position: 0px 0px, 50% 45%;
-    background-size: auto, 800px;
-    background-repeat: repeat, no-repeat;
   }
 
   .dzial-2 {
@@ -3901,13 +3814,13 @@ img {
   }
 
   .div_higiena_picture {
-    overflow: hidden;
     min-height: 400px;
+    overflow: hidden;
   }
 
   .div_radiologia_picture {
     min-height: 400px;
-    background-position: 10% 50%;
+    background-position: 10%;
     background-size: cover;
   }
 
@@ -3918,7 +3831,7 @@ img {
 
   .div_klinika_picture {
     height: 400px;
-    background-position: 50% 50%;
+    background-position: 50%;
   }
 
   .image_mazowsze {
@@ -3947,8 +3860,7 @@ img {
   .zespol_box {
     width: 100%;
     min-width: auto;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .immage_grid {
@@ -3956,18 +3868,18 @@ img {
   }
 
   .body-2 {
-    background-position: 50% 50%;
+    background-position: 50%;
     background-size: cover;
   }
 
   .portrets {
-    position: static;
     display: block;
+    position: static;
   }
 
   .visual_desk_monika_walerzak {
+    background-position: 0 0;
     display: none;
-    background-position: 0vh 0px;
   }
 
   .karolina_mazurek_desktop {
@@ -3978,21 +3890,16 @@ img {
     height: 400px;
   }
 
-  .back {
-    position: relative;
-  }
-
-  .section_galeria {
+  .back, .section_galeria {
     position: relative;
   }
 
   .div-block-94 {
-    -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
   }
 
   .html-embed-3 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .covid-19---mob-horizon {
@@ -4000,26 +3907,22 @@ img {
   }
 
   .covid-10---desk {
-    padding-top: 0px;
-    padding-bottom: 40px;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 40px;
   }
 
   .div-block-98 {
     width: 15%;
   }
 
-  .covid-19 {
-    display: none;
-  }
-
-  .covid-19---ipad {
+  .covid-19, .covid-19---ipad {
     display: none;
   }
 
   .container-9 {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .div-block-100 {
@@ -4032,9 +3935,9 @@ img {
     width: 450px;
     max-width: none;
     min-width: 250px;
-    margin-right: 0px;
-    margin-left: 0px;
     align-items: flex-start;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .secsion_pl-eng {
@@ -4044,7 +3947,7 @@ img {
   .logo {
     width: 80px;
     margin-top: 33px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .button_home {
@@ -4054,8 +3957,8 @@ img {
 
   .txt_fc-tv {
     width: 330px;
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     font-size: 14px;
     line-height: 18px;
   }
@@ -4083,7 +3986,7 @@ img {
   }
 
   .zadzwon {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .section-footer {
@@ -4097,11 +4000,11 @@ img {
   }
 
   .pl-eng-facebook.mobile {
-    display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    align-self: stretch;
     flex: 1;
+    align-self: stretch;
+    align-items: flex-end;
+    display: flex;
   }
 
   .pl-eng-facebook.mobile._2 {
@@ -4113,8 +4016,8 @@ img {
   }
 
   .pl-eng {
-    display: none;
     flex: 0 auto;
+    display: none;
   }
 
   .fanpage {
@@ -4122,21 +4025,20 @@ img {
   }
 
   .link-pl-eng_male.mobile {
+    text-align: right;
+    align-self: flex-end;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 5px;
-    align-self: flex-end;
     font-size: 16px;
-    text-align: right;
   }
 
   .pl-eng_2 {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    -ms-grid-row-align: center;
-        align-self: center;
     flex: 1;
+    justify-content: center;
+    align-self: center;
+    align-items: flex-end;
   }
 
   .facebook-2 {
@@ -4144,7 +4046,7 @@ img {
   }
 
   .menu-uslugi {
-    background-image: linear-gradient(180deg, #3a3838 1%, rgba(43, 43, 43, 0.5) 66%);
+    background-image: linear-gradient(#3a3838 1%, rgba(43, 43, 43, .5) 66%);
   }
 
   .kontakt-trigger {
@@ -4152,16 +4054,15 @@ img {
   }
 
   .menu-wrapper {
-    -ms-grid-row-align: center;
-        align-self: center;
     flex: 0 auto;
+    align-self: center;
   }
 
   .menu-up {
-    left: 0%;
     top: 99%;
-    right: 0%;
     bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .rich-text-block.edukacja.tv {
@@ -4173,8 +4074,8 @@ img {
   }
 
   .menu-main-desktop {
-    position: relative;
     opacity: 1;
+    position: relative;
   }
 
   .down-info {
@@ -4182,37 +4083,35 @@ img {
   }
 
   .div-block-35 {
-    position: relative;
     flex-direction: column;
     flex: 1;
+    position: relative;
   }
 
   .text-block-9.copywrite {
-    margin-left: 0px;
-    -ms-grid-row-align: center;
-        align-self: center;
-    color: hsla(0, 0%, 100%, 0.8);
+    color: rgba(255, 255, 255, .8);
+    align-self: center;
+    margin-left: 0;
   }
 
   .link-artrepublica {
-    -ms-grid-row-align: center;
-        align-self: center;
-    opacity: 0.8;
+    opacity: .8;
+    align-self: center;
   }
 
   .secsion-copywrite {
-    display: flex;
     height: 45px;
+    background-color: #444749;
     flex-direction: column;
     justify-content: center;
-    background-color: #444749;
+    display: flex;
   }
 
   .secsion-box {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background-size: auto;
     background-repeat: repeat;
+    background-size: auto;
   }
 
   .plexus {
@@ -4224,39 +4123,36 @@ img {
   }
 
   .animation {
-    display: block;
-    margin-right: -75px;
-    margin-left: -72px;
-    justify-content: center;
-    align-items: center;
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
     flex: 1;
+    justify-content: center;
+    align-self: stretch;
+    align-items: center;
+    margin-left: -72px;
+    margin-right: -75px;
+    display: block;
   }
 
   .lottie-animation--mobile {
     width: 100%;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 53px;
   }
 
   .gradient {
-    position: absolute;
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
     height: 70px;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .div_chirurgia_picture {
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .box-kategoria-tytul {
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .box-kategoria-tytul.zespol {
@@ -4270,8 +4166,8 @@ img {
   }
 
   .image-box {
-    position: relative;
     z-index: 0;
+    position: relative;
   }
 
   .section-white-dots {
@@ -4279,8 +4175,8 @@ img {
   }
 
   .dystans {
-    display: none;
     height: 10px;
+    display: none;
   }
 
   .text-on-picture {
@@ -4290,17 +4186,12 @@ img {
 
   .round-16 {
     width: auto;
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
-    border-radius: 0px;
+    border-radius: 0;
+    align-self: stretch;
   }
 
-  .accordian-item-trigger:focus {
-    background-color: rgba(108, 157, 168, 0.35);
-  }
-
-  .accordian-item-trigger-2:focus {
-    background-color: rgba(108, 157, 168, 0.35);
+  .accordian-item-trigger:focus, .accordian-item-trigger-2:focus {
+    background-color: rgba(107, 157, 168, .35);
   }
 
   .ico_main {
@@ -4314,102 +4205,102 @@ img {
 
   .section-intro {
     height: 350px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .section-intro.implanty {
-    margin-top: 0px;
-    padding-top: 77px;
-    justify-content: flex-start;
-    background-image: url('../images/Implanty_tlo.jpg'), linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    background-position: 0px 0px, 0px 0px;
+    background-image: url('../images/Implanty_tlo.jpg'), linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    background-position: 0 0, 0 0;
     background-size: cover, auto;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 77px;
   }
 
   .section-intro.orto {
-    padding-bottom: 0%;
-    justify-content: flex-end;
     background-image: url('../images/Ortodoncja.jpg');
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
+    justify-content: flex-end;
+    padding-bottom: 0%;
   }
 
   .section-intro.protetyka {
-    background-image: linear-gradient(270deg, rgba(54, 45, 20, 0.25), rgba(90, 81, 58, 0.11) 36%, rgba(145, 136, 115, 0) 50%), url('../images/Protetyka.jpg');
-    background-position: 0px 0px, -60px -50px;
-    background-size: auto, 900px;
+    background-image: linear-gradient(270deg, rgba(54, 45, 20, .25), rgba(90, 81, 58, .11) 36%, rgba(145, 136, 115, 0) 50%), url('../images/Protetyka.jpg');
+    background-position: 0 0, -60px -50px;
     background-repeat: repeat, no-repeat;
+    background-size: auto, 900px;
     background-attachment: scroll, scroll;
   }
 
   .section-intro.higiena {
     background-image: url('../images/Higiena.jpg');
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
   }
 
   .section-intro.chirurgia {
     background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
   }
 
   .section-intro.stomatologia {
     background-image: url('../images/Stomatologia.jpg');
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
   }
 
   .section-intro.radiologia {
     background-image: url('../images/Radiologia.jpg');
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: cover;
   }
 
   .section-intro.edukacja {
     height: auto;
-    margin-top: 0px;
-    padding-bottom: 40px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Edukacja.jpg');
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Edukacja.jpg');
+    background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    margin-top: 0;
+    padding-bottom: 40px;
   }
 
   .section-intro.o-klinice {
-    padding-top: 50px;
     background-image: url('../images/face_clinic_scaner3d_009-u22744-fr.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
+    background-position: 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
   }
 
   .section-intro.ue {
-    background-image: linear-gradient(180deg, rgba(0, 21, 46, 0.5), rgba(0, 21, 46, 0.5)), url('../images/UE.jpg');
-    background-position: 0px 0px, 70% 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(rgba(0, 21, 46, .5), rgba(0, 21, 46, .5)), url('../images/UE.jpg');
+    background-position: 0 0, 70%;
     background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
   }
 
   .section-intro.tv {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/Face-Clinic-TV-Recepcja.jpg');
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../images/Face-Clinic-TV-Recepcja.jpg');
+    background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
   }
 
   .section-intro.faq {
     background-image: url('../images/KonradPacjent_sRGB_8bit-1.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
+    background-position: 50%;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .section-intro.galeria {
-    padding-bottom: 30px;
     background-image: url('../images/face-clinic_modele.jpg');
-    background-position: 50% 50%;
+    background-position: 50%;
     background-size: cover;
+    padding-bottom: 30px;
   }
 
   .section-intro.moj-opis {
@@ -4453,9 +4344,9 @@ img {
   }
 
   .section-logo {
-    padding-top: 0px;
-    padding-bottom: 0px;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .dystans-10._1 {
@@ -4470,49 +4361,46 @@ img {
     width: auto;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
   }
 
   .div-block-63 {
     width: 330px;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .adres-n-r-nr-b {
+    border-bottom: 1px dashed #fff;
+    align-self: stretch;
     margin-bottom: 10px;
     padding-bottom: 20px;
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
-    border-bottom: 1px dashed #fff;
   }
 
   .section-nav {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-bottom: 40px;
   }
 
   .footer-01 {
-    display: flex;
     width: 330px;
     flex-direction: column;
-    align-items: center;
     align-self: stretch;
+    align-items: center;
+    display: flex;
   }
 
   .div-block-68 {
     width: auto;
-    margin-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: 0%;
-    margin-bottom: 0px;
   }
 
   .visual-load.edukacja {
     background-image: url('../images/Edukacja.jpg');
-    background-position: -100px 50%;
+    background-position: -100px;
   }
 
   .visual-load.osoba {
@@ -4521,7 +4409,7 @@ img {
   }
 
   .visual-load.chirurgia {
-    background-position: 40% 0%, 0px 0px;
+    background-position: 40% 0, 0 0;
   }
 
   .visual {
@@ -4533,24 +4421,24 @@ img {
   }
 
   .visual-gradient {
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
-    display: block;
     height: 130px;
-    margin-top: 326px;
     background-image: none;
+    margin-top: 326px;
+    display: block;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .visual-gradient._2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .53));
     display: none;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), hsla(0, 0%, 100%, 0.53));
   }
 
   .section-opis-home {
-    padding: 40px 10px;
     background-image: none;
+    padding: 40px 10px;
   }
 
   .div-nr {
@@ -4572,7 +4460,7 @@ img {
   }
 
   .div-block-72 {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 15px;
   }
 
@@ -4590,52 +4478,42 @@ img {
   }
 
   .paragraph-9 {
+    letter-spacing: 1px;
     font-size: 21px;
     line-height: 30px;
-    letter-spacing: 1px;
   }
 
   .div-block-74 {
+    margin-top: 0;
     display: block;
-    margin-top: 0px;
   }
 
   .div-block-75 {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding-top: 0px;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 0;
+    display: flex;
   }
 
   .div-block-76 {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .text-block-24 {
     margin-top: 3px;
   }
 
-  .text-block-25 {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .nip {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .bank {
+  .text-block-25, .nip, .bank {
     font-size: 17px;
     line-height: 24px;
   }
 
   .lottie-animation-2 {
-    top: 90px;
-    right: 54px;
     width: 150px;
     height: 150px;
+    top: 90px;
+    right: 54px;
   }
 
   .div_implanty_picture {
@@ -4657,22 +4535,22 @@ img {
   }
 
   .wstep_do_pacjentow {
-    position: relative;
-    left: auto;
-    top: -62px;
-    right: auto;
     padding-left: 40px;
+    position: relative;
+    top: -62px;
+    left: auto;
+    right: auto;
   }
 
   .section_form {
-    display: block;
-    padding-right: 40px;
     padding-left: 40px;
+    padding-right: 40px;
+    display: block;
   }
 
   .div-block-86 {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .select-field {
@@ -4681,14 +4559,14 @@ img {
   }
 
   .div-block-83 {
-    display: flex;
     flex-direction: column;
+    display: flex;
   }
 
   .section_formularz {
-    padding-right: 40px;
     padding-bottom: 20px;
     padding-left: 40px;
+    padding-right: 40px;
   }
 
   .div-block-82 {
@@ -4704,19 +4582,19 @@ img {
   }
 
   .visual-2 {
-    position: -webkit-sticky;
-    position: sticky;
     height: 100%;
     margin-top: 2px;
+    position: -webkit-sticky;
+    position: sticky;
   }
 
   .visual-gradient-2 {
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
     height: 130px;
     margin-top: 326px;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .visual-load-2 {
@@ -4725,15 +4603,15 @@ img {
   }
 
   .wstep_do_pacjentow-2 {
-    position: relative;
-    left: auto;
-    top: -62px;
-    right: auto;
     width: auto;
     max-width: none;
     margin-top: 100px;
     margin-bottom: -15px;
     padding-left: 40px;
+    position: relative;
+    top: -62px;
+    left: auto;
+    right: auto;
   }
 
   .button-2 {
@@ -4742,11 +4620,11 @@ img {
 
   .section-intro-2 {
     height: 200px;
-    margin-top: -235px;
-    background-image: linear-gradient(180deg, transparent, transparent 23%, rgba(0, 0, 0, 0.29) 59%, rgba(0, 0, 0, 0.32) 86%, rgba(0, 0, 0, 0.26) 89%, transparent), url('../images/Laptop.png');
-    background-position: 0px 0px, 10% 80%;
-    background-size: auto, 420px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 23%, rgba(0, 0, 0, .29) 59%, rgba(0, 0, 0, .32) 86%, rgba(0, 0, 0, .26) 89%, rgba(0, 0, 0, 0)), url('../images/Laptop.png');
+    background-position: 0 0, 10% 80%;
     background-repeat: repeat, no-repeat;
+    background-size: auto, 420px;
+    margin-top: -235px;
   }
 
   .dzial-2 {
@@ -4779,7 +4657,7 @@ img {
 
   .div_radiologia_picture {
     min-height: 300px;
-    background-position: 10% 50%;
+    background-position: 10%;
   }
 
   .section-intro-rodo {
@@ -4787,11 +4665,11 @@ img {
   }
 
   .txt-rodo {
-    position: relative;
     width: auto;
     margin-top: 10px;
-    padding-right: 40px;
     padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
   }
 
   .txt-rodo.kontakt {
@@ -4800,7 +4678,7 @@ img {
 
   .div_klinika_picture {
     height: 300px;
-    background-position: 50% 50%;
+    background-position: 50%;
   }
 
   .immage_grid {
@@ -4816,24 +4694,23 @@ img {
   }
 
   .div-block-94 {
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
 
   .html-embed-3 {
-    display: flex;
-    overflow: hidden;
-    padding: 7px;
+    background-color: #333;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    padding: 7px;
+    display: flex;
+    overflow: hidden;
   }
 
   .covid-19---mob-horizon {
+    padding-left: 5px;
+    padding-right: 5px;
     display: none;
     overflow: hidden;
-    padding-right: 5px;
-    padding-left: 5px;
   }
 
   .covid-10---desk {
@@ -4843,9 +4720,8 @@ img {
   .div-block-96 {
     width: 480px;
     height: 270px;
-    -ms-grid-row-align: center;
-        align-self: center;
     border-radius: 20px;
+    align-self: center;
   }
 
   .body-old {
@@ -4853,8 +4729,8 @@ img {
   }
 
   .container-7 {
-    margin-bottom: 0px;
-    border-radius: 0px;
+    border-radius: 0;
+    margin-bottom: 0;
   }
 
   .covid-19---ipad {
@@ -4862,8 +4738,8 @@ img {
   }
 
   .zadzwon-2 {
-    margin-right: 10px;
     margin-bottom: 240px;
+    margin-right: 10px;
   }
 
   .div-block-99 {
@@ -4871,18 +4747,18 @@ img {
   }
 
   .div-block-2 {
-    display: flex;
     justify-content: center;
+    display: flex;
   }
 
   .grid-image {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .container-8 {
-    position: relative;
     z-index: 1;
     display: block;
+    position: relative;
   }
 
   .section-title-group {
@@ -4890,35 +4766,35 @@ img {
   }
 
   .heading-6 {
-    margin-left: 0px;
-    font-size: 22px;
     text-transform: none;
+    margin-left: 0;
+    font-size: 22px;
   }
 
   .heading-7 {
     color: #fff;
-    font-size: 22px;
     text-transform: none;
+    font-size: 22px;
   }
 
   .container-9 {
+    padding-left: 0;
+    padding-right: 0;
     display: none;
-    padding-right: 0px;
-    padding-left: 0px;
   }
 
   .column-0-padding {
-    margin-bottom: 40px;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   .div-block-9 {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
   }
 
   .txt_d {
@@ -4928,22 +4804,22 @@ img {
   }
 
   .section {
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .bus_nr {
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
     background-color: #de4b29;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .bus_nr.black {
-    background-color: #000;
     color: #fff;
+    background-color: #000;
   }
 
   .txtt_22 {
@@ -4955,23 +4831,23 @@ img {
   .txt_32 {
     color: #fff;
     font-size: 32px;
-    line-height: 42px;
     font-weight: 700;
+    line-height: 42px;
   }
 
   .heading {
-    font-size: 22px;
     text-align: center;
+    font-size: 22px;
   }
 
   .image-23 {
-    position: absolute;
-    left: 0%;
-    top: 6%;
-    right: 0%;
-    bottom: auto;
     z-index: -1;
     display: block;
+    position: absolute;
+    top: 6%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .face-edu_absolute {
@@ -4981,13 +4857,13 @@ img {
 
 @media screen and (max-width: 479px) {
   .paragraph {
-    left: auto;
-    display: flex;
     width: auto;
     min-width: auto;
-    padding: 35px 20px;
+    border-radius: 0;
     align-items: center;
-    border-radius: 0px;
+    padding: 35px 20px;
+    display: flex;
+    left: auto;
   }
 
   .secsion_pl-eng {
@@ -4995,10 +4871,10 @@ img {
   }
 
   .logo {
-    display: none;
-    margin-top: 0px;
+    filter: contrast(500%) invert();
+    margin-top: 0;
     margin-right: 0%;
-    filter: contrast(500%) invert(100%);
+    display: none;
   }
 
   .text-span-head-stopka {
@@ -5012,14 +4888,14 @@ img {
   }
 
   .linki-w-kontaktach {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .parking {
     width: 180px;
-    margin-top: 0px;
-    margin-right: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .projekty-ue {
@@ -5033,68 +4909,62 @@ img {
   }
 
   .image-5 {
-    display: block;
     width: 95%;
     max-width: 60%;
     min-width: 200px;
+    filter: contrast(500%) invert();
     margin-top: 40px;
-    margin-right: 0px;
     margin-bottom: 40px;
-    filter: contrast(500%) invert(100%);
+    margin-right: 0;
+    display: block;
   }
 
   .lightbox-link {
     width: 180px;
-    background-position: 0% 0%;
+    background-position: 0 0;
   }
 
   .linia {
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .pl-eng-facebook.mobile {
-    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    align-self: stretch;
     flex: 1;
+    justify-content: flex-end;
+    align-self: stretch;
+    align-items: flex-start;
+    display: flex;
   }
 
   .pl-eng-facebook.mobile._2 {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: 0%;
-    bottom: auto;
-    display: none;
     width: 100px;
-    margin-top: 58px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: 1px solid rgba(255, 255, 255, .3);
     flex-direction: row;
-    border-top: 1px solid hsla(0, 0%, 100%, 0.3);
-    border-left: 1px solid hsla(0, 0%, 100%, 0.3);
-  }
-
-  .pl-eng-facebook.mobile._1 {
+    margin-top: 58px;
     display: none;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: 0%;
   }
 
-  .pl-eng-facebook.desktop {
+  .pl-eng-facebook.mobile._1, .pl-eng-facebook.desktop {
     display: none;
   }
 
   .pl-eng {
-    margin-right: -7px;
+    flex: none;
     justify-content: flex-start;
+    align-self: center;
     align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-    flex: 0 0 auto;
+    margin-right: -7px;
   }
 
   .fanpage {
-    flex: 0 0 auto;
+    flex: none;
   }
 
   .link-pl-eng_male.mobile {
@@ -5107,78 +4977,52 @@ img {
   .pl-eng_2 {
     flex-direction: row;
     justify-content: flex-end;
+    align-self: center;
     align-items: flex-start;
-    -ms-grid-row-align: center;
-        align-self: center;
   }
 
   .facebook-2 {
-    display: none;
+    align-self: center;
     margin-left: 15px;
-    -ms-grid-row-align: center;
-        align-self: center;
+    display: none;
   }
 
   .menu-uslugi {
-    padding-bottom: 5px;
-    background-image: none;
     -webkit-backdrop-filter: none;
-            backdrop-filter: none;
+    backdrop-filter: none;
+    background-image: none;
+    padding-bottom: 5px;
   }
 
   .home-tree {
-    position: relative;
     z-index: 1;
+    position: relative;
   }
 
-  .link-menu.uslugi.w--current {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.implanty {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.protetyka {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.higiena {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.chirurgia {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.stomatologia {
-    width: 248vw;
-  }
-
-  .link-menu.uslugi.radiologia {
+  .link-menu.uslugi.w--current, .link-menu.uslugi.implanty, .link-menu.uslugi.protetyka, .link-menu.uslugi.higiena, .link-menu.uslugi.chirurgia, .link-menu.uslugi.stomatologia, .link-menu.uslugi.radiologia {
     width: 248vw;
   }
 
   .link-menu.uslugi.wiecej {
     z-index: 2;
-    display: none;
     width: 248vw;
+    background-image: linear-gradient(#444749, #3a3838);
     padding-right: 10px;
-    background-image: linear-gradient(180deg, #444749, #3a3838);
+    display: none;
   }
 
   .link-menu.uslugi.wiecej:hover {
-    background-image: linear-gradient(180deg, #444749, rgba(0, 111, 255, 0.5));
+    background-image: linear-gradient(#444749, rgba(0, 111, 255, .5));
   }
 
   .link-menu.uslugi.mniej {
     z-index: 80;
+    width: 248vw;
+    color: #3a3838;
+    background-color: #444749;
+    padding-right: 10px;
     display: none;
     overflow: hidden;
-    width: 248vw;
-    padding-right: 10px;
-    background-color: #444749;
-    color: #3a3838;
   }
 
   .link-menu.uslugi.ortodoncja {
@@ -5186,18 +5030,18 @@ img {
   }
 
   .menu-txt-uslugi {
-    position: relative;
-    margin-right: 0px;
+    margin-right: 0;
     font-size: 16px;
     font-style: normal;
+    position: relative;
   }
 
   .menu-txt-uslugi.wiecej {
-    padding-right: 10px;
-    justify-content: flex-end;
-    font-style: italic;
     text-align: right;
     text-transform: none;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-style: italic;
   }
 
   .kontakt-trigger {
@@ -5210,36 +5054,36 @@ img {
   }
 
   .podmenu._2 {
-    position: static;
-    left: 0%;
-    top: 0%;
-    right: auto;
-    bottom: auto;
     z-index: 8;
-    display: block;
-    overflow: visible;
     width: 100vw;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 10px;
+    background-image: none;
+    border-left-style: none;
     flex-direction: column;
     align-items: flex-end;
-    border-left-style: none;
-    background-image: none;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    display: block;
+    position: static;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: auto;
+    overflow: visible;
   }
 
   .menu-up {
-    left: 0%;
-    top: 98%;
-    right: 0%;
-    bottom: auto;
     width: 100vw;
-    margin-right: 0px;
-    margin-left: -71px;
+    background-image: linear-gradient(#3a3838, rgba(58, 56, 56, .66) 8%);
     flex-direction: column;
-    align-items: flex-start;
     flex: 0 auto;
-    background-image: linear-gradient(180deg, #3a3838, rgba(58, 56, 56, 0.66) 8%);
+    align-items: flex-start;
+    margin-left: -71px;
+    margin-right: 0;
+    top: 98%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .text-block-8 {
@@ -5247,60 +5091,34 @@ img {
     font-size: 16px;
   }
 
-  .l2-link.o-klinice {
+  .l2-link.o-klinice, .l2-link.zespol {
     width: 152vw;
+    margin-left: 0;
     margin-right: 15px;
-    margin-left: 0px;
     padding-left: 40px;
   }
 
   .l2-link.zespol {
     width: 152vw;
-    margin-right: 15px;
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 40px;
   }
 
-  .l2-link.zespol {
+  .l2-link.ue, .l2-link.tv, .l2-link.faq {
     width: 152vw;
-    margin-left: 0px;
-    padding-left: 40px;
-  }
-
-  .l2-link.ue {
-    width: 152vw;
+    margin-left: 0;
     margin-right: 15px;
-    margin-left: 0px;
-    padding-left: 40px;
-  }
-
-  .l2-link.tv {
-    width: 152vw;
-    margin-right: 15px;
-    margin-left: 0px;
-    padding-left: 40px;
-  }
-
-  .l2-link.faq {
-    width: 152vw;
-    margin-right: 15px;
-    margin-left: 0px;
     padding-left: 40px;
   }
 
   .l2-link.galeria {
     width: 152vw;
+    margin-left: 0;
     margin-right: 14px;
-    margin-left: 0px;
     padding-left: 40px;
   }
 
-  .l2-link.edukacja {
-    width: 152vw;
-    padding-left: 40px;
-  }
-
-  .l2-link.edukacja.w--current {
+  .l2-link.edukacja, .l2-link.edukacja.w--current {
     width: 152vw;
     padding-left: 40px;
   }
@@ -5320,74 +5138,68 @@ img {
   }
 
   .menu-main-desktop {
-    position: relative;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
     width: 100vw;
+    position: relative;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .down-info {
-    display: none;
     height: 46px;
+    display: none;
   }
 
   .text-block-9.copywrite {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .link-artrepublica {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
-  .div-block-38 {
-    display: none;
-  }
-
-  .plexus {
+  .div-block-38, .plexus {
     display: none;
   }
 
   .plexus-div {
     width: 200vw;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: -12px;
   }
 
   .animation {
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: auto;
-    display: block;
     justify-content: center;
+    align-self: center;
     align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    display: block;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
   }
 
   .lottie-animation--mobile {
     width: auto;
-    margin-right: -250px;
-    margin-left: 56px;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
     align-items: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    margin-left: 56px;
+    margin-right: -250px;
   }
 
   .gradient {
-    position: absolute;
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
     z-index: 60;
-    display: block;
     height: 120px;
     flex: 1;
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
   }
 
   .div_chirurgia_picture {
@@ -5413,8 +5225,8 @@ img {
   }
 
   .image-box.sz-t {
+    margin-bottom: 0;
     display: block;
-    margin-bottom: 0px;
   }
 
   .div-block-47 {
@@ -5426,17 +5238,17 @@ img {
   }
 
   .text-on-picture {
-    position: static;
     width: auto;
+    background-color: #8f8069;
     margin-top: -7px;
     padding: 10px 5%;
-    background-color: #8f8069;
+    position: static;
   }
 
   .link_film {
+    flex: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    flex: 0 auto;
     font-size: 14px;
     line-height: 16px;
   }
@@ -5450,9 +5262,9 @@ img {
   }
 
   .link_film-2 {
+    flex: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    flex: 0 auto;
     font-size: 14px;
     line-height: 16px;
   }
@@ -5462,19 +5274,19 @@ img {
   }
 
   .ico_main {
-    display: none;
     width: 60px;
     margin-left: -14px;
+    display: none;
   }
 
   .ico_main.online {
-    display: none;
     width: 80px;
+    display: none;
   }
 
   .ico_main.ue {
-    display: inline-block;
     width: 80px;
+    display: inline-block;
   }
 
   .section-intro {
@@ -5482,9 +5294,9 @@ img {
   }
 
   .section-intro.implanty {
-    padding-top: 273px;
-    padding-bottom: 0px;
     justify-content: flex-start;
+    padding-top: 273px;
+    padding-bottom: 0;
   }
 
   .section-intro.orto {
@@ -5492,18 +5304,18 @@ img {
   }
 
   .section-intro.chirurgia {
-    background-position: 50% 0%;
+    background-position: 50% 0;
   }
 
   .section-intro.edukacja {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/Edukacja.jpg');
+    background-position: 0 0, -70px;
     padding-top: 10px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Edukacja.jpg');
-    background-position: 0px 0px, -70px 50%;
   }
 
   .section-intro.o-klinice {
-    background-image: linear-gradient(180deg, null, null), url('../images/face_clinic_tomograf_007.jpg');
-    background-position: 0px 0px, 70% 50%;
+    background-image: linear-gradient(to bottom, null, null), url('../images/face_clinic_tomograf_007.jpg');
+    background-position: 0 0, 70%;
   }
 
   .section-intro.ue {
@@ -5511,12 +5323,12 @@ img {
   }
 
   .section-intro.tv {
-    background-image: linear-gradient(180deg, null, null), url('../images/Face-Clinic-TV-Recepcja.jpg');
-    background-position: 0px 0px, 0% 50%;
+    background-image: linear-gradient(to bottom, null, null), url('../images/Face-Clinic-TV-Recepcja.jpg');
+    background-position: 0 0, 0%;
   }
 
   .section-intro.galeria {
-    background-position: 30% 50%;
+    background-position: 30%;
   }
 
   .h1-dzial {
@@ -5535,7 +5347,7 @@ img {
 
   .dzial.ue {
     margin-top: -150px;
-    padding-top: 0px;
+    padding-top: 0;
     padding-left: 70px;
   }
 
@@ -5545,13 +5357,13 @@ img {
 
   .div-nav {
     width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 35px;
-    padding-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 35px;
+    padding-bottom: 20px;
   }
 
   .div-nav.phone {
@@ -5561,20 +5373,20 @@ img {
 
   .section-logo {
     width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 66%, rgba(43, 43, 43, .2)), url('../images/visual6.jpg');
+    background-position: 0 0, -20px 0;
+    background-size: auto, cover;
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: stretch;
-    background-image: linear-gradient(180deg, transparent 66%, rgba(43, 43, 43, 0.2)), url('../images/visual6.jpg');
-    background-position: 0px 0px, -20px 0px;
-    background-size: auto, cover;
   }
 
   .bx4 {
-    margin-bottom: 0px;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 0;
   }
 
   .bx4.mob {
@@ -5614,6 +5426,7 @@ img {
 
   .polityka-op {
     text-align: center;
+    margin-top: 10px;
   }
 
   .paragraph-6 {
@@ -5627,26 +5440,25 @@ img {
 
   .section-nav {
     width: auto;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, .4);
     border-top: 1px dashed #000;
     border-bottom: 1px dashed #000;
-    background-color: hsla(0, 0%, 100%, 0.4);
-    -webkit-backdrop-filter: blur(30px);
-            backdrop-filter: blur(30px);
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .footer-01 {
     width: 180px;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .visual-load {
     background-image: url('../images/visual6.jpg');
-    background-position: 20% 0%;
-    background-size: cover;
+    background-position: 20% 0;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
   }
 
@@ -5656,12 +5468,12 @@ img {
   }
 
   .visual-load.kontakt {
-    background-image: linear-gradient(180deg, null, null), url('../images/FC2020.jpg');
-    background-position: 0px 0px, 50% 50%;
+    background-image: linear-gradient(to bottom, null, null), url('../images/FC2020.jpg');
+    background-position: 0 0, 50%;
   }
 
   .section-opis-home {
-    padding: 0px;
+    padding: 0;
   }
 
   .doted-horizon-line.dojazd {
@@ -5700,7 +5512,7 @@ img {
   }
 
   .heading-3 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 32px;
   }
 
@@ -5717,8 +5529,8 @@ img {
   }
 
   .div-block-74 {
-    display: none;
     margin-top: -8px;
+    display: none;
   }
 
   .div-block-75 {
@@ -5730,21 +5542,21 @@ img {
   }
 
   .lottie-animation-2 {
+    display: none;
     top: 89px;
     right: 47px;
-    display: none;
   }
 
   .lottie-animation-2.ue {
+    margin-top: -212px;
+    display: flex;
     top: 92px;
     right: 47px;
-    display: flex;
-    margin-top: -212px;
   }
 
   .div_implanty_picture {
-    overflow: hidden;
     min-height: 200px;
+    overflow: hidden;
   }
 
   .div_protetyka_picture {
@@ -5752,9 +5564,9 @@ img {
   }
 
   .wstep_do_pacjentow {
-    padding-right: 20px;
-    padding-left: 20px;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .rich-text-block-2 {
@@ -5766,38 +5578,38 @@ img {
   }
 
   .section_form {
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .div-block-86 {
-    display: flex;
     height: 340px;
-    margin-right: -5px;
-    margin-left: -5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 21px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    display: flex;
   }
 
   .div-block-87 {
-    display: flex;
     width: 200px;
     flex-direction: column;
     align-items: flex-start;
+    display: flex;
   }
 
   .div-block-85 {
-    display: flex;
     justify-content: flex-start;
     align-items: center;
+    display: flex;
   }
 
   .paragraph-10 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-left: 10px;
   }
 
@@ -5812,10 +5624,10 @@ img {
   }
 
   .section_formularz {
-    overflow: hidden;
-    padding-right: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
   }
 
   .div-block-82 {
@@ -5823,8 +5635,8 @@ img {
   }
 
   .konsultacje-online {
-    margin-right: -5px;
     margin-left: -5px;
+    margin-right: -5px;
   }
 
   .box_zgody {
@@ -5840,15 +5652,15 @@ img {
   }
 
   .visual-load-2 {
-    background-position: 25% 0%;
+    background-position: 25% 0;
   }
 
   .wstep_do_pacjentow-2 {
+    align-items: center;
     margin-top: 85px;
     margin-bottom: -45px;
-    padding-right: 20px;
     padding-left: 20px;
-    align-items: center;
+    padding-right: 20px;
   }
 
   .rich-text-block-4 {
@@ -5860,15 +5672,15 @@ img {
   }
 
   .section-intro-2 {
+    background-position: 0 0, 50% 90%;
     padding-top: 580px;
     padding-left: 26px;
-    background-position: 0px 0px, 50% 90%;
   }
 
   .dzial-2 {
     width: 80%;
     margin-top: -63px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .dzial-2.konsultacje {
@@ -5889,11 +5701,7 @@ img {
     min-height: 250px;
   }
 
-  .div_higiena_picture {
-    min-height: 200px;
-  }
-
-  .div_radiologia_picture {
+  .div_higiena_picture, .div_radiologia_picture {
     min-height: 200px;
   }
 
@@ -5902,13 +5710,13 @@ img {
   }
 
   .txt-rodo {
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .div_klinika_picture {
     height: 150px;
-    background-position: 50% 50%;
+    background-position: 50%;
   }
 
   .image_mazowsze {
@@ -5924,8 +5732,8 @@ img {
   }
 
   .loga_prjekty_unijne {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .immage_grid {
@@ -5939,13 +5747,12 @@ img {
   }
 
   .div-block-94 {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 
   .html-embed-3 {
-    padding: 3px;
     border-radius: 10px;
+    padding: 3px;
   }
 
   .covid-19---mob-horizon {
@@ -5953,27 +5760,27 @@ img {
   }
 
   .covid-19---phone {
+    padding-bottom: 40px;
     display: none;
     overflow: hidden;
-    padding-bottom: 40px;
   }
 
   .body-old {
-    display: flex;
-    flex-direction: column;
     background-image: none;
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-size: auto;
     background-attachment: scroll;
+    flex-direction: column;
+    display: flex;
   }
 
   .bx2 {
-    margin-bottom: 15px;
     flex-direction: row;
+    margin-bottom: 15px;
   }
 
   .section {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .image-23 {
@@ -5995,24 +5802,11 @@ img {
 }
 
 #w-node-_2b534084-2729-9c06-78a7-01ce7587c044-3998823c {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 #w-node-_230d8cac-e79c-ec0b-21a4-d7c5f7150b74-3998823c {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-column-span: 1;
-  grid-column-end: 4;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-area: 1 / 3 / 2 / 4;
 }
+
 
