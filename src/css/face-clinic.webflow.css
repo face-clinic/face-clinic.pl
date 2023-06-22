@@ -3413,6 +3413,14 @@ img {
   background-size: cover;
 }
 
+.link360 {
+  transition: letter-spacing .2s;
+}
+
+.link360:hover {
+  letter-spacing: .3px;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
     margin-left: 40px;
