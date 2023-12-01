@@ -1,3 +1,23 @@
+:root {
+  --black-blue: #09141b;
+  --menu_bottom: #444749;
+  --white: white;
+  --black: black;
+  --dark-slate-grey: #3a3838;
+  --black-menu: #2b2b2b;
+  --blue: rgba(0, 110, 255, .5);
+  --nasze-doswiadczenie: rgba(25, 40, 51, .8);
+  --steel-blue-doted: #4b88be;
+  --bg-dark-green: #01191d;
+  --fizjot: rgba(160, 140, 126, .9);
+  --tan: #dfd5c0;
+  --light-green: #8acfdf;
+  --light-blue: #bed0d5;
+  --bg_chirurgia_mob: #132327;
+  --steel-blue: rgba(63, 116, 163, .2);
+  --light-sky-blue-txt: #7ebff8;
+}
+
 .w-embed-youtubevideo {
   width: 100%;
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
@@ -60,7 +80,7 @@
 }
 
 body {
-  color: #09141b;
+  color: var(--black-blue);
   order: 0;
   align-self: auto;
   font-family: Open Sans, sans-serif;
@@ -198,7 +218,7 @@ img {
 
 .txt_fc-tv {
   width: 450px;
-  color: #444749;
+  color: var(--menu_bottom);
   border-radius: 16px;
   align-self: center;
   margin-bottom: 0;
@@ -263,7 +283,7 @@ img {
 }
 
 .dane {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
@@ -300,7 +320,7 @@ img {
 }
 
 .txt-godziny {
-  color: #fff;
+  color: var(--white);
   font-size: 12px;
   font-weight: 300;
   line-height: 24px;
@@ -314,7 +334,7 @@ img {
 }
 
 .txt-link-stopka-home.google {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -350,7 +370,7 @@ img {
 }
 
 .recepcja-home-link {
-  color: #fff;
+  color: var(--white);
   transition: text-shadow .2s, transform .2s;
   transform: translate(0);
 }
@@ -424,7 +444,7 @@ img {
   color: #313131;
 }
 
-.link-block.face-pro {
+.link-block.face-pro, .link-block.off {
   display: none;
 }
 
@@ -444,8 +464,8 @@ img {
 .home_tree {
   width: 70px;
   height: 70px;
+  background-color: var(--menu_bottom);
   opacity: .55;
-  background-color: #444749;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -459,7 +479,7 @@ img {
 
 .div-block-18 {
   height: 1px;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .div-block-19 {
@@ -474,7 +494,7 @@ img {
 .pl-eng-facebook {
   z-index: 1;
   clear: right;
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   flex-direction: column;
   flex: 1;
   display: flex;
@@ -532,7 +552,7 @@ img {
 }
 
 .dropdown-list.w--open {
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   position: absolute;
   top: auto;
   bottom: 89%;
@@ -544,7 +564,7 @@ img {
 .drop-up-wrapper {
   z-index: 90;
   height: 70px;
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   align-items: center;
   display: flex;
 }
@@ -552,8 +572,8 @@ img {
 .menu-button {
   width: 70px;
   height: 70px;
+  background-color: var(--menu_bottom);
   cursor: pointer;
-  background-color: #444749;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -562,11 +582,11 @@ img {
 }
 
 .menu-button:hover {
-  background-color: #3a3838;
+  background-color: var(--dark-slate-grey);
 }
 
 .menu-button:active {
-  background-color: #2b2b2b;
+  background-color: var(--black-menu);
 }
 
 .menu-uslugi {
@@ -581,7 +601,7 @@ img {
 }
 
 .home-tree {
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   overflow: hidden;
 }
 
@@ -596,7 +616,7 @@ img {
 .l1 {
   width: 280px;
   opacity: .65;
-  color: #fff;
+  color: var(--white);
   border-top: 1px rgba(255, 255, 255, .65);
   align-items: center;
   padding: 8px 20px;
@@ -622,8 +642,8 @@ img {
 }
 
 .link-menu:hover {
+  background-image: linear-gradient(to bottom, transparent, var(--blue));
   opacity: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 111, 255, .5));
 }
 
 .link-menu.uslugi {
@@ -648,7 +668,7 @@ img {
 }
 
 .menu-txt-uslugi {
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   flex: 1;
   justify-content: space-between;
@@ -666,7 +686,7 @@ img {
 
 .kontakt-trigger {
   height: 70px;
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   align-self: center;
   align-items: center;
   display: flex;
@@ -714,7 +734,7 @@ img {
 }
 
 .podmenu.ortodoncja {
-  background-color: #3a3838;
+  background-color: var(--dark-slate-grey);
   flex-direction: column;
   align-items: flex-start;
   margin-left: 217px;
@@ -761,7 +781,7 @@ img {
 }
 
 .ico-menu {
-  border: .5px solid #fff;
+  border: .5px solid var(--white);
   border-radius: 6px;
   margin-right: 10px;
 }
@@ -805,7 +825,7 @@ img {
 }
 
 .text-block-8 {
-  color: #fff;
+  color: var(--white);
 }
 
 .l2-link {
@@ -820,12 +840,16 @@ img {
 }
 
 .l2-link:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 111, 255, 0), var(--blue));
   opacity: 1;
-  background-image: linear-gradient(rgba(0, 111, 255, 0), rgba(0, 111, 255, .5));
 }
 
 .l2-link.zespol {
   height: auto;
+}
+
+.l2-link.blog {
+  display: none;
 }
 
 .chirurgia_wstep {
@@ -847,17 +871,17 @@ img {
 }
 
 .rich-text-block.edukacja {
-  color: #fff;
+  color: var(--white);
   padding-left: 0;
 }
 
 .rich-text-block.edukacja.txt-o-mnie {
-  color: rgba(25, 40, 51, .8);
+  color: var(--nasze-doswiadczenie);
   padding-top: 0;
 }
 
 .rich-text-block.edukacja.txt-o-mnie.blue {
-  color: #4b88be;
+  color: var(--steel-blue-doted);
 }
 
 .menu-main-desktop {
@@ -872,7 +896,7 @@ img {
 .down-info {
   z-index: 1;
   height: 26px;
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   position: relative;
 }
 
@@ -882,7 +906,7 @@ img {
 }
 
 .text-block-9 {
-  color: #fff;
+  color: var(--white);
   margin-left: 20px;
   font-size: 11px;
   font-weight: 300;
@@ -894,7 +918,7 @@ img {
 
 .link-artrepublica {
   opacity: .65;
-  color: #fff;
+  color: var(--white);
   margin-right: 20px;
   font-size: 11px;
   font-weight: 300;
@@ -921,7 +945,7 @@ img {
 .plexus {
   z-index: -9998;
   max-width: 0%;
-  background-color: #09141b;
+  background-color: var(--black-blue);
   position: fixed;
   top: 0%;
   bottom: auto;
@@ -953,7 +977,7 @@ img {
 
 .prelouder {
   z-index: 2147483647;
-  background-color: #09141b;
+  background-color: var(--black-blue);
   background-image: none;
   background-repeat: repeat;
   background-size: auto;
@@ -972,7 +996,7 @@ img {
 }
 
 .txt-loading {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -991,7 +1015,7 @@ img {
 
 .animation {
   z-index: -998;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), #09141b);
+  background-image: linear-gradient(to bottom, transparent, var(--black-blue));
   margin-top: -79px;
   display: none;
   position: fixed;
@@ -1008,7 +1032,7 @@ img {
 .gradient {
   z-index: 1;
   height: 200px;
-  background-image: linear-gradient(rgba(1, 25, 29, 0), #01191d 93%);
+  background-image: linear-gradient(to bottom, rgba(1, 25, 29, 0), var(--bg-dark-green) 93%);
   position: absolute;
   top: auto;
   bottom: 0%;
@@ -1022,7 +1046,7 @@ img {
 
 .div-block-43 {
   width: 100%;
-  background-color: #000;
+  background-color: var(--black);
   flex-direction: row;
   align-items: stretch;
   margin-bottom: 10px;
@@ -1046,7 +1070,7 @@ img {
 }
 
 .text-block-12.konrad {
-  color: #fff;
+  color: var(--white);
 }
 
 .text-span {
@@ -1101,7 +1125,7 @@ img {
 
 .box-kategoria-tytul.zespol.fizjoterapeuci {
   min-width: 1200px;
-  background-color: rgba(160, 140, 126, .9);
+  background-color: var(--fizjot);
 }
 
 .box-kategotia-zawartosc {
@@ -1129,7 +1153,7 @@ img {
 .gradient_plexus {
   z-index: 1;
   height: 200px;
-  background-image: linear-gradient(rgba(1, 25, 29, 0), #01191d);
+  background-image: linear-gradient(to bottom, rgba(1, 25, 29, 0), var(--bg-dark-green));
   position: absolute;
   top: auto;
   bottom: 0%;
@@ -1157,7 +1181,7 @@ img {
 
 .text-on-picture {
   width: 150px;
-  color: #fff;
+  color: var(--white);
   align-items: center;
   padding-left: 75%;
   font-size: 20px;
@@ -1177,8 +1201,8 @@ img {
 }
 
 .txt-zabiegi {
+  border-top: 1px dashed var(--black);
   text-transform: uppercase;
-  border-top: 1px dashed #000;
   margin-left: 10px;
   margin-right: 10px;
   padding: 9px 10px 0;
@@ -1186,7 +1210,7 @@ img {
 }
 
 .link_film {
-  border: 1px dashed #000;
+  border: 1px dashed var(--black);
   border-radius: 8px;
   flex-direction: row;
   flex: 1;
@@ -1205,8 +1229,8 @@ img {
 }
 
 .text-block-21 {
-  color: #2b2b2b;
-  border-left: 1px dashed #000;
+  border-left: 1px dashed var(--black);
+  color: var(--black-menu);
   align-self: stretch;
   align-items: center;
   padding: 7px 15px;
@@ -1332,8 +1356,8 @@ img {
 }
 
 .link_film-2 {
+  border: 1px dashed var(--black);
   color: rgba(68, 71, 73, .9);
-  border: 1px dashed #000;
   border-radius: 8px;
   flex-direction: row;
   flex: 1;
@@ -1352,7 +1376,7 @@ img {
 }
 
 .text-block-23 {
-  border-left: 1px dashed #000;
+  border-left: 1px dashed var(--black);
   align-self: stretch;
   align-items: center;
   padding: 7px 15px;
@@ -1360,8 +1384,8 @@ img {
 }
 
 .txt-zabiegi-2 {
+  border-top: 1px dashed var(--black);
   text-transform: uppercase;
-  border-top: 1px dashed #000;
   margin-left: 10px;
   margin-right: 10px;
   padding: 9px 10px 0;
@@ -1397,11 +1421,11 @@ img {
 }
 
 .heading-2.white {
-  color: #fff;
+  color: var(--white);
 }
 
 .heading-4-tytul-zabiegow {
-  color: #3a3838;
+  color: var(--dark-slate-grey);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1445,11 +1469,11 @@ img {
 }
 
 .przerywana._2 {
-  border-bottom: 1px dashed #4b88be;
+  border-bottom: 1px dashed var(--steel-blue-doted);
 }
 
 .h1-dzial {
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -1459,11 +1483,11 @@ img {
 }
 
 .h1-dzial.funkcja {
-  color: #4b88be;
+  color: var(--steel-blue-doted);
 }
 
 .text-haslo {
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1473,7 +1497,7 @@ img {
 }
 
 .text-haslo.imie-i-nazwisko {
-  color: #4b88be;
+  color: var(--steel-blue-doted);
   margin-bottom: 10px;
 }
 
@@ -1487,7 +1511,7 @@ img {
 
 .dzial.opis {
   height: auto;
-  background-color: #fff;
+  background-color: var(--white);
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 20%;
@@ -1601,7 +1625,7 @@ img {
 }
 
 .text-span-2 {
-  color: #fff;
+  color: var(--white);
   font-size: 19px;
   font-weight: 400;
 }
@@ -1618,7 +1642,7 @@ img {
 }
 
 .link-3 {
-  color: #fff;
+  color: var(--white);
   font-size: 12px;
   line-height: 0;
 }
@@ -1628,7 +1652,7 @@ img {
 }
 
 .text-span-3 {
-  color: #fff;
+  color: var(--white);
   font-size: 12px;
   font-weight: 300;
 }
@@ -2125,7 +2149,7 @@ img {
 
 .visual-gradient {
   height: 200px;
-  background-image: linear-gradient(rgba(9, 20, 27, 0), #09141b);
+  background-image: linear-gradient(to bottom, rgba(9, 20, 27, 0), var(--black-blue));
   display: none;
   position: fixed;
   top: auto;
@@ -2145,7 +2169,7 @@ img {
 
 .doted-horizon-line {
   height: 1px;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed var(--white);
 }
 
 .doted-horizon-line.dojazd {
@@ -2153,7 +2177,7 @@ img {
 }
 
 .mobile-nr {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
 }
 
@@ -2179,25 +2203,25 @@ img {
 }
 
 .heading-3 {
-  color: #fff;
+  color: var(--white);
   margin-top: 0;
   margin-right: 10px;
 }
 
 .heading-4 {
-  color: #fff;
+  color: var(--white);
   margin-top: 0;
   font-size: 16px;
   font-weight: 400;
 }
 
 .paragraph-8 {
-  color: #fff;
+  color: var(--white);
   margin-top: -1px;
 }
 
 .paragraph-9 {
-  color: #fff;
+  color: var(--white);
   font-size: 16px;
 }
 
@@ -2212,7 +2236,7 @@ img {
 }
 
 .text-block-24 {
-  color: #fff;
+  color: var(--white);
   margin-bottom: 9px;
 }
 
@@ -2221,11 +2245,11 @@ img {
 }
 
 .text-block-25, .nip {
-  color: #fff;
+  color: var(--white);
 }
 
 .bank {
-  color: #fff;
+  color: var(--white);
   font-size: 14px;
   display: none;
 }
@@ -2233,8 +2257,8 @@ img {
 .x {
   width: 70px;
   height: 70px;
+  background-color: var(--menu_bottom);
   color: rgba(255, 255, 255, .55);
-  background-color: #444749;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2256,7 +2280,7 @@ img {
 }
 
 .x.opened {
-  color: #fff;
+  color: var(--white);
   background-color: #3a3838;
   display: none;
 }
@@ -2264,7 +2288,7 @@ img {
 .button-x {
   width: 70px;
   height: 70px;
-  background-color: #444749;
+  background-color: var(--menu_bottom);
   overflow: hidden;
 }
 
@@ -2450,7 +2474,7 @@ img {
 }
 
 .body_higiena_pl {
-  background-color: #01191d;
+  background-color: var(--bg-dark-green);
 }
 
 .body_konsultacje_pl {
@@ -2489,7 +2513,7 @@ img {
 }
 
 .div-block-86 {
-  background-color: #3a3838;
+  background-color: var(--dark-slate-grey);
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 40px;
@@ -2578,7 +2602,7 @@ img {
 }
 
 .konsultacje-online {
-  background-color: #3a3838;
+  background-color: var(--dark-slate-grey);
   flex-direction: column;
   align-items: stretch;
   padding-bottom: 10px;
@@ -2608,11 +2632,11 @@ img {
 }
 
 .text-field::-ms-input-placeholder {
-  color: #3a3838;
+  color: var(--dark-slate-grey);
 }
 
 .text-field::placeholder {
-  color: #3a3838;
+  color: var(--dark-slate-grey);
 }
 
 .div-block-88 {
@@ -2620,7 +2644,7 @@ img {
 }
 
 .html-embed {
-  background-color: #fff;
+  background-color: var(--white);
   justify-content: center;
   display: flex;
 }
@@ -2792,7 +2816,7 @@ img {
 }
 
 .body {
-  background-color: #dfd5c0;
+  background-color: var(--tan);
 }
 
 .lottie-animation-3, .lottie-animation-4 {
@@ -2800,7 +2824,7 @@ img {
 }
 
 .heading-5 {
-  color: #8acfdf;
+  color: var(--light-green);
 }
 
 .lottie-animation-5 {
@@ -2872,7 +2896,7 @@ img {
 }
 
 .loga_prjekty_unijne {
-  background-color: #fff;
+  background-color: var(--white);
   justify-content: center;
   align-self: stretch;
   align-items: center;
@@ -2910,6 +2934,10 @@ img {
 .link_osoba:hover {
   transform: translate(0, -5px);
   box-shadow: 0 8px 12px -2px #292929;
+}
+
+.link_osoba.off {
+  display: none;
 }
 
 .podpis {
@@ -2990,7 +3018,7 @@ img {
 }
 
 .back {
-  background-color: #3a3838;
+  background-color: var(--dark-slate-grey);
   border-radius: 0 6px 6px 0;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -3001,7 +3029,7 @@ img {
 }
 
 .back:hover {
-  background-color: #2b2b2b;
+  background-color: var(--black-menu);
 }
 
 .visual_galeria {
@@ -3195,7 +3223,7 @@ img {
 }
 
 .section-heading.centered {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   text-transform: uppercase;
 }
@@ -3206,7 +3234,7 @@ img {
 }
 
 .section-subheading.center {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: Droid Sans, sans-serif;
   font-size: 19px;
@@ -3219,7 +3247,7 @@ img {
 }
 
 .text-block {
-  color: #fff;
+  color: var(--white);
   margin-top: 33px;
   font-size: 18px;
   line-height: 24px;
@@ -3263,8 +3291,8 @@ img {
 }
 
 .body_kontakt {
-  background-color: rgba(25, 40, 51, .8);
-  background-image: linear-gradient(rgba(25, 40, 51, .8), rgba(25, 40, 51, .8)), url('../images/FC2020.jpg');
+  background-color: var(--nasze-doswiadczenie);
+  background-image: linear-gradient(to bottom, var(--nasze-doswiadczenie), var(--nasze-doswiadczenie)), url('../images/FC2020.jpg');
   background-position: 0 0, 0 0;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -3272,8 +3300,8 @@ img {
 }
 
 .tekst-kontakt {
-  color: #fff;
-  border-left: 1px dashed #fff;
+  border-left: 1px dashed var(--white);
+  color: var(--white);
   margin: 10px;
   padding-left: 10px;
 }
@@ -3419,6 +3447,10 @@ img {
 
 .link360:hover {
   letter-spacing: .3px;
+}
+
+.section-12 {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3597,7 +3629,7 @@ img {
   .dzial.opis {
     width: 100vw;
     height: auto;
-    border-top: 1px dashed #4b88be;
+    border-top: 1px dashed var(--steel-blue-doted);
     justify-content: flex-start;
     padding-top: 5px;
     padding-bottom: 0%;
@@ -4121,7 +4153,7 @@ img {
 
   .secsion-copywrite {
     height: 45px;
-    background-color: #444749;
+    background-color: var(--menu_bottom);
     flex-direction: column;
     justify-content: center;
     display: flex;
@@ -4391,7 +4423,7 @@ img {
   }
 
   .adres-n-r-nr-b {
-    border-bottom: 1px dashed #fff;
+    border-bottom: 1px dashed var(--white);
     align-self: stretch;
     margin-bottom: 10px;
     padding-bottom: 20px;
@@ -4792,7 +4824,7 @@ img {
   }
 
   .heading-7 {
-    color: #fff;
+    color: var(--white);
     text-transform: none;
     font-size: 22px;
   }
@@ -4818,7 +4850,7 @@ img {
   }
 
   .txt_d {
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     line-height: 24px;
   }
@@ -4838,18 +4870,18 @@ img {
   }
 
   .bus_nr.black {
-    color: #fff;
+    color: var(--white);
     background-color: #000;
   }
 
   .txtt_22 {
-    color: #fff;
+    color: var(--white);
     font-size: 22px;
     line-height: 30px;
   }
 
   .txt_32 {
-    color: #fff;
+    color: var(--white);
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
@@ -5026,20 +5058,20 @@ img {
   .link-menu.uslugi.wiecej {
     z-index: 2;
     width: 248vw;
-    background-image: linear-gradient(#444749, #3a3838);
+    background-image: linear-gradient(to bottom, var(--menu_bottom), var(--dark-slate-grey));
     padding-right: 10px;
     display: none;
   }
 
   .link-menu.uslugi.wiecej:hover {
-    background-image: linear-gradient(#444749, rgba(0, 111, 255, .5));
+    background-image: linear-gradient(to bottom, var(--menu_bottom), var(--blue));
   }
 
   .link-menu.uslugi.mniej {
     z-index: 80;
     width: 248vw;
-    color: #3a3838;
-    background-color: #444749;
+    background-color: var(--menu_bottom);
+    color: var(--dark-slate-grey);
     padding-right: 10px;
     display: none;
     overflow: hidden;
@@ -5094,7 +5126,7 @@ img {
 
   .menu-up {
     width: 100vw;
-    background-image: linear-gradient(#3a3838, rgba(58, 56, 56, .66) 8%);
+    background-image: linear-gradient(to bottom, var(--dark-slate-grey), rgba(58, 56, 56, .66) 8%);
     flex-direction: column;
     flex: 0 auto;
     align-items: flex-start;
@@ -5145,6 +5177,13 @@ img {
 
   .l2-link.out {
     width: 152vw;
+    margin-right: 15px;
+    padding-left: 40px;
+  }
+
+  .l2-link.blog.w--current {
+    width: 152vw;
+    margin-left: 0;
     margin-right: 15px;
     padding-left: 40px;
   }
