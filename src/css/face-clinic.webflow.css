@@ -444,7 +444,7 @@ img {
   color: #313131;
 }
 
-.link-block.face-pro, .link-block.off {
+.link-block.face-pro {
   display: none;
 }
 
@@ -846,10 +846,6 @@ img {
 
 .l2-link.zespol {
   height: auto;
-}
-
-.l2-link.blog {
-  display: none;
 }
 
 .chirurgia_wstep {
