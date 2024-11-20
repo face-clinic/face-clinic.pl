@@ -881,6 +881,7 @@ img {
 }
 
 .rich-text-block.chirurgia {
+  padding-bottom: 20px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -3462,6 +3463,14 @@ img {
 .cell-2 {
   justify-content: flex-start;
   align-items: center;
+}
+
+.chirurgia-ortognatyczna {
+  margin-top: 5px;
+}
+
+.chirurgia-ortognatyczna.off {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
