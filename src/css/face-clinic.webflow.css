@@ -2083,6 +2083,14 @@ img {
   background-attachment: fixed;
 }
 
+.visual-load.osoba.paulina-szot {
+  background-image: url('../images/Szot.jpg');
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
 .visual-load.chirurgia {
   background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
   background-position: 0 0;
