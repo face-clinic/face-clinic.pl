@@ -169,19 +169,18 @@ img {
 }
 
 .paragraph {
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
   text-align: left;
   cursor: e-resize;
-  background-color: #fff6;
-  border: 1px solid #0000;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 610px;
-  margin: 0 20px;
-  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -3538,10 +3537,32 @@ img {
   display: none;
 }
 
+.bold-text-5 {
+  width: 610px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 19px;
+  line-height: 22px;
+  display: flex;
+}
+
+.heading-8 {
+  color: var(--dark-slate-grey);
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.div-block-106 {
+  background-color: var(--white-a50);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     position: relative;
   }
@@ -3763,7 +3784,7 @@ img {
   }
 
   .div-block-68 {
-    width: auto;
+    width: 610px;
     margin-right: 0%;
   }
 
@@ -4080,6 +4101,17 @@ img {
     max-width: 580px;
     margin-top: 10px;
     padding-top: 20px;
+  }
+
+  .bold-text-5 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .div-block-106 {
+    width: auto;
   }
 }
 
@@ -4999,6 +5031,16 @@ img {
   .footer_dok_txt {
     margin-left: 0;
   }
+
+  .bold-text-5 {
+    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .div-block-106 {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5007,7 +5049,7 @@ img {
     align-items: center;
     width: auto;
     min-width: auto;
-    padding: 35px 20px;
+    padding-bottom: 35px;
     display: flex;
     left: auto;
   }
@@ -5935,6 +5977,15 @@ img {
   .quick-stack {
     max-width: 180px;
     padding-top: 25px;
+  }
+
+  .bold-text-5 {
+    width: 100vw;
+  }
+
+  .div-block-106 {
+    border-radius: 0;
+    width: 100vw;
   }
 }
 
