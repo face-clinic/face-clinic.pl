@@ -3,6 +3,7 @@
   --black: black;
   --menu_bottom: #444749;
   --white: #fff;
+  --focused: #07f;
   --steel-blue-doted: #4b88be;
   --white-a50: #ffffff80;
   --light-sky-blue-txt: #7ebff8;
@@ -15,7 +16,6 @@
   --fizjot: #a08c7ee6;
   --tan: #dfd5c0;
   --light-green: #8acfdf;
-  --focused: #07f;
   --light-blue: #bed0d5;
   --bg_chirurgia_mob: #132327;
   --steel-blue: #3f74a333;
@@ -382,6 +382,20 @@ img {
   transform: translate(0, -2px);
 }
 
+.txt-link-stopka-home.link-google {
+  color: var(--white);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.txt-link-stopka-home.link-google:focus-visible, .txt-link-stopka-home.link-google[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  outline-width: 6px;
+  outline-style: solid;
+}
+
 .linki-w-kontaktach {
   width: 180px;
   margin-left: 22px;
@@ -414,6 +428,14 @@ img {
   text-shadow: 0 2px 6px #000;
   display: inline-block;
   transform: translate(0, -2px);
+}
+
+.recepcja-home-link:focus-visible, .recepcja-home-link[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  outline-width: 6px;
+  outline-style: solid;
 }
 
 .projekty-ue {
@@ -1606,6 +1628,14 @@ img {
   font-size: 17px;
 }
 
+.rpu:focus-visible, .rpu[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  outline-width: 6px;
+  outline-style: solid;
+}
+
 .artrepublica {
   color: #ffffffc2;
   align-self: center;
@@ -1648,6 +1678,13 @@ img {
   color: var(--white);
   font-size: 12px;
   line-height: 0;
+}
+
+.link-3:focus-visible, .link-3[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-width: 6px;
+  outline-style: solid;
 }
 
 .paragraph-6 {
@@ -2207,9 +2244,26 @@ img {
   display: none;
 }
 
+.paragraph-7 {
+  transition: filter .2s, transform .2s;
+}
+
+.paragraph-7:hover {
+  filter: drop-shadow(0 2px 5px #000000b3);
+  transform: translate(0, -2px);
+}
+
 .mobile-nr {
   color: var(--white);
   font-size: 14px;
+}
+
+.mobile-nr:focus-visible, .mobile-nr[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  outline-width: 6px;
+  outline-style: solid;
 }
 
 .div-nr {
@@ -3179,7 +3233,7 @@ img {
 }
 
 .link_media {
-  opacity: .74;
+  width: 26px;
   margin: 8px 6px;
   transition: opacity .2s, transform .2s;
 }
@@ -3187,6 +3241,16 @@ img {
 .link_media:hover {
   opacity: 1;
   transform: translate(0, -3px);
+}
+
+.link_media:focus-visible, .link_media[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  border-radius: 20px;
+  outline-width: 6px;
+  outline-style: solid;
+  overflow: hidden;
 }
 
 .zadzwon-teraz {
@@ -3539,6 +3603,14 @@ img {
   transform: translate(0, -3px);
 }
 
+.dokumenty_footer:focus-visible, .dokumenty_footer[data-wf-focus-visible] {
+  background-color: var(--focused);
+  outline-color: var(--focused);
+  outline-offset: 0px;
+  outline-width: 6px;
+  outline-style: solid;
+}
+
 .footer_dok_txt {
   color: var(--white);
   margin-left: -6px;
@@ -3582,6 +3654,19 @@ img {
 .link-recepcja---mail:focus-visible, .link-recepcja---mail[data-wf-focus-visible] {
   border: var(--focused-keyboard-3px) solid var(--focused);
   background-color: var(--focused);
+}
+
+.ico_media {
+  opacity: .74;
+  transition: opacity .2s;
+}
+
+.ico_media:hover {
+  opacity: 100;
+}
+
+.ico_media:focus-visible, .ico_media[data-wf-focus-visible] {
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 991px) {
