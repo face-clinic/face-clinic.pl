@@ -3258,8 +3258,12 @@ img {
   position: fixed;
 }
 
+.zadzwon-teraz:focus-visible, .zadzwon-teraz[data-wf-focus-visible] {
+  filter: brightness(200%) hue-rotate(212deg);
+}
+
 .zadzwon-2 {
-  background-color: #00aeff;
+  background-color: red;
   border-radius: 100px;
   width: 70px;
   height: 70px;
