@@ -3673,6 +3673,10 @@ img {
   border-radius: 20px;
 }
 
+.text-span-6, .text-span-7 {
+  color: var(--white);
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
     padding-left: 20px;
