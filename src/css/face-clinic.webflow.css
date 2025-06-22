@@ -1173,6 +1173,12 @@ img {
   display: none;
 }
 
+.image-box.ico {
+  filter: invert(60%);
+  height: 100px;
+  margin-top: 7px;
+}
+
 .div-block-47 {
   width: 100%;
   overflow: hidden;
