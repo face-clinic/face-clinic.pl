@@ -2151,6 +2151,11 @@ img {
   background-attachment: fixed;
 }
 
+.visual-load.osoba.katarzyna-debinska {
+  background-image: url('../images/Katarzyna_Debinska.jpg');
+  background-size: auto;
+}
+
 .visual-load.chirurgia {
   background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
   background-position: 0 0;
