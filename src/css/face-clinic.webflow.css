@@ -1778,7 +1778,7 @@ img {
 
 .visual-load.zespol {
   background-image: url('../images/MonikaKonrad_2023.jpg');
-  background-position: 10%;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
