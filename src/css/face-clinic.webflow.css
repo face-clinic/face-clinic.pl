@@ -1974,7 +1974,7 @@ img {
 }
 
 .visual-load.osoba.kuczynska-ksiazek {
-  background-image: url('../images/Kuczynska-Ksiazek.jpg');
+  background-image: url('../images/Karmen-Krajewska.jpg');
   background-position: 0%;
 }
 
@@ -2165,6 +2165,18 @@ img {
   background-image: url('../images/Naumawska.jpg');
   background-position: 0 0;
   background-size: contain;
+}
+
+.visual-load.osoba.szewc {
+  background-image: url('../images/Szewc.jpg');
+}
+
+.visual-load.osoba.rogulska {
+  background-image: url('../images/Rogulska.jpg');
+}
+
+.visual-load.osoba.nicole-zawistowska {
+  background-image: url('../images/Zawistowska.jpg');
 }
 
 .visual-load.chirurgia {
