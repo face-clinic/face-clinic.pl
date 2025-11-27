@@ -38,6 +38,11 @@ gulp.task('txt', function () {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('xml', function () {
+    return gulp.src('src/*.xml')
+        .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('documents', function () {
     return gulp.src('src/documents/**/*')
         .pipe(gulp.dest('dist/documents'));
@@ -74,6 +79,7 @@ gulp.task('default', gulp.series(
     'js',
     'html',
     'txt',
+    'xml',
     'documents',
     'hash',
     'redirects'
