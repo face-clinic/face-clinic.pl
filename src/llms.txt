@@ -1,0 +1,22 @@
+# Face-Clinic
+
+> Profesjonalna klinika stomatologiczna i medyczna łącząca nowoczesną stomatologię, ortodoncję i opiekę medyczną.
+
+## O nas / Informacje
+- https://face-clinic.pl/  ― strona główna z misją kliniki :contentReference[oaicite:0]{index=0}  
+- https://face-clinic.pl/menu/o-klinice.html ― informacje o klinice  :contentReference[oaicite:1]{index=1}  
+- https://face-clinic.pl/menu/zespol.html ― informacje o zespole  :contentReference[oaicite:2]{index=2}  
+
+
+## Edukacja / Szkolenia
+- https://edu.face-clinic.pl/ ― sekcja Face-Edu z kursami medycznymi :contentReference[oaicite:3]{index=3}  
+- https://edu.face-clinic.pl/menu/kontakt.html ― kontakt edukacyjny Face-Clinic :contentReference[oaicite:4]{index=4}  
+
+## Polityki i Regulacje
+- https://face-clinic.pl/menu/rodo.html ― polityka ochrony prywatności :contentReference[oaicite:5]{index=5}  
+- https://face-clinic.pl/documents/Face-Clinic_Standardy_Ochrony_Maloletnich.pdf ― standardy ochrony małoletnich :contentReference[oaicite:6]{index=6} 
+- https://face-clinic.pl/prawne/regulamin.html - regulamin :contentReference[oaicite:7]{index=7} 
+
+## Kontakt
+- https://face-clinic.pl/menu/kontakt.html ― dane kontaktowe kliniki :contentReference[oaicite:8]{index=8}  
+- Numer telefonu: +48 22 863 61 82, e-mail: recepcja@face-clinic.pl :contentReference[oaicite:9]{index=9}  
