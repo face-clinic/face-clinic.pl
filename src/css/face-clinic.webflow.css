@@ -3710,6 +3710,10 @@ img {
   color: var(--white);
 }
 
+.last_line, .div-block-108 {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .paragraph {
     padding-left: 20px;
@@ -5858,6 +5862,7 @@ img {
   .heading-3 {
     margin-bottom: 0;
     font-size: 32px;
+    line-height: 1em;
   }
 
   .heading-4 {
@@ -6126,6 +6131,10 @@ img {
     margin-bottom: 15px;
   }
 
+  .spolecznosciowe.m {
+    margin-left: 0;
+  }
+
   .section {
     margin-top: 0;
   }
@@ -6159,6 +6168,17 @@ img {
   .div-block-106 {
     border-radius: 0;
     width: 100vw;
+  }
+
+  .last_line {
+    background-color: #fff;
+    width: 1px;
+    height: 43px;
+    display: block;
+  }
+
+  .div-block-108 {
+    display: block;
   }
 }
 
