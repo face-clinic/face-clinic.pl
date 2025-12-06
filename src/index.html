@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Dec 06 2025 17:37:27 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Dec 06 2025 18:33:14 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -38,6 +38,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KZSCB8LJ');</script>
   <!--  End Google Tag Manager  -->
   <link rel="preload" as="image" href="https://face-clinic.pl/images/fc-header.webp" fetchpriority="high">
+  <!--  Webflow Non-Blocking CSS Loader  -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select the Webflow CSS file that starts with "style-"
+    const cssLink = document.querySelector('link[href^="/css/style-"][rel="stylesheet"]');
+    if(cssLink){
+      // Preload CSS to prioritize fetch
+      const preloadLink = document.createElement('link');
+      preloadLink.rel = 'preload';
+      preloadLink.as = 'style';
+      preloadLink.href = cssLink.href;
+      document.head.appendChild(preloadLink);
+      // Make original CSS non-blocking
+      cssLink.media = 'print';
+      cssLink.onload = () => { cssLink.media = 'all'; };
+    }
+  });
+</script>
+  <!--  Optional: Inline critical CSS for above-the-fold content  -->
+  <style>
+  /* Paste your critical above-the-fold CSS here */
+  body { margin:0; font-family:Arial,sans-serif; }
+  header { display:flex; align-items:center; justify-content:space-between; }
+  /* Add other hero/navbar styles as needed */
+</style>
 </head>
 <body class="body-old">
   <div data-w-id="cc2d09f5-ac7a-08a6-05d0-c3ec284347f0" class="menu-main-desktop">
@@ -195,26 +220,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="visual-load"></div>
   </div>
   <div class="section-logo">
-    <div class="div-nav phone"><img src="images/logo_face-clinic_grey.svg" width="110" style="opacity:0" data-w-id="1486e2e1-1842-bc65-63de-6c2faa14c403" alt="Logo Face-Clinic" class="logo"><img src="images/haslo_grey.svg" width="74.5" style="opacity:0" data-w-id="09017aac-fdd7-c43d-2095-c6cf76d3b9d3" alt="hasło: z uśmiechem ci do twarzy" class="image-5">
-      <div class="covid-19">
-        <div class="html-embed-3 w-embed w-iframe"><iframe src="https://player.vimeo.com/video/471374135?background=1" width="590" height="329" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
-      </div>
-    </div>
-  </div>
-  <div class="covid-19---ipad">
-    <div class="div-block-68">
-      <div class="html-embed-3 w-embed w-iframe"><iframe src="https://player.vimeo.com/video/471374135?background=1" width="590" height="330" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
-    </div>
-  </div>
-  <div class="covid-19---mob-horizon">
-    <div class="div-block-68">
-      <div class="html-embed-3 w-embed w-iframe"><iframe src="https://player.vimeo.com/video/471374135?background=1" width="440" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
-    </div>
-  </div>
-  <div class="covid-19---phone">
-    <div class="div-block-68">
-      <div class="html-embed-3 w-embed w-iframe"><iframe src="https://player.vimeo.com/video/471374135?background=1" width="320" height="180" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe></div>
-    </div>
+    <div class="div-nav phone"><img src="images/logo_face-clinic_grey.svg" width="110" style="opacity:0" data-w-id="1486e2e1-1842-bc65-63de-6c2faa14c403" alt="Logo Face-Clinic" class="logo"><img src="images/haslo_grey.svg" width="74.5" style="opacity:0" data-w-id="09017aac-fdd7-c43d-2095-c6cf76d3b9d3" alt="hasło: z uśmiechem ci do twarzy" class="image-5"></div>
   </div>
   <div class="section-opis-home">
     <div data-w-id="eb340828-696c-3049-48b7-dcdff43ee757" class="div-block-68">
