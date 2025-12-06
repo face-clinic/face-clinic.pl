@@ -1722,7 +1722,7 @@ img {
 
 .visual-load {
   z-index: -2147483648;
-  background-image: url('../images/visual6.jpg');
+  background-image: url('../images/fc-header.webp');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3192,7 +3192,6 @@ img {
 
 .body-old {
   background-image: url('../images/Paper_FC_BG.jpg');
-  background-position: 0 0;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -4222,6 +4221,13 @@ img {
     align-items: center;
     padding-top: 0;
     padding-bottom: 40px;
+  }
+
+  .body-old {
+    background-image: url('../images/Paper_FC_BG.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
   }
 
   .link-block-4:focus-visible, .link-block-4[data-wf-focus-visible] {
@@ -6100,10 +6106,9 @@ img {
   }
 
   .body-old {
-    background-image: none;
-    background-position: 0 0;
+    background-image: url('../images/Paper_FC_BG.jpg');
     background-size: auto;
-    background-attachment: scroll;
+    background-attachment: fixed;
     flex-direction: column;
     display: flex;
   }
