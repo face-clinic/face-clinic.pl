@@ -6106,9 +6106,9 @@ img {
   }
 
   .body-old {
-    background-image: url('../images/Paper_FC_BG.jpg');
+    background-image: none;
     background-size: auto;
-    background-attachment: fixed;
+    background-attachment: scroll;
     flex-direction: column;
     display: flex;
   }
