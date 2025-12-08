@@ -15,6 +15,11 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('fonts', function () {
+    return gulp.src('src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('js', function () {
     return gulp.src('src/js/**/*')
         .pipe(concat('scripts.min.js'))
@@ -74,6 +79,7 @@ gulp.task('redirects', function () {
 
 gulp.task('default', gulp.series(
     'css',
+    'fonts',
     'img',
     'video',
     'js',
