@@ -1,3 +1,259 @@
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-SemiBold.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-Bold.ttf') format("truetype"), url('../fonts/OpenSans_Condensed-ExtraBold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-ExtraBold.ttf') format("truetype"), url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-Italic.ttf') format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-SemiBold.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-MediumItalic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-LightItalic.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format("truetype"), url('../fonts/OpenSans-BoldItalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-LightItalic.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-ExtraBoldItalic.ttf') format("truetype"), url('../fonts/OpenSans_SemiCondensed-BoldItalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-Italic.ttf') format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-SemiBoldItalic.ttf') format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-SemiBold.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-BoldItalic.ttf') format("truetype"), url('../fonts/OpenSans_Condensed-ExtraBoldItalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-MediumItalic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype"), url('../fonts/OpenSans-ExtraBold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-LightItalic.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf') format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Semicondensed;
+  src: url('../fonts/OpenSans_SemiCondensed-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Condensed;
+  src: url('../fonts/OpenSans_Condensed-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-MediumItalic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-Italic.ttf') format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Variablefont Wdth Wght;
+  src: url('../images/') format("truetype");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans Variablefont Wdth Wght;
+  src: url('../images/') format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --black-blue: #09141b;
   --black: black;
@@ -120,7 +376,7 @@ body {
   color: var(--black-blue);
   order: 0;
   align-self: auto;
-  font-family: Open Sans, sans-serif;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -194,6 +450,7 @@ img {
   flex: 0 auto;
   justify-content: flex-start;
   align-self: flex-end;
+  font-family: Opensans, Verdana, sans-serif;
   display: none;
   position: fixed;
 }
@@ -259,6 +516,7 @@ img {
   width: 450px;
   margin-bottom: 0;
   padding: 10px 40px 10px 30px;
+  font-family: Opensans, Verdana, sans-serif;
   line-height: 22px;
 }
 
@@ -283,6 +541,7 @@ img {
   justify-content: center;
   align-items: stretch;
   margin-bottom: 0;
+  font-family: Opensans, Verdana, sans-serif;
   font-weight: 600;
   display: flex;
   position: static;
@@ -339,6 +598,7 @@ img {
 
 .text-span-head-stopka {
   text-transform: none;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 19px;
   font-weight: 600;
 }
@@ -356,6 +616,7 @@ img {
 
 .txt-godziny {
   color: var(--white);
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 24px;
@@ -399,6 +660,7 @@ img {
 .linki-w-kontaktach {
   width: 180px;
   margin-left: 22px;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .parking {
@@ -459,6 +721,7 @@ img {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 130px;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -1570,6 +1833,7 @@ img {
   align-items: flex-end;
   height: auto;
   padding-top: 119px;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
   overflow: hidden;
 }
@@ -1603,6 +1867,7 @@ img {
   flex-direction: row;
   justify-content: center;
   width: 952px;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
 }
 
@@ -1665,6 +1930,7 @@ img {
 
 .text-span-2 {
   color: var(--white);
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 19px;
   font-weight: 400;
 }
@@ -1699,6 +1965,7 @@ img {
 
 .text-span-3 {
   color: var(--white);
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 12px;
   font-weight: 300;
 }
@@ -1708,6 +1975,7 @@ img {
   align-items: flex-end;
   padding-top: 40px;
   padding-bottom: 40px;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
   overflow: hidden;
 }
@@ -2242,6 +2510,7 @@ img {
 
 .visual {
   z-index: -2147483648;
+  font-family: Opensans, Verdana, sans-serif;
   position: relative;
   inset: 0%;
 }
@@ -2265,6 +2534,7 @@ img {
   align-items: flex-end;
   padding-top: 40px;
   padding-bottom: 40px;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
   overflow: hidden;
 }
@@ -2309,6 +2579,10 @@ img {
   margin-top: 11px;
 }
 
+.nip-regon, .section-7 {
+  font-family: Opensans, Verdana, sans-serif;
+}
+
 .zadzwon-linki {
   display: flex;
 }
@@ -2325,6 +2599,7 @@ img {
   color: var(--white);
   margin-top: 0;
   margin-right: 10px;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 23px;
   font-weight: 600;
 }
@@ -2333,6 +2608,7 @@ img {
   color: var(--white);
   margin-top: 0;
   margin-bottom: 10px;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2345,6 +2621,7 @@ img {
 
 .paragraph-9 {
   color: var(--white);
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 16px;
 }
 
@@ -2367,7 +2644,12 @@ img {
   font-size: 19px;
 }
 
-.text-block-25, .nip {
+.text-block-25 {
+  color: var(--white);
+  font-family: Opensans, Verdana, sans-serif;
+}
+
+.nip {
   color: var(--white);
 }
 
@@ -2611,10 +2893,12 @@ img {
 
 .body_higiena_pl {
   background-color: var(--bg-dark-green);
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .body_konsultacje_pl {
   background-color: #5e5e5e;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .wstep_do_pacjentow {
@@ -2937,6 +3221,7 @@ img {
 
 .body {
   background-color: var(--tan);
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .lottie-animation-3, .lottie-animation-4 {
@@ -2991,6 +3276,7 @@ img {
 
 .body_rodo_pl {
   background-color: #00224b;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .image-20 {
@@ -3088,6 +3374,10 @@ img {
   width: 100vh;
   height: 100vw;
   display: flex;
+}
+
+.body-2 {
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .portrets {
@@ -3194,6 +3484,7 @@ img {
   background-image: url('../images/Paper_FC_BG.jpg');
   background-size: cover;
   background-attachment: fixed;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .section-reklama {
@@ -3201,6 +3492,7 @@ img {
   backdrop-filter: blur(7px);
   flex-direction: row;
   justify-content: space-around;
+  font-family: Opensans, Verdana, sans-serif;
   display: flex;
 }
 
@@ -3369,7 +3661,7 @@ img {
 .section-subheading.center {
   color: var(--white);
   text-align: center;
-  font-family: Droid Sans, sans-serif;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 19px;
   line-height: 30px;
 }
@@ -3430,6 +3722,7 @@ img {
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .tekst-kontakt {
@@ -3587,6 +3880,7 @@ img {
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .div-block-105 {
@@ -3651,6 +3945,7 @@ img {
 .footer_dok_txt {
   color: var(--white);
   margin-left: -6px;
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 .cell-2 {
@@ -3670,6 +3965,7 @@ img {
   width: 610px;
   padding-left: 15px;
   padding-right: 15px;
+  font-family: Opensans, Verdana, sans-serif;
   font-size: 19px;
   line-height: 22px;
   display: flex;
@@ -3712,6 +4008,10 @@ img {
 
 .last_line, .div-block-108 {
   display: none;
+}
+
+.body-4, .body-5, .body-6, .body-7, .body-8, .body-9, .body-10, .body-11, .body-12, .body-13, .body-14, .body-15, .body-16, .body-17, .body-18, .body-19, .body-20, .body-21, .body-22, .body-23, .body-24, .body-25, .body-26, .body-27, .body-28, .body-29, .body-30, .body-31, .body-32, .body-33, .body-34, .body-35, .body-36, .body-37, .body-38, .body-39, .body-40, .body-41, .body-42, .body-43, .body-44, .body-45, .body-46, .body-47, .body-48, .body-49, .body-50, .body-51, .body-52, .body-53, .body-54, .body-55, .body-56, .body-57 {
+  font-family: Opensans, Verdana, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -6203,3 +6503,227 @@ img {
 }
 
 
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-Bold.ttf') format('truetype'), url('../fonts/OpenSans_Condensed-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-ExtraBold.ttf') format('truetype'), url('../fonts/OpenSans_SemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype'), url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-ExtraBoldItalic.ttf') format('truetype'), url('../fonts/OpenSans_SemiCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-BoldItalic.ttf') format('truetype'), url('../fonts/OpenSans_Condensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Semicondensed';
+  src: url('../fonts/OpenSans_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Condensed';
+  src: url('../fonts/OpenSans_Condensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Variablefont Wdth Wght';
+  src: url('../images/') format('truetype');
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans Variablefont Wdth Wght';
+  src: url('../images/') format('truetype');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
