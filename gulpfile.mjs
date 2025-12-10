@@ -64,7 +64,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('hash', function () {
-    return gulp.src(['dist/**/*.{css,js,tff,jpeg,webp,svg}'], {encoding: false})
+    return gulp.src(['dist/**/*.{css,js,ttf,jpeg,webp,svg}'], {encoding: false})
         .pipe(rev())
         .pipe(revdel())
         .pipe(gulp.src('dist/**/*.html'))
