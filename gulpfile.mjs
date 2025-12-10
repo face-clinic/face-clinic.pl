@@ -16,7 +16,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('src/fonts/**/*')
+    return gulp.src('src/fonts/**/*', {encoding: false})
         .pipe(gulp.dest('dist/fonts'));
 });
 
