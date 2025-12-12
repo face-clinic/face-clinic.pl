@@ -49,7 +49,7 @@ gulp.task('xml', function () {
 });
 
 gulp.task('documents', function () {
-    return gulp.src('src/documents/**/*',{encoding: false})
+    return gulp.src('src/documents/**/*', {encoding: false})
         .pipe(gulp.dest('dist/documents'));
 });
 
@@ -64,7 +64,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('hash', function () {
-    return gulp.src(['dist/**/*.{css,js,ttf,jpeg,webp,svg}'], {encoding: false})
+    return gulp.src(['dist/**/*.{css,js,ttf,woff2,jpeg,webp,svg}'], {encoding: false})
         .pipe(rev())
         .pipe(revdel())
         .pipe(gulp.src('dist/**/*.html'))
