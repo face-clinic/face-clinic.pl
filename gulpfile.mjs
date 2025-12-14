@@ -55,9 +55,26 @@ gulp.task('documents', function () {
 
 gulp.task('html', function () {
     return gulp.src(['src/**/*.html'])
-        .pipe(replace(/<link href="(..\/)*css\/normalize\.css" rel="stylesheet" type="text\/css">/, ''))
-        .pipe(replace(/<link href="(..\/)*css\/webflow\.css" rel="stylesheet" type="text\/css">/, ''))
-        .pipe(replace(/(..\/)*css\/.+.webflow\.css/, '/css/style.min.css'))
+
+
+        // .pipe(replace(/<link href="(..\/)*css\/normalize\.css" rel="stylesheet" type="text\/css">/, ''))
+        // .pipe(replace(/<link href="(..\/)*css\/webflow\.css" rel="stylesheet" type="text\/css">/, ''))
+        // .pipe(replace(/(..\/)*css\/.+.webflow\.css/, '/css/style.min.css'))
+
+        // remove old css
+        .pipe(replace(/<link href="(..\/)*css\/normalize\.css"[^>]*>/g, ''))
+        .pipe(replace(/<link href="(..\/)*css\/webflow\.css"[^>]*>/g, ''))
+
+        // replace webflow css with preload + stylesheet
+        .pipe(replace(
+            /<link href="(..\/)*css\/.+\.webflow\.css"[^>]*>/g,
+            `
+                <link rel="preload" href="/css/style.min.css" as="style">
+                <link rel="stylesheet" href="/css/style.min.css">
+            `.trim()
+        ))
+
+
         .pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
