@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Dec 14 2025 00:54:15 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Dec 14 2025 01:33:00 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -43,7 +43,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-12564831-1');
+    gtag('config', 'UA-12564831-1', { send_page_view: false });
   </script>
   <script>
 window.addEventListener("DOMContentLoaded", function () {
@@ -73,13 +73,37 @@ window.addEventListener("DOMContentLoaded", function () {
 });
     </script>
   <!--  Google Tag Manager  -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <!--  old<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KZSCB8LJ');</script>
+})(window,document,'script','dataLayer','GTM-KZSCB8LJ');</script> -->
   <!--  End Google Tag Manager  -->
   <link rel="preload" as="image" href="https://face-clinic.pl/images/fc-header.webp" fetchpriority="high">
+  <script>
+(function() {
+  var gtmLoaded = false;
+  function loadGTM() {
+    if (gtmLoaded) return;
+    gtmLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-KZSCB8LJ';
+    document.head.appendChild(s);
+  }
+  // Load GTM on first interaction
+  ['pointerdown','keydown','scroll','touchstart'].forEach(function(evt) {
+    window.addEventListener(evt, loadGTM, { once: true, passive: true });
+  });
+  // Fallback: load after 3 seconds
+  setTimeout(loadGTM, 3000);
+})();
+</script>
 </head>
 <body class="body-old">
   <div data-w-id="cc2d09f5-ac7a-08a6-05d0-c3ec284347f0" class="menu-main-desktop">
