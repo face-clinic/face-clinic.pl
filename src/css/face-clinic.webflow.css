@@ -3481,9 +3481,9 @@ img {
 }
 
 .body-old {
-  background-image: url('../images/Paper_FC_BG.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: none;
+  background-size: auto;
+  background-attachment: scroll;
   font-family: Opensans, Verdana, sans-serif;
 }
 
@@ -6104,7 +6104,7 @@ img {
   }
 
   .visual-load {
-    background-image: url('../images/visual6.jpg');
+    background-image: url('../images/fc-header.webp');
     background-position: 20% 0;
     background-repeat: no-repeat;
     background-size: cover;
