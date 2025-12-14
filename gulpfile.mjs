@@ -75,12 +75,7 @@ gulp.task('html', function () {
         ))
 
 
-        //.pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
-        .pipe(replace(
-            /<script src="(..\/)*js\/scripts\.min\.js"><\/script>/g,
-            '<link rel="preload" href="/js/scripts.min.js" as="script">' +
-            '<script src="/js/scripts.min.js" defer></script>'
-        ))
+        .pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
 });
