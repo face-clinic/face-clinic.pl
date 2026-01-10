@@ -4,7 +4,3 @@ Allow: /
 # Lokalizacja mapy witryny
 Sitemap: https://face-clinic.pl/sitemap.xml
 
-# Content signals — pełna zgoda na wykorzystanie treści
-search: yes
-ai-input: yes
-ai-train: yes
