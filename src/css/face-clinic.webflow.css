@@ -4511,7 +4511,17 @@ img {
   padding-right: 0;
 }
 
-.container-30, .container-31, .container-32, .container-33, .container-34 {
+.container-28, .container-29 {
+  display: none;
+}
+
+.container-30, .container-31 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.container-32, .container-33, .container-34 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -4952,6 +4962,163 @@ img {
 
 .service-accordian-description {
   color: var(--black);
+}
+
+.metamorfozy-heading {
+  background-color: #aaabac;
+  width: 100%;
+  margin-top: 140px;
+}
+
+.metamorfozy-heading-wrapper {
+  background-color: #0000;
+  max-width: 80%;
+  padding-left: 20px;
+}
+
+.container-53 {
+  flex-flow: row;
+  align-items: center;
+  max-width: 80%;
+  padding-bottom: 60px;
+  display: block;
+}
+
+.container-54, .container-55 {
+  max-width: 80%;
+}
+
+.container-56 {
+  flex: 0 auto;
+  order: -9999;
+  max-width: 20%;
+}
+
+.container-57 {
+  flex-flow: row;
+  flex: 0 auto;
+  width: auto;
+  max-width: none;
+  height: auto;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  overflow: visible;
+}
+
+.image-28 {
+  object-fit: contain;
+  max-width: none;
+  height: 400px;
+  margin-right: 0;
+  display: block;
+}
+
+.image-28.metamorfozy-slide-square {
+  width: 400px;
+}
+
+.slider-2 {
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+  width: auto;
+  max-width: none;
+  height: 400px;
+  display: block;
+}
+
+.slider-2.slider-class {
+  height: 400px;
+}
+
+.metamorfozy-title {
+  color: var(--white);
+}
+
+.section-18 {
+  margin-top: 20px;
+}
+
+.container-58 {
+  max-width: 80%;
+}
+
+.section-19 {
+  margin-top: 20px;
+}
+
+.container-59 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: left;
+  overflow-wrap: normal;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+}
+
+.container-60 {
+  width: 80%;
+  max-width: none;
+  padding-left: 20px;
+}
+
+.heading-10 {
+  border-radius: 1px;
+}
+
+.mask {
+  width: 320px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mask.metamorfozy-mask-square {
+  width: 400px;
+}
+
+.slide-nav {
+  width: auto;
+}
+
+.slide-6 {
+  height: auto;
+}
+
+.container-61 {
+  height: 400px;
+}
+
+.container-62 {
+  max-width: none;
+  height: auto;
+  display: block;
+}
+
+.slide-7 {
+  height: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .container-28, .container-29, .container-30, .container-31 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-28, .container-29 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container-28, .container-29, .container-30, .container-31 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -5507,9 +5674,7 @@ img {
   }
 
   .body-old {
-    background-image: url('../images/Paper_FC_BG.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: none;
     display: block;
   }
 
@@ -5565,6 +5730,15 @@ img {
 
   .dropdown-list-2, .container-20, .section-13, .container-28, .container-29, .container-30, .container-31, .container-32 {
     display: none;
+  }
+
+  .container-53 {
+    max-width: 100%;
+  }
+
+  .container-59 {
+    flex-flow: wrap;
+    max-width: 100%;
   }
 }
 
@@ -8453,6 +8627,100 @@ img {
 
   .service-accordian-description {
     font-size: 14px;
+  }
+
+  .metamorfozy-heading {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .metamorfozy-heading-wrapper {
+    text-align: center;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 0;
+    display: block;
+  }
+
+  .container-53 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-57 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .image-28 {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-28.metamorfozy-slide-square, .slider-2.slider-class {
+    width: 100%;
+    height: 100%;
+  }
+
+  .metamorfozy-title {
+    text-align: center;
+  }
+
+  .section-18 {
+    width: 100%;
+  }
+
+  .container-58 {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .section-19 {
+    margin-left: 2%;
+    margin-right: 2px;
+    padding-right: 0%;
+    display: none;
+  }
+
+  .container-59 {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .container-60 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .heading-10 {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 18px;
+  }
+
+  .mask {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mask.metamorfozy-mask-square, .text-block-39 {
+    width: 100%;
   }
 }
 
