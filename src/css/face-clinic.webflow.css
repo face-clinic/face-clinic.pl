@@ -5119,6 +5119,10 @@ img {
   .container-28, .container-29, .container-30, .container-31 {
     display: block;
   }
+
+  .image-28.metamorfozy-slide-square {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 991px) {
