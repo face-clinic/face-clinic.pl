@@ -1187,7 +1187,7 @@ img {
   flex-direction: column;
   align-self: flex-start;
   max-width: 960px;
-  padding: 10px 20px 20px;
+  padding: 10px 20px 0;
   display: flex;
 }
 
@@ -5101,6 +5101,14 @@ img {
 
 .slide-7 {
   height: auto;
+}
+
+.section-20 {
+  margin-top: 20px;
+}
+
+.section-21 {
+  background-color: #fff;
 }
 
 @media screen and (min-width: 1280px) {
