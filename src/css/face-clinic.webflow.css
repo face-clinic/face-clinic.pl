@@ -5111,9 +5111,130 @@ img {
   background-color: #fff;
 }
 
+.section-22 {
+  background-color: #aaabac;
+  margin-top: 140px;
+  padding-bottom: 20px;
+}
+
+.heading-11 {
+  font-size: 24px;
+}
+
+.container-63 {
+  max-width: 80%;
+}
+
+.heading-12 {
+  font-size: 24px;
+}
+
+.zeby-w-jeden-dzien-1.text-picture-other-flow {
+  flex-flow: column-reverse;
+  display: flex;
+}
+
+.image-29 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.image-31, .image-32 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bold-text-21 {
+  color: var(--white);
+}
+
 @media screen and (min-width: 1280px) {
   .container-28, .container-29, .container-30, .container-31 {
     display: none;
+  }
+
+  .section-22 {
+    background-color: #aaabac;
+    margin-top: 140px;
+    padding-bottom: 20px;
+  }
+
+  .zeby-w-jeden-dzien-1 {
+    max-width: 80%;
+  }
+
+  .zeby-w-jeden-dzien-1.text-picture-other-flow {
+    flex-flow: column-reverse;
+    max-width: 80%;
+    display: flex;
+  }
+
+  .container-66 {
+    max-width: none;
+  }
+
+  .container-67 {
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heading-14 {
+    font-weight: 700;
+  }
+
+  .container-68 {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .container-69 {
+    max-width: none;
+  }
+
+  .zeby-w-jeden-dzien-2.text-picture-other-flow {
+    max-width: 80%;
+  }
+
+  .container-70 {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .image-29 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .container-71 {
+    max-width: none;
+  }
+
+  .image-31 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .image-32 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .image-33 {
+    text-align: center;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .bold-text-21 {
+    color: var(--white);
   }
 }
 
@@ -5121,15 +5242,261 @@ img {
   .container-28, .container-29 {
     display: none;
   }
+
+  .section-22 {
+    background-color: #aaabac;
+    padding-bottom: 20px;
+  }
+
+  .container-63 {
+    width: 80%;
+  }
+
+  .container-64 {
+    max-width: 80%;
+  }
+
+  .zeby-w-jeden-dzien-1 {
+    flex-flow: row;
+    max-width: 80%;
+    display: flex;
+  }
+
+  .zeby-w-jeden-dzien-1.text-picture-other-flow {
+    max-width: 80%;
+  }
+
+  .container-66 {
+    flex: 1;
+    max-width: none;
+  }
+
+  .container-67 {
+    flex: 1;
+    max-width: none;
+    padding-right: 20px;
+  }
+
+  .heading-14 {
+    font-size: 20px;
+  }
+
+  .container-68 {
+    flex: 1;
+    max-width: none;
+    padding-right: 10px;
+  }
+
+  .container-69 {
+    flex: 1;
+    max-width: none;
+  }
+
+  .section-23 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .zeby-w-jeden-dzien-2 {
+    max-width: 80%;
+    display: flex;
+  }
+
+  .zeby-w-jeden-dzien-2.text-picture-other-flow {
+    flex-flow: row-reverse;
+  }
+
+  .zeby-w-jeden-dzien-3 {
+    max-width: 80%;
+    display: flex;
+  }
+
+  .container-70, .container-71 {
+    flex: 1;
+    max-width: none;
+  }
+
+  .image-33 {
+    height: 450px;
+  }
+
+  .bold-text-21 {
+    color: var(--white);
+  }
 }
 
 @media screen and (min-width: 1920px) {
+  img {
+    padding-right: 10px;
+  }
+
   .container-28, .container-29, .container-30, .container-31 {
     display: block;
   }
 
   .image-28.metamorfozy-slide-square {
     width: auto;
+  }
+
+  .section-22 {
+    background-color: #aaabac;
+    padding-bottom: 20px;
+  }
+
+  .heading-12 {
+    color: var(--white);
+    font-size: 28px;
+  }
+
+  .container-64 {
+    max-width: none;
+    margin-top: 40px;
+  }
+
+  .container-64.odwrotny-flow {
+    flex-flow: row-reverse;
+    max-width: none;
+    display: flex;
+  }
+
+  .zeby-w-jeden-dzien-1 {
+    flex: 1;
+    width: 80%;
+    max-width: none;
+  }
+
+  .zeby-w-jeden-dzien-1.opis-odwrotny-flow, .zeby-w-jeden-dzien-1.text-picture-other-flow {
+    flex-flow: row-reverse;
+  }
+
+  .container-66 {
+    margin-top: 0;
+  }
+
+  .container-67 {
+    text-align: right;
+    flex-flow: wrap;
+    flex: 1;
+    order: 9999;
+    place-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+    display: flex;
+  }
+
+  .text-block-40 {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .text-block-41 {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+
+  .bold-text-20, .heading-13, .heading-14 {
+    font-size: 24px;
+  }
+
+  .heading-15 {
+    font-size: 20px;
+  }
+
+  .container-68 {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-69 {
+    flex: 1;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-23 {
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .zeby-w-jeden-dzien-2 {
+    flex: 1;
+    max-width: none;
+  }
+
+  .zeby-w-jeden-dzien-2.opis-odwrotny-flow {
+    flex-flow: row-reverse;
+  }
+
+  .zeby-w-jeden-dzien-2.text-picture-other-flow {
+    flex-flow: row-reverse;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .zeby-w-jeden-dzien-3 {
+    flex: 1;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .zeby-w-jeden-dzien-3.opis-odwrotny-flow, .zeby-w-jeden-dzien-3.text-picture-other-flow {
+    flex-flow: row-reverse;
+  }
+
+  .container-70 {
+    flex: 1;
+    align-self: flex-start;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image-29 {
+    object-fit: fill;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+  }
+
+  .image-30 {
+    text-align: right;
+  }
+
+  .container-71 {
+    order: -9999;
+    max-width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image-31 {
+    text-align: right;
+    object-fit: fill;
+    flex: 1;
+    order: 9999;
+    align-self: flex-start;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .image-32 {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-33 {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -5751,6 +6118,10 @@ img {
   .container-59 {
     flex-flow: wrap;
     max-width: 100%;
+  }
+
+  .container-63 {
+    max-width: 728px;
   }
 }
 
@@ -6760,6 +7131,11 @@ img {
   .haslo-payu-sa-second-row {
     font-size: 26px;
     line-height: 32px;
+  }
+
+  .section-22, .section-23 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -8733,6 +9109,14 @@ img {
 
   .mask.metamorfozy-mask-square, .text-block-39 {
     width: 100%;
+  }
+
+  .section-22 {
+    margin-top: 60px;
+  }
+
+  .heading-12 {
+    line-height: 1.2em;
   }
 }
 
