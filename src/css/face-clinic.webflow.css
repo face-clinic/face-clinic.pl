@@ -7133,9 +7133,18 @@ img {
     line-height: 32px;
   }
 
+  .section-20 {
+    background-color: #fff;
+    width: auto;
+  }
+
   .section-22, .section-23 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .container-72 {
+    background-color: #fff;
   }
 }
 
