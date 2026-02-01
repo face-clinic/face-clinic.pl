@@ -771,6 +771,7 @@ img {
   background-color: var(--white-a50);
   color: #313131;
   border-radius: 20%;
+  overflow: visible;
 }
 
 .link-block:focus-visible, .link-block[data-wf-focus-visible] {
@@ -1768,6 +1769,12 @@ img {
 
 .section-intro.payu-page {
   background-image: url('../images/payu-header.webp');
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.section-intro.cennik-page {
+  background-image: url('../images/cennik-desktop.webp');
   background-position: 0 0;
   background-size: cover;
 }
@@ -3516,20 +3523,30 @@ img {
 .section-reklama {
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
-  flex-direction: row;
+  background-color: #fff;
+  flex-flow: column;
   justify-content: space-around;
+  align-items: center;
   font-family: Opensans, Verdana, sans-serif;
   display: flex;
 }
 
 .reklama {
-  width: 1315.63px;
+  text-align: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link-block-4 {
   opacity: .95;
   -webkit-backdrop-filter: blur(5px) blur(10px);
   backdrop-filter: blur(5px) blur(10px);
+  text-align: left;
+  width: 40%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link-block-4:focus-visible, .link-block-4[data-wf-focus-visible] {
@@ -3897,6 +3914,7 @@ img {
 }
 
 .section-12 {
+  margin-top: 130px;
   margin-bottom: 20px;
 }
 
@@ -5104,7 +5122,9 @@ img {
 }
 
 .section-20 {
-  margin-top: 20px;
+  background-color: #ededed;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-21 {
@@ -5149,7 +5169,74 @@ img {
   color: var(--white);
 }
 
+.container-72 {
+  background-color: #ededed;
+  max-width: none;
+  padding-bottom: 20px;
+}
+
+.instagram-feed {
+  background-color: #ededed;
+  min-height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.div-block-109 {
+  color: var(--white);
+}
+
+.haslo-cennik {
+  color: var(--black);
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-size: 42px;
+  line-height: 48px;
+}
+
+.haslo-cennik.imie-i-nazwisko {
+  color: var(--steel-blue-doted);
+  margin-bottom: 10px;
+}
+
+.cennik-przerywana {
+  background-image: url('../images/white_dot-01_poziom.svg');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 3px;
+}
+
+.cennik-przerywana._2 {
+  border-bottom: 1px dashed var(--steel-blue-doted);
+}
+
+.haslo-cennik-2 {
+  color: var(--black);
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-size: 28px;
+  line-height: 48px;
+}
+
+.haslo-cennik-2.imie-i-nazwisko {
+  color: var(--steel-blue-doted);
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 1280px) {
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-desktop.webp');
+  }
+
+  .section-12 {
+    margin-top: 130px;
+  }
+
   .container-28, .container-29, .container-30, .container-31 {
     display: none;
   }
@@ -5239,6 +5326,22 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-desktop.webp');
+    background-position: 50% 0;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .link-block-4 {
+    width: 60%;
+  }
+
+  .section-12 {
+    margin-top: 130px;
+  }
+
   .container-28, .container-29 {
     display: none;
   }
@@ -5330,12 +5433,31 @@ img {
     padding-right: 10px;
   }
 
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-desktop.webp');
+    background-repeat: repeat-x;
+    background-size: contain;
+    padding-bottom: 0%;
+  }
+
+  .link-block-4 {
+    width: 40%;
+  }
+
+  .section-12 {
+    margin-top: 130px;
+  }
+
   .container-28, .container-29, .container-30, .container-31 {
     display: block;
   }
 
   .image-28.metamorfozy-slide-square {
     width: auto;
+  }
+
+  .section-20 {
+    padding-top: 20px;
   }
 
   .section-22 {
@@ -5516,8 +5638,18 @@ img {
     order: 0;
   }
 
+  .button_home {
+    border: 1px solid #aaabac;
+  }
+
   .div-button-home {
+    background-color: #aaabac;
     max-width: 140px;
+  }
+
+  .txt-button-menu-home {
+    color: #fff;
+    -webkit-text-stroke-color: transparent;
   }
 
   .div-kreska-pion-black {
@@ -5683,6 +5815,12 @@ img {
 
   .section-intro.payu-page {
     background-image: url('../images/pay-u-mobile-new.webp');
+    background-position: 80% 30%;
+    background-size: cover;
+  }
+
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-mobile.webp');
     background-position: 80% 30%;
     background-size: cover;
   }
@@ -6057,6 +6195,10 @@ img {
     display: block;
   }
 
+  .link-block-4 {
+    width: 80%;
+  }
+
   .link-block-4:focus-visible, .link-block-4[data-wf-focus-visible] {
     border-width: 9px;
   }
@@ -6082,6 +6224,10 @@ img {
 
   .div-block-100 {
     flex-direction: column;
+  }
+
+  .section-12 {
+    margin-top: 130px;
   }
 
   .quick-stack {
@@ -6506,6 +6652,16 @@ img {
     background-position: 0 0, 0 0, 0 0;
     background-size: cover, cover, auto;
     justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 77px;
+  }
+
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-mobile.webp'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0;
+    background-size: cover, auto;
+    justify-content: flex-start;
+    height: 700px;
     margin-top: 0;
     padding-top: 77px;
   }
@@ -7055,6 +7211,10 @@ img {
     top: 100px;
   }
 
+  .section-12 {
+    margin-top: 120px;
+  }
+
   .quick-stack {
     max-width: 330px;
     margin-top: 20px;
@@ -7145,6 +7305,16 @@ img {
 
   .container-72 {
     background-color: #fff;
+  }
+
+  .instagram-feed {
+    background-color: #fff;
+    width: auto;
+  }
+
+  .haslo-cennik, .haslo-cennik-2 {
+    font-size: 26px;
+    line-height: 32px;
   }
 }
 
@@ -7670,6 +7840,18 @@ img {
     padding-bottom: 0;
   }
 
+  .section-intro.cennik-page {
+    background-image: url('../images/cennik-mobile.webp'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0;
+    background-size: cover, auto;
+    flex: 0 auto;
+    justify-content: flex-start;
+    height: 550px;
+    margin-top: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .h1-dzial {
     color: var(--white);
     background-color: #0000;
@@ -7937,7 +8119,12 @@ img {
   }
 
   .div-block-75 {
+    color: var(--white);
     flex-direction: column;
+  }
+
+  .div-block-76 {
+    color: var(--white);
   }
 
   .text-block-24 {
@@ -8225,6 +8412,11 @@ img {
     inset: 0% auto 0% 0%;
   }
 
+  .link-block-4 {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .link-block-4:focus-visible, .link-block-4[data-wf-focus-visible] {
     border-width: 6px;
   }
@@ -8339,7 +8531,7 @@ img {
   }
 
   .section-12 {
-    margin-top: 0;
+    margin-top: 70px;
   }
 
   .quick-stack {
@@ -9126,6 +9318,25 @@ img {
 
   .heading-12 {
     line-height: 1.2em;
+  }
+
+  .haslo-cennik {
+    color: var(--dark_gray_main);
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .haslo-cennik-2 {
+    color: var(--dark_gray_main);
+    background-color: #fff;
+    padding: 5px 10px 5px 5px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
 
