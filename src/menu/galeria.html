@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Feb 05 2026 10:58:58 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Feb 05 2026 11:43:36 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bffa8cc988255" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -88,6 +88,12 @@ window.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener('click', () => {
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({ event: cfg.event });
+          gtag('event', 'conversion', {
+      		'send_to': 'AW-622377758/israCOOviPMbEJ724qgC',
+      		'value': 1.0,
+      		'currency': 'PLN',
+      		'event_callback': callback
+  		  });
         }, { once: true });
       }
     });
@@ -979,6 +985,12 @@ window.addEventListener("DOMContentLoaded", function () {
           event: eventsMap[event.name],
           page: window.location.href
         });
+          gtag('event', 'conversion', {
+      		'send_to': 'AW-622377758/israCOOviPMbEJ724qgC',
+      		'value': 1.0,
+      		'currency': 'PLN',
+      		'event_callback': callback
+  			});
       }
     });
   } else {
