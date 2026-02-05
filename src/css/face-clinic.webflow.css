@@ -5172,6 +5172,7 @@ img {
 .container-72 {
   background-color: #ededed;
   max-width: none;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -6679,6 +6680,7 @@ img {
 
   .dzial {
     width: 40%;
+    padding-top: 0%;
   }
 
   .dzial.tv {
