@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Feb 04 2026 23:57:21 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Feb 05 2026 10:37:10 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff7c37988284" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -66,6 +66,30 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
     </script>
+  <script>
+(function () {
+  const configs = [
+    { selector: '.footer_phone_land', event: 'footer_phone_land' },
+    { selector: '.footer_phone_mobile', event: 'footer_phone_mobile' }
+  ];
+  const observer = new MutationObserver(() => {
+    configs.forEach((cfg) => {
+      const btn = document.querySelector(cfg.selector);
+      if (btn && !btn.dataset.tracked) {
+        btn.dataset.tracked = 'true';
+        btn.addEventListener('click', () => {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: cfg.event });
+        }, { once: true });
+      }
+    });
+  });
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
 </head>
 <body class="body-42">
   <section class="section-14 section-15 section-16">
@@ -820,11 +844,11 @@ window.addEventListener("DOMContentLoaded", function () {
               <div class="text-block-24"><span class="text-span-4">ZADZWOŃ</span></div>
               <div class="div-tel-nr">
                 <div class="div-nr">
-                  <a target="_self" href="tel:0048228636182" class="mobile-nr">tel.:<br>+48 22 863 61 82</a>
+                  <a target="_self" href="tel:0048228636182" class="mobile-nr footer_phone_land">tel.:<br>+48 22 863 61 82</a>
                 </div>
               </div>
               <div class="div-nr">
-                <a target="_self" href="tel:0048512505460" class="mobile-nr">tel. kom.<br> +48 512 505 460</a>
+                <a target="_self" href="tel:0048512505460" class="mobile-nr footer_phone_mobile">tel. kom.<br> +48 512 505 460</a>
               </div>
             </div>
             <div class="linki-w-kontaktach">
@@ -932,5 +956,28 @@ window.addEventListener("DOMContentLoaded", function () {
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5c596ea54abddd008a1e1302" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="../../../js/webflow.js" type="text/javascript"></script>
   <script defer="" type="text/javascript" src="https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd"></script>
+  <script>
+(function waitForThulium() {
+  if (window._tc && typeof window._tc === 'function') {
+    // Thulium widget loaded, attach listener
+    _tc('event_listener', function(event) {
+      const eventsMap = {
+        'callback_scheduled': 'th_callback_scheduled',
+        'callback_created': 'th_callback_created'
+      };
+      if (eventsMap[event.name]) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: eventsMap[event.name],
+          page: window.location.href
+        });
+      }
+    });
+  } else {
+    // Wait 100ms and check again
+    setTimeout(waitForThulium, 100);
+  }
+})();
+</script>
 </body>
 </html>
