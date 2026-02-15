@@ -5149,9 +5149,40 @@ img {
   font-size: 24px;
 }
 
-.zeby-w-jeden-dzien-1.text-picture-other-flow {
+.article-part-1-content {
+  max-width: none;
+}
+
+.article-part-1-content.text-picture-other-flow {
+  flex-flow: column;
+  display: flex;
+}
+
+.article-part-1-content.text-picture-other-flow-copy {
   flex-flow: column-reverse;
   display: flex;
+}
+
+.container-66 {
+  max-width: none;
+}
+
+.container-67 {
+  justify-content: center;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.heading-15 {
+  margin-top: 10px;
+}
+
+.section-23 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-29 {
@@ -5160,9 +5191,25 @@ img {
   margin-right: 0;
 }
 
-.image-31, .image-32 {
+.container-71 {
+  max-width: none;
+}
+
+.image-31 {
+  text-align: left;
+  max-width: none;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.image-32 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-33 {
+  margin-top: 20px;
 }
 
 .bold-text-21 {
@@ -5229,6 +5276,281 @@ img {
   margin-bottom: 10px;
 }
 
+.heading-12-copy {
+  font-size: 24px;
+}
+
+.licowki-porcelanowe-header {
+  font-size: 20px;
+}
+
+.pricing-description-col-titles {
+  justify-content: center;
+  align-items: flex-end;
+  width: 40%;
+  display: flex;
+}
+
+.pricing-description-text {
+  color: #73b71a;
+  font-family: Lato, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.pricing-grid-flexbox-copy {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.pricing-rows {
+  border-bottom: 1px solid #bec3c7;
+  display: flex;
+}
+
+.pricing-rows-copy {
+  border-top: 1px solid #bec3c7;
+  border-bottom: 1px solid #bec3c7;
+  display: flex;
+}
+
+.pricing-check-cell {
+  text-align: center;
+  border-right: 1px solid #bec3c7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.member-price {
+  color: #7ead31;
+  font-weight: 700;
+}
+
+.member-level-title-and-apply {
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 15%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
+.pricing-check-column-titles {
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  width: 15%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
+.div-block-117 {
+  border-right: 1px solid #bec3c7;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pricing-grid-flexbox {
+  border: 1px #bec3c7;
+  border-style: solid none none solid;
+  flex-wrap: wrap;
+  width: 100%;
+  box-shadow: 0 0 10px -3px #0000007a;
+}
+
+.text-block-48 {
+  color: #245672;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.apply-buttons {
+  color: #154058;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #a8d069;
+  border-radius: 3px;
+  padding: 11px 20px;
+  font-family: Lato, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+  transition: background-color .2s, all .2s;
+  display: inline-block;
+}
+
+.apply-buttons:hover {
+  background-color: #83aa46;
+  transform: translate(0, -2px);
+}
+
+.apply-buttons:active {
+  background-color: #729736;
+  transform: translate(0, -5px);
+}
+
+.pricing-rows-titles {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.patron-disclaimer-div {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  padding-left: 5px;
+  display: flex;
+}
+
+.section-24 {
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  display: flex;
+}
+
+.pricing-description-cell {
+  background-color: #f5f5f5;
+  border-right: 1px solid #bec3c7;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  padding: 15px 20px;
+  display: flex;
+}
+
+.pricing-check-mark {
+  width: 16px;
+}
+
+.div-block-118 {
+  width: 40%;
+}
+
+.pricing-component-titles {
+  color: #245672;
+  font-family: Lato, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.max-1200 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member-events-description {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.container-73 {
+  border-radius: 1px;
+  display: flex;
+}
+
+.container-73.licowki-table-header-row {
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.container-73.licowki-table-row {
+  padding-top: 5px;
+}
+
+.container-74, .container-75, .container-76, .container-77 {
+  flex: 1;
+}
+
+.licowki-table-header {
+  font-weight: 600;
+}
+
+.container-78 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.licowki-image-before-after {
+  justify-content: center;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.container-86 {
+  text-align: center;
+  max-width: none;
+  margin-top: 20px;
+}
+
+.image-34 {
+  text-align: center;
+  width: 80%;
+  max-width: none;
+}
+
+.heading-19 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.container-87 {
+  max-width: 80%;
+}
+
+.container-88 {
+  width: 80%;
+  max-width: none;
+}
+
+.text-block-61 {
+  text-align: left;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-6 {
+  width: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-25 {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 1280px) {
   .section-intro.cennik-page {
     background-image: url('../images/cennik-desktop.webp');
@@ -5248,11 +5570,18 @@ img {
     padding-bottom: 20px;
   }
 
-  .zeby-w-jeden-dzien-1 {
-    max-width: 80%;
+  .article-part-1-content {
+    max-width: none;
+    display: block;
   }
 
-  .zeby-w-jeden-dzien-1.text-picture-other-flow {
+  .article-part-1-content.text-picture-other-flow {
+    flex-flow: column;
+    max-width: none;
+    display: flex;
+  }
+
+  .article-part-1-content.text-picture-other-flow-copy {
     flex-flow: column-reverse;
     max-width: 80%;
     display: flex;
@@ -5281,8 +5610,12 @@ img {
     max-width: none;
   }
 
+  .section-23 {
+    width: 80%;
+  }
+
   .zeby-w-jeden-dzien-2.text-picture-other-flow {
-    max-width: 80%;
+    max-width: none;
   }
 
   .container-70 {
@@ -5308,14 +5641,19 @@ img {
   }
 
   .image-32 {
+    box-sizing: content-box;
+    float: none;
+    object-fit: fill;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    overflow: clip;
   }
 
   .image-33 {
     text-align: center;
-    max-width: none;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -5323,6 +5661,56 @@ img {
 
   .bold-text-21 {
     color: var(--white);
+  }
+
+  .container-78 {
+    max-width: none;
+  }
+
+  .container-79 {
+    flex: 1;
+    width: 50%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .licowki-text-1 {
+    max-width: none;
+  }
+
+  .container-80 {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: none;
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+  }
+
+  .container-81 {
+    max-width: none;
+  }
+
+  .container-82 {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-83 {
+    max-width: 100%;
+  }
+
+  .licowki-image-before-after {
+    max-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
   }
 }
 
@@ -5360,13 +5748,20 @@ img {
     max-width: 80%;
   }
 
-  .zeby-w-jeden-dzien-1 {
+  .article-part-1-content {
     flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
     max-width: 80%;
     display: flex;
   }
 
-  .zeby-w-jeden-dzien-1.text-picture-other-flow {
+  .article-part-1-content.text-picture-other-flow {
+    flex-flow: column;
+    max-width: 80%;
+  }
+
+  .article-part-1-content.text-picture-other-flow-copy {
     max-width: 80%;
   }
 
@@ -5378,7 +5773,8 @@ img {
   .container-67 {
     flex: 1;
     max-width: none;
-    padding-right: 20px;
+    padding-right: 0;
+    display: block;
   }
 
   .heading-14 {
@@ -5397,6 +5793,7 @@ img {
   }
 
   .section-23 {
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -5408,6 +5805,7 @@ img {
 
   .zeby-w-jeden-dzien-2.text-picture-other-flow {
     flex-flow: row-reverse;
+    max-width: 80%;
   }
 
   .zeby-w-jeden-dzien-3 {
@@ -5415,7 +5813,13 @@ img {
     display: flex;
   }
 
-  .container-70, .container-71 {
+  .container-70 {
+    flex: 1;
+    max-width: none;
+    margin-left: 20px;
+  }
+
+  .container-71 {
     flex: 1;
     max-width: none;
   }
@@ -5426,6 +5830,52 @@ img {
 
   .bold-text-21 {
     color: var(--white);
+  }
+
+  .container-73.licowki-table-header-row, .container-73.licowki-table-row, .container-78 {
+    max-width: none;
+  }
+
+  .container-79 {
+    max-width: 40%;
+  }
+
+  .licowki-text-1 {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .container-80 {
+    flex-flow: row-reverse;
+    max-width: 80%;
+    display: flex;
+  }
+
+  .container-81 {
+    max-width: 80%;
+  }
+
+  .container-82 {
+    max-width: none;
+  }
+
+  .container-83 {
+    max-width: 80%;
+  }
+
+  .container-84 {
+    max-width: none;
+  }
+
+  .container-85 {
+    max-width: 100%;
+  }
+
+  .licowki-image-before-after {
+    flex: 1;
+    max-width: none;
+    padding-right: 0;
+    display: block;
   }
 }
 
@@ -5482,17 +5932,31 @@ img {
     display: flex;
   }
 
-  .zeby-w-jeden-dzien-1 {
+  .article-part-1-content {
+    flex-flow: row;
     flex: 1;
-    width: 80%;
-    max-width: none;
+    align-items: flex-start;
+    width: auto;
+    max-width: 80%;
   }
 
-  .zeby-w-jeden-dzien-1.opis-odwrotny-flow, .zeby-w-jeden-dzien-1.text-picture-other-flow {
+  .article-part-1-content.opis-odwrotny-flow {
+    flex-flow: row-reverse;
+  }
+
+  .article-part-1-content.text-picture-other-flow {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    flex-flow: row-reverse;
+    max-width: 80%;
+  }
+
+  .article-part-1-content.text-picture-other-flow-copy {
     flex-flow: row-reverse;
   }
 
   .container-66 {
+    max-width: 100%;
     margin-top: 0;
   }
 
@@ -5501,9 +5965,12 @@ img {
     flex-flow: wrap;
     flex: 1;
     order: 9999;
-    place-content: flex-start;
+    place-content: center flex-start;
     align-items: flex-start;
-    max-width: 50%;
+    max-width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
     display: flex;
   }
 
@@ -5527,8 +5994,11 @@ img {
   }
 
   .container-68 {
+    text-align: left;
     flex: 1;
     max-width: 50%;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -5606,20 +6076,93 @@ img {
     flex: 1;
     order: 9999;
     align-self: flex-start;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .image-32 {
+    box-sizing: border-box;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding-right: 0;
   }
 
   .image-33 {
     max-width: 100%;
     height: auto;
+  }
+
+  .heading-12-copy, .licowki-porcelanowe-header {
+    color: var(--white);
+    font-size: 28px;
+  }
+
+  .container-73.licowki-table-header-row, .container-73.licowki-table-row, .container-78 {
+    max-width: none;
+  }
+
+  .container-79 {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .licowki-text-1 {
+    flex: 1;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-80 {
+    flex-flow: row-reverse;
+    max-width: 80%;
+    display: flex;
+  }
+
+  .container-81 {
+    max-width: 80%;
+  }
+
+  .container-82 {
+    max-width: none;
+  }
+
+  .container-83 {
+    max-width: 80%;
+  }
+
+  .container-84 {
+    max-width: 50%;
+  }
+
+  .container-85 {
+    max-width: none;
+  }
+
+  .licowki-image-before-after {
+    text-align: right;
+    flex-flow: wrap;
+    flex: 1;
+    order: 9999;
+    place-content: center flex-start;
+    align-items: flex-start;
+    max-width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .section-27 {
+    margin-bottom: 10px;
+  }
+
+  .section-29 {
+    margin-bottom: 20px;
   }
 }
 
@@ -6269,6 +6812,48 @@ img {
 
   .container-63 {
     max-width: 728px;
+  }
+
+  .article-part-1-content.text-picture-other-flow {
+    flex-flow: column;
+  }
+
+  .image-31 {
+    max-width: 100%;
+  }
+
+  .bold-text-21, .licowki-porcelanowe-header {
+    line-height: 24px;
+  }
+
+  .pricing-description-text {
+    font-size: 2vw;
+  }
+
+  .pricing-check-cell {
+    width: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-block-48, .apply-buttons {
+    font-size: 1.5vw;
+  }
+
+  .section-24 {
+    padding: 50px;
+  }
+
+  .pricing-description-cell {
+    padding: 20px;
+  }
+
+  .pricing-component-titles {
+    font-size: 2vw;
+  }
+
+  .list-5 {
+    margin-top: 10px;
   }
 }
 
@@ -7300,9 +7885,30 @@ img {
     width: auto;
   }
 
-  .section-22, .section-23 {
+  .section-22 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .heading-12 {
+    line-height: 26px;
+  }
+
+  .article-part-1-content.text-picture-other-flow {
+    flex-flow: column;
+  }
+
+  .heading-15 {
+    margin-top: 10px;
+  }
+
+  .section-23 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bold-text-21 {
+    line-height: 28px;
   }
 
   .container-72 {
@@ -7317,6 +7923,58 @@ img {
   .haslo-cennik, .haslo-cennik-2 {
     font-size: 26px;
     line-height: 32px;
+  }
+
+  .licowki-porcelanowe-header {
+    line-height: 24px;
+  }
+
+  .pricing-description-text {
+    font-size: 2.5vw;
+  }
+
+  .pricing-check-cell {
+    padding: 10px 15px;
+  }
+
+  .member-level-title-and-apply, .pricing-check-column-titles {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-block-48 {
+    letter-spacing: 0;
+    font-size: 1.7vw;
+  }
+
+  .apply-buttons {
+    letter-spacing: 0;
+    padding: 5px 10px;
+    font-size: 1.8vw;
+  }
+
+  .pricing-rows-titles {
+    margin-bottom: 10px;
+  }
+
+  .section-24 {
+    padding: 30px;
+  }
+
+  .pricing-description-cell {
+    padding: 15px;
+  }
+
+  .pricing-check-mark {
+    width: 2.7vw;
+  }
+
+  .pricing-component-titles {
+    font-size: 2.1vw;
+  }
+
+  .list-3, .list-4 {
+    margin-top: 10px;
   }
 }
 
@@ -9322,6 +9980,37 @@ img {
     line-height: 1.2em;
   }
 
+  .article-part-1-content.text-picture-other-flow {
+    flex-flow: column;
+  }
+
+  .container-66 {
+    margin-top: 0;
+  }
+
+  .bold-text-20 {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  .heading-13 {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .heading-14 {
+    margin-top: 20px;
+  }
+
+  .heading-15 {
+    margin-top: 10px;
+  }
+
+  .section-23 {
+    width: 100%;
+  }
+
   .haslo-cennik {
     color: var(--dark_gray_main);
     background-color: #fff;
@@ -9339,6 +10028,152 @@ img {
     font-size: 11px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .heading-12-copy, .licowki-porcelanowe-header {
+    line-height: 1.2em;
+  }
+
+  .pricing-description-text {
+    font-size: 4vw;
+  }
+
+  .pricing-check-cell {
+    padding: 5px;
+  }
+
+  .member-level-title-and-apply, .pricing-check-column-titles {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .text-block-48 {
+    font-size: 2.5vw;
+  }
+
+  .apply-buttons {
+    padding: 3px 5px;
+    font-size: 2.4vw;
+  }
+
+  .section-24, .pricing-description-cell {
+    padding: 10px;
+  }
+
+  .pricing-check-mark {
+    width: 5vw;
+  }
+
+  .pricing-component-titles {
+    font-size: 3.5vw;
+  }
+
+  .member-events-description {
+    display: none;
+  }
+
+  .licowki-table-header {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .heading-16 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .heading-17 {
+    margin-top: 20px;
+  }
+
+  .bold-text-22 {
+    font-size: 18px;
+  }
+
+  .list-2 {
+    margin-top: 10px;
+  }
+
+  .text-block-49, .text-block-50, .text-block-51, .text-block-52, .text-block-53, .text-block-54 {
+    font-size: 12px;
+  }
+
+  .text-block-55 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .text-block-56, .text-block-57, .text-block-58, .text-block-59, .text-block-60 {
+    font-size: 12px;
+  }
+
+  .heading-18 {
+    margin-top: 20px;
+  }
+
+  .bold-text-23, .bold-text-24 {
+    line-height: 26px;
+  }
+
+  .container-86 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .image-34 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .heading-19 {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .container-87 {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .container-88 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-block-61 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .bold-text-25, .bold-text-26, .bold-text-27, .bold-text-28, .bold-text-29, .bold-text-30, .bold-text-31 {
+    font-size: 20px;
+  }
+
+  .bold-text-32 {
+    font-size: 16px;
+  }
+
+  .bold-text-33 {
+    font-size: 20px;
+  }
+
+  .section-26 {
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-27, .section-28, .section-29, .section-30, .section-31, .section-32, .section-33, .section-34, .section-35 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
