@@ -5535,6 +5535,7 @@ img {
 
 .text-block-61 {
   text-align: left;
+  flex: 1;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -5549,6 +5550,32 @@ img {
 
 .section-25 {
   margin-bottom: 20px;
+}
+
+.container-89, .container-90, .container-91, .container-92, .container-93, .container-94 {
+  max-width: 80%;
+}
+
+.container-95 {
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+
+.list-7 {
+  list-style-type: none;
+}
+
+.list-item {
+  list-style-type: disc;
+}
+
+.container-96 {
+  align-items: center;
+  display: flex;
+}
+
+.code-embed-6 {
+  padding-top: 10px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6164,6 +6191,62 @@ img {
   .section-29 {
     margin-bottom: 20px;
   }
+
+  .container-89, .container-90 {
+    max-width: 80%;
+  }
+
+  .bold-text-34 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .heading-20 {
+    text-align: center;
+  }
+
+  .text-block-62 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .container-91 {
+    max-width: 80%;
+    margin-top: 40px;
+  }
+
+  .heading-21 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .container-92 {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .container-93 {
+    max-width: 80%;
+    margin-bottom: 0;
+  }
+
+  .container-94 {
+    max-width: 80%;
+  }
+
+  .bold-text-35, .bold-text-36 {
+    font-weight: 600;
+  }
+
+  .container-95 {
+    max-width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .container-96 {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -6361,6 +6444,7 @@ img {
     background-image: url('../images/pay-u-mobile-new.webp');
     background-position: 80% 30%;
     background-size: cover;
+    height: 90vh;
   }
 
   .section-intro.cennik-page {
@@ -6855,6 +6939,10 @@ img {
   .list-5 {
     margin-top: 10px;
   }
+
+  .container-95 {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7238,6 +7326,7 @@ img {
     background-position: 0 0, 0 0, 0 0;
     background-size: cover, cover, auto;
     justify-content: flex-start;
+    height: 950px;
     margin-top: 0;
     padding-top: 77px;
   }
@@ -7265,6 +7354,7 @@ img {
 
   .dzial {
     width: 40%;
+    margin-top: 550px;
     padding-top: 0%;
   }
 
@@ -7857,6 +7947,7 @@ img {
 
   .ico_main_payu {
     width: 80px;
+    margin-top: -10px;
     margin-left: -20px;
   }
 
@@ -7975,6 +8066,15 @@ img {
 
   .list-3, .list-4 {
     margin-top: 10px;
+  }
+
+  .container-95 {
+    margin-bottom: 40px;
+  }
+
+  .section-36 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -10172,6 +10272,15 @@ img {
   }
 
   .section-27, .section-28, .section-29, .section-30, .section-31, .section-32, .section-33, .section-34, .section-35 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-95 {
+    margin-bottom: 40px;
+  }
+
+  .section-36 {
     padding-left: 10px;
     padding-right: 10px;
   }
