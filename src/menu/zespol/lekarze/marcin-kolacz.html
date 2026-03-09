@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Feb 23 2026 23:05:13 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Mar 09 2026 20:52:48 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff250c988292" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -18,12 +18,13 @@
   <link href="../../../images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="../../../images/webclip.png" rel="apple-touch-icon">
   <link href="https://face-clinic.pl/menu/zespol/lekarze/marcin-kolacz" rel="canonical">
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" type="text/javascript"></script>
-  <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin="">
-  <link rel="preload" href="/fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin="">
-  <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="">
-  <link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="">
-  <link rel="preload" href="/fonts/OpenSans-ExtraBold.ttf" as="font" type="font/ttf" crossorigin="">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" defer="">
+</script>
+  <!-- <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/OpenSans-ExtraBold.ttf" as="font" type="font/ttf" crossorigin> -->
   <link rel="preload" href="/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="">
@@ -38,76 +39,27 @@
   </script> -->
   <!--  Google tag (gtag.js)  -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
-  <script>
+  <!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-LF58J4S3MG');
 </script>
-  <!--  Google tag (gtag.js)  -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-622377758"></script>
-  <script>
+<!-- Google tag (gtag.js)  -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-622377758"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-622377758');
-</script>
+</script> -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
   <script>
-window.addEventListener("DOMContentLoaded", function () {
-  console.log("✅ Page loaded, now loading non-critical stylesheets...");
-  // --- Define your non-critical stylesheets here ---
-  let stylesheets = [
-    // "/css/vendors.min.css", // Example
-    // "/css/style.min.css",   // Example
-    // Add all stylesheets that are NOT critical css
-  ];
-  // ----------------------------------------------
-  let loadedCount = 0;
-  function checkAllStylesLoaded() { 
-    loadedCount++; 
-    if (loadedCount === stylesheets.length) { 
-      console.log("✅ All non-critical stylesheets loaded..."); 
-    } 
-  }
-  stylesheets.forEach(function(href) { 
-    var link = document.createElement("link"); 
-    link.rel = "stylesheet"; 
-    link.href = href; 
-    link.onload = checkAllStylesLoaded; 
-    link.onerror = () => console.warn(`Failed to load stylesheet: ${href}`); 
-    document.head.appendChild(link); 
-  });
-});
-    </script>
-  <script>
-(function () {
-  const configs = [
-    { selector: '.footer_phone_land', event: 'footer_phone_land' },
-    { selector: '.footer_phone_mobile', event: 'footer_phone_mobile' }
-  ];
-  const observer = new MutationObserver(() => {
-    configs.forEach((cfg) => {
-      const btn = document.querySelector(cfg.selector);
-      if (btn && !btn.dataset.tracked) {
-        btn.dataset.tracked = 'true';
-        btn.addEventListener('click', () => {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({ event: cfg.event });
-          gtag('event', 'conversion', {
-      		'send_to': 'AW-622377758/israCOOviPMbEJ724qgC',
-      		'value': 1.0,
-      		'currency': 'PLN',
-      		'event_callback': callback
-  		  });
-        }, { once: true });
-      }
-    });
-  });
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
-})();
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-LF58J4S3MG');
+gtag('config', 'AW-622377758');
 </script>
 </head>
 <body class="body-7">
