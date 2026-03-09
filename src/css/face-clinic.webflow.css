@@ -271,10 +271,10 @@
   --bg-dark-green: #01191d;
   --fizjot: #a08c7ee6;
   --tan: #dfd5c0;
-  --light-green: #8acfdf;
   --dark_gray_main: #454749;
   --light_gray_main: #aaabac;
   --light-blue: #bed0d5;
+  --light-green: #8acfdf;
   --bg_chirurgia_mob: #132327;
   --steel-blue: #3f74a333;
 }
@@ -629,20 +629,6 @@ img {
   text-transform: none;
   font-weight: 300;
   text-decoration: none;
-}
-
-.txt-link-stopka-home.google {
-  color: var(--white);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  transition: text-shadow .2s, transform .2s;
-}
-
-.txt-link-stopka-home.google:hover {
-  text-shadow: 0 2px 6px #000;
-  display: inline-block;
-  transform: translate(0, -2px);
 }
 
 .txt-link-stopka-home.link-google {
@@ -1208,10 +1194,6 @@ img {
   padding-top: 0;
 }
 
-.rich-text-block.edukacja.txt-o-mnie.blue {
-  color: var(--steel-blue-doted);
-}
-
 .menu-main-desktop {
   z-index: 10;
   display: block;
@@ -1473,10 +1455,6 @@ img {
   background-repeat: repeat-y;
   background-size: 3px;
   height: 200px;
-}
-
-.section-white-dots.white {
-  opacity: 1;
 }
 
 .dystans {
@@ -1758,10 +1736,6 @@ img {
   display: flex;
 }
 
-.section-intro.success {
-  height: 50vh;
-}
-
 .section-intro.moj-opis {
   height: auto;
   padding-bottom: 0%;
@@ -1881,11 +1855,6 @@ img {
   background-color: #fffffff2;
   border-radius: 20px;
   display: flex;
-}
-
-._2-menu {
-  width: 295px;
-  display: none;
 }
 
 .footer-all {
@@ -2110,11 +2079,6 @@ img {
   background-position: 0%;
 }
 
-.visual-load.osoba.baszun {
-  background-image: url('../images/Face_Clinic_Magda_Baszun_2022.jpg');
-  background-position: 0%;
-}
-
 .visual-load.osoba.milczarek {
   background-image: url('../images/Milczarek.jpg');
   background-position: 0%;
@@ -2142,11 +2106,6 @@ img {
 
 .visual-load.osoba.wojcik {
   background-image: url('../images/Wojcik.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.dziugiel {
-  background-image: url('../images/Dziugiel.jpg');
   background-position: 0%;
 }
 
@@ -2185,31 +2144,6 @@ img {
   background-position: 0%;
 }
 
-.visual-load.osoba.pietrzycka {
-  background-image: url('../images/Pietrzycka.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.bojadziska {
-  background-image: url('../images/Bojadziska.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.szczuka {
-  background-image: url('../images/Szczuka.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.cichocka {
-  background-image: url('../images/Cichocka.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.milobedzki {
-  background-image: url('../images/Milobedzki.jpg');
-  background-position: 0%;
-}
-
 .visual-load.osoba.chrzanowska {
   background-image: url('../images/Chrzanowska.jpg');
   background-position: 0%;
@@ -2217,11 +2151,6 @@ img {
 
 .visual-load.osoba.tecza {
   background-image: url('../images/Tecza.jpg');
-  background-position: 0%;
-}
-
-.visual-load.osoba.wieckowski {
-  background-image: url('../images/Wieckowski.jpg');
   background-position: 0%;
 }
 
@@ -2251,11 +2180,6 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-}
-
-.visual-load.osoba.chodyn-semczuk {
-  background-image: url('../images/Chodyn-Semczuk.jpg');
-  background-position: 0 0;
 }
 
 .visual-load.osoba.meredyk {
@@ -2324,32 +2248,8 @@ img {
   background-attachment: fixed;
 }
 
-.visual-load.osoba.skorycka {
-  background-image: url('../images/Skorycka.jpg');
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-}
-
-.visual-load.osoba.krasnicka {
-  background-image: url('../images/Krasnicka.jpg');
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-}
-
 .visual-load.osoba.jablonska {
   background-image: url('../images/Jablonska.jpg');
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-}
-
-.visual-load.osoba.tyminska {
-  background-image: url('../images/Tyminska.jpg');
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2366,12 +2266,6 @@ img {
 
 .visual-load.osoba.konrad-kaminski {
   background-image: url('../images/Kaminski.jpg');
-  background-position: 0 0;
-  background-size: contain;
-}
-
-.visual-load.osoba.rynkiewicz {
-  background-image: url('../images/Rynkiewicz.jpg');
   background-position: 0 0;
   background-size: contain;
 }
@@ -2533,14 +2427,6 @@ img {
   background-attachment: fixed;
 }
 
-.visual-load.payu-visual {
-  background-image: url('../images/payu-header.webp');
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-
 .visual {
   z-index: auto;
   font-family: Opensans, Verdana, sans-serif;
@@ -2658,11 +2544,6 @@ img {
   font-size: 16px;
 }
 
-.div-block-74 {
-  margin-top: -10px;
-  display: none;
-}
-
 .div-block-75 {
   margin-bottom: 10px;
   padding-top: 2px;
@@ -2680,10 +2561,6 @@ img {
 .text-block-25 {
   color: var(--white);
   font-family: Opensans, Verdana, sans-serif;
-}
-
-.nip {
-  color: var(--white);
 }
 
 .bank {
@@ -3257,18 +3134,6 @@ img {
   font-family: Opensans, Verdana, sans-serif;
 }
 
-.lottie-animation-3, .lottie-animation-4 {
-  width: 200px;
-}
-
-.heading-5 {
-  color: var(--light-green);
-}
-
-.lottie-animation-5 {
-  display: none;
-}
-
 .section-intro-rodo {
   flex-direction: column;
   justify-content: center;
@@ -3310,10 +3175,6 @@ img {
 .body_rodo_pl {
   background-color: #00224b;
   font-family: Opensans, Verdana, sans-serif;
-}
-
-.image-20 {
-  height: 60px;
 }
 
 .image_mazowsze {
@@ -3393,22 +3254,6 @@ img {
   overflow: hidden;
 }
 
-.section-9 {
-  height: 75vh;
-}
-
-.cv {
-  opacity: 1;
-  align-self: flex-end;
-  width: 45%;
-}
-
-.div-block-91 {
-  width: 100vh;
-  height: 100vw;
-  display: flex;
-}
-
 .body-2 {
   font-family: Opensans, Verdana, sans-serif;
 }
@@ -3427,18 +3272,6 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  position: fixed;
-  inset: 0%;
-}
-
-.karolina_mazurek_desktop {
-  z-index: -2147483648;
-  background-image: url('../images/Mazurek_2020.jpg');
-  background-position: 0%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  width: 100vw;
   position: fixed;
   inset: 0%;
 }
@@ -3481,10 +3314,6 @@ img {
   flex-direction: row;
 }
 
-.div-block-94 {
-  column-count: 4;
-}
-
 .html-embed-3 {
   background-color: #333;
   border-radius: 20px;
@@ -3498,15 +3327,6 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
   display: none;
-}
-
-.covid-10---desk {
-  opacity: .93;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-top: 40px;
-  display: flex;
-  overflow: hidden;
 }
 
 .covid-19---phone {
@@ -3559,13 +3379,6 @@ img {
 
 .bx2.off {
   display: none;
-}
-
-.div-block-98 {
-  background-color: #fffffff2;
-  width: 33%;
-  position: relative;
-  overflow: auto;
 }
 
 .image-21 {
@@ -3849,10 +3662,6 @@ img {
   transform: translate(0, -3px);
 }
 
-.image-23 {
-  display: none;
-}
-
 .face-edu {
   padding-right: 20px;
   transition: opacity .2s;
@@ -3870,28 +3679,6 @@ img {
 }
 
 .image-24 {
-  filter: brightness(200%);
-}
-
-.face-edu_absolute {
-  position: fixed;
-  inset: 20px auto auto 20px;
-}
-
-.face-edu_box-2 {
-  opacity: .65;
-  align-items: flex-end;
-  transition: opacity .2s;
-  display: flex;
-  position: relative;
-  left: -17px;
-}
-
-.face-edu_box-2:hover {
-  opacity: 1;
-}
-
-.image-25 {
   filter: brightness(200%);
 }
 
@@ -3962,10 +3749,6 @@ img {
   padding-left: 10px;
 }
 
-.image-27 {
-  margin-right: 0;
-}
-
 .dokumenty_footer {
   opacity: .76;
   justify-content: flex-start;
@@ -4000,10 +3783,6 @@ img {
 
 .chirurgia-ortognatyczna {
   margin-top: 5px;
-}
-
-.chirurgia-ortognatyczna.off {
-  display: none;
 }
 
 .bold-text-5 {
@@ -4107,21 +3886,6 @@ img {
   box-shadow: 0 2px 5px #0003;
 }
 
-.grid {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  width: 70%;
-  display: grid;
-}
-
-.navigation_menu_wrapper {
-  float: right;
-  max-width: none;
-}
-
 .container-11 {
   object-fit: fill;
   flex-flow: row;
@@ -4130,21 +3894,6 @@ img {
   padding: 10px;
   display: flex;
   position: relative;
-}
-
-.container-12 {
-  text-align: left;
-  order: 1;
-  align-self: center;
-  width: 40px;
-  max-width: none;
-  height: 40px;
-}
-
-.grid-2 {
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 5%;
 }
 
 .navigation_fb {
@@ -4227,67 +3976,6 @@ img {
 
 .dropdown-toggle {
   padding-left: 0;
-}
-
-.ortodoncja-icon {
-  color: var(--dark_gray_main);
-  border: 1px solid #454749;
-  border-radius: 5px;
-  width: 42px;
-  height: 42px;
-  margin-left: 10px;
-}
-
-.ortodoncja-icon:hover {
-  color: var(--light_gray_main);
-  -webkit-text-stroke-color: var(--light_gray_main);
-  border-color: #aaabac;
-}
-
-.ortodoncja-icon.ortodoncja-hover {
-  color: var(--dark_gray_main);
-}
-
-.ortodoncja-icon.ortodoncja-hover:hover {
-  color: var(--dark_gray_main);
-  -webkit-text-stroke-color: var(--dark_gray_main);
-  border-color: #454749;
-}
-
-.container-16 {
-  display: flex;
-}
-
-.text-block-30 {
-  margin-left: 10px;
-}
-
-.ortodoncja-link {
-  align-items: center;
-  padding-bottom: 10px;
-  display: flex;
-}
-
-.ortodoncja-container {
-  margin-top: 0;
-  padding-top: 10px;
-}
-
-.ortodoncja-container:hover {
-  color: var(--light_gray_main);
-}
-
-.ortodoncja-text {
-  color: var(--dark_gray_main);
-  margin-left: 10px;
-}
-
-.ortodoncja-text:hover {
-  color: var(--light_gray_main);
-}
-
-.ortodoncja-text.ortodoncja-hover, .ortodoncja-text.ortodoncja-hover:hover {
-  color: var(--dark_gray_main);
 }
 
 .link-block-5 {
@@ -4405,29 +4093,6 @@ img {
   display: block;
 }
 
-.logo_navii_menu {
-  color: var(--dark_gray_main);
-  text-align: left;
-  width: 40px;
-  height: auto;
-  position: static;
-}
-
-.logo_navii_menu:hover {
-  color: var(--light_gray_main);
-}
-
-.navigation_ortodoncja_link_mobile {
-  color: var(--dark_gray_main);
-  margin-right: 40px;
-  font-family: Opensans, Verdana, sans-serif;
-  font-size: 20px;
-}
-
-.navigation_ortodoncja_link_mobile:hover {
-  color: var(--light_gray_main);
-}
-
 .ortodoncja-service-mobile {
   color: var(--dark_gray_main);
   margin-left: 0;
@@ -4475,58 +4140,11 @@ img {
   padding-right: 0;
 }
 
-.cennik-mobile {
-  box-sizing: border-box;
-  width: auto;
-  max-width: none;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-  display: block;
-}
-
-.cennik-mobile0icon {
-  color: var(--dark_gray_main);
-  width: 39px;
-  height: 39px;
-  font-size: 15px;
-}
-
-.cennik-mobile-text {
-  text-align: right;
-  flex: 0 auto;
-  min-width: auto;
-  max-width: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.kontakt-mobile {
-  -webkit-text-stroke-color: var(--dark_gray_main);
-  border: 1px solid #454749;
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
-  margin-left: 0;
-  padding-right: 0;
-}
-
 .kontakt-mobile-text {
   flex: 1;
   margin-left: 0;
   padding-left: 10px;
   font-size: 16px;
-}
-
-.oferta-mobile-icon {
-  -webkit-text-stroke-color: var(--dark_gray_main);
-  border: 1px solid #454749;
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
-  margin-left: 0;
-  padding-right: 0;
 }
 
 .container-28, .container-29 {
@@ -4633,11 +4251,6 @@ img {
   bottom: 23px;
 }
 
-.ico_main_payu.online {
-  margin-top: 3px;
-  margin-bottom: -1px;
-}
-
 .haslo-payu-sa {
   color: var(--white);
   text-transform: none;
@@ -4648,11 +4261,6 @@ img {
   line-height: 48px;
 }
 
-.haslo-payu-sa.imie-i-nazwisko {
-  color: var(--steel-blue-doted);
-  margin-bottom: 10px;
-}
-
 .dzial-payu {
   color: var(--white);
   text-transform: uppercase;
@@ -4661,10 +4269,6 @@ img {
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
-}
-
-.dzial-payu.funkcja {
-  color: var(--steel-blue-doted);
 }
 
 .text-block-33 {
@@ -4717,25 +4321,6 @@ img {
   padding-right: 40px;
 }
 
-.text-block-34 {
-  color: var(--dark_gray_main);
-  text-align: left;
-  flex: 1;
-  order: 9999;
-  font-size: 23px;
-}
-
-.container-38 {
-  border-bottom: 1px solid #aaabac;
-  flex-flow: column;
-  justify-content: flex-start;
-  max-width: none;
-  margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: flex;
-}
-
 .container-39 {
   flex-flow: row;
   flex: 1;
@@ -4747,19 +4332,6 @@ img {
   display: flex;
   position: static;
   left: auto;
-}
-
-.cennik-category {
-  color: var(--dark_gray_main);
-  text-align: left;
-  flex-flow: column;
-  flex: 0 auto;
-  order: 0;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 10px;
-  font-size: 23px;
-  display: block;
 }
 
 .value-category {
@@ -4782,19 +4354,6 @@ img {
   max-width: 80%;
   padding-left: 10px;
   font-size: 20px;
-}
-
-.service-price {
-  color: var(--dark_gray_main);
-  text-align: right;
-  flex: .3 auto;
-  order: 9999;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  position: static;
 }
 
 .container-40 {
@@ -4841,10 +4400,6 @@ img {
   font-size: 24px;
 }
 
-.container-45 {
-  display: none;
-}
-
 .container-47 {
   flex: 0 auto;
   order: 0;
@@ -4856,21 +4411,6 @@ img {
 
 .container-48 {
   display: none;
-}
-
-.haslo-payu-sa-second-row {
-  color: var(--white);
-  text-transform: none;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-right: 20px;
-  font-size: 28px;
-  line-height: 48px;
-}
-
-.haslo-payu-sa-second-row.imie-i-nazwisko {
-  color: var(--steel-blue-doted);
-  margin-bottom: 10px;
 }
 
 .link-block-7 {
@@ -4888,32 +4428,6 @@ img {
   color: var(--white);
   margin: 10px;
   padding-left: 10px;
-}
-
-.container-50 {
-  flex: 1;
-  align-items: center;
-  width: 100%;
-  max-width: none;
-  display: flex;
-}
-
-.text-block-35 {
-  opacity: 0;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.container-51 {
-  width: 100%;
-  max-width: none;
-  height: 0;
-}
-
-.text-block-36 {
-  height: 0;
-  overflow: hidden;
 }
 
 .service-accordian-toggle {
@@ -5000,16 +4514,6 @@ img {
   max-width: 80%;
   padding-bottom: 60px;
   display: block;
-}
-
-.container-54, .container-55 {
-  max-width: 80%;
-}
-
-.container-56 {
-  flex: 0 auto;
-  order: -9999;
-  max-width: 20%;
 }
 
 .container-57 {
@@ -5103,20 +4607,6 @@ img {
   width: auto;
 }
 
-.slide-6 {
-  height: auto;
-}
-
-.container-61 {
-  height: 400px;
-}
-
-.container-62 {
-  max-width: none;
-  height: auto;
-  display: block;
-}
-
 .slide-7 {
   height: auto;
 }
@@ -5137,10 +4627,6 @@ img {
   padding-bottom: 20px;
 }
 
-.heading-11 {
-  font-size: 24px;
-}
-
 .container-63 {
   max-width: 80%;
 }
@@ -5155,11 +4641,6 @@ img {
 
 .article-part-1-content.text-picture-other-flow {
   flex-flow: column;
-  display: flex;
-}
-
-.article-part-1-content.text-picture-other-flow-copy {
-  flex-flow: column-reverse;
   display: flex;
 }
 
@@ -5189,10 +4670,6 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 0;
-}
-
-.container-71 {
-  max-width: none;
 }
 
 .image-31 {
@@ -5244,21 +4721,12 @@ img {
   line-height: 48px;
 }
 
-.haslo-cennik.imie-i-nazwisko {
-  color: var(--steel-blue-doted);
-  margin-bottom: 10px;
-}
-
 .cennik-przerywana {
   background-image: url('../images/white_dot-01_poziom.svg');
   background-position: 0 0;
   background-repeat: repeat-x;
   background-size: contain;
   height: 3px;
-}
-
-.cennik-przerywana._2 {
-  border-bottom: 1px dashed var(--steel-blue-doted);
 }
 
 .haslo-cennik-2 {
@@ -5271,198 +4739,8 @@ img {
   line-height: 48px;
 }
 
-.haslo-cennik-2.imie-i-nazwisko {
-  color: var(--steel-blue-doted);
-  margin-bottom: 10px;
-}
-
-.heading-12-copy {
-  font-size: 24px;
-}
-
 .licowki-porcelanowe-header {
   font-size: 20px;
-}
-
-.pricing-description-col-titles {
-  justify-content: center;
-  align-items: flex-end;
-  width: 40%;
-  display: flex;
-}
-
-.pricing-description-text {
-  color: #73b71a;
-  font-family: Lato, sans-serif;
-  font-size: 1.2vw;
-  font-weight: 700;
-  line-height: 100%;
-}
-
-.pricing-grid-flexbox-copy {
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 15px;
-}
-
-.pricing-rows {
-  border-bottom: 1px solid #bec3c7;
-  display: flex;
-}
-
-.pricing-rows-copy {
-  border-top: 1px solid #bec3c7;
-  border-bottom: 1px solid #bec3c7;
-  display: flex;
-}
-
-.pricing-check-cell {
-  text-align: center;
-  border-right: 1px solid #bec3c7;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-}
-
-.member-price {
-  color: #7ead31;
-  font-weight: 700;
-}
-
-.member-level-title-and-apply {
-  text-align: center;
-  justify-content: center;
-  align-items: flex-start;
-  width: 15%;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
-
-.pricing-check-column-titles {
-  text-align: center;
-  justify-content: center;
-  align-items: flex-end;
-  width: 15%;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-}
-
-.div-block-117 {
-  border-right: 1px solid #bec3c7;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.pricing-grid-flexbox {
-  border: 1px #bec3c7;
-  border-style: solid none none solid;
-  flex-wrap: wrap;
-  width: 100%;
-  box-shadow: 0 0 10px -3px #0000007a;
-}
-
-.text-block-48 {
-  color: #245672;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Lato, sans-serif;
-  font-size: 1.2vw;
-  font-weight: 700;
-  line-height: 150%;
-}
-
-.apply-buttons {
-  color: #154058;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background-color: #a8d069;
-  border-radius: 3px;
-  padding: 11px 20px;
-  font-family: Lato, sans-serif;
-  font-size: 1.2vw;
-  font-weight: 700;
-  line-height: 100%;
-  text-decoration: none;
-  transition: background-color .2s, all .2s;
-  display: inline-block;
-}
-
-.apply-buttons:hover {
-  background-color: #83aa46;
-  transform: translate(0, -2px);
-}
-
-.apply-buttons:active {
-  background-color: #729736;
-  transform: translate(0, -5px);
-}
-
-.pricing-rows-titles {
-  margin-bottom: 10px;
-  display: flex;
-}
-
-.patron-disclaimer-div {
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 40%;
-  padding-left: 5px;
-  display: flex;
-}
-
-.section-24 {
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  display: flex;
-}
-
-.pricing-description-cell {
-  background-color: #f5f5f5;
-  border-right: 1px solid #bec3c7;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 40%;
-  padding: 15px 20px;
-  display: flex;
-}
-
-.pricing-check-mark {
-  width: 16px;
-}
-
-.div-block-118 {
-  width: 40%;
-}
-
-.pricing-component-titles {
-  color: #245672;
-  font-family: Lato, sans-serif;
-  font-size: 1.2vw;
-  font-weight: 400;
-  line-height: 100%;
-}
-
-.max-1200 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.member-events-description {
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .container-73 {
@@ -5480,7 +4758,7 @@ img {
   padding-top: 5px;
 }
 
-.container-74, .container-75, .container-76, .container-77 {
+.container-74, .container-75, .container-76 {
   flex: 1;
 }
 
@@ -5495,14 +4773,6 @@ img {
 
 .list {
   margin-top: 10px;
-}
-
-.licowki-image-before-after {
-  justify-content: center;
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
 }
 
 .container-86 {
@@ -5561,14 +4831,6 @@ img {
   margin-bottom: 40px;
 }
 
-.list-7 {
-  list-style-type: none;
-}
-
-.list-item {
-  list-style-type: disc;
-}
-
 .container-96 {
   align-items: center;
   display: flex;
@@ -5605,12 +4867,6 @@ img {
   .article-part-1-content.text-picture-other-flow {
     flex-flow: column;
     max-width: none;
-    display: flex;
-  }
-
-  .article-part-1-content.text-picture-other-flow-copy {
-    flex-flow: column-reverse;
-    max-width: 80%;
     display: flex;
   }
 
@@ -5654,10 +4910,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }
-
-  .container-71 {
-    max-width: none;
   }
 
   .image-31 {
@@ -5732,13 +4984,6 @@ img {
   .container-83 {
     max-width: 100%;
   }
-
-  .licowki-image-before-after {
-    max-width: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: none;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -5771,10 +5016,6 @@ img {
     width: 80%;
   }
 
-  .container-64 {
-    max-width: 80%;
-  }
-
   .article-part-1-content {
     flex-flow: row;
     justify-content: center;
@@ -5785,10 +5026,6 @@ img {
 
   .article-part-1-content.text-picture-other-flow {
     flex-flow: column;
-    max-width: 80%;
-  }
-
-  .article-part-1-content.text-picture-other-flow-copy {
     max-width: 80%;
   }
 
@@ -5835,20 +5072,10 @@ img {
     max-width: 80%;
   }
 
-  .zeby-w-jeden-dzien-3 {
-    max-width: 80%;
-    display: flex;
-  }
-
   .container-70 {
     flex: 1;
     max-width: none;
     margin-left: 20px;
-  }
-
-  .container-71 {
-    flex: 1;
-    max-width: none;
   }
 
   .image-33 {
@@ -5897,13 +5124,6 @@ img {
   .container-85 {
     max-width: 100%;
   }
-
-  .licowki-image-before-after {
-    flex: 1;
-    max-width: none;
-    padding-right: 0;
-    display: block;
-  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -5948,17 +5168,6 @@ img {
     font-size: 28px;
   }
 
-  .container-64 {
-    max-width: none;
-    margin-top: 40px;
-  }
-
-  .container-64.odwrotny-flow {
-    flex-flow: row-reverse;
-    max-width: none;
-    display: flex;
-  }
-
   .article-part-1-content {
     flex-flow: row;
     flex: 1;
@@ -5967,19 +5176,11 @@ img {
     max-width: 80%;
   }
 
-  .article-part-1-content.opis-odwrotny-flow {
-    flex-flow: row-reverse;
-  }
-
   .article-part-1-content.text-picture-other-flow {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     flex-flow: row-reverse;
     max-width: 80%;
-  }
-
-  .article-part-1-content.text-picture-other-flow-copy {
-    flex-flow: row-reverse;
   }
 
   .container-66 {
@@ -6049,25 +5250,10 @@ img {
     max-width: none;
   }
 
-  .zeby-w-jeden-dzien-2.opis-odwrotny-flow {
-    flex-flow: row-reverse;
-  }
-
   .zeby-w-jeden-dzien-2.text-picture-other-flow {
     flex-flow: row-reverse;
     align-items: center;
     max-width: 80%;
-  }
-
-  .zeby-w-jeden-dzien-3 {
-    flex: 1;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .zeby-w-jeden-dzien-3.opis-odwrotny-flow, .zeby-w-jeden-dzien-3.text-picture-other-flow {
-    flex-flow: row-reverse;
   }
 
   .container-70 {
@@ -6084,17 +5270,6 @@ img {
     padding-left: 20px;
     padding-right: 20px;
     display: inline-block;
-  }
-
-  .image-30 {
-    text-align: right;
-  }
-
-  .container-71 {
-    order: -9999;
-    max-width: 50%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .image-31 {
@@ -6123,7 +5298,7 @@ img {
     height: auto;
   }
 
-  .heading-12-copy, .licowki-porcelanowe-header {
+  .licowki-porcelanowe-header {
     color: var(--white);
     font-size: 28px;
   }
@@ -6168,20 +5343,6 @@ img {
 
   .container-85 {
     max-width: none;
-  }
-
-  .licowki-image-before-after {
-    text-align: right;
-    flex-flow: wrap;
-    flex: 1;
-    order: 9999;
-    place-content: center flex-start;
-    align-items: flex-start;
-    max-width: 30%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-right: 0;
-    display: flex;
   }
 
   .section-27 {
@@ -6556,10 +5717,6 @@ img {
     background-position: 50% 0, 0 0;
   }
 
-  .visual-load.payu-visual {
-    background-image: url('../images/payu-header.webp'), url('../images/Implanty_tlo.jpg');
-  }
-
   .visual.implanty {
     z-index: auto;
   }
@@ -6595,10 +5752,6 @@ img {
 
   .div-block-72 {
     margin-top: 5px;
-  }
-
-  .div-block-74 {
-    display: none;
   }
 
   .div-block-75 {
@@ -6788,10 +5941,6 @@ img {
     display: none;
   }
 
-  .karolina_mazurek_desktop {
-    display: none;
-  }
-
   .div-block-93 {
     height: 400px;
   }
@@ -6800,22 +5949,12 @@ img {
     position: relative;
   }
 
-  .div-block-94 {
-    column-count: 3;
-  }
-
   .html-embed-3 {
     margin-bottom: 0;
   }
 
   .covid-19---mob-horizon {
     display: none;
-  }
-
-  .covid-10---desk {
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 40px;
   }
 
   .body-old {
@@ -6829,10 +5968,6 @@ img {
 
   .link-block-4:focus-visible, .link-block-4[data-wf-focus-visible] {
     border-width: 9px;
-  }
-
-  .div-block-98 {
-    width: 15%;
   }
 
   .covid-19, .covid-19---ipad {
@@ -6908,32 +6043,6 @@ img {
 
   .bold-text-21, .licowki-porcelanowe-header {
     line-height: 24px;
-  }
-
-  .pricing-description-text {
-    font-size: 2vw;
-  }
-
-  .pricing-check-cell {
-    width: 15%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .text-block-48, .apply-buttons {
-    font-size: 1.5vw;
-  }
-
-  .section-24 {
-    padding: 50px;
-  }
-
-  .pricing-description-cell {
-    padding: 20px;
-  }
-
-  .pricing-component-titles {
-    font-size: 2vw;
   }
 
   .list-5 {
@@ -7381,14 +6490,6 @@ img {
     padding-bottom: 0;
   }
 
-  .dystans-10._1 {
-    display: none;
-  }
-
-  ._2-menu {
-    width: 330px;
-  }
-
   .adres-zadzwon-linki {
     flex-direction: column;
     justify-content: center;
@@ -7442,14 +6543,6 @@ img {
 
   .visual-load.chirurgia {
     background-position: 40% 0, 0 0;
-  }
-
-  .visual-load.payu-visual {
-    background-image: url('../images/payu-header.webp');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
   }
 
   .visual {
@@ -7520,11 +6613,6 @@ img {
     line-height: 30px;
   }
 
-  .div-block-74 {
-    margin-top: 0;
-    display: block;
-  }
-
   .div-block-75 {
     justify-content: space-between;
     margin-top: 20px;
@@ -7541,7 +6629,7 @@ img {
     margin-top: 3px;
   }
 
-  .text-block-25, .nip, .bank {
+  .text-block-25, .bank {
     font-size: 17px;
     line-height: 24px;
   }
@@ -7726,10 +6814,6 @@ img {
     top: 10px;
   }
 
-  .div-block-94 {
-    column-count: 2;
-  }
-
   .html-embed-3 {
     background-color: #333;
     justify-content: center;
@@ -7744,17 +6828,6 @@ img {
     padding-right: 5px;
     display: none;
     overflow: hidden;
-  }
-
-  .covid-10---desk {
-    display: none;
-  }
-
-  .div-block-96 {
-    border-radius: 20px;
-    align-self: center;
-    width: 480px;
-    height: 270px;
   }
 
   .body-old {
@@ -7877,17 +6950,6 @@ img {
     font-size: 22px;
   }
 
-  .image-23 {
-    z-index: -1;
-    display: block;
-    position: absolute;
-    inset: 6% 0% auto;
-  }
-
-  .face-edu_absolute {
-    top: 100px;
-  }
-
   .section-12 {
     margin-top: 120px;
   }
@@ -7951,10 +7013,6 @@ img {
     margin-left: -20px;
   }
 
-  .ico_main_payu.online {
-    bottom: 30px;
-  }
-
   .haslo-payu-sa {
     font-size: 26px;
     line-height: 32px;
@@ -7964,11 +7022,6 @@ img {
     padding-right: 10px;
     font-size: 16px;
     line-height: 18px;
-  }
-
-  .haslo-payu-sa-second-row {
-    font-size: 26px;
-    line-height: 32px;
   }
 
   .section-20 {
@@ -8018,50 +7071,6 @@ img {
 
   .licowki-porcelanowe-header {
     line-height: 24px;
-  }
-
-  .pricing-description-text {
-    font-size: 2.5vw;
-  }
-
-  .pricing-check-cell {
-    padding: 10px 15px;
-  }
-
-  .member-level-title-and-apply, .pricing-check-column-titles {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .text-block-48 {
-    letter-spacing: 0;
-    font-size: 1.7vw;
-  }
-
-  .apply-buttons {
-    letter-spacing: 0;
-    padding: 5px 10px;
-    font-size: 1.8vw;
-  }
-
-  .pricing-rows-titles {
-    margin-bottom: 10px;
-  }
-
-  .section-24 {
-    padding: 30px;
-  }
-
-  .pricing-description-cell {
-    padding: 15px;
-  }
-
-  .pricing-check-mark {
-    width: 2.7vw;
-  }
-
-  .pricing-component-titles {
-    font-size: 2.1vw;
   }
 
   .list-3, .list-4 {
@@ -8337,18 +7346,7 @@ img {
     padding-left: 40px;
   }
 
-  .l2-link.ue, .l2-link.tv, .l2-link.faq, .l2-link.galeria, .l2-link.edukacja, .l2-link.edukacja.w--current {
-    width: 152vw;
-    padding-left: 40px;
-  }
-
-  .l2-link.out {
-    width: 152vw;
-    margin-right: 15px;
-    padding-left: 40px;
-  }
-
-  .l2-link.blog {
+  .l2-link.ue, .l2-link.tv, .l2-link.faq, .l2-link.galeria, .l2-link.edukacja, .l2-link.edukacja.w--current, .l2-link.blog {
     width: 152vw;
     padding-left: 40px;
   }
@@ -8797,14 +7795,6 @@ img {
     z-index: auto;
   }
 
-  .visual-load.payu-visual {
-    background-image: none;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: auto;
-    background-attachment: scroll;
-  }
-
   .visual {
     margin-top: 70px;
   }
@@ -8871,11 +7861,6 @@ img {
   .paragraph-9 {
     font-size: 17px;
     line-height: 24px;
-  }
-
-  .div-block-74 {
-    margin-top: -8px;
-    display: none;
   }
 
   .div-block-75 {
@@ -9139,10 +8124,6 @@ img {
     z-index: auto;
   }
 
-  .div-block-94 {
-    column-count: 1;
-  }
-
   .html-embed-3 {
     border-radius: 10px;
     padding: 3px;
@@ -9266,10 +8247,6 @@ img {
   .color {
     z-index: -1;
     position: absolute;
-  }
-
-  .image-23 {
-    width: 1200px;
   }
 
   .face-edu_box {
@@ -9434,54 +8411,6 @@ img {
     box-shadow: 0 2px 5px #0003;
   }
 
-  .logo_navii_menu {
-    flex: 0 auto;
-    order: -9999;
-    align-self: center;
-    width: 40px;
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .code-embed-3 {
-    clear: none;
-    aspect-ratio: auto;
-    color: var(--dark_gray_main);
-    text-align: left;
-    flex: 1;
-    order: 9999;
-    justify-content: flex-end;
-    align-self: center;
-    align-items: center;
-    width: 50px;
-    height: 40px;
-    display: flex;
-  }
-
-  .container-22 {
-    flex-flow: row;
-    flex: 0 auto;
-    order: 0;
-    align-self: auto;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    padding: 10px;
-    display: none;
-  }
-
-  .container-23 {
-    float: none;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    width: 100%;
-    display: none;
-    position: static;
-  }
-
   .x-icon {
     box-sizing: content-box;
     float: none;
@@ -9548,12 +8477,6 @@ img {
     display: flex;
   }
 
-  .dropdown-3 {
-    align-self: auto;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
   .arrow-down-oferta {
     color: var(--dark_gray_main);
     text-align: left;
@@ -9567,32 +8490,6 @@ img {
     padding-left: 3px;
   }
 
-  .icon {
-    flex: 0 auto;
-    order: 0;
-  }
-
-  .cennik-mobile {
-    width: 100%;
-  }
-
-  .cennik-mobile0icon {
-    border: 1px solid #454749;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-  }
-
-  .cennik-mobile-text {
-    padding-left: 10px;
-    font-size: 20px;
-  }
-
-  .container-25 {
-    background-color: #fff;
-    width: 31%;
-  }
-
   .container-26 {
     width: 100%;
     max-width: none;
@@ -9601,17 +8498,6 @@ img {
 
   .container-27 {
     width: 100%;
-  }
-
-  .kontakt-mobile {
-    color: var(--dark_gray_main);
-    text-align: left;
-    border-style: none;
-    border-width: 0;
-    flex: 0 auto;
-    align-self: center;
-    width: 39px;
-    height: 39px;
   }
 
   .kontakt-mobile-text {
@@ -9624,15 +8510,6 @@ img {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .oferta-mobile-icon {
-    color: var(--dark_gray_main);
-    text-align: left;
-    flex: 0 auto;
-    align-self: center;
-    width: 39px;
-    height: 39px;
   }
 
   .oferta-mobile-text-icon {
@@ -9689,16 +8566,6 @@ img {
     width: 60px;
     margin-left: -14px;
     display: none;
-  }
-
-  .ico_main_payu.online {
-    width: 80px;
-    display: none;
-  }
-
-  .ico_main_payu.ue {
-    width: 80px;
-    display: inline-block;
   }
 
   .haslo-payu-sa {
@@ -9786,10 +8653,6 @@ img {
     padding-right: 0%;
   }
 
-  .container-38 {
-    width: 100%;
-  }
-
   .container-39 {
     text-align: left;
     flex-flow: column;
@@ -9801,12 +8664,6 @@ img {
   .service-name {
     font-size: 18px;
     line-height: 1.5em;
-  }
-
-  .service-price {
-    flex-grow: .08;
-    font-size: 18px;
-    line-height: 1.7;
   }
 
   .container-40 {
@@ -9840,44 +8697,6 @@ img {
     overflow: auto;
   }
 
-  .container-45 {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .container-46 {
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
-    overflow-wrap: normal;
-    align-items: flex-start;
-    display: flex;
-    overflow: auto;
-  }
-
-  .button-3 {
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-  }
-
-  .dropdown-list-4 {
-    overflow-wrap: normal;
-    align-items: center;
-    display: flex;
-    overflow: auto;
-  }
-
-  .dropdown-4 {
-    flex: 0 auto;
-    align-self: flex-start;
-    display: none;
-    position: relative;
-  }
-
-  .dropdown-link {
-    overflow: auto;
-  }
-
   .container-47 {
     z-index: 10;
     background-color: #fff;
@@ -9891,15 +8710,6 @@ img {
     position: sticky;
     top: 70px;
     overflow: auto;
-  }
-
-  .haslo-payu-sa-second-row {
-    color: var(--dark_gray_main);
-    background-color: #fff;
-    padding: 5px 10px 5px 5px;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 20px;
   }
 
   .link-4 {
@@ -10130,46 +8940,8 @@ img {
     line-height: 20px;
   }
 
-  .heading-12-copy, .licowki-porcelanowe-header {
+  .licowki-porcelanowe-header {
     line-height: 1.2em;
-  }
-
-  .pricing-description-text {
-    font-size: 4vw;
-  }
-
-  .pricing-check-cell {
-    padding: 5px;
-  }
-
-  .member-level-title-and-apply, .pricing-check-column-titles {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .text-block-48 {
-    font-size: 2.5vw;
-  }
-
-  .apply-buttons {
-    padding: 3px 5px;
-    font-size: 2.4vw;
-  }
-
-  .section-24, .pricing-description-cell {
-    padding: 10px;
-  }
-
-  .pricing-check-mark {
-    width: 5vw;
-  }
-
-  .pricing-component-titles {
-    font-size: 3.5vw;
-  }
-
-  .member-events-description {
-    display: none;
   }
 
   .licowki-table-header {
@@ -10184,10 +8956,6 @@ img {
 
   .heading-17 {
     margin-top: 20px;
-  }
-
-  .bold-text-22 {
-    font-size: 18px;
   }
 
   .list-2 {
