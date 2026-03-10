@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 17:10:48 GMT+0000 (Coordinated Universal Time)  --><html data-wf-page="687113d34acbeaff1c126eb9" data-wf-site="5c596ea54abddd008a1e1302" lang="pl"><head><meta charset="utf-8"><title>Katarzyna Dębińska</title><meta content="Katarzyna Dębińska" property="og:title"><meta content="Katarzyna Dębińska" property="twitter:title"><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="Webflow" name="generator"><link rel="preload" href="/css/style-817b513188.min.css" as="style"><link rel="stylesheet" href="/css/style-817b513188.min.css"><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../../../images/favicon.png" rel="shortcut icon" type="image/x-icon"><link href="../../../images/webclip.png" rel="apple-touch-icon"><link href="https://face-clinic.pl/menu/zespol/lekarze/katarzyna-debinska" rel="canonical"><script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" defer=""></script><!-- <link rel="preload" href="/fonts/OpenSans-Bold-6bbd5cf43b.ttf" as="font" type="font/ttf" crossorigin>
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 18:19:01 GMT+0000 (Coordinated Universal Time)  --><html data-wf-page="687113d34acbeaff1c126eb9" data-wf-site="5c596ea54abddd008a1e1302" lang="pl"><head><meta charset="utf-8"><title>Katarzyna Dębińska</title><meta content="Katarzyna Dębińska" property="og:title"><meta content="Katarzyna Dębińska" property="twitter:title"><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="Webflow" name="generator"><link rel="preload" href="/css/style-817b513188.min.css" as="style"><link rel="stylesheet" href="/css/style-817b513188.min.css"><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../../../images/favicon.png" rel="shortcut icon" type="image/x-icon"><link href="../../../images/webclip.png" rel="apple-touch-icon"><link href="https://face-clinic.pl/menu/zespol/lekarze/katarzyna-debinska" rel="canonical"><script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" defer=""></script><!-- <link rel="preload" href="/fonts/OpenSans-Bold-6bbd5cf43b.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-Light-6fdf8d974a.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-SemiBold-ebebb4b543.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-Regular-94d168f74b.ttf" as="font" type="font/ttf" crossorigin>
@@ -110,7 +110,8 @@ window.addEventListener('load', function () {
   }
 })();
 }, 1500);
-</script> --><script>function gtag_report_conversion2(url) {
+</script> --> <!-- <script>
+function gtag_report_conversion2(url) {
   var callback = function () {
     if (typeof(url) !== 'undefined') {
       window.location = url;
@@ -170,4 +171,63 @@ window.addEventListener('load', function () {
       }
     })();
   }, 2000);
-});</script></body></html>
+});
+</script> --><script>(function(){
+let thuliumStarted = false;
+function startThulium(){
+  const e = document.createElement("script");
+  e.src="https://elfsightcdn.com/platform.js";
+  e.async=true;
+  document.body.appendChild(e);
+  if(thuliumStarted) return;
+  thuliumStarted = true;
+  const s = document.createElement("script");
+  s.src="https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
+  s.async=true;
+  document.body.appendChild(s);
+  waitForThulium();
+}
+function waitForThulium(){
+  let attempts=0;
+  (function check(){
+    if(window._tc && typeof window._tc==="function"){
+      _tc('event_listener',function(event){
+        const eventsMap={
+          callback_scheduled:'th_callback_scheduled',
+          callback_created:'th_callback_created'
+        };
+        if(eventsMap[event.name]){
+          window.dataLayer=window.dataLayer||[];
+          window.dataLayer.push({
+            event:eventsMap[event.name],
+            page:location.href
+          });
+          gtag_report_conversion?.();
+          gtag_report_conversion2?.();
+        }
+      });
+    } else if(attempts<20){
+      attempts++;
+      setTimeout(check,500);
+    }
+  })();
+}
+function trigger(){
+  startThulium();
+  removeListeners();
+}
+function removeListeners(){
+  window.removeEventListener('scroll',trigger);
+  window.removeEventListener('mousemove',trigger);
+  window.removeEventListener('touchstart',trigger);
+  window.removeEventListener('click',trigger);
+}
+window.addEventListener('scroll',trigger,{once:true});
+window.addEventListener('mousemove',trigger,{once:true});
+window.addEventListener('touchstart',trigger,{once:true});
+window.addEventListener('click',trigger,{once:true});
+/* fallback if user never interacts */
+window.addEventListener('load',()=>{
+  setTimeout(startThulium,6000);
+});
+})();</script></body></html>
