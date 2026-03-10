@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 14:45:27 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 15:30:22 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -74,7 +74,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KZSCB8LJ');</script> -->
   <!--  End Google Tag Manager  -->
   <link rel="preload" as="image" href="https://face-clinic.pl/images/fc-header.webp" fetchpriority="high">
-  <script>
+  <link rel="preload" as="image" href="https://face-clinic.pl/images/fc-header-mobile.webp" fetchpriority="high">
+  <!-- <script>
 (function() {
   var gtmLoaded = false;
   function loadGTM() {
@@ -97,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // Fallback: load after 3 seconds
   setTimeout(loadGTM, 3000);
 })();
-</script>
+</script> -->
 </head>
 <body class="body-old">
   <section class="section-14 section-15 section-16">
@@ -1021,7 +1022,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </section>
   <div class="section-reklama">
-    <a href="https://rezonansfc.pl" target="_blank" class="link-block-4 w-inline-block"><img src="images/Rezonans-FC.webp" loading="lazy" alt="Rezonans od ręki, niska cena! Tel. 222 139 310, ul. Łuczek 4, Warszawa. rezonansfc.pl" class="reklama"></a>
+    <a href="https://rezonansfc.pl" target="_blank" class="link-block-4 w-inline-block"><img src="images/Rezonans-FC.webp" loading="lazy" sizes="(max-width: 2048px) 100vw, 2048px, 100vw" srcset="images/Rezonans-FC-p-500.webp 500w, images/Rezonans-FC-p-800.webp 800w, images/Rezonans-FC-p-1080.webp 1080w, images/Rezonans-FC-p-1600.webp 1600w, images/Rezonans-FC-p-2000.webp 2000w, images/Rezonans-FC.webp 2048w" alt="Rezonans od ręki, niska cena! Tel. 222 139 310, ul. Łuczek 4, Warszawa. rezonansfc.pl" class="reklama"></a>
   </div>
   <footer id="FOOTER" class="section-footer">
     <div class="footer-all">
@@ -1211,6 +1212,11 @@ window.addEventListener('load', function () {
   script.type = "text/javascript";
   script.async = true;
   document.body.appendChild(script);
+  var scriptE = document.createElement('script');
+  scriptE.src = "https://elfsightcdn.com/platform.js";
+  scriptE.type = "text/javascript";
+  scriptE.defer = true;
+  document.body.appendChild(scriptE);
     (function waitForThulium() {
   if (window._tc && typeof window._tc === 'function') {
     // Thulium widget loaded, attach listener
@@ -1234,15 +1240,11 @@ window.addEventListener('load', function () {
     setTimeout(waitForThulium, 1000);
   }
 })();
-  var script = document.createElement('script');
-  script.src = "https://elfsightcdn.com/platform.js";
-  script.type = "text/javascript";
-  script.defer = true;
-  document.body.appendChild(script);
-}, 1000);
+}, 1500);
 </script>
   <!--  Google Tag Manager (noscript)  -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZSCB8LJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZSCB8LJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
   <!--  End Google Tag Manager (noscript)  -->
 </body>
 </html>

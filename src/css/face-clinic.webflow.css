@@ -6554,6 +6554,10 @@ img {
 
   .visual-load {
     background-image: url('../images/fc-header-mobile.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .visual-load.edukacja {
@@ -7791,11 +7795,11 @@ img {
   }
 
   .visual-load {
-    background-image: url('../images/fc-header-mobile.webp'), url('../images/fc-header.webp');
-    background-position: 0 0, 20% 0;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    background-attachment: scroll, fixed;
+    background-image: url('../images/fc-header-mobile.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .visual-load.o-klinice, .visual-load.implanty {
