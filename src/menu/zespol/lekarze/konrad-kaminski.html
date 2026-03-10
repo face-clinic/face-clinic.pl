@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 13:26:25 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 14:45:27 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6385ff97e50ee5085a0ff06e" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -987,15 +987,15 @@ window.addEventListener('load', function () {
     });
   } else {
     // Wait 100ms and check again
-    setTimeout(waitForThulium, 100);
+    setTimeout(waitForThulium, 1000);
   }
 })();
   var script = document.createElement('script');
   script.src = "https://elfsightcdn.com/platform.js";
   script.type = "text/javascript";
-  script.async = true;
+  script.defer = true;
   document.body.appendChild(script);
-});
+}, 1000);
 </script>
 </body>
 </html>
