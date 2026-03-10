@@ -2498,8 +2498,13 @@ img {
   margin-top: 11px;
 }
 
-.nip-regon, .section-7 {
+.nip-regon {
   font-family: Opensans, Verdana, sans-serif;
+}
+
+.section-7 {
+  font-family: Opensans, Verdana, sans-serif;
+  display: block;
 }
 
 .zadzwon-linki {

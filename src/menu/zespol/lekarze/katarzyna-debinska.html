@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 11:23:14 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 12:33:00 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="687113d34acbeaff1c126eb9" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -405,7 +405,7 @@ function gtag_report_conversion(url) {
 }
 </script>
   <!-- <script defer type="text/javascript" src="https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd"></script> -->
-  <script>
+  <!-- <script>
 window.addEventListener('load', function () {
   var script = document.createElement('script');
   script.src = "https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
@@ -413,9 +413,15 @@ window.addEventListener('load', function () {
   script.defer = true;
   document.body.appendChild(script);
 });
-</script>
+</script> -->
   <script>
-(function waitForThulium() {
+  window.addEventListener('load', function () {
+  var script = document.createElement('script');
+  script.src = "https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
+  script.type = "text/javascript";
+  script.defer = true;
+  document.body.appendChild(script);
+    (function waitForThulium() {
   if (window._tc && typeof window._tc === 'function') {
     // Thulium widget loaded, attach listener
     _tc('event_listener', function(event) {
@@ -438,6 +444,12 @@ window.addEventListener('load', function () {
     setTimeout(waitForThulium, 100);
   }
 })();
+  var script = document.createElement('script');
+  script.src = "https://elfsightcdn.com/platform.js";
+  script.type = "text/javascript";
+  script.defer = true;
+  document.body.appendChild(script);
+});
 </script>
 </body>
 </html>
