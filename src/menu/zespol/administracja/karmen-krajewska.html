@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 17:10:48 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Mar 10 2026 18:19:01 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff468a988246" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -994,7 +994,7 @@ window.addEventListener('load', function () {
 })();
 }, 1500);
 </script> -->
-  <script>
+  <!-- <script>
 function gtag_report_conversion2(url) {
   var callback = function () {
     if (typeof(url) !== 'undefined') {
@@ -1056,6 +1056,67 @@ window.addEventListener('load', function () {
     })();
   }, 2000);
 });
+</script> -->
+  <script>
+(function(){
+let thuliumStarted = false;
+function startThulium(){
+  const e = document.createElement("script");
+  e.src="https://elfsightcdn.com/platform.js";
+  e.async=true;
+  document.body.appendChild(e);
+  if(thuliumStarted) return;
+  thuliumStarted = true;
+  const s = document.createElement("script");
+  s.src="https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
+  s.async=true;
+  document.body.appendChild(s);
+  waitForThulium();
+}
+function waitForThulium(){
+  let attempts=0;
+  (function check(){
+    if(window._tc && typeof window._tc==="function"){
+      _tc('event_listener',function(event){
+        const eventsMap={
+          callback_scheduled:'th_callback_scheduled',
+          callback_created:'th_callback_created'
+        };
+        if(eventsMap[event.name]){
+          window.dataLayer=window.dataLayer||[];
+          window.dataLayer.push({
+            event:eventsMap[event.name],
+            page:location.href
+          });
+          gtag_report_conversion?.();
+          gtag_report_conversion2?.();
+        }
+      });
+    } else if(attempts<20){
+      attempts++;
+      setTimeout(check,500);
+    }
+  })();
+}
+function trigger(){
+  startThulium();
+  removeListeners();
+}
+function removeListeners(){
+  window.removeEventListener('scroll',trigger);
+  window.removeEventListener('mousemove',trigger);
+  window.removeEventListener('touchstart',trigger);
+  window.removeEventListener('click',trigger);
+}
+window.addEventListener('scroll',trigger,{once:true});
+window.addEventListener('mousemove',trigger,{once:true});
+window.addEventListener('touchstart',trigger,{once:true});
+window.addEventListener('click',trigger,{once:true});
+/* fallback if user never interacts */
+window.addEventListener('load',()=>{
+  setTimeout(startThulium,6000);
+});
+})();
 </script>
 </body>
 </html>
