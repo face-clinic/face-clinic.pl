@@ -5724,6 +5724,10 @@ img {
   box-shadow: 0 2px 5px #0003;
 }
 
+.section-51 {
+  background-image: linear-gradient(0deg, #cba990, #fff);
+}
+
 .image-53 {
   border-radius: 30px;
   margin-top: 20px;
@@ -5737,7 +5741,7 @@ img {
   margin-top: 20px;
 }
 
-.sec-korony, .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej {
+.sec-korony, .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
   display: none;
 }
 
@@ -5755,7 +5759,7 @@ img {
   width: 80%;
   max-width: none;
   padding: 40px 20px;
-  box-shadow: 0 2px 5px #0003;
+  box-shadow: inset -3px 5px 15px #0003;
 }
 
 .container-149 {
@@ -5775,12 +5779,20 @@ img {
   text-align: center;
 }
 
+.section-55 {
+  flex-flow: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+  display: flex;
+}
+
 .licowki {
   background-color: #fff;
   border-radius: 30px;
   align-self: start;
-  width: 95%;
+  width: 100%;
   max-width: none;
+  margin-top: 20px;
   padding: 30px 20px;
   box-shadow: 0 2px 5px #0003;
 }
@@ -5806,6 +5818,7 @@ img {
 
 .grid-6 {
   background-image: linear-gradient(0deg, #cba990 30%, #fff);
+  grid-template-columns: 1fr 1fr;
 }
 
 .container-org {
@@ -5819,7 +5832,28 @@ img {
 .container-org.korony-container {
   background-color: #fff;
   align-self: start;
-  width: 95%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container-150 {
+  width: 48%;
+  max-width: none;
+}
+
+.licowki1, .bonding1, .protezy-na-implantach {
+  background-color: #fff;
+  border-radius: 30px;
+  align-self: start;
+  width: 100%;
+  max-width: none;
+  margin-top: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 5px #0003;
+}
+
+.text-block-81-copy {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6341,6 +6375,10 @@ img {
     display: none;
   }
 
+  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+    display: none;
+  }
+
   .container-144 {
     object-fit: fill;
     width: 100%;
@@ -6363,7 +6401,7 @@ img {
     background-color: #fff;
     border-radius: 30px;
     padding: 40px 20px;
-    box-shadow: 0 2px 5px #0003;
+    box-shadow: inset -3px 5px 15px #0003, 0 2px 5px #0003;
   }
 
   .container-149 {
@@ -6377,6 +6415,11 @@ img {
 
   .section-54 {
     background-image: linear-gradient(0deg, #cba990 30%, #fff);
+  }
+
+  .section-55 {
+    margin-bottom: 0;
+    padding-bottom: 40px;
   }
 
   .licowki {
@@ -6435,6 +6478,44 @@ img {
     margin-left: 0;
     margin-right: 0;
     box-shadow: 0 2px 5px #0003;
+  }
+
+  .licowki1, .bonding1 {
+    border-radius: 30px;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .bonding-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #fff;
+    border-radius: 0;
+    flex-flow: column;
+    width: 100%;
+    max-width: none;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .protezy-na-implantach {
+    border-radius: 30px;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-na-implantach-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #fff;
+    border-radius: 0;
+    flex-flow: column;
+    width: 100%;
+    max-width: none;
+    padding: 20px 10px;
+    display: flex;
   }
 }
 
@@ -6988,7 +7069,7 @@ img {
     margin-left: 20px;
   }
 
-  .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej {
+  .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
     display: none;
   }
 
@@ -7042,7 +7123,7 @@ img {
     width: 80%;
     max-width: none;
     padding: 40px 20px;
-    box-shadow: 0 2px 5px #0003;
+    box-shadow: inset -3px 5px 15px #0003, 0 2px 5px #0003;
   }
 
   .container-149 {
@@ -7115,6 +7196,52 @@ img {
     border-radius: 20px;
     display: block;
     transform: translate(0);
+  }
+
+  .licowki1, .bonding1 {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .bonding-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .protezy-na-implantach {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-na-implantach-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .text-block-81-copy {
+    line-height: 18px;
   }
 }
 
@@ -8034,6 +8161,12 @@ img {
     display: none;
   }
 
+  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+    align-self: start;
+    display: none;
+    position: static;
+  }
+
   .container-146 {
     width: 100%;
     max-width: none;
@@ -8170,6 +8303,72 @@ img {
     max-width: none;
     display: flex;
     overflow: visible;
+  }
+
+  .licowki1, .bonding1 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-flow: column;
+    align-self: start;
+    align-items: baseline;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .bonding-glowny {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: none;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 20px;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .protezy-na-implantach {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-flow: column;
+    align-self: start;
+    align-items: baseline;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-na-implantach-glowny {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: none;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 20px;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    display: flex;
   }
 }
 
@@ -8920,7 +9119,13 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
-  .container-148, .container-149 {
+  .container-148 {
+    width: 95%;
+    max-width: none;
+    box-shadow: inset -3px 5px 15px #0003, inset -3px 5px 15px #0003;
+  }
+
+  .container-149 {
     width: 95%;
     max-width: none;
   }
@@ -10142,12 +10347,22 @@ img {
     width: 80%;
   }
 
-  .container-148, .container-149 {
+  .container-148 {
+    width: 95%;
+    box-shadow: 0 2px 5px #0003, inset -3px 5px 15px #0003;
+  }
+
+  .container-149 {
     width: 95%;
   }
 
   .heading-39 {
     text-align: center;
+  }
+
+  .section-55 {
+    flex-flow: column;
+    margin-bottom: 40px;
   }
 
   .licowki, .section-56, .section-57 {
@@ -10159,6 +10374,14 @@ img {
   }
 
   .container-org.korony-container {
+    width: 95%;
+  }
+
+  .container-150 {
+    width: 100%;
+  }
+
+  .licowki1, .bonding1, .protezy-na-implantach {
     width: 95%;
   }
 }
@@ -12367,7 +12590,7 @@ img {
     padding: 0;
   }
 
-  .sec-korony, .sec-korony.licowki-wiecej {
+  .sec-korony, .sec-korony.licowki-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
     display: none;
   }
 
@@ -12407,6 +12630,24 @@ img {
   .right-arrow {
     border-radius: 20px;
   }
+
+  .licowki1, .bonding1 {
+    width: 95%;
+  }
+
+  .bonding-glowny {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .protezy-na-implantach {
+    width: 95%;
+  }
+
+  .protezy-na-implantach-glowny {
+    border-radius: 0;
+    padding: 0;
+  }
 }
 
 #w-node-_2b534084-2729-9c06-78a7-01ce7587c044-3998823c {
@@ -12420,10 +12661,6 @@ img {
 @media screen and (min-width: 1920px) {
   #w-node-_01e9377a-bd08-1a62-1994-84a3deeb3a0d-35ff2cf4, #w-node-_5521885d-6cce-cb01-934a-7fb16dbdd858-35ff2cf4, #w-node-b5b79008-77e4-486f-78e3-2f9016250594-35ff2cf4, #w-node-c697fd53-a8c5-03ea-02cb-b14f1fcbd96c-35ff2cf4 {
     grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-
-  #w-node-_4cb4b783-e7f9-7664-83e9-2fe008f2fca2-35ff2cf4 {
-    grid-area: 1 / 1 / 2 / 2;
   }
 }
 
