@@ -5741,8 +5741,16 @@ img {
   margin-top: 20px;
 }
 
-.sec-korony, .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+.sec-korony, .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej, .sec-korony.protezy-zebowe-wiecej, .sec-korony.mosty-protetyczne-wiecej {
   display: none;
+}
+
+.sec-korony.inlay-onlay-overlay-wiecej, .sec-korony.najczestrze-problemy-wiecej {
+  display: block;
+}
+
+.text-block-79 {
+  margin-top: 10px;
 }
 
 .text-block-81 {
@@ -5854,6 +5862,25 @@ img {
 
 .text-block-81-copy {
   margin-top: 20px;
+}
+
+.protezy-zebowe, .mosty-protetyczne, .inlay-onlay-overlay {
+  background-color: #fff;
+  border-radius: 30px;
+  align-self: start;
+  width: 100%;
+  max-width: none;
+  margin-top: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 5px #0003;
+}
+
+.text-block-82, .text-block-83 {
+  font-weight: 600;
+}
+
+.grid-7 {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6375,7 +6402,7 @@ img {
     display: none;
   }
 
-  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej, .sec-korony.protezy-zebowe-wiecej, .sec-korony.mosty-protetyczne-wiecej, .sec-korony.inlay-onlay-overlay-wiecej, .sec-korony.najczestrze-problemy-wiecej {
     display: none;
   }
 
@@ -6507,6 +6534,63 @@ img {
   }
 
   .protezy-na-implantach-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #fff;
+    border-radius: 0;
+    flex-flow: column;
+    width: 100%;
+    max-width: none;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .protezy-zebowe {
+    border-radius: 30px;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-zebowe-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #fff;
+    border-radius: 0;
+    flex-flow: column;
+    width: 100%;
+    max-width: none;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .mosty-protetyczne {
+    border-radius: 30px;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .najczestrze-problemy-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #fff;
+    border-radius: 0;
+    flex-flow: column;
+    width: 100%;
+    max-width: none;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .inlay-onlay-overlay {
+    border-radius: 30px;
+    width: 100%;
+    max-width: none;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .inlay-onlay-overlay-glowny {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     background-color: #fff;
@@ -7069,7 +7153,7 @@ img {
     margin-left: 20px;
   }
 
-  .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+  .sec-korony.licowki-wiecej, .sec-korony.korony-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej, .sec-korony.protezy-zebowe-wiecej, .sec-korony.mosty-protetyczne-wiecej, .sec-korony.inlay-onlay-overlay-wiecej, .sec-korony.najczestrze-problemy-wiecej {
     display: none;
   }
 
@@ -7242,6 +7326,69 @@ img {
 
   .text-block-81-copy {
     line-height: 18px;
+  }
+
+  .protezy-zebowe {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-zebowe-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .mosty-protetyczne {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .najczestrze-problemy-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .inlay-onlay-overlay {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .inlay-onlay-overlay-glowny {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    flex-flow: column;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
   }
 }
 
@@ -8161,7 +8308,19 @@ img {
     display: none;
   }
 
-  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+  .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej, .sec-korony.protezy-zebowe-wiecej, .sec-korony.mosty-protetyczne-wiecej {
+    align-self: start;
+    display: none;
+    position: static;
+  }
+
+  .sec-korony.inlay-onlay-overlay-wiecej {
+    align-self: start;
+    display: block;
+    position: static;
+  }
+
+  .sec-korony.najczestrze-problemy-wiecej {
     align-self: start;
     display: none;
     position: static;
@@ -8357,6 +8516,105 @@ img {
   }
 
   .protezy-na-implantach-glowny {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: none;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 20px;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .protezy-zebowe {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-flow: column;
+    align-self: start;
+    align-items: baseline;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .protezy-zebowe-glowny {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: none;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 20px;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .mosty-protetyczne {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-flow: column;
+    align-self: start;
+    align-items: baseline;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .najczestrze-problemy-glowny {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    max-width: none;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 20px;
+    flex-flow: column;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding: 0;
+    display: flex;
+  }
+
+  .inlay-onlay-overlay {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-flow: column;
+    align-self: start;
+    align-items: baseline;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .inlay-onlay-overlay-glowny {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
@@ -10381,7 +10639,7 @@ img {
     width: 100%;
   }
 
-  .licowki1, .bonding1, .protezy-na-implantach {
+  .licowki1, .bonding1, .protezy-na-implantach, .protezy-zebowe, .mosty-protetyczne, .inlay-onlay-overlay {
     width: 95%;
   }
 }
@@ -12590,7 +12848,15 @@ img {
     padding: 0;
   }
 
-  .sec-korony, .sec-korony.licowki-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej {
+  .sec-korony, .sec-korony.licowki-wiecej, .sec-korony.bonding-wiecej, .sec-korony.protezy-na-implantach-wiecej, .sec-korony.protezy-zebowe-wiecej, .sec-korony.mosty-protetyczne-wiecej {
+    display: none;
+  }
+
+  .sec-korony.inlay-onlay-overlay-wiecej {
+    display: block;
+  }
+
+  .sec-korony.najczestrze-problemy-wiecej {
     display: none;
   }
 
@@ -12645,6 +12911,33 @@ img {
   }
 
   .protezy-na-implantach-glowny {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .protezy-zebowe {
+    width: 95%;
+  }
+
+  .protezy-zebowe-glowny {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .mosty-protetyczne {
+    width: 95%;
+  }
+
+  .najczestrze-problemy-glowny {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .inlay-onlay-overlay {
+    width: 95%;
+  }
+
+  .inlay-onlay-overlay-glowny {
     border-radius: 0;
     padding: 0;
   }
