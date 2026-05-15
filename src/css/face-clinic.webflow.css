@@ -3979,8 +3979,9 @@ img {
   text-align: left;
   object-fit: fill;
   background-color: #fff;
+  border-radius: 30px;
   width: 420px;
-  display: none;
+  display: flex;
   left: -50%;
   box-shadow: 0 2px 5px #0003;
 }
