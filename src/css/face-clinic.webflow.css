@@ -286,6 +286,15 @@
   display: block;
 }
 
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
 .w-embed-youtubevideo {
   background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg');
   background-position: 50%;
@@ -345,15 +354,6 @@
 
 .w-checkbox-input--inputType-custom.w--redirected-focus {
   box-shadow: 0 0 3px 1px #3898ec;
-}
-
-.w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
 }
 
 @media screen and (max-width: 991px) {
@@ -752,6 +752,7 @@ img {
   background-color: var(--white-a50);
   color: #313131;
   border-radius: 20%;
+  width: 140px;
   overflow: visible;
 }
 
@@ -1731,13 +1732,19 @@ img {
   display: flex;
 }
 
+.section-intro.orto {
+  background-image: url('../images/ortodoncja-mobile.webp');
+  background-position: 0 0;
+  background-size: cover;
+}
+
 .section-intro.moj-opis {
   height: auto;
   padding-bottom: 0%;
 }
 
 .section-intro.payu-page {
-  background-image: url('../images/payu-header.webp');
+  background-image: url('../images/raty-payu-desktop.webp');
   background-position: 0 0;
   background-size: cover;
 }
@@ -2003,11 +2010,11 @@ img {
 }
 
 .visual-load.implanty {
-  background-image: url('../images/Implanty_tlo.jpg');
-  background-position: 0 0;
+  background-image: url('../images/implanty-desktop.webp');
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .visual-load.edukacja {
@@ -2366,7 +2373,7 @@ img {
 }
 
 .visual-load.chirurgia {
-  background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
+  background-image: url('../images/chirurgia-desktop.webp');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2374,11 +2381,10 @@ img {
 }
 
 .visual-load.ortro {
-  background-image: url('../images/Ortodoncja.jpg');
-  background-position: 0 0;
+  background-image: url('../images/ortodoncja-desktop.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .visual-load.protetyka {
@@ -2664,7 +2670,7 @@ img {
   align-items: stretch;
   min-height: 700px;
   margin-bottom: 10px;
-  display: flex;
+  display: none;
 }
 
 .section-opis-dzialu {
@@ -3926,13 +3932,14 @@ img {
 .container-15 {
   width: 40px;
   max-width: none;
+  height: 40px;
   margin-right: 5px;
 }
 
 .insta_navi {
   color: var(--dark_gray_main);
   -webkit-text-stroke-color: var(--light_gray_main);
-  display: flex;
+  display: block;
 }
 
 .insta_navi:hover {
@@ -4158,7 +4165,7 @@ img {
 }
 
 .container-28, .container-29 {
-  display: none;
+  display: block;
 }
 
 .container-30, .container-31 {
@@ -4310,25 +4317,30 @@ img {
 .container-36 {
   z-index: 999;
   text-align: left;
+  mix-blend-mode: normal;
+  border-radius: 30px;
   flex-flow: column;
   flex: 1;
   justify-content: flex-start;
   align-self: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  padding-right: 40px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
   display: flex;
   position: sticky;
   top: 140px;
+  box-shadow: 0 2px 5px #0003;
 }
 
 .container-37 {
   flex: 1;
   width: 70%;
   max-width: none;
-  padding-right: 40px;
+  padding-right: 0;
 }
 
 .container-39 {
@@ -4391,16 +4403,25 @@ img {
 }
 
 .container-41 {
+  background-color: #fff;
+  border-radius: 30px;
   width: 100%;
   max-width: none;
+  margin-bottom: 20px;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 10px;
+  padding: 20px 10px 10px;
+  box-shadow: 0 2px 5px #0003;
 }
 
 .container-42 {
+  background-color: #fff;
+  border-radius: 30px;
   width: 100%;
   max-width: none;
+  margin-bottom: 20px;
+  padding: 20px 10px 10px;
+  box-shadow: 0 2px 5px #0003;
 }
 
 .container-43, .container-44 {
@@ -4409,6 +4430,7 @@ img {
 
 .category-button {
   color: var(--dark_gray_main);
+  text-align: left;
   background-color: #0000;
   font-size: 24px;
 }
@@ -4502,6 +4524,7 @@ img {
 
 .text-block-38 {
   color: var(--black);
+  white-space: normal;
   font-size: 20px;
 }
 
@@ -4535,15 +4558,17 @@ img {
   width: auto;
   max-width: none;
   height: auto;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   display: inline-block;
   overflow: visible;
 }
 
 .image-28 {
   object-fit: contain;
+  border-radius: 20px 0 0;
   max-width: none;
   height: 400px;
   margin-right: 0;
@@ -4552,6 +4577,7 @@ img {
 }
 
 .image-28.metamorfozy-slide-square {
+  border-radius: 20px 20px 0 0;
   width: 400px;
 }
 
@@ -4567,7 +4593,8 @@ img {
 
 .slider-2.slider-class {
   object-fit: cover;
-  border-top-left-radius: 15px;
+  background-color: #0000;
+  border-radius: 20px 20px 0 0;
   height: 400px;
 }
 
@@ -4610,6 +4637,8 @@ img {
 }
 
 .mask {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 320px;
   height: 400px;
   overflow: hidden;
@@ -4620,10 +4649,12 @@ img {
 }
 
 .slide-nav {
+  border-radius: 10px;
   width: auto;
 }
 
 .slide-7 {
+  border-radius: 20px 20px 0 0;
   height: auto;
 }
 
@@ -5193,8 +5224,8 @@ img {
 }
 
 .section-42 {
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -5211,13 +5242,14 @@ img {
   background-color: #fff;
   border-radius: 20px;
   flex-flow: row;
-  width: 100%;
+  width: auto;
   max-width: none;
-  height: 400px;
-  margin-left: 0;
-  margin-right: 0;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  display: flex;
+  display: block;
+  box-shadow: 0 2px 5px #0003;
 }
 
 .container-108 {
@@ -5228,19 +5260,21 @@ img {
 }
 
 .container-109 {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0;
+  flex-flow: column;
   width: 100%;
-  max-width: 250px;
+  max-width: none;
   margin-left: 0;
   margin-right: 0;
+  padding-bottom: 10px;
   padding-left: 5px;
-  box-shadow: 0 2px 5px #0003;
+  padding-right: 5px;
+  display: flex;
 }
 
 .metamorfoza-usluga {
   text-align: left;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-radius: 10px;
   flex-flow: row;
   flex: 0 auto;
   order: -9999;
@@ -5504,9 +5538,21 @@ img {
   display: flex;
 }
 
+.link-block-16 {
+  width: 40px;
+  height: 40px;
+}
+
+.link-block-17, .link-block-18 {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
 .container-126 {
   width: 80%;
   max-width: none;
+  margin-top: 100px;
 }
 
 .bold-text-37 {
@@ -5901,6 +5947,105 @@ img {
   line-height: 32px;
 }
 
+.left-arrow {
+  border-radius: 10px;
+}
+
+.container-151 {
+  background-image: linear-gradient(#cba990 30%, #fff);
+  max-width: none;
+}
+
+.container-152 {
+  background-image: linear-gradient(0deg, #cba990 30%, #fff);
+  max-width: none;
+}
+
+.container-153 {
+  background-image: linear-gradient(#cba990 30%, #fff);
+  max-width: none;
+}
+
+.container-154 {
+  background-image: linear-gradient(0deg, #cba990 30%, #fff);
+  max-width: none;
+}
+
+.container-155 {
+  background-image: linear-gradient(#cba990 30%, #fff);
+  max-width: none;
+}
+
+.container-156 {
+  background-color: #fff;
+  max-width: none;
+}
+
+.link-block-23 {
+  width: 100%;
+  height: 100%;
+}
+
+.image-55 {
+  width: 100%;
+  max-width: none;
+  margin-right: 0;
+}
+
+.slider-3 {
+  background-color: #0000;
+  height: auto;
+}
+
+.text-block-86 {
+  margin-top: 0;
+  margin-left: 20%;
+  font-family: Opensans Condensed, Verdana, sans-serif;
+  font-size: 40px;
+  display: none;
+  position: absolute;
+}
+
+.slider-payu {
+  margin-top: 400px;
+  margin-left: 20%;
+  font-family: Opensans Condensed, Verdana, sans-serif;
+  font-size: 40px;
+  display: none;
+  position: absolute;
+}
+
+.text-block-87 {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-size: 40px;
+}
+
+.slider-4 {
+  height: 100%;
+}
+
+.container-158 {
+  display: none;
+}
+
+.protetyka_header {
+  width: 80%;
+  max-width: none;
+  margin-top: 0;
+}
+
+.text-block-88 {
+  flex-flow: wrap;
+  flex: 0 auto;
+  width: 100%;
+  font-size: 20px;
+  display: block;
+}
+
 @media screen and (min-width: 1280px) {
   .section-footer {
     width: 100%;
@@ -5908,8 +6053,38 @@ img {
     padding-bottom: 0;
   }
 
+  .section-intro.payu-page {
+    background-image: url('../images/raty-payu-desktop.webp');
+  }
+
   .section-intro.cennik-page {
     background-image: url('../images/cennik-desktop-3.webp');
+  }
+
+  .visual-load.implanty {
+    background-image: url('../images/implanty-desktop.webp');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .visual-load.chirurgia {
+    background-image: url('../images/chirurgia-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .visual-load.ortro {
+    -webkit-text-fill-color: inherit;
+    background-image: url('../images/ortodoncja-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
   }
 
   .section-12 {
@@ -5932,7 +6107,11 @@ img {
     box-shadow: 0 2px 5px #0003;
   }
 
-  .container-28, .container-29, .container-30, .container-31 {
+  .container-28, .container-29 {
+    display: block;
+  }
+
+  .container-30, .container-31 {
     display: none;
   }
 
@@ -5940,9 +6119,44 @@ img {
     text-align: left;
   }
 
+  .service-accordian-toggle {
+    flex-flow: row;
+  }
+
+  .icon-2.service-accordian-icon {
+    flex: 0 auto;
+  }
+
+  .text-block-37 {
+    object-fit: fill;
+  }
+
   .text-block-38 {
+    white-space: normal;
+    flex-flow: wrap-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
     width: 100%;
     max-width: 100%;
+    display: block;
+  }
+
+  .image-28 {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .slider-2.slider-class {
+    background-color: #0000;
+    border-radius: 0;
+  }
+
+  .mask {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .slide-7 {
+    border-radius: 20px 20px 0 0;
   }
 
   .section-22 {
@@ -6260,6 +6474,7 @@ img {
     width: auto;
     max-width: none;
     height: auto;
+    padding: 0;
   }
 
   .container-109 {
@@ -6308,6 +6523,18 @@ img {
 
   .footer-oferta {
     padding-bottom: 0;
+  }
+
+  .code-embed-9 {
+    width: 40px;
+  }
+
+  .link-block-17, .link-block-18 {
+    margin-left: 10px;
+  }
+
+  .container-126 {
+    margin-top: 150px;
   }
 
   .link-block-21 {
@@ -6639,6 +6866,80 @@ img {
     font-size: 30px;
     line-height: 32px;
   }
+
+  .left-arrow-2 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+
+  .container-151 {
+    background-image: linear-gradient(#cba990 30%, #fff);
+    max-width: none;
+  }
+
+  .container-156 {
+    max-width: none;
+  }
+
+  .link-block-23 {
+    width: 100%;
+  }
+
+  .image-55 {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .slider-3 {
+    height: auto;
+  }
+
+  .text-block-86, .slider-payu {
+    width: auto;
+    margin-top: 400px;
+    margin-left: 20%;
+    font-family: Opensans Condensed, Verdana, sans-serif;
+    font-size: 40px;
+    display: none;
+    position: absolute;
+  }
+
+  .slider-4 {
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .left-arrow-4, .right-arrow-3 {
+    display: block;
+  }
+
+  .protetyka_header {
+    margin-top: 0;
+  }
+
+  .text-block-88 {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    width: 100%;
+    display: block;
+  }
+
+  .div-block-113 {
+    flex-flow: wrap;
+    display: flex;
+  }
+
+  .text-block-89 {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    flex-flow: wrap;
+    order: 1;
+    font-size: 20px;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -6646,6 +6947,11 @@ img {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .section-intro.payu-page {
+    background-image: url('../images/raty-payu-desktop.webp');
+    padding-bottom: 10%;
   }
 
   .section-intro.cennik-page {
@@ -6658,7 +6964,27 @@ img {
     padding-bottom: 5%;
   }
 
-  .dzial.cennik-dzial, .link-block-4 {
+  .dzial.cennik-dzial {
+    width: 60%;
+  }
+
+  .visual-load.chirurgia {
+    background-image: url('../images/chirurgia-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .visual-load.ortro {
+    background-image: url('../images/ortodoncja-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .link-block-4 {
     width: 60%;
   }
 
@@ -6679,15 +7005,23 @@ img {
   }
 
   .container-28, .container-29 {
-    display: none;
+    display: block;
+  }
+
+  .container-36 {
+    background-color: #fff;
+  }
+
+  .service-accordian, .dropdown-5 {
+    border-radius: 15px;
   }
 
   .image-28 {
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
   }
 
   .slider-2.slider-class {
-    background-color: #fff;
+    background-color: #0000;
   }
 
   .section-22 {
@@ -6922,6 +7256,7 @@ img {
   .section-42 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    flex-flow: wrap;
     justify-content: center;
     display: flex;
   }
@@ -6937,6 +7272,9 @@ img {
     width: auto;
     max-width: none;
     height: auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
   }
 
@@ -7015,6 +7353,17 @@ img {
     font-size: 20px;
   }
 
+  .link-block-16 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .link-block-17, .link-block-18 {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
   .link-block-19, .link-block-20 {
     margin-right: auto;
   }
@@ -7022,6 +7371,7 @@ img {
   .container-126 {
     width: 80%;
     max-width: none;
+    margin-top: 150px;
     margin-bottom: 60px;
   }
 
@@ -7449,6 +7799,84 @@ img {
     font-size: 30px;
     line-height: 32px;
   }
+
+  .container-151 {
+    background-image: linear-gradient(#cba990 30%, #fff);
+    max-width: none;
+  }
+
+  .container-156 {
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: none;
+  }
+
+  .link-block-23 {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    display: block;
+  }
+
+  .container-157 {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    position: static;
+  }
+
+  .text-block-85 {
+    margin-top: 130px;
+    margin-left: 20%;
+  }
+
+  .image-55 {
+    object-fit: fill;
+    width: 100%;
+    max-width: none;
+    position: static;
+  }
+
+  .mask-2 {
+    position: relative;
+  }
+
+  .slide-8 {
+    object-fit: cover;
+  }
+
+  .slider-3 {
+    height: auto;
+  }
+
+  .text-block-86, .slider-payu {
+    width: auto;
+    margin-top: 400px;
+    margin-left: 20%;
+    margin-right: 0;
+    font-family: Opensans Condensed, Verdana, sans-serif;
+    font-size: 40px;
+    display: none;
+    position: absolute;
+  }
+
+  .slider-4 {
+    height: 100%;
+  }
+
+  .protetyka_header {
+    width: 80%;
+    max-width: none;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .text-block-88 {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -7463,6 +7891,15 @@ img {
     padding-bottom: 0;
   }
 
+  .section-intro.orto {
+    background-image: url('../images/ortodoncja-desktop.webp');
+  }
+
+  .section-intro.payu-page {
+    background-image: url('../images/raty-payu-desktop.webp');
+    padding-bottom: 10%;
+  }
+
   .section-intro.cennik-page {
     background-image: url('../images/cennik-desktop-3.webp');
     background-repeat: repeat-x;
@@ -7474,6 +7911,30 @@ img {
   .section-logo {
     width: 100%;
     max-width: none;
+  }
+
+  .visual-load.implanty {
+    background-image: url('../images/implanty-desktop.webp'), url('../images/Implanty_tlo.jpg');
+    background-position: 0 0, 0 0;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover;
+    background-attachment: scroll, fixed;
+  }
+
+  .visual-load.chirurgia {
+    background-image: url('../images/chirurgia-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .visual-load.ortro {
+    background-image: url('../images/ortodoncja-desktop.webp');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .body-old {
@@ -7492,6 +7953,19 @@ img {
 
   .section-12 {
     margin-top: 130px;
+  }
+
+  .navigation_fb {
+    height: 40px;
+  }
+
+  .fb_navi {
+    display: block;
+  }
+
+  .navigation_fb_link {
+    width: auto;
+    overflow: visible;
   }
 
   .dropdown-list-2 {
@@ -7514,9 +7988,19 @@ img {
     display: block;
   }
 
+  .container-36 {
+    background-color: #fff;
+    max-width: 300px;
+  }
+
   .container-41 {
+    background-color: #fff;
     width: 100%;
     max-width: none;
+  }
+
+  .container-42 {
+    background-color: #fff;
   }
 
   .container-44 {
@@ -7535,6 +8019,12 @@ img {
   .slider-2.slider-class {
     background-color: #0000;
     border-top-left-radius: 15px;
+  }
+
+  .heading-10 {
+    text-align: center;
+    font-family: Opensans Condensed, Verdana, sans-serif;
+    font-size: 30px;
   }
 
   .mask, .slide-7 {
@@ -8011,7 +8501,7 @@ img {
     width: auto;
     max-width: none;
     height: auto;
-    padding: 0 0 10px;
+    padding: 0;
     transform: translate(0);
     box-shadow: 0 2px 5px #0003;
   }
@@ -8179,6 +8669,10 @@ img {
 
   .link-block-18 {
     border-radius: 50px;
+  }
+
+  .container-126 {
+    margin-top: 150px;
   }
 
   .container-127 {
@@ -8714,6 +9208,97 @@ img {
     text-align: center;
     margin-bottom: 0;
   }
+
+  .text-block-84 {
+    flex-flow: wrap;
+    display: block;
+  }
+
+  .container-151 {
+    background-image: linear-gradient(#cba990 30%, #fff);
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .container-152, .container-153, .container-154, .container-155 {
+    width: 100%;
+  }
+
+  .container-156 {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .link-block-23 {
+    background-image: none;
+    background-size: auto;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .container-157 {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .image-54 {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+
+  .image-55 {
+    object-fit: contain;
+    border-radius: 0;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    display: block;
+  }
+
+  .slider-3 {
+    background-color: #0000;
+    width: auto;
+    height: auto;
+  }
+
+  .text-block-86, .slider-payu {
+    margin-top: 700px;
+    font-size: 60px;
+    display: none;
+  }
+
+  .text-block-87 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .slider-4 {
+    height: 7%;
+  }
+
+  .protetyka_header {
+    margin-top: 0;
+  }
+
+  .container-160 {
+    max-width: none;
+  }
+
+  .text-block-88 {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -8880,6 +9465,9 @@ img {
   }
 
   .section-intro.orto {
+    background-image: url('../images/ortodoncja-mobile.webp');
+    background-position: 0 0;
+    background-size: cover;
     justify-content: flex-end;
   }
 
@@ -8908,10 +9496,11 @@ img {
   }
 
   .section-intro.payu-page {
-    background-image: url('../images/pay-u-mobile-new.webp');
+    background-image: url('../images/payu-mobile.webp');
     background-position: 80% 30%;
     background-size: cover;
     height: 90vh;
+    padding-bottom: 60px;
   }
 
   .section-intro.cennik-page {
@@ -9001,7 +9590,11 @@ img {
   }
 
   .visual-load.implanty {
-    background-image: url('../images/payu-header.webp'), url('../images/Implanty_tlo.jpg');
+    background-image: url('../images/implanty-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .visual-load.tv {
@@ -9024,7 +9617,23 @@ img {
   }
 
   .visual-load.chirurgia {
-    background-position: 50% 0, 0 0;
+    background-image: url('../images/chirurgia-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .visual-load.ortro {
+    opacity: 1;
+    background-image: url('../images/ortodoncja-desktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .visual {
+    display: block;
   }
 
   .visual.implanty {
@@ -9036,6 +9645,7 @@ img {
   }
 
   .visual-gradient {
+    background-color: #0000;
     margin-bottom: 0;
   }
 
@@ -9268,7 +9878,9 @@ img {
   }
 
   .body-old {
-    background-image: none;
+    background-image: url('../images/phone_line.svg');
+    background-position: 0 0;
+    background-size: auto;
     display: block;
   }
 
@@ -9330,12 +9942,41 @@ img {
     display: block;
   }
 
+  .container-15 {
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
+
+  .insta_navi {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+  .navigation_insta_link {
+    background-color: #0000;
+    width: 40px;
+    height: 40px;
+  }
+
   .dropdown-list-2, .container-20, .section-13, .container-28, .container-29, .container-30, .container-31, .container-32 {
     display: none;
   }
 
   .container-37 {
     padding-right: 0;
+  }
+
+  .container-39 {
+    width: 95%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .category-button {
+    font-size: 18px;
   }
 
   .dropdown-5 {
@@ -9345,12 +9986,14 @@ img {
   .text-block-38 {
     box-sizing: border-box;
     clear: both;
-    word-break: break-all;
+    white-space: normal;
+    word-break: normal;
     object-fit: fill;
     flex-flow: wrap;
     flex: 0 auto;
     width: 100%;
     max-width: 100%;
+    height: auto;
     display: block;
   }
 
@@ -9358,9 +10001,19 @@ img {
     max-width: 100%;
   }
 
+  .image-28 {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
   .container-59 {
     flex-flow: wrap;
     max-width: 100%;
+  }
+
+  .slide-7 {
+    border-radius: 20px 20px 0 0;
   }
 
   .container-63 {
@@ -9407,7 +10060,7 @@ img {
   }
 
   .section-42 {
-    flex-flow: column;
+    flex-flow: wrap;
     grid-auto-flow: row;
     width: 95%;
     display: flex;
@@ -9488,6 +10141,51 @@ img {
 
   .grid-6 {
     grid-template-columns: 1fr;
+  }
+
+  .container-156 {
+    max-width: none;
+  }
+
+  .link-block-23 {
+    height: 100%;
+  }
+
+  .image-55 {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .slider-3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-block-86, .slider-payu {
+    display: none;
+  }
+
+  .text-block-87 {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 38px;
+  }
+
+  .slider-4 {
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .container-158 {
+    display: none;
+  }
+
+  .protetyka_header {
+    margin-top: 0;
   }
 }
 
@@ -9765,16 +10463,16 @@ img {
   }
 
   .section-intro.implanty {
-    background-image: url('../images/Implanty_tlo.jpg'), linear-gradient(#0003, #0003);
-    background-position: 0 0, 0 0;
-    background-size: cover, auto;
+    background-image: url('../images/implanty-desktop.webp'), url('../images/Implanty_tlo.jpg'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0, 0 0;
+    background-size: cover, cover, auto;
     justify-content: flex-start;
     margin-top: 0;
     padding-top: 77px;
   }
 
   .section-intro.orto {
-    background-image: url('../images/Ortodoncja.jpg');
+    background-image: url('../images/ortodoncja-desktop.webp');
     background-position: 0 0;
     background-size: cover;
     justify-content: flex-end;
@@ -9796,7 +10494,7 @@ img {
   }
 
   .section-intro.chirurgia {
-    background-image: url('../images/ObliczeTwarzy_8bit_new.jpg');
+    background-image: url('../images/chirurgia-desktop.webp');
     background-position: 0 0;
     background-size: cover;
   }
@@ -9868,9 +10566,9 @@ img {
   }
 
   .section-intro.payu-page {
-    background-image: url('../images/pay-u-mobile-new.webp'), url('../images/payu-header.webp'), linear-gradient(#0003, #0003);
-    background-position: 0 0, 0 0, 0 0;
-    background-size: cover, cover, auto;
+    background-image: url('../images/payu-mobile.webp'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0;
+    background-size: cover, auto;
     justify-content: flex-start;
     height: 950px;
     margin-top: 0;
@@ -9992,7 +10690,19 @@ img {
   }
 
   .visual-load.chirurgia {
-    background-position: 40% 0, 0 0;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: scroll;
+  }
+
+  .visual-load.ortro {
+    background-image: url('../images/ortodoncja-desktop.webp');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .visual {
@@ -10007,7 +10717,7 @@ img {
     background-image: none;
     height: 130px;
     margin-top: 326px;
-    display: block;
+    display: none;
     inset: 0% 0% auto;
   }
 
@@ -10497,6 +11207,8 @@ img {
     -webkit-text-fill-color: inherit;
     object-fit: fill;
     background-clip: border-box;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .slider-2.slider-class {
@@ -10505,7 +11217,8 @@ img {
 
   .mask {
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
   }
 
   .section-20 {
@@ -10676,6 +11389,7 @@ img {
 
   .container-126 {
     width: 95%;
+    margin-top: 150px;
   }
 
   .link-block-22 {
@@ -10737,6 +11451,50 @@ img {
   .licowki1, .bonding1, .protezy-na-implantach, .protezy-zebowe, .mosty-protetyczne, .inlay-onlay-overlay {
     width: 95%;
   }
+
+  .link-block-23 {
+    display: block;
+  }
+
+  .image-55 {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin-right: 0;
+  }
+
+  .slider-3 {
+    width: auto;
+    height: auto;
+  }
+
+  .text-block-86, .slider-payu {
+    margin-top: 300px;
+    display: none;
+  }
+
+  .text-block-87 {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+
+  .slider-4 {
+    height: 100%;
+  }
+
+  .container-158 {
+    display: none;
+  }
+
+  .protetyka_header {
+    width: 95%;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -10766,7 +11524,16 @@ img {
     display: none;
   }
 
-  .button_home.lab, .div-button-home, .txt-button-menu-home {
+  .button_home.lab {
+    position: relative;
+  }
+
+  .div-button-home {
+    width: 100px;
+    position: relative;
+  }
+
+  .txt-button-menu-home {
     position: relative;
   }
 
@@ -10824,6 +11591,7 @@ img {
 
   .link-block {
     pointer-events: auto;
+    width: 100px;
     position: relative;
   }
 
@@ -11187,15 +11955,18 @@ img {
   }
 
   .section-intro.implanty {
-    background-image: url('../images/Implanty_tlo.jpg'), linear-gradient(#0003, #0003);
-    background-position: 0 0, 0 0;
-    background-size: cover, auto;
+    background-image: url('../images/implanty-desktop.webp'), url('../images/Implanty_tlo.jpg'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0, 0 0;
+    background-size: cover, cover, auto;
     justify-content: flex-start;
     padding-top: 273px;
     padding-bottom: 0;
   }
 
   .section-intro.orto {
+    background-image: url('../images/ortodoncja-mobile.webp');
+    background-position: 0 0;
+    background-size: cover;
     height: 400px;
   }
 
@@ -11239,9 +12010,9 @@ img {
   }
 
   .section-intro.payu-page {
-    background-image: url('../images/pay-u-mobile-new.webp'), url('../images/Implanty_tlo.jpg'), linear-gradient(#0003, #0003);
-    background-position: 0 0, 0 0, 0 0;
-    background-size: cover, cover, auto;
+    background-image: url('../images/payu-mobile.webp'), linear-gradient(#0003, #0003);
+    background-position: 0 0, 0 0;
+    background-size: cover, auto;
     flex: 0 auto;
     justify-content: flex-start;
     height: 550px;
@@ -11251,9 +12022,9 @@ img {
   }
 
   .section-intro.cennik-page {
-    background-image: url('../images/cennik-mobile-1.webp'), linear-gradient(#0003, #0003);
-    background-position: 0 0, 0 0;
-    background-size: cover, auto;
+    background-image: url('../images/cennik-mobile-1.webp');
+    background-position: 0 0;
+    background-size: cover;
     flex: 0 auto;
     justify-content: flex-start;
     height: 550px;
@@ -11290,6 +12061,7 @@ img {
     align-self: auto;
     align-items: stretch;
     width: 100%;
+    margin-top: 320px;
   }
 
   .dzial.ue {
@@ -11413,6 +12185,7 @@ img {
     width: auto;
     padding-top: 0;
     padding-bottom: 0;
+    display: none;
     position: relative;
   }
 
@@ -11457,7 +12230,14 @@ img {
   }
 
   .visual-gradient {
-    z-index: auto;
+    z-index: 999999;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: none;
+    position: fixed;
   }
 
   .section-opis-home {
@@ -11548,7 +12328,7 @@ img {
 
   .div_implanty_picture {
     min-height: 200px;
-    display: block;
+    display: none;
     overflow: hidden;
   }
 
@@ -11987,6 +12767,20 @@ img {
     align-self: center;
   }
 
+  .container-15 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .insta_navi {
+    -webkit-text-stroke-color: var(--dark_gray_main);
+  }
+
+  .navigation_insta_link {
+    color: var(--dark_gray_main);
+    overflow: scroll;
+  }
+
   .code-embed {
     color: var(--dark_gray_main);
     text-align: left;
@@ -12281,6 +13075,7 @@ img {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: #fff;
+    border-radius: 0;
     flex-flow: row;
     flex: 0 auto;
     order: -9999;
@@ -12330,10 +13125,19 @@ img {
   .container-41 {
     width: 100%;
     max-width: 100%;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .container-42 {
     max-width: 100%;
+    box-shadow: none;
+    background-color: #fff;
+    margin-left: 0;
+    margin-right: 2px;
   }
 
   .container-44 {
@@ -12410,7 +13214,7 @@ img {
   }
 
   .icon-2.service-accordian-icon {
-    margin-right: 0;
+    margin-right: 5px;
   }
 
   .text-block-37 {
@@ -12438,10 +13242,13 @@ img {
 
   .text-block-38 {
     clear: none;
+    white-space: pre-wrap;
+    word-break: normal;
     flex: 0 auto;
     width: 100%;
     max-width: 100%;
     font-size: 16px;
+    line-height: 18px;
     display: block;
     overflow: visible;
   }
@@ -12493,6 +13300,7 @@ img {
 
   .slider-2.slider-class {
     border-radius: 20px;
+    height: 450px;
   }
 
   .metamorfozy-title {
@@ -12540,7 +13348,7 @@ img {
   }
 
   .mask {
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
   }
@@ -12612,6 +13420,7 @@ img {
     font-size: 11px;
     font-weight: 400;
     line-height: 20px;
+    display: none;
   }
 
   .licowki-porcelanowe-header {
@@ -13027,6 +13836,135 @@ img {
   .inlay-onlay-overlay-glowny {
     border-radius: 0;
     padding: 0;
+  }
+
+  .container-156 {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    overflow: clip;
+  }
+
+  .link-block-23 {
+    object-fit: cover;
+    flex-flow: column;
+    height: 100%;
+    display: block;
+  }
+
+  .image-55 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    display: inline-block;
+    overflow: visible;
+  }
+
+  .mask-2 {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  .slide-8 {
+    width: auto;
+    height: auto;
+  }
+
+  .slider-3 {
+    background-color: #fff;
+    width: auto;
+    height: auto;
+  }
+
+  .text-block-86 {
+    margin-top: 50%;
+    margin-bottom: auto;
+    margin-left: 25%;
+    display: none;
+  }
+
+  .left-arrow-3, .right-arrow-2 {
+    display: block;
+  }
+
+  .slider-payu {
+    margin-top: 40%;
+    margin-bottom: auto;
+    margin-left: 25%;
+    display: none;
+  }
+
+  .icon-3, .icon-4 {
+    display: block;
+  }
+
+  .text-block-87 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .slider-4 {
+    height: 100%;
+  }
+
+  .grid-8 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    width: auto;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: auto;
+  }
+
+  .grid-9 {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+
+  .grid-10 {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 16px;
+  }
+
+  .container-158 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: auto;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  .container-159 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .protetyka_header {
+    width: 95%;
+    margin-top: 0;
+  }
+
+  .container-160 {
+    margin-left: 70%;
+    margin-right: 10px;
+  }
+
+  .text-block-88 {
+    font-size: 14px;
   }
 }
 
