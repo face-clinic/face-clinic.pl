@@ -3913,9 +3913,11 @@ img {
 }
 
 .fb_navi {
+  width: 40px;
+  height: 40px;
   color: var(--dark_gray_main);
   align-items: flex-end;
-  display: flex;
+  display: block;
 }
 
 .fb_navi:hover {
@@ -7887,6 +7889,10 @@ img {
     padding-right: 10px;
   }
 
+  .logo {
+    border-radius: 0;
+  }
+
   .section-footer {
     width: 100%;
     padding-top: 0;
@@ -9944,6 +9950,12 @@ img {
     display: block;
   }
 
+  .fb_navi {
+    width: 40px;
+    height: 40px;
+    color: var(--dark_gray_main);
+  }
+
   .container-15 {
     width: auto;
     max-width: none;
@@ -11154,6 +11166,11 @@ img {
     margin-top: 0;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .fb_navi {
+    width: 40px;
+    height: 40px;
   }
 
   .dropdown-list-2 {
