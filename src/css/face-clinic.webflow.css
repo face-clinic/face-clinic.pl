@@ -1739,6 +1739,7 @@ img {
 }
 
 .section-intro.moj-opis {
+  flex-flow: column;
   height: auto;
   padding-bottom: 0%;
 }
@@ -1806,7 +1807,7 @@ img {
 
 .dzial.opis {
   background-color: var(--white);
-  flex-direction: column;
+  flex-flow: column;
   justify-content: flex-start;
   height: auto;
   padding-top: 20%;
@@ -10609,6 +10610,7 @@ img {
 
   .dzial.opis {
     height: auto;
+    margin-top: 0;
   }
 
   .dzial.edu {
@@ -12072,6 +12074,7 @@ img {
   }
 
   .dzial.opis {
+    margin-top: 0;
     padding-left: 20px;
   }
 
