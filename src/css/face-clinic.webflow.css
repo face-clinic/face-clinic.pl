@@ -4316,18 +4316,20 @@ img {
   padding-top: 20px;
   display: block;
   position: static;
+  overflow: visible;
 }
 
 .container-36 {
   z-index: 999;
   text-align: left;
   mix-blend-mode: normal;
+  background-color: #fff;
   border-radius: 30px;
   flex-flow: column;
   flex: 1;
   justify-content: flex-start;
-  align-self: flex-start;
   align-items: flex-start;
+  width: auto;
   max-width: 100%;
   margin-left: auto;
   margin-right: 20px;
@@ -4337,6 +4339,7 @@ img {
   display: flex;
   position: sticky;
   top: 140px;
+  overflow: visible;
   box-shadow: 0 2px 5px #0003;
 }
 
@@ -4433,6 +4436,7 @@ img {
 }
 
 .category-button {
+  width: 100%;
   color: var(--dark_gray_main);
   text-align: left;
   background-color: #0000;
@@ -4440,8 +4444,10 @@ img {
 }
 
 .container-47 {
+  box-sizing: border-box;
   flex: 0 auto;
   order: 0;
+  align-self: flex-start;
   width: 30%;
   max-width: none;
   position: sticky;
@@ -6119,6 +6125,10 @@ img {
     display: none;
   }
 
+  .container-36 {
+    background-color: #fff;
+  }
+
   .container-44 {
     text-align: left;
   }
@@ -6140,7 +6150,7 @@ img {
     flex-flow: wrap-reverse;
     justify-content: flex-start;
     align-items: stretch;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     display: block;
   }
@@ -10005,7 +10015,7 @@ img {
     object-fit: fill;
     flex-flow: wrap;
     flex: 0 auto;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     height: auto;
     display: block;
@@ -13088,7 +13098,9 @@ img {
   }
 
   .section-17 {
+    padding-top: 0;
     display: flex;
+    overflow: visible;
   }
 
   .container-36 {
@@ -13116,12 +13128,13 @@ img {
     padding-right: 0;
     display: flex;
     position: relative;
-    top: 0;
-    overflow: auto;
+    inset: 0% auto auto;
+    overflow: visible;
   }
 
   .container-37 {
     width: 100%;
+    margin-top: 20px;
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -13132,6 +13145,8 @@ img {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
+    display: flex;
+    position: static;
   }
 
   .service-name {
@@ -13175,6 +13190,7 @@ img {
     align-items: baseline;
     min-width: auto;
     max-width: 100%;
+    font-size: 24px;
     display: flex;
     overflow: auto;
   }
@@ -13189,9 +13205,14 @@ img {
     margin-bottom: 30px;
     padding-top: 0;
     padding-bottom: 0;
+    display: block;
     position: sticky;
     top: 70px;
     overflow: auto;
+  }
+
+  .container-48 {
+    display: none;
   }
 
   .link-4 {

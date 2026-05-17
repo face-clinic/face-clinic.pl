@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun May 17 2026 13:32:20 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun May 17 2026 23:50:52 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6962c1fd03e3cf6395c6801c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -829,8 +829,6 @@ gtag('config', 'AW-622377758');
 /* soft luxury peach gradients */
 /* ========================================= */
 .fc-peach-bg{
-  position:relative;
-  overflow:hidden;
   background:
     radial-gradient(
       circle at top left,
@@ -854,45 +852,6 @@ linear-gradient(
   #fdeee8 70%,
   #fff9f7 100%
 );
-}
-/* soft glass glow */
-.fc-peach-bg::before{
-  content:'';
-  position:absolute;
-  top:-200px;
-  right:-200px;
-  width:700px;
-  height:700px;
-  border-radius:50%;
-  background:radial-gradient(
-    circle,
-    rgba(255,255,255,0.45),
-    transparent 70%
-  );
-  filter:blur(60px);
-  z-index:0;
-}
-/* luxury blur layer */
-.fc-peach-bg::after{
-  content:'';
-  position:absolute;
-  left:-150px;
-  bottom:-150px;
-  width:500px;
-  height:500px;
-  border-radius:50%;
-  background:radial-gradient(
-    circle,
-    rgba(255,255,255,0.22),
-    transparent 70%
-  );
-  filter:blur(80px);
-  z-index:0;
-}
-/* content above background */
-.fc-peach-bg > *{
-  position:relative;
-  z-index:5;
 }
 </style>
     </div>
