@@ -6056,6 +6056,13 @@ img {
   display: block;
 }
 
+.text-block-90 {
+  color: var(--white);
+  font-family: Opensans Condensed, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1280px) {
   .section-footer {
     width: 100%;
