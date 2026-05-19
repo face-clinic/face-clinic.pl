@@ -76,8 +76,10 @@ gulp.task('html', function () {
 
 
         .pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
-        .pipe(replace(/href="(?:\.\/)?\/?index\.html"/g, 'href="/"'))
+        .pipe(replace(/href="(?:\.\.\/|\.\/|\/)?index\.html"/g, 'href="/"'))
         .pipe(replace(/href="([^"|#]+)\.html"/g, 'href="$1"'))
+        .pipe(replace(/href="\s*\/index\s*"/g, 'href="/"'))
+
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
 });
