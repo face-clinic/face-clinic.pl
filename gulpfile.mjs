@@ -76,9 +76,10 @@ gulp.task('html', function () {
 
 
         .pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
-        .pipe(replace(/href=\s*["']\s*(?:\.\.\/|\.\/|\/)?index\.html\s*["']/g, 'href="/"'))
+        .pipe(replace(/href=\s*["']\s*(?:\.\.\/|\.\/|\/)*index\.html\s*["']/g, 'href="/"'))
         .pipe(replace(/href=\s*["']\s*(?!\w+:\/\/)([^"']+)\.html(#?[^"']*)["']/g, 'href="$1$2"'))
-        .pipe(replace(/href=\s*["']\s*\/index\/?\s*["']/g, 'href="/"'))
+        .pipe(replace(/href=\s*["']\s*(?:\.\.\/|\.\/|\/)*index\/?\s*["']/g, 'href="/"'))
+        //.pipe(replace(/href=\s*["']\s*\/index\/?\s*["']/g, 'href="/"'))
         //.pipe(replace(/href="\s*(?:\.\.\/|\.\/|\/)?index\.html\s*"/g, 'href="/"'))
         //.pipe(replace(/href="\s*(?!\w+:\/\/)([^"|#]+)\.html\s*"/g, 'href="$1"'))
         //.pipe(replace(/href="\s*\/?index\/?\s*"/g, 'href="/"'))
