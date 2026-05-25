@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed May 20 2026 00:04:33 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon May 25 2026 13:45:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff4420988256" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -1593,10 +1593,10 @@ function copyTextFooteNip(){
             <a href="../menu/kontakt.html" class="link-block-15 w-inline-block link-animation">
               <div class="text-block-76">Mapa z dojazdem</div>
             </a>
-            <a href="tel:0048228636182" class="link-block-13 w-inline-block link-animation"><img src="../images/phone_line.svg" loading="lazy" alt="" class="image-44">
+            <a href="tel:0048228636182" class="link-block-13 w-inline-block link-animation footer_phone"><img src="../images/phone_line.svg" loading="lazy" alt="" class="image-44">
               <div class="text-block-72">+48 22 863 61 82</div>
             </a>
-            <a href="tel:0048512505460" class="link-block-13 w-inline-block link-animation"><img src="../images/phone_com.svg" loading="lazy" alt="" class="image-44">
+            <a href="tel:0048512505460" class="link-block-13 w-inline-block link-animation footer_mobile_phone"><img src="../images/phone_com.svg" loading="lazy" alt="" class="image-44">
               <div class="text-block-72">+48 512 505 460</div>
             </a>
             <a href="mailto:recepcja@face-clinic.pl?subject=Hej%20Face%20Clinik!" class="link-block-13 w-inline-block link-animation"><img src="../images/email.svg" loading="lazy" alt="" class="image-44">
@@ -1851,8 +1851,20 @@ window.addEventListener('load', function () {
   }, 2000);
 });
 </script> -->
-  <script>
+  <!-- <script>
 (function(){
+  function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location = url;
+    }
+  };
+    console.log("report conversion thulium");
+  gtag('event', 'conversion', {
+    send_to: 'AW-622377758/I1OLCOiwk_gbEJ724qgC',
+    event_callback: callback
+  });
+}
 let thuliumStarted = false;
 function startThulium(){
   const e = document.createElement("script");
@@ -1883,7 +1895,6 @@ function waitForThulium(){
             page:location.href
           });
           gtag_report_conversion?.();
-          gtag_report_conversion2?.();
         }
       });
     } else if(attempts<20){
@@ -1910,6 +1921,148 @@ window.addEventListener('click',trigger,{once:true});
 window.addEventListener('load',()=>{
   setTimeout(startThulium,6000);
 });
+  document.addEventListener('DOMContentLoaded', function () {
+  const footer_mobile_phone = document.querySelector('.footer_mobile_phone');
+  if (footer_mobile_phone) {
+    footer_mobile_phone.addEventListener('click', function (event) {
+      console.log('Element footer_mobile_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+      const footer_phone = document.querySelector('.footer_phone');
+      if (footer_phone) {
+    footer_phone.addEventListener('click', function (event) {
+      console.log('Element footer_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+    const kontakt_phone = document.querySelector('.kontakt_phone');
+      if (kontakt_phone) {
+    kontakt_phone.addEventListener('click', function (event) {
+      console.log('Element kontakt_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+        const kontakt_mobile_phone = document.querySelector('.kontakt_mobile_phone');
+      if (kontakt_mobile_phone) {
+    kontakt_mobile_phone.addEventListener('click', function (event) {
+      console.log('Element kontakt_mobile_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+});
+})();
+</script> -->
+  <script>
+(function(){
+  // 1. Google Analytics Conversion Reporter
+  function gtag_report_conversion(url) {
+    const callback = function () {
+      if (typeof url !== 'undefined') {
+        window.location = url;
+      }
+    };
+    console.log("report conversion");
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-622377758/I1OLCOiwk_gbEJ724qgC',
+        'event_callback': callback
+      });
+    } else {
+      callback(); // Fallback if gtag fails to load
+    }
+  }
+  let scriptsInjected = false;
+  // 2. Optimized Lazy-Loading Wrapper
+  function injectThirdPartyScripts() {
+    if (scriptsInjected) return;
+    scriptsInjected = true;
+    // Remove listeners immediately to free up browser main-thread
+    removeListeners();
+    // Load Elfsight
+    const elfsight = document.createElement("script");
+    elfsight.src = "https://elfsightcdn.com/platform.js";
+    elfsight.async = true;
+    document.body.appendChild(elfsight);
+    // Load Thulium
+    const thulium = document.createElement("script");
+    thulium.src = "https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
+    thulium.async = true;
+    document.body.appendChild(thulium);
+    waitForThulium();
+  }
+  // 3. Polling for Thulium Widget initialization
+  function waitForThulium() {
+    let attempts = 0;
+    const maxAttempts = 20;
+    const check = setInterval(() => {
+      if (window._tc && typeof window._tc === "function") {
+        clearInterval(check);
+        window._tc('event_listener', function(event) {
+          const eventsMap = {
+            callback_scheduled: 'th_callback_scheduled',
+            callback_created: 'th_callback_created'
+          };
+          if (eventsMap[event.name]) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: eventsMap[event.name],
+              page: location.href
+            });
+            gtag_report_conversion();
+          }
+        });
+      } else if (attempts >= maxAttempts) {
+        clearInterval(check); // Give up to prevent endless resource leaking
+      }
+      attempts++;
+    }, 500);
+  }
+  // 4. Clean Event Management
+  function removeListeners() {
+    window.removeEventListener('scroll', injectThirdPartyScripts);
+    window.removeEventListener('mousemove', injectThirdPartyScripts);
+    window.removeEventListener('touchstart', injectThirdPartyScripts);
+    window.removeEventListener('click', injectThirdPartyScripts);
+  }
+  window.addEventListener('scroll', injectThirdPartyScripts, {once: true});
+  window.addEventListener('mousemove', injectThirdPartyScripts, {once: true});
+  window.addEventListener('touchstart', injectThirdPartyScripts, {once: true});
+  window.addEventListener('click', injectThirdPartyScripts, {once: true});
+  // Fallback if user is completely idle
+  window.addEventListener('load', () => {
+    setTimeout(injectThirdPartyScripts, 6000);
+  });
+  // 5. Streamlined Click Tracking via Event Delegation / Array maps
+  document.addEventListener('DOMContentLoaded', function () {
+    const phoneSelectors = [
+      '.footer_mobile_phone',
+      '.footer_phone',
+      '.kontakt_phone',
+      '.kontakt_mobile_phone'
+    ];
+    phoneSelectors.forEach(selector => {
+      const element = document.querySelector(selector);
+      if (element) {
+        element.addEventListener('click', function () {
+          console.log(`Element ${selector} clicked`);
+          gtag_report_conversion();
+        });
+      }
+    });
+  });
 })();
 </script>
 </body>

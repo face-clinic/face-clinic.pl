@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed May 20 2026 00:04:33 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon May 25 2026 13:45:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bffc0d498828a" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -882,11 +882,11 @@ gtag('config', 'AW-622377758');
     <div class="txt-rodo kontakt">
       <div class="div-block-100">
         <div class="w-layout-blockcontainer container-97 w-container">
-          <a href="tel:+48228636182" class="kontakt_tel w-inline-block">
+          <a href="tel:+48228636182" class="kontakt_tel w-inline-block kontakt_phone">
             <div class="kontakt_address">‍tel. +48 22 863 61 82</div>
           </a>
           <a href="tel:+48512505460" class="kontakt_tel_kom w-inline-block">
-            <div class="kontakt_address">‍tel. kom. +48 512 505 460</div>
+            <div class="kontakt_address kontakt_mobile_phone">‍tel. kom. +48 512 505 460</div>
           </a>
           <a href="mailto:recepcja@face-clinic.pl?subject=Hey%20Face%20Clinic!" class="kontakt_email w-inline-block">
             <div class="kontakt_address">recepcja@face-clinic.pl</div>
@@ -1219,8 +1219,8 @@ function fcNrKontaCopyTextWF(){
       </div>
     </div>
     <div class="div-mapa">
-      <div class="container-9 w-container"><img src="../images/FC-Dojazd.jpg" loading="lazy" sizes="100vw" srcset="../images/FC-Dojazd-p-500.jpeg 500w, ../images/FC-Dojazd-p-800.jpeg 800w, ../images/FC-Dojazd-p-1080.jpeg 1080w, ../images/FC-Dojazd-p-1600.jpeg 1600w, ../images/FC-Dojazd-p-2000.jpeg 2000w, ../images/FC-Dojazd.jpg 2048w" alt="" class="image-3"></div>
-      <div class="w-layout-blockcontainer container-125 w-container"><img src="../images/tablica_parking_mapa.webp" loading="lazy" sizes="100vw" srcset="../images/tablica_parking_mapa-p-500.webp 500w, ../images/tablica_parking_mapa-p-800.webp 800w, ../images/tablica_parking_mapa-p-1080.webp 1080w, ../images/tablica_parking_mapa-p-1600.webp 1600w, ../images/tablica_parking_mapa.webp 1684w" alt="" class="image-45"></div>
+      <div class="container-9 w-container"><img src="../images/FC-Dojazd.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="../images/FC-Dojazd-p-500.jpeg 500w, ../images/FC-Dojazd-p-800.jpeg 800w, ../images/FC-Dojazd-p-1080.jpeg 1080w, ../images/FC-Dojazd-p-1600.jpeg 1600w, ../images/FC-Dojazd-p-2000.jpeg 2000w, ../images/FC-Dojazd.jpg 2048w" alt="" class="image-3"></div>
+      <div class="w-layout-blockcontainer container-125 w-container"><img src="../images/tablica_parking_mapa.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="../images/tablica_parking_mapa-p-500.webp 500w, ../images/tablica_parking_mapa-p-800.webp 800w, ../images/tablica_parking_mapa-p-1080.webp 1080w, ../images/tablica_parking_mapa-p-1600.webp 1600w, ../images/tablica_parking_mapa.webp 1684w" alt="" class="image-45"></div>
       <div class="container-8 w-container">
         <div class="columns w-row">
           <div class="column-0-padding w-col w-col-4 w-col-medium-4 w-col-small-small-stack">
@@ -1473,8 +1473,20 @@ window.addEventListener('load', function () {
   }, 2000);
 });
 </script> -->
-  <script>
+  <!-- <script>
 (function(){
+  function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location = url;
+    }
+  };
+    console.log("report conversion thulium");
+  gtag('event', 'conversion', {
+    send_to: 'AW-622377758/I1OLCOiwk_gbEJ724qgC',
+    event_callback: callback
+  });
+}
 let thuliumStarted = false;
 function startThulium(){
   const e = document.createElement("script");
@@ -1505,7 +1517,6 @@ function waitForThulium(){
             page:location.href
           });
           gtag_report_conversion?.();
-          gtag_report_conversion2?.();
         }
       });
     } else if(attempts<20){
@@ -1532,6 +1543,148 @@ window.addEventListener('click',trigger,{once:true});
 window.addEventListener('load',()=>{
   setTimeout(startThulium,6000);
 });
+  document.addEventListener('DOMContentLoaded', function () {
+  const footer_mobile_phone = document.querySelector('.footer_mobile_phone');
+  if (footer_mobile_phone) {
+    footer_mobile_phone.addEventListener('click', function (event) {
+      console.log('Element footer_mobile_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+      const footer_phone = document.querySelector('.footer_phone');
+      if (footer_phone) {
+    footer_phone.addEventListener('click', function (event) {
+      console.log('Element footer_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+    const kontakt_phone = document.querySelector('.kontakt_phone');
+      if (kontakt_phone) {
+    kontakt_phone.addEventListener('click', function (event) {
+      console.log('Element kontakt_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+        const kontakt_mobile_phone = document.querySelector('.kontakt_mobile_phone');
+      if (kontakt_mobile_phone) {
+    kontakt_mobile_phone.addEventListener('click', function (event) {
+      console.log('Element kontakt_mobile_phone clicked');
+      // your code here
+      // example:
+      // gtag_report_conversion();
+      gtag_report_conversion();
+    });
+  }
+});
+})();
+</script> -->
+  <script>
+(function(){
+  // 1. Google Analytics Conversion Reporter
+  function gtag_report_conversion(url) {
+    const callback = function () {
+      if (typeof url !== 'undefined') {
+        window.location = url;
+      }
+    };
+    console.log("report conversion");
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-622377758/I1OLCOiwk_gbEJ724qgC',
+        'event_callback': callback
+      });
+    } else {
+      callback(); // Fallback if gtag fails to load
+    }
+  }
+  let scriptsInjected = false;
+  // 2. Optimized Lazy-Loading Wrapper
+  function injectThirdPartyScripts() {
+    if (scriptsInjected) return;
+    scriptsInjected = true;
+    // Remove listeners immediately to free up browser main-thread
+    removeListeners();
+    // Load Elfsight
+    const elfsight = document.createElement("script");
+    elfsight.src = "https://elfsightcdn.com/platform.js";
+    elfsight.async = true;
+    document.body.appendChild(elfsight);
+    // Load Thulium
+    const thulium = document.createElement("script");
+    thulium.src = "https://cdn.thulium.com/apps/chat-widget/chat-loader.js?hash=faceclinic2-2ebeaf6c-6dd1-4647-a18f-6558c5958abd";
+    thulium.async = true;
+    document.body.appendChild(thulium);
+    waitForThulium();
+  }
+  // 3. Polling for Thulium Widget initialization
+  function waitForThulium() {
+    let attempts = 0;
+    const maxAttempts = 20;
+    const check = setInterval(() => {
+      if (window._tc && typeof window._tc === "function") {
+        clearInterval(check);
+        window._tc('event_listener', function(event) {
+          const eventsMap = {
+            callback_scheduled: 'th_callback_scheduled',
+            callback_created: 'th_callback_created'
+          };
+          if (eventsMap[event.name]) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: eventsMap[event.name],
+              page: location.href
+            });
+            gtag_report_conversion();
+          }
+        });
+      } else if (attempts >= maxAttempts) {
+        clearInterval(check); // Give up to prevent endless resource leaking
+      }
+      attempts++;
+    }, 500);
+  }
+  // 4. Clean Event Management
+  function removeListeners() {
+    window.removeEventListener('scroll', injectThirdPartyScripts);
+    window.removeEventListener('mousemove', injectThirdPartyScripts);
+    window.removeEventListener('touchstart', injectThirdPartyScripts);
+    window.removeEventListener('click', injectThirdPartyScripts);
+  }
+  window.addEventListener('scroll', injectThirdPartyScripts, {once: true});
+  window.addEventListener('mousemove', injectThirdPartyScripts, {once: true});
+  window.addEventListener('touchstart', injectThirdPartyScripts, {once: true});
+  window.addEventListener('click', injectThirdPartyScripts, {once: true});
+  // Fallback if user is completely idle
+  window.addEventListener('load', () => {
+    setTimeout(injectThirdPartyScripts, 6000);
+  });
+  // 5. Streamlined Click Tracking via Event Delegation / Array maps
+  document.addEventListener('DOMContentLoaded', function () {
+    const phoneSelectors = [
+      '.footer_mobile_phone',
+      '.footer_phone',
+      '.kontakt_phone',
+      '.kontakt_mobile_phone'
+    ];
+    phoneSelectors.forEach(selector => {
+      const element = document.querySelector(selector);
+      if (element) {
+        element.addEventListener('click', function () {
+          console.log(`Element ${selector} clicked`);
+          gtag_report_conversion();
+        });
+      }
+    });
+  });
 })();
 </script>
 </body>
