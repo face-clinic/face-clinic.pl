@@ -9,7 +9,8 @@
     "gulp-replace": "^1.1.4",
     "gulp-rev": "^12.0.0",
     "gulp-rev-delete-original": "^0.2.3",
-    "gulp-rev-rewrite": "^6.0.0"
+    "gulp-rev-rewrite": "^6.0.0",
+    "gulp-terser": "^2.1.0"
   },
   "scripts": {
     "build": "gulp"

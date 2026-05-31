@@ -21,8 +21,15 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('src/js/**/*')
+    return gulp.src([
+        'src/js/jquery*.js', // Ensures jQuery loads first if present in source
+        'src/js/**/*',
+    ])
         .pipe(concat('scripts.min.js'))
+        .pipe(terser({
+            compress: { drop_console: true }, // Strips console logs to clean up production files
+            mangle: true                      // Obfuscates/shortens internal variable names
+        }))
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -34,7 +41,7 @@ gulp.task('img', function () {
 
 gulp.task('video', function () {
     return gulp.src('src/video/**/*', {encoding: false})
-        .pipe(imagemin())
+        //.pipe(imagemin())
         .pipe(gulp.dest('dist/video'));
 });
 
