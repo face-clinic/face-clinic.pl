@@ -70,7 +70,8 @@ gulp.task('html', function () {
             /<link href="(..\/)*css\/.+\.webflow\.css"[^>]*>/g,
             `
                 <link rel="preload" href="/css/style.min.css" as="style">
-                <link rel="stylesheet" href="/css/style.min.css">
+                <link rel="stylesheet" href="/css/style.min.css" media="print" onload="this.media='all'">
+                <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
             `.trim()
         ))
 
