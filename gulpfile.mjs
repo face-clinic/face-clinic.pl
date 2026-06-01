@@ -7,6 +7,7 @@ import replace from 'gulp-replace';
 import rev from 'gulp-rev';
 import revdel from 'gulp-rev-delete-original';
 import revRewrite from 'gulp-rev-rewrite';
+import terser from 'gulp-terser';
 
 gulp.task('css', function () {
     return gulp.src(['src/css/normalize.css', 'src/css/webflow.css', 'src/css/*.webflow.css'])
