@@ -82,6 +82,18 @@ gulp.task('html', function () {
             `.trim()
         ))
 
+        // 3. THE CLS BODY OVERRIDE FIX: Inserts a layout constraint block 
+        // into the page header to prevent Cookiebot from modifying body overflow values.
+        .pipe(replace(/<\/head>/, `
+            <style>
+                body, .body-old { 
+                    overflow: visible !important; 
+                    position: relative !important; 
+                }
+            </style>
+            </head>
+        `.trim()))
+
 
         //.pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
         // Locate the script tag for webflow.js and add the defer attribute
