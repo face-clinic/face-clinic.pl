@@ -88,8 +88,8 @@ gulp.task('html', function () {
         .pipe(replace(/<\/head>/, `
             <style>
                 html, body, .body-old { 
-                    overflow: visible !important; 
-                    overflow-x: hidden !important; /* Prevents unwanted sideways scrolling */
+                    overflow-y: scroll !important; /* Forces the vertical scrollbar track to stay open */
+                    overflow-x: hidden !important; 
                     position: relative !important; 
                     height: auto !important;
                 }
