@@ -87,9 +87,11 @@ gulp.task('html', function () {
         // into the page header to prevent Cookiebot from modifying body overflow values.
         .pipe(replace(/<\/head>/, `
             <style>
-                body, .body-old { 
+                html, body, .body-old { 
                     overflow: visible !important; 
+                    overflow-x: hidden !important; /* Prevents unwanted sideways scrolling */
                     position: relative !important; 
+                    height: auto !important;
                 }
             </style>
             </head>
