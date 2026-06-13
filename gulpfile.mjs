@@ -93,6 +93,10 @@ gulp.task('html', function () {
                     position: relative !important; 
                     height: auto !important;
                 }
+                    
+                p, h1, h2, h3, h4, span, body {
+                    font-display: swap !important;
+                }
             </style>
             </head>
         `.trim()))
