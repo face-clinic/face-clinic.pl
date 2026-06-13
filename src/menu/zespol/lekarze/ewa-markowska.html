@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 13 2026 19:13:28 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 13 2026 19:58:41 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="67a1f7d2e72914e1398f38c2" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -1996,6 +1996,15 @@ window.addEventListener('load',()=>{
       observer.observe(bodyElement, { attributes: true, attributeFilter: ['style'] });
     }
   })();
+</script>
+  <script>
+  // Intercepts Cookiebot the exact millisecond it tries to show the banner
+  window.addEventListener('CookiebotOnDialogDisplay', function() {
+      // Forces the scrollbar to stay locked open natively
+      document.body.style.setProperty('overflow-y', 'scroll', 'important');
+      document.body.style.setProperty('overflow', 'visible', 'important');
+      document.documentElement.style.setProperty('overflow-y', 'scroll', 'important');
+  });
 </script>
 </body>
 </html>
