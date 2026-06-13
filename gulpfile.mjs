@@ -87,13 +87,18 @@ gulp.task('html', function () {
         // into the page header to prevent Cookiebot from modifying body overflow values.
         .pipe(replace(/<\/head>/, `
             <style>
+                body.body-old[style*="overflow: hidden"] {
+                    overflow: visible !important;
+                    overflow-y: scroll !important;
+                }
+                
                 html, body, .body-old { 
                     overflow-y: scroll !important; /* Forces the vertical scrollbar track to stay open */
                     overflow-x: hidden !important; 
                     position: relative !important; 
                     height: auto !important;
                 }
-                    
+
                 p, h1, h2, h3, h4, span, body {
                     font-display: swap !important;
                 }
