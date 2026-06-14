@@ -121,6 +121,8 @@ gulp.task('html', function () {
 
 
         //.pipe(replace(/(..\/)*js\/webflow.js/, '/js/scripts.min.js'))
+        .pipe(replace(/<script src="([^"]*cloudfront\.net\/js\/jquery-[^"]*)"/g, '<script defer src="$1"'))
+        
         // Locate the script tag for webflow.js and add the defer attribute
         .pipe(replace(/<script[^>]*src="(..\/)*js\/webflow\.js"[^>]*><\/script>/g, '<script src="/js/scripts.min.js" defer></script>'))
         .pipe(replace(/href=\s*["']\s*(?:\.\.\/|\.\/|\/)*index\.html\s*["']/g, 'href="/"'))
