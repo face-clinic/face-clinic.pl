@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 10:45:38 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 11:13:17 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff4e1c988242" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -1814,28 +1814,6 @@ window.addEventListener('load',()=>{
     });
   });
 })();
-</script>
-  <script>
-  // NUCLEAR CLS FIX: Intercepts and blocks Cookiebot from hiding the scrollbar
-  (function() {
-    var bodyElement = document.querySelector('body');
-    // Create an observer to watch for changes to the body's style attribute
-    var observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        if (mutation.attributeName === "style") {
-          // If Cookiebot tries to inject overflow: hidden, instantly revert it
-          if (bodyElement.style.overflow === "hidden" || bodyElement.style.overflow === "hidden !important") {
-            bodyElement.style.setProperty('overflow', 'visible', 'important');
-            bodyElement.style.setProperty('overflow-y', 'scroll', 'important');
-          }
-        }
-      });
-    });
-    // Start watching the body tag immediately
-    if (bodyElement) {
-      observer.observe(bodyElement, { attributes: true, attributeFilter: ['style'] });
-    }
-  })();
 </script>
   <style>
   /* Failsafe layout anchors */
