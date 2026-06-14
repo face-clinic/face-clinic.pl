@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 08:07:51 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 08:38:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff468a988246" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -1995,45 +1995,27 @@ window.addEventListener('load',()=>{
     }
   })();
 </script>
-  <script>
-  // NUCLEAR CLS FIX 2.0: Pre-emptive Body Shield
-  // Runs in the <head> to catch Cookiebot the millisecond the body tag is created
-  (function() {
-    function lockScrollbar() {
-      if (document.body) {
-        var currentOverflow = document.body.style.getPropertyValue('overflow');
-        // If Cookiebot tries to hide the overflow (with or without spaces/important tags)
-        if (currentOverflow === 'hidden' || document.body.style.overflow === 'hidden') {
-          // Instantly force it back to scroll
-          document.body.style.setProperty('overflow', 'visible', 'important');
-          document.body.style.setProperty('overflow-y', 'scroll', 'important');
-        }
-      }
-    }
-    // Check every 10 milliseconds until the <body> tag exists
-    var bodyWatcher = setInterval(function() {
-      if (document.body) {
-        clearInterval(bodyWatcher); // Stop polling once body is found
-        lockScrollbar(); // Run immediately
-        // Attach the shield for any future changes Cookiebot tries to make
-        var observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            if (mutation.attributeName === "style") {
-              lockScrollbar();
-            }
-          });
-        });
-        observer.observe(document.body, { attributes: true, attributeFilter: ['style'] });
-      }
-    }, 10);
-  })();
-</script>
   <style>
   /* Failsafe layout anchors */
   html, body, .body-old { 
       overflow-y: scroll !important; 
       overflow-x: hidden !important; 
   }
+  p, h1, h2, h3, h4, span, body {
+      font-display: swap !important;
+  }
+</style>
+  <style>
+  /* 1. Permanently reserves scrollbar space so the layout NEVER snaps horizontally */
+  html {
+      scrollbar-gutter: stable !important;
+  }
+  /* 2. Forces vertical scrolling and overrides Cookiebot's inline injection natively */
+  body[style], body.body-old { 
+      overflow-x: hidden !important; 
+      overflow-y: scroll !important;
+  }
+  /* 3. LCP Font Failsafe */
   p, h1, h2, h3, h4, span, body {
       font-display: swap !important;
   }
