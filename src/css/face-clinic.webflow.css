@@ -1827,17 +1827,23 @@ img {
 }
 
 .div-nav.phone {
+  margin-left: auto;
+  margin-right: 4.5%;
   overflow: hidden;
 }
 
 .section-logo {
+  z-index: auto;
   flex-direction: column;
   align-self: flex-end;
   align-items: flex-end;
+  width: auto;
   height: auto;
   padding-top: 119px;
   font-family: Opensans, Verdana, sans-serif;
-  display: flex;
+  display: block;
+  position: relative;
+  inset: 0%;
   overflow: hidden;
 }
 
@@ -1990,10 +1996,10 @@ img {
 
 .visual-load {
   z-index: -2147483648;
-  background-image: url('../images/fc-header.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: none;
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
   flex-direction: column;
   display: block;
   position: fixed;
@@ -2434,6 +2440,7 @@ img {
 .visual {
   z-index: auto;
   font-family: Opensans, Verdana, sans-serif;
+  display: none;
   position: relative;
   inset: 0%;
 }
@@ -6098,8 +6105,34 @@ img {
   transform: rotate(-14deg);
 }
 
-.container-161 {
+.image-56 {
   display: none;
+}
+
+.container-161 {
+  z-index: -999;
+  width: auto;
+  max-width: none;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: fixed;
+  inset: 0;
+}
+
+.image-57 {
+  vertical-align: baseline;
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin-right: 0;
+  padding-right: 0;
+  display: inline-block;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6115,6 +6148,11 @@ img {
 
   .section-intro.cennik-page {
     background-image: url('../images/cennik-desktop-3.webp');
+  }
+
+  .section-logo {
+    margin-top: 30%;
+    padding-top: 0;
   }
 
   .visual-load.implanty {
@@ -7030,6 +7068,11 @@ img {
 
   .dzial.cennik-dzial {
     width: 60%;
+  }
+
+  .section-logo {
+    margin-top: 25%;
+    padding-top: 0;
   }
 
   .visual-load.chirurgia {
@@ -7979,6 +8022,7 @@ img {
   .section-logo {
     width: 100%;
     max-width: none;
+    margin-top: 119px;
   }
 
   .visual-load.implanty {
@@ -8003,6 +8047,10 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .visual {
+    display: none;
   }
 
   .body-old {
@@ -9367,6 +9415,15 @@ img {
     width: 100%;
     display: block;
   }
+
+  .container-161 {
+    display: block;
+  }
+
+  .image-57 {
+    border-radius: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -9605,9 +9662,9 @@ img {
 
   .section-logo {
     align-items: center;
-    margin-left: 50%;
-    padding-top: 326px;
-    padding-bottom: 151px;
+    margin-left: 0%;
+    padding-top: 380px;
+    padding-bottom: 60px;
   }
 
   .footer-all {
@@ -10263,11 +10320,11 @@ img {
   }
 
   .code-embed-12 {
-    width: 80px;
+    width: 110px;
   }
 
   .code-embed-13 {
-    width: 230px;
+    width: 280px;
     margin-top: 46px;
   }
 }
@@ -10710,6 +10767,7 @@ img {
 
   .section-logo {
     align-items: center;
+    margin-top: 50%;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -10791,6 +10849,7 @@ img {
 
   .visual {
     height: 100%;
+    display: none;
   }
 
   .visual.o-klinice {
@@ -11586,11 +11645,11 @@ img {
   }
 
   .code-embed-12 {
-    width: 80px;
+    width: 110px;
   }
 
   .code-embed-13 {
-    width: 180px;
+    width: 260px;
     margin-top: 40px;
     margin-bottom: 46px;
   }
@@ -14143,6 +14202,10 @@ img {
     display: block;
     position: absolute;
     inset: 0%;
+  }
+
+  .image-57 {
+    display: none;
   }
 }
 
