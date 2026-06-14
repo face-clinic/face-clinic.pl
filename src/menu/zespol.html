@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 19:30:04 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 21:05:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bffc4ee9882d8" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -20,20 +20,26 @@
   <link href="../images/webclip.png" rel="apple-touch-icon">
   <link href="https://face-clinic.pl/menu/zespol" rel="canonical">
   <script>
-    // BLOCKS COOKIEBOT CLS PENALTY
-    // Intercepts the command to lock the body scroll before it hits the DOM
-    Object.defineProperty(document.body.style, 'overflow', {
-        set: function(value) {
-            // If Cookiebot tries to inject 'hidden', block it
-            if (value === 'hidden') {
-                return; 
+    // BLOCKS COOKIEBOT CLS PENALTY (HEAD-SAFE VERSION)
+    (function() {
+        var observer = new MutationObserver(function(mutations, obs) {
+            // Wait for the body tag to actually exist in the HTML
+            if (document.body) {
+                Object.defineProperty(document.body.style, 'overflow', {
+                    set: function(value) {
+                        // If Cookiebot tries to inject 'hidden', block it entirely
+                        if (value === 'hidden') return; 
+                        this.setProperty('overflow', value);
+                    },
+                    get: function() {
+                        return this.getPropertyValue('overflow');
+                    }
+                });
+                obs.disconnect(); // Stop observing once it is locked down
             }
-            this.setProperty('overflow', value);
-        },
-        get: function() {
-            return this.getPropertyValue('overflow');
-        }
-    });
+        });
+        observer.observe(document.documentElement, { childList: true });
+    })();
 </script>
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async="">
 </script>
