@@ -450,6 +450,7 @@ img {
   opacity: .9;
   margin-top: 40px;
   margin-bottom: 10px;
+  display: none;
 }
 
 .button_pl-eng {
@@ -711,6 +712,7 @@ img {
   width: 300px;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: none;
   transform: rotate(-14deg);
 }
 
@@ -6080,6 +6082,22 @@ img {
   display: none;
 }
 
+.code-embed-12 {
+  width: 110px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-right: 7px;
+}
+
+.code-embed-13 {
+  color: #515353;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 7px;
+  transform: rotate(-14deg);
+}
+
 @media screen and (min-width: 1280px) {
   .section-footer {
     width: 100%;
@@ -10239,6 +10257,15 @@ img {
   .protetyka_header {
     margin-top: 0;
   }
+
+  .code-embed-12 {
+    width: 80px;
+  }
+
+  .code-embed-13 {
+    width: 230px;
+    margin-top: 46px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -11552,6 +11579,16 @@ img {
   .protetyka_header {
     width: 95%;
     margin-top: 0;
+  }
+
+  .code-embed-12 {
+    width: 80px;
+  }
+
+  .code-embed-13 {
+    width: 180px;
+    margin-top: 40px;
+    margin-bottom: 46px;
   }
 }
 
@@ -14053,6 +14090,13 @@ img {
 
   .bold-text-41 {
     font-size: 30px;
+  }
+
+  .code-embed-13 {
+    width: 95%;
+    min-width: 200px;
+    max-width: 60%;
+    color: var(--white);
   }
 }
 
