@@ -87,33 +87,35 @@ gulp.task('html', function () {
         // into the page header to prevent Cookiebot from modifying body overflow values.
         .pipe(replace(/<\/head>/, `
             <style>
+               /* 1. Scrollbar & Layout Anchors */
                 html {
+                    scrollbar-gutter: stable !important;
                     overflow-y: scroll !important;
                 }
   
-                body {
+                body, .body-old {
                     width: 100% !important;
+                    overflow-x: hidden !important;
+                    overflow-y: scroll !important;
                     position: relative !important;
-                }
-
-                p, h1, h2, h3, h4, span, body {
-                    font-display: swap !important;
+                    height: auto !important;
                 }
                 
+                /* 2. Cookiebot Override (Kills inline JS injection) */
                 body.body-old[style*="overflow: hidden"] {
                     overflow: visible !important;
                     overflow-y: scroll !important;
                 }
-                
-                html, body, .body-old { 
-                    overflow-y: scroll !important; /* Forces the vertical scrollbar track to stay open */
-                    overflow-x: hidden !important; 
-                    position: relative !important; 
-                    height: auto !important;
-                }
 
+                /* 3. LCP Font Failsafe */
                 p, h1, h2, h3, h4, span, body {
                     font-display: swap !important;
+                }
+
+                /* 4. Force LCP Element to render instantly (Bypasses Webflow animations) */
+                .fix-mobile-lcp, .paragraph {
+                    opacity: 1 !important;
+                    transform: none !important;
                 }
             </style>
             </head>
