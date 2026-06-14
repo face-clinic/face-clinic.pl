@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 08:38:42 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 10:05:12 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bffc4ee9882d8" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -117,11 +117,33 @@ gtag('config', 'G-LF58J4S3MG');
 gtag('config', 'AW-622377758');
 </script>
   <!--  Google Tag Manager  -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NMBXQJCJ');</script>
+})(window,document,'script','dataLayer','GTM-NMBXQJCJ');</script> -->
+  <script>
+  (function() {
+    let gtmTriggered = false;
+    function loadGTM() {
+      if (gtmTriggered) return;
+      gtmTriggered = true;
+      // Remove interaction listeners
+      ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+        window.removeEventListener(evt, loadGTM);
+      });
+      // Inject GTM script dynamically
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NMBXQJCJ');
+    }
+    // Attach listeners for real user activity
+    ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+      window.addEventListener(evt, loadGTM, { passive: true });
+    });
+  })();
+</script>
   <!--  End Google Tag Manager  -->
 </head>
 <body class="body">
