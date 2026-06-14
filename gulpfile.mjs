@@ -87,7 +87,7 @@ gulp.task('html', function () {
         // into the page header to prevent Cookiebot from modifying body overflow values.
         .pipe(replace(/<\/head>/, `
             <style>
-               /* 1. Scrollbar & Layout Anchors */
+                /* 1. Scrollbar & Layout Anchors */
                 html {
                     scrollbar-gutter: stable !important;
                     overflow-y: scroll !important;
@@ -112,9 +112,10 @@ gulp.task('html', function () {
                     font-display: swap !important;
                 }
 
-                /* 4. Force LCP Element to render instantly (Bypasses Webflow animations) */
-                .fix-mobile-lcp, .paragraph {
+                /* 4. Force ALL Hero Elements to render instantly (Bypasses Webflow animations) */
+                .fix-mobile-lcp, .paragraph, .visual, .logo, .image-5, .section-logo {
                     opacity: 1 !important;
+                    visibility: visible !important;
                     transform: none !important;
                 }
             </style>
