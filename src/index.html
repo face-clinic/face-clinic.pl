@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 17:54:21 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 19:30:04 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -19,6 +19,22 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link href="https://face-clinic.pl" rel="canonical">
+  <script>
+    // BLOCKS COOKIEBOT CLS PENALTY
+    // Intercepts the command to lock the body scroll before it hits the DOM
+    Object.defineProperty(document.body.style, 'overflow', {
+        set: function(value) {
+            // If Cookiebot tries to inject 'hidden', block it
+            if (value === 'hidden') {
+                return; 
+            }
+            this.setProperty('overflow', value);
+        },
+        get: function() {
+            return this.getPropertyValue('overflow');
+        }
+    });
+</script>
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async="">
 </script>
   <!-- <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -922,8 +938,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="tel:+48512505460" class="zadzwon-teraz w-inline-block"><img src="images/icon_PHONE_white.svg" loading="lazy" alt="ZADZWOŃ" width="50" class="zadzwon-2">
     <div class="section-white-dots"></div>
   </a>
-  <div class="w-embed">
-    <style>
+  <div class="w-embed"><!-- <style>
     /* 🚀 1. THE KEYFRAMES (Defines the fade from 0 to 100%) */
     @keyframes pureCssFadeIn {
         0% { opacity: 0; }
@@ -945,6 +960,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .css-grow-in {
         /* Runs instantly, lasts 0.6 seconds, smooth easing, stays visible at the end */
         animation: smoothGrowIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
+    }
+</style> -->
+    <style>
+    /* 1. THE "CURTAIN" FADE EFFECT 
+      The actual element loads instantly (Google loves this), 
+      but a white box sitting on top of it fades away over 1.5s.
+    */
+    .css-fade-in {
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+    }
+    .css-fade-in::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #ffffff; /* Matches your page background */
+        z-index: 10;
+        pointer-events: none; /* Lets clicks pass through */
+        animation: pullTheCurtain 1.5s ease-out forwards;
+    }
+    @keyframes pullTheCurtain {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+    /* 2. THE GROW EFFECT (No Opacity!)
+      Google penalizes opacity changes, so we ONLY animate the scale.
+      It starts slightly smaller and grows to full size over 1.5s.
+    */
+    .css-grow-in {
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+        transform-origin: center center;
+        animation: smoothGrowOnly 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
+    }
+    @keyframes smoothGrowOnly {
+        0% { transform: scale(0.95); } /* Starts at 95% size instead of 40% to avoid layout shifts */
+        100% { transform: scale(1); }
     }
 </style>
   </div>
@@ -1266,12 +1319,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div data-delay="4000" data-animation="slide" class="slider-4 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
       <div class="w-slider-mask">
         <div class="w-slide">
-          <a href="uslugi/ortodoncja.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-desktop.webp" loading="lazy" sizes="100vw" srcset="images/ortodoncja-desktop-p-500.webp 500w, images/ortodoncja-desktop-p-800.webp 800w, images/ortodoncja-desktop-p-1080.webp 1080w, images/ortodoncja-desktop-p-1600.webp 1600w, images/ortodoncja-desktop-p-2000.webp 2000w, images/ortodoncja-desktop.webp 2304w" alt="" class="image-55">
+          <a href="uslugi/ortodoncja.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/ortodoncja-desktop-p-500.webp 500w, images/ortodoncja-desktop-p-800.webp 800w, images/ortodoncja-desktop-p-1080.webp 1080w, images/ortodoncja-desktop-p-1600.webp 1600w, images/ortodoncja-desktop-p-2000.webp 2000w, images/ortodoncja-desktop.webp 2304w" alt="" class="image-55">
             <div class="text-block-87">ORTODONCJA</div>
           </a>
         </div>
         <div class="w-slide">
-          <a href="oferta/protetyka.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-slider.webp" loading="lazy" sizes="100vw" srcset="images/ortodoncja-slider-p-500.webp 500w, images/ortodoncja-slider-p-800.webp 800w, images/ortodoncja-slider-p-1080.webp 1080w, images/ortodoncja-slider.webp 1264w" alt="" class="image-55">
+          <a href="oferta/protetyka.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-slider.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/ortodoncja-slider-p-500.webp 500w, images/ortodoncja-slider-p-800.webp 800w, images/ortodoncja-slider-p-1080.webp 1080w, images/ortodoncja-slider.webp 1264w" alt="" class="image-55">
             <div class="text-block-87">PROTETYKA</div>
           </a>
         </div>
@@ -1317,7 +1370,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </section>
   <div class="section-reklama">
-    <a href="https://rezonansfc.pl" target="_blank" class="link-block-4 w-inline-block"><img class="reklama" src="images/Rezonans-FC.webp" alt="Rezonans od ręki, niska cena! Tel. 222 139 310, ul. Łuczek 4, Warszawa. rezonansfc.pl" sizes="100vw" loading="lazy" srcset="images/Rezonans-FC-p-500.webp 500w, images/Rezonans-FC-p-800.webp 800w, images/Rezonans-FC-p-1080.webp 1080w, images/Rezonans-FC-p-1600.webp 1600w, images/Rezonans-FC-p-2000.webp 2000w, images/Rezonans-FC.webp 2048w"></a>
+    <a href="https://rezonansfc.pl" target="_blank" class="link-block-4 w-inline-block"><img class="reklama" src="images/Rezonans-FC.webp" alt="Rezonans od ręki, niska cena! Tel. 222 139 310, ul. Łuczek 4, Warszawa. rezonansfc.pl" sizes="(max-width: 2048px) 100vw, 2048px" loading="lazy" srcset="images/Rezonans-FC-p-500.webp 500w, images/Rezonans-FC-p-800.webp 800w, images/Rezonans-FC-p-1080.webp 1080w, images/Rezonans-FC-p-1600.webp 1600w, images/Rezonans-FC-p-2000.webp 2000w, images/Rezonans-FC.webp 2048w"></a>
   </div>
   <footer id="FOOTER" class="section-footer section-58">
     <section class="section-59">
