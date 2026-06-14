@@ -431,6 +431,8 @@ img {
   font-weight: 300;
   line-height: 24px;
   display: block;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .secsion_pl-eng {
