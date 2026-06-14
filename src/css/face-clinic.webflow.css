@@ -1991,7 +1991,6 @@ img {
 .visual-load {
   z-index: -2147483648;
   background-image: url('../images/fc-header.webp');
-  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -6083,6 +6082,7 @@ img {
 }
 
 .code-embed-12 {
+  color: #515353;
   width: 110px;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -11676,7 +11676,7 @@ img {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 0;
-    display: block;
+    display: none;
   }
 
   .lightbox-link {
@@ -12293,10 +12293,10 @@ img {
 
   .visual-load {
     background-image: url('../images/fc-header-mobile.webp');
-    background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: none;
   }
 
   .visual-load.o-klinice, .visual-load.implanty {
@@ -12323,6 +12323,7 @@ img {
 
   .visual {
     margin-top: 70px;
+    display: block;
   }
 
   .visual-gradient {
@@ -14092,11 +14093,16 @@ img {
     font-size: 30px;
   }
 
+  .code-embed-12 {
+    color: var(--white);
+  }
+
   .code-embed-13 {
     width: 95%;
     min-width: 200px;
     max-width: 60%;
     color: var(--white);
+    transform: rotate(-14deg);
   }
 }
 
