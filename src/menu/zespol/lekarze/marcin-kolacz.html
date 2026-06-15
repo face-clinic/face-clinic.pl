@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 23:47:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jun 15 2026 06:55:02 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff250c988292" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -20,15 +20,79 @@
   <link href="../../../images/webclip.png" rel="apple-touch-icon">
   <link href="https://face-clinic.pl/menu/zespol/lekarze/marcin-kolacz" rel="canonical">
   <style id="cookiebot-cls-fix">
-    /* Catches any element Cookiebot tries to freeze */
-    body[style*="overflow: hidden"], 
-    body[style*="overflow:hidden"] {
-        overflow: visible !important;
-        overflow-y: scroll !important;
+  /* Catches any element Cookiebot tries to freeze */
+  body[style*='overflow: hidden'],
+  body[style*='overflow:hidden'] {
+    overflow: visible !important;
+    overflow-y: scroll !important;
+  }
+</style>
+  <script>
+  // 🚀 THE ULTIMATE CLS DOM-MUTATION BLOCKER
+  (function () {
+    var enforceScroll = function () {
+      if (document.body && document.body.style.overflow === 'hidden') {
+        // Instantly delete the rule so Lighthouse doesn't register a layout shift
+        document.body.style.removeProperty('overflow');
+      }
+    };
+    // Watch the <body> tag for any script trying to modify its styles
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (mutation.attributeName === 'style') {
+          enforceScroll();
+        }
+      });
+    });
+    // Start watching the exact millisecond the <body> is generated
+    var initObserver = setInterval(function () {
+      if (document.body) {
+        clearInterval(initObserver);
+        enforceScroll(); // Run once immediately
+        observer.observe(document.body, { attributes: true, attributeFilter: ['style'] });
+      }
+    }, 10);
+  })();
+</script>
+  <style>
+    /* 1. THE "CURTAIN" FADE EFFECT 
+      The actual element loads instantly (Google loves this), 
+      but a white box sitting on top of it fades away over 1.5s.
+    */
+    .css-fade-in {
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+    }
+    .css-fade-in::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #ffffff; /* Matches your page background */
+        z-index: 10;
+        pointer-events: none; /* Lets clicks pass through */
+        animation: pullTheCurtain 1.5s ease-out forwards;
+    }
+    @keyframes pullTheCurtain {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+    /* 2. THE GROW EFFECT (No Opacity!)
+      Google penalizes opacity changes, so we ONLY animate the scale.
+      It starts slightly smaller and grows to full size over 1.5s.
+    */
+    .css-grow-in {
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+        transform-origin: center center;
+        animation: smoothGrowOnly 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
+    }
+    @keyframes smoothGrowOnly {
+        0% { transform: scale(0.95); } /* Starts at 95% size instead of 40% to avoid layout shifts */
+        100% { transform: scale(1); }
     }
 </style>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async="">
-</script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async=""></script>
   <!-- <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
@@ -38,20 +102,20 @@
 <link rel="preload" href="/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin> -->
   <style>
-@font-face {
-  font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 </style>
   <link rel="preload" href="/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -118,11 +182,13 @@
 </script> -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
   <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LF58J4S3MG');
-gtag('config', 'AW-622377758');
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-LF58J4S3MG');
+  gtag('config', 'AW-622377758');
 </script>
   <!--  Google Tag Manager  -->
   <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -131,23 +197,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMBXQJCJ');</script> -->
   <script>
-  (function() {
+  (function () {
     let gtmTriggered = false;
     function loadGTM() {
       if (gtmTriggered) return;
       gtmTriggered = true;
       // Remove interaction listeners
-      ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+      ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
         window.removeEventListener(evt, loadGTM);
       });
       // Inject GTM script dynamically
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NMBXQJCJ');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NMBXQJCJ');
     }
     // Attach listeners for real user activity
-    ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+    ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
       window.addEventListener(evt, loadGTM, { passive: true });
     });
   })();

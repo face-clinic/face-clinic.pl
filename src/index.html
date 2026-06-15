@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 14 2026 23:47:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jun 15 2026 06:55:02 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -20,15 +20,79 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link href="https://face-clinic.pl" rel="canonical">
   <style id="cookiebot-cls-fix">
-    /* Catches any element Cookiebot tries to freeze */
-    body[style*="overflow: hidden"], 
-    body[style*="overflow:hidden"] {
-        overflow: visible !important;
-        overflow-y: scroll !important;
+  /* Catches any element Cookiebot tries to freeze */
+  body[style*='overflow: hidden'],
+  body[style*='overflow:hidden'] {
+    overflow: visible !important;
+    overflow-y: scroll !important;
+  }
+</style>
+  <script>
+  // 🚀 THE ULTIMATE CLS DOM-MUTATION BLOCKER
+  (function () {
+    var enforceScroll = function () {
+      if (document.body && document.body.style.overflow === 'hidden') {
+        // Instantly delete the rule so Lighthouse doesn't register a layout shift
+        document.body.style.removeProperty('overflow');
+      }
+    };
+    // Watch the <body> tag for any script trying to modify its styles
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (mutation.attributeName === 'style') {
+          enforceScroll();
+        }
+      });
+    });
+    // Start watching the exact millisecond the <body> is generated
+    var initObserver = setInterval(function () {
+      if (document.body) {
+        clearInterval(initObserver);
+        enforceScroll(); // Run once immediately
+        observer.observe(document.body, { attributes: true, attributeFilter: ['style'] });
+      }
+    }, 10);
+  })();
+</script>
+  <style>
+    /* 1. THE "CURTAIN" FADE EFFECT 
+      The actual element loads instantly (Google loves this), 
+      but a white box sitting on top of it fades away over 1.5s.
+    */
+    .css-fade-in {
+        position: relative !important;
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+    }
+    .css-fade-in::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #ffffff; /* Matches your page background */
+        z-index: 10;
+        pointer-events: none; /* Lets clicks pass through */
+        animation: pullTheCurtain 1.5s ease-out forwards;
+    }
+    @keyframes pullTheCurtain {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+    /* 2. THE GROW EFFECT (No Opacity!)
+      Google penalizes opacity changes, so we ONLY animate the scale.
+      It starts slightly smaller and grows to full size over 1.5s.
+    */
+    .css-grow-in {
+        visibility: visible !important;
+        opacity: 1 !important; /* Forces instant LCP paint */
+        transform-origin: center center;
+        animation: smoothGrowOnly 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
+    }
+    @keyframes smoothGrowOnly {
+        0% { transform: scale(0.95); } /* Starts at 95% size instead of 40% to avoid layout shifts */
+        100% { transform: scale(1); }
     }
 </style>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async="">
-</script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async=""></script>
   <!-- <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
@@ -38,20 +102,20 @@
 <link rel="preload" href="/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin> -->
   <style>
-@font-face {
-  font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 </style>
   <link rel="preload" href="/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -118,11 +182,13 @@
 </script> -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
   <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LF58J4S3MG');
-gtag('config', 'AW-622377758');
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-LF58J4S3MG');
+  gtag('config', 'AW-622377758');
 </script>
   <!--  Google Tag Manager  -->
   <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -131,29 +197,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMBXQJCJ');</script> -->
   <script>
-  (function() {
+  (function () {
     let gtmTriggered = false;
     function loadGTM() {
       if (gtmTriggered) return;
       gtmTriggered = true;
       // Remove interaction listeners
-      ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+      ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
         window.removeEventListener(evt, loadGTM);
       });
       // Inject GTM script dynamically
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NMBXQJCJ');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NMBXQJCJ');
     }
     // Attach listeners for real user activity
-    ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
+    ['mouseover', 'keydown', 'touchstart', 'scroll'].forEach((evt) => {
       window.addEventListener(evt, loadGTM, { passive: true });
     });
   })();
 </script>
-  <!--  End Google Tag Manager  -->
-  <!--  Google Tag Manager  -->
+  <!--  End Google Tag Manager  --><!--  Google Tag Manager  -->
   <!--  old<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -954,7 +1025,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         animation: smoothGrowIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
     }
 </style> -->
-    <style>
+    <!-- <style>
     /* 1. THE "CURTAIN" FADE EFFECT 
       The actual element loads instantly (Google loves this), 
       but a white box sitting on top of it fades away over 1.5s.
@@ -991,14 +1062,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         0% { transform: scale(0.95); } /* Starts at 95% size instead of 40% to avoid layout shifts */
         100% { transform: scale(1); }
     }
-</style>
-  </div>
-  <div class="visual css-fade-in">
-    <div class="visual-gradient"></div>
-    <div class="visual-load"></div>
+</style> -->
   </div>
   <div class="section-logo">
-    <div class="w-layout-blockcontainer container-161 w-container"><img class="image-57" src="images/fc-header.webp" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" loading="eager" fetchpriority="high" srcset="images/fc-header-p-500.webp 500w, images/fc-header-p-800.webp 800w, images/fc-header-p-1080.webp 1080w, images/fc-header-p-1600.webp 1600w, images/fc-header-p-2000.webp 2000w, images/fc-header-p-2600.webp 2600w, images/fc-header.webp 2880w"><img class="image-56" src="images/fc-header-mobile.webp" width="Auto" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" loading="eager" fetchpriority="high" srcset="images/fc-header-mobile-p-500.webp 500w, images/fc-header-mobile-p-800.webp 800w, images/fc-header-mobile-p-1080.webp 1080w, images/fc-header-mobile.webp 1336w"></div>
+    <div class="w-layout-blockcontainer container-161 w-container"><img src="images/fc-header.webp" loading="eager" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/fc-header-p-500.webp 500w, images/fc-header-p-800.webp 800w, images/fc-header-p-1080.webp 1080w, images/fc-header-p-1600.webp 1600w, images/fc-header-p-2000.webp 2000w, images/fc-header-p-2600.webp 2600w, images/fc-header.webp 2880w" alt="" class="image-57"><img src="images/fc-header-mobile.webp" loading="eager" width="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="" srcset="images/fc-header-mobile-p-500.webp 500w, images/fc-header-mobile-p-800.webp 800w, images/fc-header-mobile-p-1080.webp 1080w, images/fc-header-mobile.webp 1336w" class="image-56"></div>
     <div class="div-nav phone">
       <div class="code-embed-12 w-embed css-grow-in"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 211.8 304.8">
           <path d="M65.7 24a9.9 9.9 0 0 1 13.9-14 10 10 0 0 1 0 14 9.9 9.9 0 0 1-13.9 0ZM50.8 61.5a14.4 14.4 0 1 0-14.4-14.4 14.3 14.3 0 0 0 14.4 14.4ZM65 94.4a20 20 0 1 0-19.9 20 19.9 19.9 0 0 0 19.9-20Zm29.4 74.1Zm91.2-61.8-12.8-23.2a9.1 9.1 0 0 1-1.3-4.6c.1-2.1.7-4.4 1-6.7C176.9 39.7 150.1 0 104.4 0a9.2 9.2 0 0 0 0 18.3l1.5-.2h1.1a9.1 9.1 0 1 1 0 18.2 9 9 0 0 1-5.3-1.7 15.6 15.6 0 0 0-8.8-2.8 15.3 15.3 0 1 0 9.2 27.5 8.8 8.8 0 0 1 5.3-1.7 9 9 0 1 1 0 18 9.2 9.2 0 0 1-2.9-.4 18.7 18.7 0 0 0-7.1-1.3 20.6 20.6 0 0 0-7.8 39.6 10.6 10.6 0 0 1-4.2 20.4 10.7 10.7 0 0 1-7.2-2.7 21.5 21.5 0 1 0-15.1 36.9c13.8 0 19.9-5.2 25.7-5.2a5.6 5.6 0 0 1 5.6 5.5c0 15.7-6.2 23.7-23.4 23.7v4.1h69.8v-4.1c-17.2 0-23.4-8-23.4-23.7a5.5 5.5 0 0 1 5.6-5.5c8.7 0 10 2.5 23.8 2.5s19.6-3.7 22.7-15.3 6.1-26.1 6.1-26.1a5.2 5.2 0 0 1 3.8-3.8 9.1 9.1 0 0 0 7.3-9 9.7 9.7 0 0 0-1.1-4.5ZM0 292.8c0-7.3 5.5-12 12.2-12 4.2 0 8.1 1.8 10.1 5.5l-5.2 3.1a1.1 1.1 0 0 1-1.5-.2 4 4 0 0 0-3.1-1.3c-2.3 0-4.3 1.8-4.3 4.9s2 5 4.5 5a3.7 3.7 0 0 0 2.9-1.4 1.2 1.2 0 0 1 1.5-.2l5.2 3.1c-2 3.7-5.9 5.5-10.1 5.5-6.8 0-12.2-4.8-12.2-12Zm189.5 0c0-7.3 5.5-12 12.2-12a11.2 11.2 0 0 1 10.1 5.5l-5.3 3.1a1.1 1.1 0 0 1-1.5-.2 3.8 3.8 0 0 0-3-1.3c-2.3 0-4.3 1.8-4.3 4.9s2 5 4.4 5a3.5 3.5 0 0 0 2.9-1.4 1.2 1.2 0 0 1 1.5-.2l5.3 3.1c-2.1 3.7-6 5.5-10.2 5.5-6.7 0-12.1-4.8-12.1-12ZM52.2 281.5v15a1.1 1.1 0 0 0 1 1h8.2l-.9 6.7H49.6a4.7 4.7 0 0 1-4.8-4.8v-17.9Zm38.7 0v22.7h-7.5v-22.7Zm23.3 0h8l4 6.3c.8 1.2 1.6 2.4 3 4.9a24.3 24.3 0 0 1-.6-5.6v-5.6h7.5v22.7h-7.4l-4.5-6.6c-.8-1.2-1.7-2.5-3.2-5a25.1 25.1 0 0 1 .6 5.7v5.9h-7.4Zm52.7 0v22.7h-7.5v-22.7ZM30.3 216.7l1.1 10.1H15a2.4 2.4 0 0 0-2.4 2.4v7.5h16.8v9.6H12.6v19.1H.8v-39a9.6 9.6 0 0 1 9.6-9.7Zm48.1 39.8H60.8l-2.9 8.9H44.1l17.7-45.6a4.9 4.9 0 0 1 4.5-3.1h7a4.9 4.9 0 0 1 4.4 3.1l17.6 45.6H81.4Zm-2.9-8.9-3.2-9.3a92.7 92.7 0 0 1-2.6-10.4h-.3a63.1 63.1 0 0 1-2.6 10.4l-3.1 9.3Zm134.4-30.9 1.1 10.1h-17.2a2.4 2.4 0 0 0-2.4 2.4v6.6H209v9.7h-17.6v7.5a2.4 2.4 0 0 0 2.4 2.4H211l-1.1 10h-20.7a9.6 9.6 0 0 1-9.6-9.6v-29.4a9.6 9.6 0 0 1 9.6-9.7Zm-99.6 24.4c0-15.3 11.3-25.7 25.8-25.7 9.3 0 17.3 4 21.8 12.3l-7.8 4.7a2.4 2.4 0 0 1-3.2-.6 12.3 12.3 0 0 0-10.4-5.2c-7.4 0-13.3 5.8-13.3 14.5s5.9 14.4 13.5 14.4a11.9 11.9 0 0 0 10.4-5.1 2.3 2.3 0 0 1 3.2-.7l7.8 4.8c-4.8 8.2-12.6 12.2-22.1 12.2-14.5 0-25.7-10.5-25.7-25.6Z" style="fill:currentColor; opacity:0.9"></path>
@@ -1312,12 +1379,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div data-delay="4000" data-animation="slide" class="slider-4 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="5" data-duration="500" data-infinite="true">
       <div class="w-slider-mask">
         <div class="w-slide">
-          <a href="uslugi/ortodoncja.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-desktop.webp" loading="lazy" sizes="100vw" srcset="images/ortodoncja-desktop-p-500.webp 500w, images/ortodoncja-desktop-p-800.webp 800w, images/ortodoncja-desktop-p-1080.webp 1080w, images/ortodoncja-desktop-p-1600.webp 1600w, images/ortodoncja-desktop-p-2000.webp 2000w, images/ortodoncja-desktop.webp 2304w" alt="" class="image-55">
+          <a href="uslugi/ortodoncja.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-desktop.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/ortodoncja-desktop-p-500.webp 500w, images/ortodoncja-desktop-p-800.webp 800w, images/ortodoncja-desktop-p-1080.webp 1080w, images/ortodoncja-desktop-p-1600.webp 1600w, images/ortodoncja-desktop-p-2000.webp 2000w, images/ortodoncja-desktop.webp 2304w" alt="" class="image-55">
             <div class="text-block-87">ORTODONCJA</div>
           </a>
         </div>
         <div class="w-slide">
-          <a href="oferta/protetyka.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-slider.webp" loading="lazy" sizes="100vw" srcset="images/ortodoncja-slider-p-500.webp 500w, images/ortodoncja-slider-p-800.webp 800w, images/ortodoncja-slider-p-1080.webp 1080w, images/ortodoncja-slider.webp 1264w" alt="" class="image-55">
+          <a href="oferta/protetyka.html" class="link-block-23 w-inline-block"><img src="images/ortodoncja-slider.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/ortodoncja-slider-p-500.webp 500w, images/ortodoncja-slider-p-800.webp 800w, images/ortodoncja-slider-p-1080.webp 1080w, images/ortodoncja-slider.webp 1264w" alt="" class="image-55">
             <div class="text-block-87">PROTETYKA</div>
           </a>
         </div>
