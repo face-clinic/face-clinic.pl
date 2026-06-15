@@ -88,37 +88,37 @@ gulp.task('html', function () {
         .pipe(replace(/<\/head>/, `
             <style>
                 /* 1. Scrollbar & Layout Anchors */
-                html {
-                    scrollbar-gutter: stable !important;
-                    overflow-y: scroll !important;
-                }
-  
-                body, .body-old {
-                    width: 100% !important;
-                    overflow-x: hidden !important;
-                    overflow-y: scroll !important;
-                    position: relative !important;
-                    height: auto !important;
-                }
-                
-                /* 2. Cookiebot Override (Kills inline JS injection) */
-                body.body-old[style*="overflow: hidden"] {
-                    overflow: visible !important;
-                    overflow-y: scroll !important;
-                }
+                    html {
+                        scrollbar-gutter: stable !important;
+                        overflow-y: scroll !important;
+                    }
 
-                /* 3. LCP Font Failsafe */
-                p, h1, h2, h3, h4, span, body {
-                    font-display: swap !important;
-                }
+                    body, .body-old {
+                        width: 100% !important;
+                        overflow-x: clip !important;
+                        overflow-y: scroll !important;
+                        /* I deleted the position: relative !important line from here */
+                        height: auto !important;
+                    }
+                    
+                    /* 2. Cookiebot Override (Kills inline JS injection) */
+                    body.body-old[style*="overflow: hidden"] {
+                        overflow-x: clip !important;
+                        overflow-y: visible !important;
+                    }
 
-                /* 4. Force ALL Hero Elements to render instantly (Bypasses Webflow animations) */
-                .fix-mobile-lcp, .paragraph, .visual, .logo, .image-5, .section-logo {
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                    transform: none !important;
-                }
-            </style>
+                    /* 3. LCP Font Failsafe */
+                    p, h1, h2, h3, h4, span, body {
+                        font-display: swap !important;
+                    }
+
+                    /* 4. Force ALL Hero Elements to render instantly (Bypasses Webflow animations) */
+                    .fix-mobile-lcp, .paragraph, .visual, .logo, .image-5, .section-logo {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        transform: none !important;
+                    }
+                </style>
             </head>
         `.trim()))
 

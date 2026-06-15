@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jun 15 2026 07:28:09 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Jun 15 2026 08:25:03 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff17b6988244" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -26,6 +26,23 @@
     overflow: visible !important;
     overflow-y: scroll !important;
   }
+</style>
+  <style id="cookiebot-quarantine">
+    /* 1. Quarantine the main banner (Stage 1) */
+    #CybotCookiebotDialog {
+        position: fixed !important;
+        z-index: 2147483647 !important;
+    }
+    /* 2. Quarantine the mini-widget (Stage 2) */
+    #CookiebotWidget {
+        position: fixed !important;
+        z-index: 2147483647 !important;
+    }
+    /* 3. Prevent the widget from creating a hidden scrollbox */
+    #CookiebotWidgetContainer {
+        min-height: 0px !important;
+        min-width: 0px !important;
+    }
 </style>
   <script>
   // 🚀 THE ULTIMATE CLS DOM-MUTATION BLOCKER
