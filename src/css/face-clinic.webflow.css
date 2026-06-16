@@ -1,12 +1,4 @@
 @font-face {
-  font-family: Opensans;
-  src: url('../fonts/open-sans-v44-latin-600.woff2') format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: Opensans Condensed;
   src: url('../fonts/OpenSans_Condensed-Regular.woff2') format("woff2");
   font-weight: 400;
@@ -219,6 +211,14 @@
   src: url('../fonts/OpenSans-Italic.woff2') format("woff2");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url('../fonts/OpenSans-SemiBold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -478,8 +478,10 @@ img {
   background-color: #444749;
   border-radius: 20%;
   align-self: stretch;
+  width: 150px;
   min-width: 140px;
   max-width: 120px;
+  height: 140px;
 }
 
 .button_home.chirurgia {
@@ -4513,6 +4515,7 @@ img {
   text-align: right;
   flex: 1;
   order: 9999;
+  font-family: Opensans Condensed, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
@@ -5858,6 +5861,7 @@ img {
 
 .heading-39 {
   text-align: center;
+  font-weight: 600;
 }
 
 .section-55 {
@@ -8000,6 +8004,22 @@ img {
     border-radius: 0;
   }
 
+  .button_home {
+    width: 140px;
+    min-width: auto;
+    max-width: none;
+    height: 130px;
+  }
+
+  .button_home.chirurgia {
+    width: 140px;
+    height: 130px;
+  }
+
+  .div-button-home {
+    height: auto;
+  }
+
   .section-footer {
     width: 100%;
     padding-top: 0;
@@ -8125,6 +8145,10 @@ img {
 
   .container-44 {
     width: auto;
+  }
+
+  .text-block-37 {
+    font-family: Opensans Semicondensed, Verdana, sans-serif;
   }
 
   .image-28 {
@@ -8575,6 +8599,10 @@ img {
     background-color: #fff;
   }
 
+  .heading-25 {
+    font-family: Opensans Condensed, Verdana, sans-serif;
+  }
+
   .section-41 {
     background-color: #fff;
     border-radius: 30px;
@@ -9022,6 +9050,8 @@ img {
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: Opensans, Verdana, sans-serif;
+    font-weight: 500;
   }
 
   .grid-5 {
@@ -10354,8 +10384,15 @@ img {
   }
 
   .button_home {
+    width: 140px;
     min-width: auto;
-    max-width: 100px;
+    max-width: none;
+  }
+
+  .button_home.chirurgia {
+    width: 140px;
+    max-width: none;
+    height: auto;
   }
 
   .txt_fc-tv {
@@ -10368,7 +10405,7 @@ img {
 
   .div-button-home {
     min-width: auto;
-    max-width: 100px;
+    max-width: none;
     min-height: 89px;
   }
 
@@ -11686,12 +11723,24 @@ img {
     display: none;
   }
 
+  .button_home {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button_home.chirurgia {
+    width: 100px;
+    max-width: 100px;
+  }
+
   .button_home.lab {
     position: relative;
   }
 
   .div-button-home {
     width: 100px;
+    max-width: 100px;
+    min-height: auto;
     position: relative;
   }
 
@@ -11754,6 +11803,8 @@ img {
   .link-block {
     pointer-events: auto;
     width: 100px;
+    height: 100px;
+    margin-top: 16px;
     position: relative;
   }
 
@@ -14042,6 +14093,7 @@ img {
     object-fit: fill;
     width: 100%;
     height: auto;
+    margin-top: 20px;
     overflow: clip;
   }
 
@@ -14229,13 +14281,6 @@ img {
 
 
 @font-face {
-  font-family: 'Opensans';
-  src: url('../fonts/open-sans-v44-latin-600.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: 'Opensans Condensed';
   src: url('../fonts/OpenSans_Condensed-Regular.woff2') format('woff2');
   font-weight: 400;
@@ -14422,6 +14467,13 @@ img {
   src: url('../fonts/OpenSans-Italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Opensans';
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
