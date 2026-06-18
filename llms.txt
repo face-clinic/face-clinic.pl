@@ -1,22 +1,54 @@
-# Face-Clinic
+# Face-Clinic Warszawa
 
-> Profesjonalna klinika stomatologiczna i medyczna łącząca nowoczesną stomatologię, ortodoncję i opiekę medyczną.
+> Specjalistyczna klinika stomatologiczna i chirurgii szczękowo-twarzowej w Warszawie, łącząca ortodoncję, protetykę, implantologię, chirurgię, stomatologię zachowawczą, higienę i radiologię pod jednym dachem. Klinika działa jako NZOZ Centrum Leczenia Wad Zgryzu.
 
-## O nas / Informacje
-- https://face-clinic.pl/  ― strona główna z misją kliniki :contentReference[oaicite:0]{index=0}  
-- https://face-clinic.pl/menu/o-klinice.html ― informacje o klinice  :contentReference[oaicite:1]{index=1}  
-- https://face-clinic.pl/menu/zespol.html ― informacje o zespole  :contentReference[oaicite:2]{index=2}  
+Face-Clinic mieści się przy ul. Łuczek 4 w Warszawie (dzielnica Ochota). Godziny pracy: poniedziałek–piątek 8:00–20:00, sobota 8:00–14:00 (po wcześniejszym umówieniu). Telefon: +48 22 863 61 82 / +48 512 505 460. E-mail: recepcja@face-clinic.pl.
 
+Klinika dysponuje 4 nowoczesnymi gabinetami stomatologicznymi, blokiem operacyjnym spełniającym standardy międzynarodowe, laboratorium diagnostycznym z tomografią CBCT 3D, salą konsultacyjną do planowania leczenia z użyciem obrazowania cyfrowego oraz indywidualnymi salami pooperacyjnymi z łazienkami. Stosowany jest aparat do znieczulenia Dräger Primus oraz tomografia 3D w czasie rzeczywistym podczas zabiegów chirurgicznych.
 
-## Edukacja / Szkolenia
-- https://edu.face-clinic.pl/ ― sekcja Face-Edu z kursami medycznymi :contentReference[oaicite:3]{index=3}  
-- https://edu.face-clinic.pl/menu/kontakt.html ― kontakt edukacyjny Face-Clinic :contentReference[oaicite:4]{index=4}  
+Klinika prowadzi również platformę edukacyjną Face-Edu (edu.face-clinic.pl) z kursami medycznymi dla specjalistów oraz Face TV – kanał informacyjny z filmami edukacyjnymi dla pacjentów. Współpracuje z laboratorium Face Lab i centrum diagnostycznym Rezonans FC.
 
-## Polityki i Regulacje
-- https://face-clinic.pl/menu/rodo.html ― polityka ochrony prywatności :contentReference[oaicite:5]{index=5}  
-- https://face-clinic.pl/documents/Face-Clinic_Standardy_Ochrony_Maloletnich.pdf ― standardy ochrony małoletnich :contentReference[oaicite:6]{index=6} 
-- https://face-clinic.pl/prawne/regulamin.html - regulamin :contentReference[oaicite:7]{index=7} 
+## Strony główne
 
-## Kontakt
-- https://face-clinic.pl/menu/kontakt.html ― dane kontaktowe kliniki :contentReference[oaicite:8]{index=8}  
-- Numer telefonu: +48 22 863 61 82, e-mail: recepcja@face-clinic.pl :contentReference[oaicite:9]{index=9}  
+- [Strona główna](https://face-clinic.pl/): misja kliniki, przegląd usług i aktualności
+- [O klinice](https://face-clinic.pl/menu/o-klinice.html): historia, filozofia leczenia, wyposażenie i standardy
+- [Zespół](https://face-clinic.pl/menu/zespol.html): lekarze, fizjoterapeuci, higienistki, pielęgniarki i administracja
+- [Cennik](https://face-clinic.pl/menu/cennik.html): cennik usług i zabiegów
+- [Kontakt](https://face-clinic.pl/menu/kontakt.html): adres, telefon, e-mail, mapa dojazdu
+- [FAQ](https://face-clinic.pl/menu/faq.html): najczęściej zadawane pytania
+- [Galeria](https://face-clinic.pl/menu/galeria.html): zdjęcia kliniki i gabinetów
+- [Metamorfozy](https://face-clinic.pl/menu/metamorfozy.html): przypadki kliniczne przed i po leczeniu
+- [Blog](https://face-clinic.pl/menu/blog.html): artykuły edukacyjne z zakresu stomatologii i ortodoncji
+- [Face TV](https://face-clinic.pl/menu/tv.html): filmy edukacyjne dla pacjentów
+
+## Usługi
+
+- [Ortodoncja](https://face-clinic.pl/uslugi/ortodoncja.html): leczenie wad zgryzu aparatami stałymi i ruchomymi, leczenie ortodontyczno-chirurgiczne wad szkieletowych, korekta typodontu, zgryz otwarty, krzyżowy, głęboki, progenia, retrogenia, laterogenia
+- [Protetyka](https://face-clinic.pl/oferta/protetyka): korony protetyczne, mosty, protezy akrylowe i szkieletowe, uzupełnienia implantoprotetyczne CAD/CAM
+- [Chirurgia](https://face-clinic.pl/uslugi/chirurgia.html): chirurgia szczękowo-twarzowa, osteotomie, ekstrakcje zębów zatrzymanych, plastyka dziąseł
+- [Implanty](https://face-clinic.pl/uslugi/implanty.html): implanty zębowe, augmentacja kości, sinus lift, lateralizacja nerwu zębodołowego
+- [Stomatologia](https://face-clinic.pl/uslugi/stomatologia.html): stomatologia zachowawcza, leczenie próchnicy, endodoncja, wybielanie zębów
+- [Higiena](https://face-clinic.pl/uslugi/higiena.html): scaling, piaskowanie, polerowanie, instruktaż higieny jamy ustnej
+- [Radiologia](https://face-clinic.pl/uslugi/radiologia.html): zdjęcia RTG wewnątrzustne, panoramiczne, tomografia CBCT 3D
+
+## Licówki i estetyka
+
+- [Licówki porcelanowe](https://face-clinic.pl/uslugi/licowki-porcelanowe.html): licówki ceramiczne do korekty kształtu, koloru i ustawienia zębów
+- [Licówki ceramiczne](https://face-clinic.pl/uslugi/bonding.html): licówki kompozytowe bezpośrednie (bonding)
+- [Zęby w jeden dzień](https://face-clinic.pl/uslugi/zeby-w-jeden-dzien.html): natychmiastowe uzupełnienia protetyczne na implantach
+
+## Edukacja
+
+- [Face-Edu](https://edu.face-clinic.pl/): platforma kursów medycznych dla specjalistów
+- [Kontakt Face-Edu](https://edu.face-clinic.pl/menu/kontakt.html): kontakt do sekcji edukacyjnej
+
+## Dokumenty i polityki
+
+- [RODO / Polityka prywatności](https://face-clinic.pl/menu/rodo.html): zasady ochrony danych osobowych pacjentów
+- [Regulamin](https://face-clinic.pl/prawne/regulamin.html): regulamin korzystania z usług kliniki
+- [Standardy ochrony małoletnich](https://face-clinic.pl/documents/Face-Clinic_Standardy_Ochrony_Maloletnich.pdf): polityka ochrony pacjentów niepełnoletnich
+
+## Opcjonalne
+
+- [Dofinansowanie UE](https://face-clinic.pl/menu/ue.html): informacje o projektach współfinansowanych z funduszy europejskich
+- [Konsultacje online](https://face-clinic.pl/konsultacje-online/): zdalne konsultacje stomatologiczne
