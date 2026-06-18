@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jun 17 2026 16:00:57 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Jun 18 2026 08:32:07 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -1461,6 +1461,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="w-embed w-script"><!--  Elfsight Instagram Feed | Untitled Instagram Feed  -->
         <!-- <script src="https://elfsightcdn.com/platform.js" defer></script> -->
         <div style="width:100%" class="elfsight-app-d44633d4-c3e5-40ce-9942-ec82ed1d4463" data-elfsight-app-lazy=""></div>
+        <style>
+/* 1. Target ONLY the specific blue post so it doesn't crop */
+a[href*="DZmht1hgFga"] .eapps-instagram-feed-posts-item-image {
+    object-fit: contain !important;
+    background-color: #8bb3d4 !important; 
+}
+</style>
+        <script>
+// 2. Safely remove broken 403 images and force Elfsight to fix the gap
+document.addEventListener('error', function(event) {
+    // Check if the error came from an Elfsight image
+    if (event.target.tagName && event.target.tagName.toLowerCase() === 'img' && event.target.classList.contains('eapps-instagram-feed-posts-item-image')) {
+        const postItem = event.target.closest('.eapps-instagram-feed-posts-item');
+        if (postItem) {
+            // Completely delete the broken post from the code
+            postItem.remove();
+            // Trick Elfsight into recalculating its native layout to close the empty space
+            window.dispatchEvent(new Event('resize'));
+        }
+    }
+}, true); // 'true' is required to catch the error event as it happens
+</script>
+        <style>
+/* 1. Limit the width of the Elfsight container to force exactly 4 posts per row */
+/* Assuming each post is ~20% width natively, capping it at 80% forces a 4-post row */
+.elfsight-app-d44633d4-c3e5-40ce-9942-ec82ed1d4463 {
+    max-width: 80% !important; /* Adjust this slightly if needed to fit exactly 4 */
+    margin: 0 auto !important; /* Centers the whole widget on the page */
+}
+/* 2. Target ONLY the specific blue post so it doesn't crop */
+a[href*="DZmht1hgFga"] .eapps-instagram-feed-posts-item-image {
+    object-fit: contain !important;
+    background-color: #8bb3d4 !important; 
+}
+/* 3. Responsive adjustments (let it go full width on mobile) */
+@media (max-width: 991px) {
+    .elfsight-app-d44633d4-c3e5-40ce-9942-ec82ed1d4463 {
+        max-width: 100% !important;
+    }
+}
+</style>
       </div>
     </div>
   </section>

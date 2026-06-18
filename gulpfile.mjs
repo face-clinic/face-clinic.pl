@@ -95,9 +95,6 @@ gulp.task('html', function () {
 
                     body, .body-old {
                         width: 100% !important;
-                        overflow-x: clip !important;
-                        overflow-y: scroll !important;
-                        /* I deleted the position: relative !important line from here */
                         height: auto !important;
                     }
                     
