@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 20:26:25 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 20:36:13 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="67ac757ac6ef06866c7ad595" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -43,6 +43,27 @@
   /* Prevent links from turning blue globally before CSS loads */
   a {
       color: inherit;
+  }
+</style>
+  <style>
+  /* 🛑 PREVENT ALL SVG ICONS FROM FLASHING GIANT */
+  /* This hides them while the page is loading */
+  .w-embed svg {
+      opacity: 0 !important;
+      transition: opacity 0.3s ease;
+  }
+  /* Once the main stylesheet is loaded, Webflow adds the 'w-mod-js' class to the <html> tag. 
+     We use this to fade the icons back in gracefully. */
+  .w-mod-js .w-embed svg {
+      opacity: 1 !important;
+  }
+  /* Maintain the fix for your specific logos to prevent the blue-link color */
+  .logo_navi svg, 
+  .logo_footer svg {
+      width: 160px !important;
+      height: auto !important;
+      color: #2b2b2b !important;
+      opacity: 1 !important; /* Keep the logo visible, just styled */
   }
 </style>
   <style id="cookiebot-quarantine">
