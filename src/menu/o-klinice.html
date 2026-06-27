@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 19:27:51 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 20:12:30 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff25499882b4" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -25,6 +25,24 @@
   body[style*='overflow:hidden'] {
     overflow-x: clip !important;
     overflow-y: visible !important;
+  }
+</style>
+  <style>
+  /* 🛑 PREVENT GIANT BLUE LOGO & FOUC (Flash of Unstyled Content) CLS */
+  .logo_navi svg, 
+  .logo_footer svg {
+      width: 160px !important; /* Locks the logo to its correct size instantly */
+      height: auto !important;
+      color: #2b2b2b !important; /* Forces the dark color, preventing default link blue */
+  }
+  /* Safety catch for all other unstyled icons */
+  .w-embed svg {
+      max-width: 100%;
+      height: auto;
+  }
+  /* Prevent links from turning blue globally before CSS loads */
+  a {
+      color: inherit;
   }
 </style>
   <style id="cookiebot-quarantine">
