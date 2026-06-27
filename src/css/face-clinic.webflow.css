@@ -14239,7 +14239,9 @@ img {
   }
 
   .code-embed-12 {
+    width: 110px;
     color: var(--white);
+    padding-top: 20px;
   }
 
   .code-embed-13 {
