@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 20:36:13 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jun 27 2026 21:03:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bff27239882d0" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -65,6 +65,22 @@
       color: #2b2b2b !important;
       opacity: 1 !important; /* Keep the logo visible, just styled */
   }
+  /* 🛑 PREVENT NAV BAR FROM SHIFTING */
+.navigation {
+    min-height: 80px !important; /* <--- CHANGE 80px TO YOUR NAV HEIGHT */
+    width: 100% !important;
+    display: block !important;
+}
+/* Also ensure your main logo container has a fixed aspect ratio or size */
+.navigation_logo {
+    min-height: 50px !important; /* <--- APPROXIMATE HEIGHT OF LOGO */
+    min-width: 50px !important;
+}
+  .navigation {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important; /* Match your Webflow design */
+    line-height: 1.2 !important;
+}
 </style>
   <style id="cookiebot-quarantine">
     /* 1. Quarantine the main banner (Stage 1) */
