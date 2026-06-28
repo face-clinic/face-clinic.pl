@@ -6135,6 +6135,7 @@ img {
   width: auto;
   max-width: none;
   height: auto;
+  max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   display: block;
