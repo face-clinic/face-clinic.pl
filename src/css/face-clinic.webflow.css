@@ -1840,7 +1840,9 @@ img {
   align-self: flex-end;
   align-items: flex-end;
   width: auto;
+  max-width: 100vw;
   height: auto;
+  max-height: 100vh;
   padding-top: 119px;
   font-family: Opensans, Verdana, sans-serif;
   display: block;
