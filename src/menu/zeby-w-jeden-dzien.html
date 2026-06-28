@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 08:26:40 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 08:41:19 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="697940ddc0f5d5fd434565e6" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -40,6 +40,11 @@
   .w-embed svg {
       max-width: 100%;
       height: auto;
+      opacity: 0 !important;
+      transition: opacity 0.3s ease;
+  }
+  .w-mod-js .w-embed svg {
+      opacity: 1 !important;
   }
   /* Prevent links from turning blue globally before CSS loads */
   a {
