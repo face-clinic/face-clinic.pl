@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 06:18:32 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 07:15:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="695c1c98d74b4315e676f92f" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -91,12 +91,21 @@
   <script>
   // 🚀 THE ULTIMATE CLS DOM-MUTATION BLOCKER
   (function () {
-    var enforceScroll = function () {
-      if (document.body && document.body.style.overflow === 'hidden') {
-        // Instantly delete the rule so Lighthouse doesn't register a layout shift
-        document.body.style.removeProperty('overflow');
-      }
-    };
+    // var enforceScroll = function () {
+    //   if (document.body && document.body.style.overflow === 'hidden') {
+    //     // Instantly delete the rule so Lighthouse doesn't register a layout shift
+    //     document.body.style.removeProperty('overflow');
+    //   }
+    // };
+    // NEW APPROACH: Hide the overlay, don't touch the body!
+var enforceScroll = function () {
+    var overlay = document.getElementById('cookie-overlay'); // Use your actual ID here
+    if (overlay) {
+        overlay.style.display = 'none'; 
+    }
+    // STOP using: document.body.style.removeProperty('overflow'); 
+    // This was the source of your layout shift.
+};
     // Watch the <body> tag for any script trying to modify its styles
     var observer = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
@@ -153,7 +162,7 @@
         100% { transform: scale(1); }
     }
 </style>
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="auto" data-cookieconsent="ignore" async=""></script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5cb7dee1-6adc-4a88-a26c-5002ca879269" data-blockingmode="manual" data-cookieconsent="ignore" async=""></script>
   <!-- <link rel="preload" href="/fonts/OpenSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-Light.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
@@ -241,7 +250,7 @@
   gtag('js', new Date());
   gtag('config', 'AW-622377758');
 </script> -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
+  <script async="" data-cookieconsent="statistics" src="https://www.googletagmanager.com/gtag/js?id=G-LF58J4S3MG"></script>
   <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -257,7 +266,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NMBXQJCJ');</script> -->
-  <script>
+  <script type="text/plain" data-cookieconsent="statistics">
   (function () {
     let gtmTriggered = false;
     function loadGTM() {
