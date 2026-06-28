@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 08:41:19 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Jun 28 2026 10:01:38 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6288a6134d4bfffa3998823c" data-wf-site="5c596ea54abddd008a1e1302" lang="pl">
 <head>
   <meta charset="utf-8">
@@ -317,7 +317,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   })();
 </script>
-  <!--  End Google Tag Manager  --><!--  Google Tag Manager  -->
+  <!--  End Google Tag Manager  -->
+  <style>
+  /* =======================================================
+     SAFE SKELETON: Reserves space without breaking Webflow 
+     ======================================================= */
+  /* 1. Hero Image Wrapper */
+  .section-logo {
+      width: 100%;
+      min-height: 30vh; /* Uses viewport height so it scales nicely */
+  }
+  /* 2. Text Box Wrapper */
+  .section-opis-home {
+      min-height: 150px; 
+  }
+  /* 3. Navigation Grid Wrapper */
+  .section-nav {
+      min-height: 40vh; 
+  }
+  /* MOBILE ADJUSTMENTS */
+  @media screen and (max-width: 767px) {
+      .section-logo {
+          min-height: 40vh; 
+      }
+      .section-nav {
+          min-height: 80vh; /* Taller on mobile because the buttons stack */
+      }
+  }
+</style>
+  <!--  Google Tag Manager  -->
   <!--  old<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
